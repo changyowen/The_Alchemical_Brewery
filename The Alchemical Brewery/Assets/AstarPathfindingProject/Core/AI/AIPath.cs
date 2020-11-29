@@ -162,6 +162,10 @@ namespace Pathfinding {
 		/// <summary>Helper which calculates points along the current path</summary>
 		protected PathInterpolator interpolator = new PathInterpolator();
 
+		////////////////////////////
+		public bool isRunning = false;
+		///////////////////////////
+
 		#region IAstarAI implementation
 
 		/// <summary>\copydoc Pathfinding::IAstarAI::Teleport</summary>
@@ -268,7 +272,8 @@ namespace Pathfinding {
 		/// So when the agent is close to the destination this method will typically be called every <see cref="repathRate"/> seconds.
 		/// </summary>
 		public virtual void OnTargetReached () {
-		}
+			
+        }
 
 		/// <summary>
 		/// Called when a requested path has been calculated.
@@ -327,6 +332,13 @@ namespace Pathfinding {
 				reachedEndOfPath = true;
 				OnTargetReached();
 			}
+
+			trytesting();
+		}
+
+		void trytesting()
+        {
+			//playerManager = GetComponent<PlayerManager>();
 		}
 
 		protected override void ClearPath () {
@@ -389,7 +401,6 @@ namespace Pathfinding {
 			velocity2D = MovementUtilities.ClampVelocity(velocity2D, maxSpeed, slowdown, slowWhenNotFacingTarget && enableRotation, forwards);
 
 			ApplyGravity(deltaTime);
-
 
 			// Set how much the agent wants to move during this frame
 			var delta2D = lastDeltaPosition = CalculateDeltaToMoveThisFrame(movementPlane.ToPlane(currentPosition), distanceToEnd, deltaTime);

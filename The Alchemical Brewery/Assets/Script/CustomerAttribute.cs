@@ -14,6 +14,8 @@ public class CustomerAttribute : MonoBehaviour
     public Vector3 deletePoint;
     public float speed;
     private float QueueTimer = 0;
+    public int preferablePotion;
+    public float waitingTime;
 
     void Start()
     {
@@ -46,7 +48,7 @@ public class CustomerAttribute : MonoBehaviour
             case 2:
                 {
                     QueueTimer += Time.deltaTime;
-                    if (QueueTimer > 10f)
+                    if (QueueTimer > waitingTime)
                     {
                         customerQueue.RemovingCustomer(customerIndex);
                         destination = QueuePoint2;
@@ -57,10 +59,18 @@ public class CustomerAttribute : MonoBehaviour
             case 3:
                 {
                     enableWalking = true;
-                    if(transform.position == destination)
+                    if (transform.position == destination)
                     {
                         destination = deletePoint;
                         customerStatus++;
+                    }
+                    break;
+                }
+            case 4:
+                {
+                    if (transform.position == destination)
+                    {
+                        Destroy(this.gameObject);
                     }
                     break;
                 }

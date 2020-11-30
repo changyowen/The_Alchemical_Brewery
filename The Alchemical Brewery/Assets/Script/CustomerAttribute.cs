@@ -6,6 +6,8 @@ public class CustomerAttribute : MonoBehaviour
 {
     CustomerQueue customerQueue;
 
+    GameObject preferablePotion_object;
+
     public int customerIndex = 0;
     public int customerStatus = 0;
     public bool enableWalking = true;
@@ -21,6 +23,8 @@ public class CustomerAttribute : MonoBehaviour
     {
         GameObject customerQueue_object = GameObject.Find("CustomerQueue");
         customerQueue = customerQueue_object.GetComponent<CustomerQueue>();
+        preferablePotion_object = transform.GetChild(0).gameObject;
+        preferablePotion_object.SetActive(false);
     }
 
     void Update()
@@ -41,6 +45,7 @@ public class CustomerAttribute : MonoBehaviour
                     if(transform.position == destination)
                     {
                         enableWalking = false;
+                        preferablePotion_object.SetActive(true);
                         customerStatus++;
                     }
                     break;
@@ -58,6 +63,7 @@ public class CustomerAttribute : MonoBehaviour
                 }
             case 3:
                 {
+                    preferablePotion_object.SetActive(false);
                     enableWalking = true;
                     if (transform.position == destination)
                     {

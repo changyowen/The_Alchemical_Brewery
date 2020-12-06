@@ -10,6 +10,7 @@ public class DailyStart : MonoBehaviour
     public int dailyTargetCustomer = 20;
 
     float dayTimer = 0;
+    bool startEndScene = false;
 
     public GameObject startUI_panel;
     public Text startUI_dayCount;
@@ -31,14 +32,27 @@ public class DailyStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        startUI_dayCount.text = "Day " + dayCount;
-        startUI_dailyTimeLimit.text = "Time\t:\t" + dailyTimeLimit;
-        startUI_dailyTargetCustomer.text = "Target\t:\t" + dailyTargetCustomer;
+        if(startEndScene == true)
+        {
+            startUI_dayCount.text = "Day " + dayCount;
+            startUI_dailyTimeLimit.text = "Time\t:\t" + dailyTimeLimit;
+            startUI_dailyTargetCustomer.text = "Target\t:\t" + dailyTargetCustomer;
+        }
+        else
+        {
+            dayTimer += Time.deltaTime;
+            if(dayTimer >= dailyTimeLimit)
+            {
+                Endday();
+            }
+        }
+
     }
 
     void InitiateScene()
     {
         //stop time??
+        startEndScene = true;
         blackScreen.SetActive(true);
         startUI_anim.SetBool("startUI_trigger", true);
     }
@@ -46,6 +60,7 @@ public class DailyStart : MonoBehaviour
     public void StartDay()
     {
         //start time
+        dayTimer = 0;
         startUI_anim.SetBool("startUI_trigger", false);
         StartCoroutine(FadingBlackScreen(true));
     }
@@ -53,6 +68,9 @@ public class DailyStart : MonoBehaviour
     public void Endday()
     {
         //stop time
+        dayTimer = 0;
+        startEndScene = true;
+        blackScreen.SetActive(true);
         StartCoroutine(FadingBlackScreen(false));
     }
 
@@ -70,6 +88,7 @@ public class DailyStart : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
             blackScreen.SetActive(false);
+            startEndScene = false;
         }
         else
         {

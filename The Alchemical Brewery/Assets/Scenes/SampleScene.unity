@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayCount: 1
-  dailyTimeLimit: 500
+  dailyTimeLimit: 120
   dailyTargetCustomer: 20
   startUI_panel: {fileID: 245633924}
   startUI_dayCount: {fileID: 339408415}

@@ -162,6 +162,9 @@ public class PlayerManager : MonoBehaviour
             if (holdObject == preferablePotion)
             {
                 customerAttribute.customerStatus++;
+                ////
+                DailyStart.dailtyServedCustomer++;
+                ////
                 customerQueue.RemovingCustomer(index);
                 holdObject = 0;
             }

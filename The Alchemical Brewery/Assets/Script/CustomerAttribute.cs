@@ -57,6 +57,9 @@ public class CustomerAttribute : MonoBehaviour
                     {
                         customerQueue.RemovingCustomer(customerIndex);
                         destination = QueuePoint2;
+                        /////
+                        DailyStart.dailyAngryCustomer++;
+                        /////
                         customerStatus++;
                     }
                     break;

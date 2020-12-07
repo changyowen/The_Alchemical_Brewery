@@ -10,7 +10,7 @@ public class ClockUI : MonoBehaviour
     public Transform MinuteHandTransform;
     private float day;
 
-    bool clockTrigger = false;
+    public bool clockTrigger = false;
 
     // Update is called once per frame
     void Update()

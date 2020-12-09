@@ -163,7 +163,8 @@ public class PlayerManager : MonoBehaviour
             {
                 customerAttribute.customerStatus++;
                 ////
-                DailyStart.dailtyServedCustomer++;
+                DailyStart.dailyServedCustomer++;
+                DailyStart.dailyEarnedMoney += 10;
                 ////
                 customerQueue.RemovingCustomer(index);
                 holdObject = 0;

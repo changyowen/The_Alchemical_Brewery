@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DailyStart : MonoBehaviour
 {
@@ -104,7 +105,7 @@ public class DailyStart : MonoBehaviour
 
     public void CloseShop()
     {
-        //nextDay
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator FadingBlackScreen(bool trigger)

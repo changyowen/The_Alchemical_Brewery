@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class DailyStart : MonoBehaviour
 {
+    //potion (will improve later)
+    public int[] potionToday1 = { 0, 0, 0, 0 };
+    public int[] potionToday2 = { 0, 0, 0, 0 };
+    public int[] potionToday3 = { 0, 0, 0, 0 };
+    public int[] potionToday4 = { 0, 0, 0, 0 };
+
     //system data
     public int dayCount = 0;
     public float dailyTimeLimit = 500;

@@ -13,8 +13,11 @@ public class PlayerManager : MonoBehaviour
     public GameObject clickableManager;
     AIPath aiPath;
     Clickable_script clickableScript;
+
     public GameObject customerQueue_gameobject;
     CustomerQueue customerQueue;
+
+    public GameObject[] pot_gameObject;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +32,7 @@ public class PlayerManager : MonoBehaviour
     {
 
         //test
-        Debug.Log(holdObject);
+        //Debug.Log(holdObject);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -38,6 +41,32 @@ public class PlayerManager : MonoBehaviour
         {
             case "a1":
                 {
+                    PotScript potScript = pot_gameObject[0].GetComponent<PotScript>();
+                    if(potScript != null)
+                    {
+                        if(potScript.potionCrafted == 0 && potScript.readyForCraft == true)
+                        {
+                            if (holdObject != 0 && holdObject < 100)
+                            {
+                                for (int i = 0; i < 4; i++)
+                                {
+                                    if (potScript.ingredientArray[i] == 0)
+                                    {
+                                        potScript.ingredientArray[i] = holdObject;
+                                        holdObject = 0;
+                                        i = 4;
+                                    }
+                                }
+                            }
+                        }
+                        else if(potScript.potionCrafted != 0 && potScript.readyForCraft == false)
+                        {
+                            holdObject = potScript.potionCrafted;
+                            potScript.potionCrafted = 0;
+                            potScript.readyForCraft = true;
+                        }
+                    }
+                    
                     break;
                 }
             case "a2":

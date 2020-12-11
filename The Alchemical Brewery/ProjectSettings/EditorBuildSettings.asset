@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NightTime.unity
     guid: 78573b2ef298ea844a0f62f4b4d733da
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9c4cdacee093dcf488900ece4a006dc8
   m_configObjects: {}

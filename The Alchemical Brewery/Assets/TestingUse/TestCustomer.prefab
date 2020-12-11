@@ -209,10 +209,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionSprite:
   - {fileID: 0}
-  - {fileID: 21300000, guid: 2ac969fecd090854990f2065942253cd, type: 3}
-  - {fileID: 21300000, guid: 5fd4e3ea2d9bb1a4291e659bb5cb05d3, type: 3}
-  - {fileID: 21300000, guid: a15dec41b8082f242a0a6163ef80376f, type: 3}
-  - {fileID: 21300000, guid: 60b116c6dfe79c04bb14b0e978a800c9, type: 3}
+  - {fileID: 21300000, guid: 3e52e6bf8a8092e4d9baafad8d13046d, type: 3}
+  - {fileID: 21300000, guid: ddb2f9cadfd3ba546918a0c687298130, type: 3}
+  - {fileID: 21300000, guid: d2499890d5e25904f88dc1b6b7f7f2bf, type: 3}
+  - {fileID: 21300000, guid: befc60cdd63950245b81c39fcafb21bf, type: 3}
   - {fileID: 21300000, guid: fb7a42bc6c775f242afa0bd075a338dc, type: 3}
   - {fileID: 21300000, guid: 28110459e288fdf4a9266ffa58dbfcf2, type: 3}
   - {fileID: 21300000, guid: 94c2c47ae4fb1be42b64a36393237b99, type: 3}
@@ -247,7 +247,7 @@ Transform:
   m_GameObject: {fileID: 8016296729910233793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.6, y: 0.48, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 6786784788277411773}
   m_RootOrder: 0
@@ -296,7 +296,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

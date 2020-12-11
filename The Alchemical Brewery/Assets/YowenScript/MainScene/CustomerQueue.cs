@@ -59,7 +59,7 @@ public class CustomerQueue : MonoBehaviour
         spawnedCustomer.GetComponent<CustomerAttribute>().QueuePoint = QueuePosition[CustomerList.IndexOf(spawnedCustomer)].position;
         spawnedCustomer.GetComponent<CustomerAttribute>().QueuePoint2 = Queue2Position[CustomerList.IndexOf(spawnedCustomer)].position;
         spawnedCustomer.GetComponent<CustomerAttribute>().deletePoint = DeletePoint.position;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(15f);
         generatingCustomer = false;
     }
 

@@ -188,7 +188,7 @@ public class PlayerManager : MonoBehaviour
         int preferablePotion = customerAttribute.preferablePotion;
         if(customerAttribute.customerStatus == 2)
         {
-            if (holdObject == preferablePotion)
+            if ((holdObject - 100) == preferablePotion)
             {
                 customerAttribute.customerStatus++;
                 ////

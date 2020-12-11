@@ -15,6 +15,6 @@ MonoBehaviour:
   customerIndex: 0
   Name: Black
   preferablePotion: 1
-  waitingTime: 15
+  waitingTime: 60
   customertype: {fileID: 1336485181231658, guid: e5cb27b0420804e41a0f1be6d053e93a,
     type: 3}

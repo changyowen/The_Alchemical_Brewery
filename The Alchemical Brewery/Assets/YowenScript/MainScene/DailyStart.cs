@@ -33,7 +33,7 @@ public class DailyStart : MonoBehaviour
     public GameObject endUI_panel;
     public Text startUI_dayCount;
     public Text startUI_dailyTimeLimit;
-    public Text startUI_dailyTargetCustomer;
+    //public Text startUI_dailyTargetCustomer;
     public Button startUI_startButton;
     public Text endUI_dayCount;
     public Text endUI_servedCustomer;
@@ -59,7 +59,7 @@ public class DailyStart : MonoBehaviour
             //startUI
             startUI_dayCount.text = "Day " + dayCount;
             startUI_dailyTimeLimit.text = "Time\t:\t" + dailyTimeLimit;
-            startUI_dailyTargetCustomer.text = "Target\t:\t" + dailyTargetCustomer;
+            //startUI_dailyTargetCustomer.text = "Target\t:\t" + dailyTargetCustomer;
             //endUI
             endUI_dayCount.text = "Day " + dayCount + " Ended";
             endUI_servedCustomer.text = ":\t" + dailyServedCustomer;

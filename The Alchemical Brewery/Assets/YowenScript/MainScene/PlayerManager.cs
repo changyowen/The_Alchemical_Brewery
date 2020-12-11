@@ -30,7 +30,6 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //test
         //Debug.Log(holdObject);
     }
@@ -71,10 +70,62 @@ public class PlayerManager : MonoBehaviour
                 }
             case "a2":
                 {
+                    PotScript potScript = pot_gameObject[1].GetComponent<PotScript>();
+                    if (potScript != null)
+                    {
+                        if (potScript.potionCrafted == 0 && potScript.readyForCraft == true)
+                        {
+                            if (holdObject != 0 && holdObject < 100)
+                            {
+                                for (int i = 0; i < 4; i++)
+                                {
+                                    if (potScript.ingredientArray[i] == 0)
+                                    {
+                                        potScript.ingredientArray[i] = holdObject;
+                                        holdObject = 0;
+                                        i = 4;
+                                    }
+                                }
+                            }
+                        }
+                        else if (potScript.potionCrafted != 0 && potScript.readyForCraft == false)
+                        {
+                            holdObject = potScript.potionCrafted;
+                            potScript.potionCrafted = 0;
+                            potScript.readyForCraft = true;
+                        }
+                    }
+
                     break;
                 }
             case "a3":
                 {
+                    PotScript potScript = pot_gameObject[2].GetComponent<PotScript>();
+                    if (potScript != null)
+                    {
+                        if (potScript.potionCrafted == 0 && potScript.readyForCraft == true)
+                        {
+                            if (holdObject != 0 && holdObject < 100)
+                            {
+                                for (int i = 0; i < 4; i++)
+                                {
+                                    if (potScript.ingredientArray[i] == 0)
+                                    {
+                                        potScript.ingredientArray[i] = holdObject;
+                                        holdObject = 0;
+                                        i = 4;
+                                    }
+                                }
+                            }
+                        }
+                        else if (potScript.potionCrafted != 0 && potScript.readyForCraft == false)
+                        {
+                            holdObject = potScript.potionCrafted;
+                            potScript.potionCrafted = 0;
+                            potScript.readyForCraft = true;
+                        }
+                    }
+
                     break;
                 }
             case "b1":

@@ -674,6 +674,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: df451c99e3367934eb7525e20b0aec90, type: 3}
   - {fileID: 21300000, guid: f7739599086df0c43bd021f86a3c90f8, type: 3}
   - {fileID: 21300000, guid: 3a173db38017e214c8cb231e57425fbc, type: 3}
+  potCenter: {fileID: 675069964}
+  blackScreen: {fileID: 1892832033}
+  resultImage: {fileID: 4584537847754416297, guid: f18460fd09266424caf3fc24cc2d4918,
+    type: 3}
+  result_sprite:
+  - {fileID: 21300000, guid: 2f92a48f73500834fab5d515da3bea26, type: 3}
+  - {fileID: 21300000, guid: 2f92a48f73500834fab5d515da3bea26, type: 3}
+  - {fileID: 21300000, guid: 3be74ebe84972fb4393b46d1d351100e, type: 3}
+  - {fileID: 21300000, guid: e5b1b0c795aa02748b7760f6497a1a71, type: 3}
+  - {fileID: 21300000, guid: c1c8bf26d3d7f494b9c4f76835a9bfb3, type: 3}
+  - {fileID: 21300000, guid: c1c8bf26d3d7f494b9c4f76835a9bfb3, type: 3}
+  resultPanel: {fileID: 328396561}
 --- !u!1 &149075789
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 289, y: -202}
+  m_AnchoredPosition: {x: 272, y: -184}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &160395955
@@ -1276,6 +1288,7 @@ GameObject:
   - component: {fileID: 328396562}
   - component: {fileID: 328396564}
   - component: {fileID: 328396563}
+  - component: {fileID: 328396565}
   m_Layer: 5
   m_Name: Result
   m_TagString: Untagged
@@ -1303,7 +1316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 268, y: 2.8441}
+  m_AnchoredPosition: {x: 268, y: 430}
   m_SizeDelta: {x: 220.00977, y: 379.68835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328396563
@@ -1343,6 +1356,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328396561}
   m_CullTransparentMesh: 0
+--- !u!95 &328396565
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328396561}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66085387974fd3842b39527bbda9952c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &403370458
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,7 +4435,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 17
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 175
@@ -4413,7 +4445,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Testing
+  m_Text: 'Weird
 
     Potion'
 --- !u!222 &1585669236
@@ -5386,7 +5418,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1724994185}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 144833610}
+        m_MethodName: StartBrewing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1724994185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6094,7 +6137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.79607844}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8352941}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6545,7 +6588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b40bbda058d80f4fae15c3b831a3fa1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: befc60cdd63950245b81c39fcafb21bf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

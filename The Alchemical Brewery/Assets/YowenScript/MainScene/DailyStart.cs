@@ -19,10 +19,11 @@ public class DailyStart : MonoBehaviour
     public static int dailyServedCustomer = 0;
     public static int dailyAngryCustomer = 0;
     public static int dailyEarnedMoney = 0;
+    public static bool forthPotionUnlocked = false;
 
     //system trigger
-    float dayTimer = 0;
-    bool startEndScene = false;
+    public float dayTimer = 0;
+    public bool startEndScene = false;
 
     //access UI
     public Text servedCustomerUI;
@@ -41,6 +42,7 @@ public class DailyStart : MonoBehaviour
     public GameObject blackScreen;
     Animator startUI_anim, endUI_anim;
     Image blackScreen_image;
+    public GameObject forthPotionGuide;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +90,15 @@ public class DailyStart : MonoBehaviour
         blackScreen.SetActive(true);
         startUI_anim.SetBool("startUI_trigger", true);
         endUI_anim.SetBool("startUI_trigger", false);
+
+        if(forthPotionUnlocked == true)
+        {
+            forthPotionGuide.SetActive(true);
+        }
+        else
+        {
+            forthPotionGuide.SetActive(false);
+        }
 
         dailyAngryCustomer = 0;
     }

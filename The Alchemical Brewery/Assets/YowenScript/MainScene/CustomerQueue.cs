@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CustomerQueue : MonoBehaviour
 {
+    public GameObject DailySystem_gameObject;
+    DailyStart dailyStart;
+
     List<Vector3> positionList = new List<Vector3>();
     public List<GameObject> CustomerList = new List<GameObject>();
     public Transform[] QueuePosition;
@@ -20,6 +23,8 @@ public class CustomerQueue : MonoBehaviour
 
     void Start()
     {
+        dailyStart = DailySystem_gameObject.GetComponent<DailyStart>();
+
         for(int i = 0; i < 5; i++)
         {
             positionList.Add(QueuePosition[i].position);

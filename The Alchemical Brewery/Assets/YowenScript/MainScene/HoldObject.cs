@@ -95,6 +95,26 @@ public class HoldObject : MonoBehaviour
                     sr.sprite = ingredientSprite[12];
                     break;
                 }
+            case 101:
+                {
+                    sr.sprite = ingredientSprite[13];
+                    break;
+                }
+            case 102:
+                {
+                    sr.sprite = ingredientSprite[14];
+                    break;
+                }
+            case 103:
+                {
+                    sr.sprite = ingredientSprite[15];
+                    break;
+                }
+            case 104:
+                {
+                    sr.sprite = ingredientSprite[16];
+                    break;
+                }
         }
     }
 }

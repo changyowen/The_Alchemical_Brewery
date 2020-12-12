@@ -19,9 +19,9 @@ public class PotScript : MonoBehaviour
     int[,] potionToday = new int[4, 4]
         {
             { 1, 1, 1, 1 },
-            { 2, 2, 2, 2 },
-            { 3, 3, 3, 3 },
-            { 4, 4, 4, 4 },
+            { 2, 2, 8, 11 },
+            { 5, 7, 7, 9 },
+            { 3, 4, 10, 10 },
         };
 
     //system data

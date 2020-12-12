@@ -5,6 +5,7 @@ using UnityEngine;
 public class CustomerAttribute : MonoBehaviour
 {
     CustomerQueue customerQueue;
+    DailyStart dailyStart;
 
     GameObject preferablePotion_object;
 
@@ -22,7 +23,9 @@ public class CustomerAttribute : MonoBehaviour
     void Start()
     {
         GameObject customerQueue_object = GameObject.Find("CustomerQueue");
+        GameObject dailySystem_object = GameObject.Find("DailySystem");
         customerQueue = customerQueue_object.GetComponent<CustomerQueue>();
+        dailyStart = dailySystem_object.GetComponent<DailyStart>();
         preferablePotion_object = transform.GetChild(0).gameObject;
         preferablePotion_object.SetActive(false);
     }
@@ -58,7 +61,10 @@ public class CustomerAttribute : MonoBehaviour
                         customerQueue.RemovingCustomer(customerIndex);
                         destination = QueuePoint2;
                         /////
-                        DailyStart.dailyAngryCustomer++;
+                        if(dailyStart.startEndScene == false)
+                        {
+                            DailyStart.dailyAngryCustomer++;
+                        }
                         /////
                         customerStatus++;
                     }

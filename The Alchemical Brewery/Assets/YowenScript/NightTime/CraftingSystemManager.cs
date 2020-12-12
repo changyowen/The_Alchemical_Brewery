@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CraftingSystemManager : MonoBehaviour
 {
@@ -144,5 +145,8 @@ public class CraftingSystemManager : MonoBehaviour
         }
     }
 
-
+    public void ExitScene()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

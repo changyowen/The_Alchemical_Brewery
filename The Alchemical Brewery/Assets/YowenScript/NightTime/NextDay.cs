@@ -9,4 +9,9 @@ public class NextDay : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void BrewNewPotion()
+    {
+        SceneManager.LoadScene(3);
+    }
 }

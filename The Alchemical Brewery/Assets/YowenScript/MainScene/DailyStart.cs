@@ -122,7 +122,7 @@ public class DailyStart : MonoBehaviour
 
     public void CloseShop()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     IEnumerator FadingBlackScreen(bool trigger)

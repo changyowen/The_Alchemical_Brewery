@@ -28,6 +28,9 @@ TagManager:
   - e3
   - e4
   - e5
+  - Ground
+  - Customer
+  - Ingredient
   layers:
   - Default
   - TransparentFX
@@ -39,7 +42,7 @@ TagManager:
   - 
   - Obstacle
   - PlayerCollider
-  - 
+  - Ingredient
   - 
   - 
   - 
@@ -64,4 +67,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 3811854057
+    locked: 0
+  - name: pot
+    uniqueID: 2752593423
     locked: 0

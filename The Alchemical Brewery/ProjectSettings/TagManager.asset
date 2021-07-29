@@ -3,34 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Obstacle
-  - a1
-  - a2
-  - a3
-  - a4
-  - a5
-  - a6
-  - b1
-  - b2
-  - b3
-  - b4
-  - b5
-  - b6
-  - c1
-  - c2
-  - c3
-  - c4
-  - c5
-  - c6
-  - e1
-  - e2
-  - e3
-  - e4
-  - e5
-  - Ground
-  - Customer
-  - Ingredient
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -40,9 +13,6 @@ TagManager:
   - UI
   - 
   - 
-  - Obstacle
-  - PlayerCollider
-  - Ingredient
   - 
   - 
   - 
@@ -55,6 +25,9 @@ TagManager:
   - 
   - 
   - 
+  - Layer 1
+  - Layer 2
+  - Layer 3
   - 
   - 
   - 
@@ -68,9 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: player
-    uniqueID: 3811854057
+  - name: Layer 1
+    uniqueID: 2425651459
     locked: 0
-  - name: pot
-    uniqueID: 2752593423
+  - name: Layer 2
+    uniqueID: 4250941897
+    locked: 0
+  - name: Layer 3
+    uniqueID: 4189426099
     locked: 0

@@ -4,17 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 9c4cdacee093dcf488900ece4a006dc8
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/NightTime.unity
-    guid: 78573b2ef298ea844a0f62f4b4d733da
-  - enabled: 1
-    path: Assets/Scenes/PotionCrafting.unity
-    guid: 337c24ee0d43393478274ffc289b8f29
+  m_Scenes: []
   m_configObjects: {}

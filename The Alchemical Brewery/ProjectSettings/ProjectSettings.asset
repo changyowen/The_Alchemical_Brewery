@@ -5,7 +5,11 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 20
 <<<<<<< HEAD
+<<<<<<< HEAD
   productGUID: 3879023ff7ef9b94d8f2ab9813d460ec
+=======
+  productGUID: af7bf14435587a445ac1838acbf8ca81
+>>>>>>> parent of 8ad9aa0 (Updated main scene)
 =======
   productGUID: af7bf14435587a445ac1838acbf8ca81
 >>>>>>> parent of 8ad9aa0 (Updated main scene)

@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 1b7ad0380be15a946b21b28215e621b7
+=======
 <<<<<<< HEAD:The Alchemical Brewery/Assets/Fishing.meta
 guid: 2ce60b85ea3cc8e448b7dc3149203ad5
 =======
 guid: 1b7ad0380be15a946b21b28215e621b7
 >>>>>>> parent of 8ad9aa0 (Updated main scene):The Alchemical Brewery/Assets/Scripts/Testing/test scriptable/customer.meta
+>>>>>>> parent of 8ad9aa0 (Updated main scene)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

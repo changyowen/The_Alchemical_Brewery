@@ -14,6 +14,8 @@ public class CustomerClass
     public bool isCustomer = false;
     public bool joinedQueue = false;
     public bool reachedQueuePos = false;
+    public int preferPotion = 0;
+    public bool served = false;
 
     public Vector3 customerDestination;
 

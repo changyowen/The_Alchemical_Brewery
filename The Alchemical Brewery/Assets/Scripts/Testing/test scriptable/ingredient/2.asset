@@ -17,6 +17,7 @@ MonoBehaviour:
   ingredientSprite: {fileID: 21300000, guid: 60b116c6dfe79c04bb14b0e978a800c9, type: 3}
   ingredientDescription: 
   priceVariable: 0
-  typeVariable: 0
+  effectiveVariable: 0
   qualityVariable: 0
-  refineStage: 0
+  elementType: -1
+  refineStage: 

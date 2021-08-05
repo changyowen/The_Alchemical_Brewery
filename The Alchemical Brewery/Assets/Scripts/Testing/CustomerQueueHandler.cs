@@ -48,5 +48,7 @@ public class CustomerQueueHandler : MonoBehaviour
         List<CustomerClass> currentQueue = CustomerHandler.Instance.customerClassInQueueList[queueIndex];
 
         /////////////////////
+        
+
     }
 }

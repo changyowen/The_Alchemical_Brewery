@@ -6,16 +6,35 @@ public class CraftPotionManager : MonoBehaviour
 {
     public static CraftPotionManager Instance { get; private set; }
 
-    public List<int> potIngredientList; //List for Ingredient in pot
+    public GameObject craftButton;
+    public GameObject craftingAnimation_obj;
+    public GameObject blackScreen_obj;
+
+    public List<int> potIngredientList = new List<int>(); //List for Ingredient in pot
+
+    public PotionData potionDataHolder = null;
 
     void Awake()
     {
         Instance = this;
     }
 
-    void Start()
+    void Update()
     {
-        potIngredientList = new List<int>();
+        CraftButtonHandler();
+    }
+
+    void CraftButtonHandler()
+    {
+        //activate when pot is full
+        if (potIngredientList.Count == 4)
+        {
+            craftButton.SetActive(true);
+        }
+        else //deactivate when pot is not full
+        {
+            craftButton.SetActive(false);
+        }
     }
 
     public void AddIngredient(int ingredientIndex)
@@ -34,25 +53,81 @@ public class CraftPotionManager : MonoBehaviour
     public void RemoveIngredient(int buttonIndex)
     {
         //remove from ingredientList
-        potIngredientList.RemoveAt(buttonIndex);
+        if(potIngredientList.Count > buttonIndex)
+        {
+            potIngredientList.RemoveAt(buttonIndex);
+        }
+    }
+
+    public void ResetPotIngredientList()
+    {
+        potIngredientList.Clear();
     }
 
     public void StartCraftPotion()
     {
+        //reset current potion data holder
+        potionDataHolder = null;
+
         //Start potion calculation
-        int totalScore = CraftPotionCalculation.Instance.PotionCalculate(potIngredientList);
-
-        //score not pass
-        if(totalScore <= 25 || totalScore > 25)
+        int effectiveScore = CraftPotionCalculation.Instance.PotionEffectiveCalculation(potIngredientList);
+       
+        //effective score not pass
+        if(effectiveScore <= -25 || effectiveScore > 25)
         {
-            
+            //reset pot ingredient list
+            ResetPotIngredientList();
         }
-        else //score pass
+        else //effective score pass
         {
+            List<int> sortedPotIngredientList = new List<int>(potIngredientList);
 
+            //create new potion data
+            PotionData newPotionData = new PotionData();
+            potionDataHolder = newPotionData;
+
+            //assign potion formular into potion data 
+            potionDataHolder.AssignListIntoFormular(sortedPotIngredientList);
+            //assign score on potion data
+            potionDataHolder.potionEffectiveScore = effectiveScore;
+            //calculate element of potion
+            potionDataHolder.potionElement = CraftPotionCalculation.Instance.ElementCalculation(sortedPotIngredientList);
+            //determinne potion usage
+            potionDataHolder.potionUsage = CraftPotionCalculation.Instance.PotionUsageDetermine(potionDataHolder.potionElement);
+
+            //Start crafting animation
+            StartingCraftingAnimation();
         }
-        //Start crafting animation
+    }
 
+    void StartingCraftingAnimation()
+    {
+        //set active black screen
+        blackScreen_obj.SetActive(true);
+        //set active crafting animation
+        craftingAnimation_obj.SetActive(true);
+        //assign img
+        CraftPotionCalculation.Instance.AssignCraftingAnimationSprite(potIngredientList);
+    }
+
+    public void EndingCraftingAnimation()
+    {
+        //Start mini game
+        FishingMiniGame.Instance.StartMiniGame();
+        //deactivate crafting animation
+        craftingAnimation_obj.SetActive(false);
+    }
+
+    public void CraftPotionResult(PotionData newPotionData)
+    {
+        //deactivate black screen
+        blackScreen_obj.SetActive(false);
+        //assign back potion data
+        potionDataHolder = newPotionData;
+
+        //adding into player profile
+        PlayerProfile.acquiredPotion.Add(potionDataHolder);
+        SaveManager.Save();
     }
 
     public void StartMiniGame()

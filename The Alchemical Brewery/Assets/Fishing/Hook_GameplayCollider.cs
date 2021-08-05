@@ -12,7 +12,19 @@ public class Hook_GameplayCollider : MonoBehaviour
         {
             if (col.tag == "fish")
             {
-                fishingMiniGame.progress += 15f * Time.deltaTime;
+                //fishingMiniGame.progress -= 15f * Time.deltaTime;
+                fishingMiniGame.inHook = true;
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (fishingMiniGame.startMiniGame)
+        {
+            if (col.tag == "fish")
+            {
+                fishingMiniGame.inHook = false;
             }
         }
     }

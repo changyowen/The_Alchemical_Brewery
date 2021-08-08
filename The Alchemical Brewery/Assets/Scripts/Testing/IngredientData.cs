@@ -19,8 +19,10 @@ public class IngredientData : ScriptableObject
 
     public int priceVariable;
     public int effectiveVariable;
-    public int qualityVariable;
     public Element elementType;
+    public PotionUsage ingredientUsage;
+
+    public Color ingredientColor;
 
     [Header("Put index of each refine stage")]
     public int[] refineStage;

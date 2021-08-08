@@ -24,8 +24,9 @@ public class CustomerClass
     {
         //get customer data scriptable object
         customerData = customerData_;
-
-        //assign gameObj
+        //assign index, sprite, gameObj
+        customerIndex = customerData.customerIndex;
+        customerSprite = customerData.customerSprite;
         customer_gameObj = customer_gameObj_;
 
         //assign navMesh agent

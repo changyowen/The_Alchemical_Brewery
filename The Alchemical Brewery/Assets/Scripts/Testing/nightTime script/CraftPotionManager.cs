@@ -22,6 +22,11 @@ public class CraftPotionManager : MonoBehaviour
     void Update()
     {
         CraftButtonHandler();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SaveManager.Load();
+        }
     }
 
     void CraftButtonHandler()
@@ -93,7 +98,7 @@ public class CraftPotionManager : MonoBehaviour
             //calculate element of potion
             potionDataHolder.potionElement = CraftPotionCalculation.Instance.ElementCalculation(sortedPotIngredientList);
             //determinne potion usage
-            potionDataHolder.potionUsage = CraftPotionCalculation.Instance.PotionUsageDetermine(potionDataHolder.potionElement);
+            potionDataHolder.potionUsage = CraftPotionCalculation.Instance.PotionUsageDetermine(sortedPotIngredientList);
 
             //Start crafting animation
             StartingCraftingAnimation();

@@ -18,6 +18,6 @@ MonoBehaviour:
   ingredientDescription: 
   priceVariable: 0
   effectiveVariable: 0
-  qualityVariable: 0
   elementType: -1
+  ingredientUsage: 1
   refineStage: 

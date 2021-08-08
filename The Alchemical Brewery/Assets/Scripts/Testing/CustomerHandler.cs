@@ -17,10 +17,11 @@ public class CustomerHandler : MonoBehaviour
     public float villagerSpawnTime = 3f;
     public float customerSpawnTime = 8f;
     public Vector3[] customerSpawnPoint;
+    public Transform[] customerDeletation;
     public float customerSpawnRandomZ = 5f;
 
     int maximumCustomerTotal;
-    int currentCustomerTotal = 0;
+    public int currentCustomerTotal = 0;
 
     void Awake()
     {
@@ -97,6 +98,7 @@ public class CustomerHandler : MonoBehaviour
             //current customer total + 1
             currentCustomerTotal++;
 
+            ///Spawn Customer Prefab
             //random choose spawn point index
             int choosenSpawnPoint = Random.Range(0, 2);
             //get spawn point from random z point
@@ -108,13 +110,23 @@ public class CustomerHandler : MonoBehaviour
             Transform customerHolder = this.gameObject.transform.GetChild(0).gameObject.transform;
             newCustomer.transform.SetParent(customerHolder, false);
 
-            //declare new customer class
+            ///Get customer type based on appearance rate
+            int getIndex = CustomerTypeWeightedRandom();
+            CustomerData currentCustomerData = StageManager.Instance.customerTypeToday[getIndex];
+
+            ///Declare Customer Class
             CustomerClass newCustomerClass = new CustomerClass();
-            //FIXXXXX
-            newCustomerClass.CustomerDeclaration(null, newCustomer);
+            newCustomerClass.CustomerDeclaration(currentCustomerData, newCustomer);
             newCustomerClass.CustomerDefine(true);
+            //assign customer class to prefab's information handler
+            newCustomer.GetComponent<CustomerInformationHandler>().customerClass = newCustomerClass;
+
             //assign into customer class list
             customerClassList.Add(newCustomerClass);
+
+            //assign prefer potion
+            int temp = Random.Range(0, StageManager.potionListToday.Count);
+            newCustomerClass.preferPotion = temp;
 
             //get customer navmesh agent
             NavMeshAgent customerNavMesh = newCustomerClass.customerNavMeshAgent;
@@ -123,19 +135,13 @@ public class CustomerHandler : MonoBehaviour
             {
                 case 0: //if spawn at left
                     {
-                        Vector3 newDestination = newSpawnPoint + new Vector3(120, 0, 0);
-                        //customerNavMesh.SetDestination(newDestination);
-                        //customerNavMesh.destination = newDestination;
-                        //customerNavMesh.Resume();
+                        Vector3 newDestination = customerDeletation[1].position;
                         newCustomerClass.NewDestination(newDestination);
                         break;
                     }
                 case 1: //if spawn at right
                     {
-                        Vector3 newDestination = newSpawnPoint + new Vector3(-120, 0, 0);
-                        //customerNavMesh.SetDestination(newDestination);
-                        //customerNavMesh.destination = newDestination;
-                        //customerNavMesh.Resume();
+                        Vector3 newDestination = customerDeletation[0].position;
                         newCustomerClass.NewDestination(newDestination);
                         break;
                     }
@@ -160,11 +166,17 @@ public class CustomerHandler : MonoBehaviour
             Transform villagerHolder = this.gameObject.transform.GetChild(1).gameObject.transform;
             newCustomer.transform.SetParent(villagerHolder, false);
 
-            //declare new customer class
+            ///Get customer type based on appearance rate
+            int getIndex = CustomerTypeWeightedRandom();
+            CustomerData currentCustomerData = StageManager.Instance.customerTypeToday[getIndex];
+
+            ///Declare Customer Class
             CustomerClass newCustomerClass = new CustomerClass();
-            //FIXXXXX
-            newCustomerClass.CustomerDeclaration(null, newCustomer);
+            newCustomerClass.CustomerDeclaration(currentCustomerData, newCustomer);
             newCustomerClass.CustomerDefine(false);
+
+            //assign customer class to prefab's information handler
+            newCustomer.GetComponent<CustomerInformationHandler>().customerClass = newCustomerClass;
             //assign into customer class list
             customerClassList.Add(newCustomerClass);
             
@@ -197,20 +209,31 @@ public class CustomerHandler : MonoBehaviour
         }
     }
 
-    void AssigningNewCustomerToQueue(GameObject customer_gameObj)
+    int CustomerTypeWeightedRandom()
     {
-        //get the exactly customer class by checking its game object
-        int getCustomerClassIndex = 0;
-        for (int i = 0; i < customerClassList.Count; i++)
+        //get customerAppearRateList
+        List<float> customerAppearRateList = StageManager.Instance.customerAppearRateList;
+        //get total customer appear rate
+        float totalAppearRate = StageManager.Instance.totalCustomerAppearRate;
+        //get random weight
+        float randomWeight = Random.Range(0, totalAppearRate);
+        //loop all customer data and return one
+        for (int i = 0; i < customerAppearRateList.Count; i++)
         {
-            if(customerClassList[i].customer_gameObj == customer_gameObj)
+            if (randomWeight < customerAppearRateList[i])
             {
-                getCustomerClassIndex = i;
-                i = customerClassList.Count; //stop the for loop
+                return i;
+            }
+            else
+            {
+                randomWeight -= customerAppearRateList[i];
             }
         }
-        CustomerClass customerClass = customerClassList[getCustomerClassIndex];
+        return 0;
+    }
 
+    void AssigningNewCustomerToQueue(CustomerClass customerClass)
+    {
         if(customerClass.isCustomer)
         {
             if(!customerClass.joinedQueue)
@@ -236,6 +259,17 @@ public class CustomerHandler : MonoBehaviour
         }
         else
         {
+
+        }
+    }
+
+    public void RefreshCustomerQueuePos(List<CustomerClass> currentQueue, int queueIndex)
+    {
+        for (int i = 0; i < currentQueue.Count; i++)
+        {
+            //get queue position vector3
+            Vector3 queuePosition = CustomerQueueHandler.Instance.queuePositionList[queueIndex][i];
+            currentQueue[i].JoinQueue(queuePosition);
         }
     }
 
@@ -256,7 +290,8 @@ public class CustomerHandler : MonoBehaviour
     {
         if(col.tag == "Customer")
         {
-            AssigningNewCustomerToQueue(col.gameObject);
+            CustomerClass customerClass = col.gameObject.GetComponent<CustomerInformationHandler>().customerClass;
+            AssigningNewCustomerToQueue(customerClass);
         }
     }
 }

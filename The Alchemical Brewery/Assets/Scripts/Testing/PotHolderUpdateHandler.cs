@@ -85,13 +85,19 @@ public class PotHolderUpdateHandler : MonoBehaviour
         //update image of filled slot
         for (int i = 0; i < potInformationHandler.potIngredientHolderList.Count; i++)
         {
-            Sprite ingSprite = SO_Holder.Instance.ingredientSO[potInformationHandler.potIngredientHolderList[i]].ingredientSprite;
+            //get so_Holder
+            ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+            //assign ingredient index
+            int _ingredientIndex = potInformationHandler.potIngredientHolderList[i];
+            //get sprite of ingredient
+            Sprite ingSprite = so_Holder.ingredientSO[_ingredientIndex].ingredientSprite;
             ingredientHolderImage[i].sprite = ingSprite;
         }
         //update image of empty slot
         for (int j = ingredientHolderImage.Length - 1; j >= ingredientHolderImage.Length - totalEmptySlot; j--)
         {
-            Sprite transSprite = SO_Holder.Instance.transparentSprite;
+            ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+            Sprite transSprite = so_Holder.transparentSprite;
             ingredientHolderImage[j].sprite = transSprite;
         }
     }

@@ -38,7 +38,7 @@ public static class SaveManager
         {
             if (File.Exists(SAVE_FOLDER + "/testing.txt"))
             {
-                string saveString = File.ReadAllText(Application.dataPath + "/testinng.txt");
+                string saveString = File.ReadAllText(SAVE_FOLDER + "/testing.txt");
                 SaveData saveData = JsonUtility.FromJson<SaveData>(saveString);
 
                 PlayerProfile.LoadData(saveData);

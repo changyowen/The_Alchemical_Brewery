@@ -17,12 +17,18 @@ public class PotIngredientHolderHandler : MonoBehaviour
         {
             if (i < potIngredientList.Count)
             {
-                IngredientData ingData = SO_Holder.Instance.ingredientSO[potIngredientList[i]];
+                //get so_Holder
+                ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+                //get ingredient data
+                IngredientData ingData = so_Holder.ingredientSO[potIngredientList[i]];
                 potIngredientHolder[i].sprite = ingData.ingredientSprite;
             }
             else
             {
-                potIngredientHolder[i].sprite = SO_Holder.Instance.transparentSprite;
+                //get so_Holder
+                ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+                //get trasparent sprite
+                potIngredientHolder[i].sprite = so_Holder.transparentSprite;
             }
         }
     }

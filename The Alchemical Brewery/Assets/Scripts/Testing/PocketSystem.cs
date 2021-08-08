@@ -52,14 +52,20 @@ public class PocketSystem : MonoBehaviour
             //**image order is start from behind
             for (int i = 0; i < playerIngredientHolder.Count; i++)
             {
-                Sprite ingSprite = SO_Holder.Instance.ingredientSO[playerIngredientHolder[i]].ingredientSprite;
+                //get so_Holder
+                ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+                //get ingredient sprite
+                Sprite ingSprite = so_Holder.ingredientSO[playerIngredientHolder[i]].ingredientSprite;
                 ingredientHolderImage[i].sprite = ingSprite;
             }
 
             //fill emply ingredient slot with transparent sprite
             for (int j = ingredientHolderImage.Length - 1; j >= playerIngredientHolder.Count; j--)
             {
-                Sprite transSprite = SO_Holder.Instance.transparentSprite;
+                //get so_Holder
+                ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+                //get transparant sprite
+                Sprite transSprite = so_Holder.transparentSprite;
                 ingredientHolderImage[j].sprite = transSprite;
             }
         }
@@ -68,7 +74,10 @@ public class PocketSystem : MonoBehaviour
             //fill all emply ingredient slot with transparent sprite
             for (int i = 0; i < ingredientHolderImage.Length; i++)
             {
-                Sprite transSprite = SO_Holder.Instance.transparentSprite;
+                //get so_Holder
+                ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+                //get transparant sprite
+                Sprite transSprite = so_Holder.transparentSprite;
                 ingredientHolderImage[i].sprite = transSprite;
             }
         }

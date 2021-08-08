@@ -115,8 +115,12 @@ public class IngredientGravity : MonoBehaviour
 
     public void SpawnForce()
     {
+        //get rigidbody
         rb = GetComponent<Rigidbody>();
-        IngredientSpawnForce ingSpawnForceSO = SO_Holder.Instance.ingredientSpawnForceSO[(int)ingredientSpawnForce];
+        //get so_Holder
+        ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+        //get Ingredient spawn force scriptable object
+        IngredientSpawnForce ingSpawnForceSO = so_Holder.ingredientSpawnForceSO[(int)ingredientSpawnForce];
         float[] upBurstForce = ingSpawnForceSO.upBurstForce;
         float[] sideBurstForce = ingSpawnForceSO.sideBurstForce;
         float[] forwardBurstForce = ingSpawnForceSO.forwardBurstForce;

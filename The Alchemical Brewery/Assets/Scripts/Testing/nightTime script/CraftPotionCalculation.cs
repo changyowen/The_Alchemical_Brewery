@@ -36,7 +36,10 @@ public class CraftPotionCalculation : MonoBehaviour
         List<IngredientData> ingredientDataList = new List<IngredientData>();
         for (int i = 0; i < potIngredient.Count; i++)
         {
-            ingredientDataList.Add(SO_Holder.Instance.ingredientSO[potIngredient[i]]);
+            //get so_Holder
+            ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+            //assign ingredient so into ingredient data list
+            ingredientDataList.Add(so_Holder.ingredientSO[potIngredient[i]]);
         }
 
         //return ingredient data list
@@ -180,19 +183,21 @@ public class CraftPotionCalculation : MonoBehaviour
         return null;
     }
 
-    public PotionUsage PotionUsageDetermine(List<Element> thisPotionElement)
+    public PotionUsage PotionUsageDetermine(List<int> potIngredient)
     {
-        int totalScore = 0;
-        for (int i = 0; i < thisPotionElement.Count; i++)
+        //get list of ingredient data
+        List<IngredientData> ingredientDataList = GetIngredientData(potIngredient);
+        //get list of element of ingredient list
+        List<PotionUsage> ingredientUsageList = new List<PotionUsage>();
+        for (int i = 0; i < ingredientDataList.Count; i++)
         {
-            if (thisPotionElement[i] < 0)
-            {
-                totalScore--;
-            }
-            else if (thisPotionElement[i] > 0)
-            {
-                totalScore++;
-            }
+            ingredientUsageList.Add(ingredientDataList[i].ingredientUsage);
+        }
+
+        int totalScore = 0;
+        for (int i = 0; i < ingredientUsageList.Count; i++)
+        {
+            totalScore += (int)ingredientUsageList[i];
         }
 
         if(totalScore < 0)

@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SO_Holder : MonoBehaviour
+[CreateAssetMenu(fileName = "Scriptable Object Holder", menuName = "SO_Holder")]
+public class ScriptableObjectHolder: ScriptableObject
 {
-    public static SO_Holder Instance { get; private set; }
-
     public Sprite transparentSprite;
     public IngredientData[] ingredientSO;
     public IngredientSpawnForce[] ingredientSpawnForceSO;
+    public CustomerData[] customerDataSO;
 
-    void Awake()
-    {
-        Instance = this;
-    }
+    public StageDataAssign[] stageDataSO;
 }

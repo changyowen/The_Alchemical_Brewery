@@ -36,7 +36,6 @@ public class RayCastMovement : MonoBehaviour
 			{
 				if (hit.collider.CompareTag("Ground"))
 				{
-					Debug.Log("Fire");
                     //navMeshAgent.destination = hit.point;
                     //navMeshAgent.Resume();
                     navMeshAgent.SetDestination(hit.point);

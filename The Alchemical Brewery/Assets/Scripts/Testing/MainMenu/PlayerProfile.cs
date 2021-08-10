@@ -9,6 +9,7 @@ public static class PlayerProfile
     public static string profileName = "NewPlayer";
     public static List<PotionData> acquiredPotion = new List<PotionData>();
     public static CustomerProfile[] customerProfile = new CustomerProfile[10];
+    public static ShopProfile shopProfile = new ShopProfile();
 
     public static void LoadData(SaveData saveData)
     {
@@ -34,6 +35,26 @@ public static class PlayerProfile
         customerProfile[customerIndex].unlocked = true;
     }
 
+    public static void UnlockNewIngredient(int ingredientIndex)
+    {
+
+    }
+
+    public static void UnlockNewPot()
+    {
+        shopProfile.potUnlocked++;
+    }
+
+    public static void UnlockNewCounter()
+    {
+        shopProfile.counterUnlocked++;
+    }
+
+    public static void UnlockRefinementStation()
+    {
+        shopProfile.refinementStationUnlocked++;
+    }
+
     public static void GM_TestingUse()
     {
         profileName = "SuperLegzai";
@@ -45,6 +66,17 @@ public static class PlayerProfile
         }
         UnlockNewCustomer(0);
     }
+}
+
+[Serializable]
+public class ShopProfile
+{
+    [Range(1, 3)] public int counterUnlocked = 1;
+    [Range(1, 10)] public int herbSlotUnlocked = 1;
+    [Range(1, 3)] public int potUnlocked = 1;
+    [Range(1, 2)] public int refinementStationUnlocked = 1;
+
+    public bool decreaseCustomerAppearRate = false;
 }
 
 [Serializable]

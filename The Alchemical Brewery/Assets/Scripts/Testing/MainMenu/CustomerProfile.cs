@@ -8,6 +8,6 @@ public class CustomerProfile
     public int customerIndex;
 
     public bool unlocked = false;
-    public int customerLevel = 1;
+    [Range(1, 6)] public int customerLevel = 1;
     public float customerExperience;
 }

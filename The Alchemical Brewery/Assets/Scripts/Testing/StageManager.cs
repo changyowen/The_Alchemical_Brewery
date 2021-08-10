@@ -11,13 +11,13 @@ public class StageManager : MonoBehaviour
     public ScriptableObjectHolder so_Holder;
 
     public static int stageIndex = 1;
-
     public static List<PotionData> potionListToday = new List<PotionData>();
-
     public List<CustomerData> customerTypeToday;
-
     public List<float> customerAppearRateList = new List<float>();
     public float totalCustomerAppearRate = 0;
+
+    public static bool pauseGame = false;
+    public static bool accelerateGame = false;
 
     void Awake()
     {

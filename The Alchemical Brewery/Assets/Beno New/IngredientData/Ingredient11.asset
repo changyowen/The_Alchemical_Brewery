@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
+  m_Name: Ingredient11
+  m_EditorClassIdentifier: 
+  ingredientIndex: 10
+  ingredientName: Coolant Herb
+  ingredientSprite: {fileID: 21300000, guid: 9f50b0a388084ad4796568ce08dbb753, type: 3}
+  ingredientDescription: 'A herb used by people in hot regions to cool themselves
+    down.
+
+    It will be counterproductive to mix it with the ignition fruit.'
+  priceVariable: 15
+  effectiveVariable: 5
+  elementType: 2
+  ingredientUsage: 1
+  ingredientColor: {r: 0.2028302, g: 1, b: 0.78814685, a: 0}
+  refineStage: 

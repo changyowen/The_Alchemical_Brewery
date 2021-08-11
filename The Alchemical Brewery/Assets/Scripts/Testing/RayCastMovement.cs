@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RayCastMovement : MonoBehaviour
 {
@@ -32,15 +33,19 @@ public class RayCastMovement : MonoBehaviour
 		RaycastHit hit;
 		if (Input.GetButtonDown("Fire1"))
 		{
-			if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-			{
-				if (hit.collider.CompareTag("Ground"))
+			if(!EventSystem.current.IsPointerOverGameObject())
+            {
+				if (Physics.Raycast(ray, out hit, Mathf.Infinity))
 				{
-                    //navMeshAgent.destination = hit.point;
-                    //navMeshAgent.Resume();
-                    navMeshAgent.SetDestination(hit.point);
-                }
+					if (hit.collider.CompareTag("Ground"))
+					{
+						//navMeshAgent.destination = hit.point;
+						//navMeshAgent.Resume();
+						navMeshAgent.SetDestination(hit.point);
+					}
+				}
 			}
+			
 		}
 
 		//if (Input.GetKeyDown(KeyCode.Q))

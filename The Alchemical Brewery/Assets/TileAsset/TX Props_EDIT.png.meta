@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 5525282360754041629
     second: TX Props_EDIT_1
+  - first:
+      213: -1299126261035108953
+    second: TX Props_EDIT_2
+  - first:
+      213: 3165070161508535592
+    second: TX Props_EDIT_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,6 +148,48 @@ TextureImporter:
       bones: []
       spriteID: d13f97c680fbdac40800000000000000
       internalID: 5525282360754041629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_EDIT_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5fe947c8398fde0800000000000000
+      internalID: -1299126261035108953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Props_EDIT_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 387
+        width: 26
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d87e9ea869ceb20800000000000000
+      internalID: 3165070161508535592
       vertices: []
       indices: 
       edges: []

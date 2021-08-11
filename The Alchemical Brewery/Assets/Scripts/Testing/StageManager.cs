@@ -12,6 +12,7 @@ public class StageManager : MonoBehaviour
 
     public static int stageIndex = 1;
     public static List<PotionData> potionListToday = new List<PotionData>();
+    public static List<int> ingrdientOrderToday = new List<int>();
     public List<CustomerData> customerTypeToday;
     public List<float> customerAppearRateList = new List<float>();
     public float totalCustomerAppearRate = 0;
@@ -28,8 +29,11 @@ public class StageManager : MonoBehaviour
             SaveManager.Load();
             PlayerProfile.GM_TestingUse();
 
+            //assign potion sell today
             AssignPotionToday();
+            //assign all customer type for this stage
             AssignCustomerTypeToday();
+            //calculate each customer appear rate
             AssignCustomerAppearRate();
         }
     }
@@ -81,4 +85,6 @@ public class StageManager : MonoBehaviour
             totalCustomerAppearRate += customerAppearRate; 
         }
     }
+
+    
 }

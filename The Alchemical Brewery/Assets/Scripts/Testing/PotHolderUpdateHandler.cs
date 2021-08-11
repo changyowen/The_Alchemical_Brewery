@@ -25,8 +25,8 @@ public class PotHolderUpdateHandler : MonoBehaviour
 
     void Update()
     {
-        //get pot class
-        Pot thisPot = PotSystem_Daytime.Instance.potList[potIndex];
+        ////get pot class
+        //Pot thisPot = PotSystem_Daytime.Instance.potList[potIndex];
 
         //if pot not boiling
         if(!potInformationHandler.potBoiling)

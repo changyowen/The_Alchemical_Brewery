@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ed414858f337a40967cca366b86a8e, type: 3}
+  m_Name: StageAssetInstantiate
+  m_EditorClassIdentifier: 
+  player_prefab: {fileID: 0}
+  counter_prefab: {fileID: 4415760715295886667, guid: a234b7e015d1e2540ad4d0008732fb33,
+    type: 3}
+  magicChest_prefab: {fileID: 4859458479507616538, guid: a72a593396159a94caddf438cd632dbf,
+    type: 3}
+  pot_prefab: {fileID: 5932807725193754046, guid: 8e244d7511448da42b7502376e3c9346,
+    type: 3}
+  grinder_prefab: {fileID: 6478295581531615091, guid: 56e049812b4bbe344b64875d9645265b,
+    type: 3}
+  distillStand_prefab: {fileID: 3056455913387765340, guid: 236a19dbc8eede145b6347c3c10d0ebc,
+    type: 3}
+  stageAsset:
+  - {fileID: 0}
+  - {fileID: 6640763790172177118, guid: cd5f1ebf978da074eb854234a3ce1894, type: 3}

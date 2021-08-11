@@ -20,10 +20,22 @@ public class CustomerQueueHandler : MonoBehaviour
 
     void Start()
     {
-        GenerateQueueLocation();
+        //GenerateQueueLocation();
     }
 
-    void GenerateQueueLocation()
+    public void AssignQueueLocation(GameObject counterPrefab, int queueIndex)
+    {
+        //declare queue position list
+        queuePositionList[queueIndex] = new List<Vector3>();
+        //assign location into list
+        for (int i = 0; i < counterPrefab.transform.GetChild(0).childCount; i++)
+        {
+            Vector3 pos = counterPrefab.transform.GetChild(0).GetChild(i).transform.position;
+            queuePositionList[queueIndex].Add(pos);
+        }
+    }
+
+    public void GenerateQueueLocation()
     {
         //declare queuePositionList array
         queuePositionList = new List<Vector3>[unlockedQueue];

@@ -43,6 +43,7 @@ public class CustomerClass
     {
         customerDestination = newDestination;
         customerNavMeshAgent.destination = customerDestination;
+
         //customerNavMeshAgent.Resume();
     }
 

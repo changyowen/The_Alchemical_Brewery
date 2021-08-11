@@ -16,7 +16,7 @@ public class CustomerHandler : MonoBehaviour
     public bool spawnCustomerBool = true;
     public float villagerSpawnTime = 3f;
     public float customerSpawnTime = 8f;
-    public Vector3[] customerSpawnPoint;
+    public Transform[] customerSpawnPoint;
     public Transform[] customerDeletation;
     public float customerSpawnRandomZ = 5f;
 
@@ -30,7 +30,7 @@ public class CustomerHandler : MonoBehaviour
 
     void Start()
     {
-        DeclareCustomerClass();
+        //DeclareCustomerClass();
         StartCoroutine(GenerateVillager());
         StartCoroutine(GenerateCustomer());
     }
@@ -47,6 +47,9 @@ public class CustomerHandler : MonoBehaviour
         }
 
         CustomerReachedDestinationUpdate();
+        if(customerClassList.Count > 0)
+        {
+        }
     }
 
     void CustomerReachedDestinationUpdate()
@@ -73,12 +76,8 @@ public class CustomerHandler : MonoBehaviour
     }
 
     //for declaring customer queue list, maximum customer total
-    void DeclareCustomerClass()
+    public void DeclareCustomerClass(int unlockedQueue, int queueLength)
     {
-        //get total unlocked queue
-        int unlockedQueue = CustomerQueueHandler.Instance.unlockedQueue;
-        int queueLength = CustomerQueueHandler.Instance.queueLength;
-
         //declare customerClassInQueueList array
         customerClassInQueueList = new List<CustomerClass>[unlockedQueue];
         //declare customerClassList list
@@ -103,7 +102,7 @@ public class CustomerHandler : MonoBehaviour
             int choosenSpawnPoint = Random.Range(0, 2);
             //get spawn point from random z point
             float randomZ = Random.Range(-(customerSpawnRandomZ), customerSpawnRandomZ);
-            Vector3 newSpawnPoint = customerSpawnPoint[choosenSpawnPoint] + new Vector3(0, 0, randomZ);
+            Vector3 newSpawnPoint = customerSpawnPoint[choosenSpawnPoint].position + new Vector3(0, 0, randomZ);
             //spawn customer at new spawn point
             GameObject newCustomer = Instantiate(customer_obj, newSpawnPoint, Quaternion.identity) as GameObject;
             //set parent
@@ -135,13 +134,13 @@ public class CustomerHandler : MonoBehaviour
             {
                 case 0: //if spawn at left
                     {
-                        Vector3 newDestination = customerDeletation[1].position;
+                        Vector3 newDestination = customerDeletation[1].position + new Vector3(0, 0, randomZ);
                         newCustomerClass.NewDestination(newDestination);
                         break;
                     }
                 case 1: //if spawn at right
                     {
-                        Vector3 newDestination = customerDeletation[0].position;
+                        Vector3 newDestination = customerDeletation[0].position + new Vector3(0, 0, randomZ);
                         newCustomerClass.NewDestination(newDestination);
                         break;
                     }
@@ -159,7 +158,7 @@ public class CustomerHandler : MonoBehaviour
             int choosenSpawnPoint = Random.Range(0, 2);
             //get spawn point from random z point
             float randomZ = Random.Range(-(customerSpawnRandomZ), customerSpawnRandomZ);
-            Vector3 newSpawnPoint = customerSpawnPoint[choosenSpawnPoint] + new Vector3(0, 0, randomZ);
+            Vector3 newSpawnPoint = customerSpawnPoint[choosenSpawnPoint].position + new Vector3(0, 0, randomZ);
             //spawn customer at new spawn point
             GameObject newCustomer = Instantiate(customer_obj, newSpawnPoint, Quaternion.identity) as GameObject;
             //set parent
@@ -187,19 +186,13 @@ public class CustomerHandler : MonoBehaviour
             {
                 case 0: //if spawn at left
                     {
-                        Vector3 newDestination = newSpawnPoint + new Vector3(120, 0, 0);
-                        //customerNavMesh.SetDestination(newDestination);
-                        //customerNavMesh.destination = newDestination;
-                        //customerNavMesh.Resume();
+                        Vector3 newDestination = customerDeletation[1].position + new Vector3(0, 0, randomZ);
                         newCustomerClass.NewDestination(newDestination);
                         break;
                     }
                 case 1: //if spawn at right
                     {
-                        Vector3 newDestination = newSpawnPoint + new Vector3(-120, 0, 0);
-                        //customerNavMesh.SetDestination(newDestination);
-                        //customerNavMesh.destination = newDestination;
-                        //customerNavMesh.Resume();
+                        Vector3 newDestination = customerDeletation[0].position + new Vector3(0, 0, randomZ);
                         newCustomerClass.NewDestination(newDestination);
                         break;
                     }
@@ -236,7 +229,7 @@ public class CustomerHandler : MonoBehaviour
     {
         if(customerClass.isCustomer)
         {
-            if(!customerClass.joinedQueue)
+            if (!customerClass.joinedQueue)
             {
                 //get each queue length
                 List<int> eachQueueLength = new List<int>();
@@ -253,6 +246,7 @@ public class CustomerHandler : MonoBehaviour
 
                 //get queue position vector3
                 Vector3 queuePosition = CustomerQueueHandler.Instance.queuePositionList[leastQueueIndex][minVal];
+                Debug.Log(queuePosition);
                 //customer join queue
                 customerClass.JoinQueue(queuePosition);
             }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShelfInteraction : MonoBehaviour
 {
     public int shelfIndex = 0;
-    public int ingrdientIndex = 0;
+    public int ingredientIndex = 0;
     public float shelfReopenTime = 5f;
     public IngredientDrop ingredientDrop;
 
@@ -45,7 +45,7 @@ public class ShelfInteraction : MonoBehaviour
             //ShelfSystem_Daytime.Instance.ShelfInteraction(shelfIndex);
             if(shelfOpen)
             {
-                ingredientDrop.IngredientSpawn(shelfIndex, ingrdientIndex);
+                ingredientDrop.IngredientSpawn(shelfIndex, ingredientIndex);
             }
             
             //close shelf

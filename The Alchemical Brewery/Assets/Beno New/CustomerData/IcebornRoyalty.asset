@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0bcb89b4fb5b4439a4a96c7622e539, type: 3}
+  m_Name: IcebornRoyalty
+  m_EditorClassIdentifier: 
+  customerIndex: 7
+  customerName: Iceborn Royalty
+  customerSprite: {fileID: 21300000, guid: 78f9de5e80dd0f445b4a1b2389b4d9de, type: 3}
+  preferElement: 00000000
+  preferPotionUsage: 00000000
+  baseAppearRate: 5
+  levelingAppearRate: 9
+  levelingExperience:
+  - 60
+  - 100
+  - 160
+  - 225
+  - 300

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0bcb89b4fb5b4439a4a96c7622e539, type: 3}
+  m_Name: Guards
+  m_EditorClassIdentifier: 
+  customerIndex: 2
+  customerName: Guard
+  customerSprite: {fileID: 21300000, guid: 8b4de674c7325bf49a1f270da3b3846c, type: 3}
+  preferElement: feffffff0200000000000000
+  preferPotionUsage: 0100000000000000
+  baseAppearRate: 20
+  levelingAppearRate: 6
+  levelingExperience:
+  - 40
+  - 60
+  - 90
+  - 135
+  - 200

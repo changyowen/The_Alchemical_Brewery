@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5525282360754041629, guid: 4bde50267456cfc4ca655953265a1db7,
+  m_Sprite: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -356,9 +356,9 @@ MonoBehaviour:
   orbSR: {fileID: 1619686343579795347}
   ingredientSR: {fileID: 1549705643108442083}
   ingredientDrop: {fileID: 4859458481047314345}
-  closeChest: {fileID: -3897329996841155032, guid: 4bde50267456cfc4ca655953265a1db7,
+  closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
-  openChest: {fileID: 5525282360754041629, guid: 4bde50267456cfc4ca655953265a1db7,
+  openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   shelfIndex: 0
   ingredientIndex: 0

@@ -59,6 +59,10 @@ public class QueueInteraction : MonoBehaviour
         if (CustomerHandler.Instance.customerClassInQueueList[queueIndex].Count != 0)
         {
             CustomerClass firstCustomer = CustomerHandler.Instance.customerClassInQueueList[queueIndex][0];
+            if(firstCustomer.reachedQueuePos)
+            {
+                Debug.Log("Yes");
+            }
             if (firstCustomer.reachedQueuePos && queueTimer >= queueRefreshTime)
             {
                 queueInteractionEnable = true;

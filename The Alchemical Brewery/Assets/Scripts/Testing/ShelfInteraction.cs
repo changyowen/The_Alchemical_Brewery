@@ -4,24 +4,57 @@ using UnityEngine;
 
 public class ShelfInteraction : MonoBehaviour
 {
+    [Header("Get Component")]
+    public SpriteRenderer chestSR;
+    public SpriteRenderer orbSR;
+    public SpriteRenderer ingredientSR;
+    public IngredientDrop ingredientDrop;
+
+    [Header("Sprite")]
+    public Sprite closeChest;
+    public Sprite openChest;
+
+    [Header("Chest Data")]
     public int shelfIndex = 0;
     public int ingredientIndex = 0;
     public float shelfReopenTime = 5f;
-    public IngredientDrop ingredientDrop;
+   
 
     bool shelfOpen = true;
     float shelfTimer = 0;
 
     void Update()
     {
+
         if(!shelfOpen)
         {
+            ChestSpriteHandler(false);
+
             shelfTimer += Time.deltaTime;
             if(shelfTimer >= shelfReopenTime)
             {
                 shelfTimer = 0f;
                 shelfOpen = true;
             }
+        }
+        else
+        {
+            ChestSpriteHandler(true);
+        }
+    }
+
+    void ChestSpriteHandler(bool open)
+    {
+        ingredientSR.enabled = open;
+        orbSR.enabled = open;
+
+        if (open)
+        {
+            chestSR.sprite = openChest;
+        }
+        else
+        {
+            chestSR.sprite = closeChest;
         }
     }
 

@@ -100,6 +100,8 @@ public class InstantiateAssetHandler : MonoBehaviour
             shelfInteraction.shelfIndex = i;
             //set ingredient
             shelfInteraction.ingredientIndex = ingOrder_test[i];
+            //set ingredient img
+            shelfInteraction.ingredientSR.sprite = so_Holder.ingredientSO[ingOrder_test[i]].ingredientSprite;
             //set shelf refresh Time
             shelfInteraction.shelfReopenTime = 3f;
         }

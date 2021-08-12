@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549705643108442081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.02000004}
+  m_LocalPosition: {x: 0, y: 0, z: -0.01}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1.5}
   m_Children: []
   m_Father: {fileID: 2344926510163002974}
@@ -220,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4119946194339051637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.01000002}
+  m_LocalPosition: {x: 0, y: 0, z: -0.02}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 2344926510163002974}
@@ -352,10 +352,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chestSR: {fileID: 166250796316242561}
+  orbSR: {fileID: 1619686343579795347}
+  ingredientSR: {fileID: 1549705643108442083}
+  ingredientDrop: {fileID: 4859458481047314345}
+  closeChest: {fileID: -3897329996841155032, guid: 4bde50267456cfc4ca655953265a1db7,
+    type: 3}
+  openChest: {fileID: 5525282360754041629, guid: 4bde50267456cfc4ca655953265a1db7,
+    type: 3}
   shelfIndex: 0
   ingredientIndex: 0
   shelfReopenTime: 5
-  ingredientDrop: {fileID: 4859458481047314345}
 --- !u!1 &4859458479509795693
 GameObject:
   m_ObjectHideFlags: 0

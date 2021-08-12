@@ -30,7 +30,7 @@ public class ShelfInteraction : MonoBehaviour
         Debug.Log("interact");
         //if player still far from shelf
         float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, transform.position);
-        if (dist > 3f)
+        if (dist > 4f)
         {
             //go to the nearest point toward collider
             Collider col = GetComponent<Collider>();

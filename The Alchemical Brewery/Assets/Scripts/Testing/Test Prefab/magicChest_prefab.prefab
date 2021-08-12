@@ -320,12 +320,12 @@ NavMeshObstacle:
   m_GameObject: {fileID: 4859458479507616538}
   m_Enabled: 1
   serializedVersion: 3
-  m_Shape: 0
-  m_Extents: {x: 1.5, y: 0.35, z: 1.5}
+  m_Shape: 1
+  m_Extents: {x: 2, y: 0.5, z: 1.5}
   m_MoveThreshold: 0
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.3, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0.35}
   m_TimeToStationary: 0
 --- !u!65 &4859458479507616537
 BoxCollider:
@@ -338,8 +338,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 0.6999999, z: 3.6713686}
-  m_Center: {x: 0, y: 0.3, z: 1.8004613}
+  m_Size: {x: 3, y: 1.5323278, z: 2.9394798}
+  m_Center: {x: 0, y: 0.71616393, z: 1.4345169}
 --- !u!114 &4859458479507616518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shelfIndex: 0
-  ingrdientIndex: 1
+  ingredientIndex: 0
   shelfReopenTime: 5
   ingredientDrop: {fileID: 4859458481047314345}
 --- !u!1 &4859458479509795693

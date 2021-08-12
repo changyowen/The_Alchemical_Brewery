@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 534689062}
   - component: {fileID: 6579691117909903270}
   m_Layer: 0
-  m_Name: queueHolder_0
+  m_Name: counter_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 1, z: 1.8}
+  m_Size: {x: 3.25, y: 1, z: 2}
   m_Center: {x: 0, y: 0, z: 0.87}
 --- !u!114 &6579691117909903270
 MonoBehaviour:

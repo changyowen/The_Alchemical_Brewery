@@ -20,7 +20,7 @@ public class PotInteractionHandler : MonoBehaviour
     {
         //if player still far from pot
         float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, transform.position);
-        if(dist > 3f)
+        if(dist > 4f)
         {
             //go to the nearest point toward collider
             Collider col = GetComponent<Collider>();
@@ -97,19 +97,23 @@ public class PotInteractionHandler : MonoBehaviour
 
     public void PopOutIngredient(int holderIndex)
     {
-        //spawn ingredient
-        GameObject spawnedIngredient = Instantiate(potInformationHandler.spawnIngredient_obj, potInformationHandler.ingredientSpawn.position, Quaternion.identity) as GameObject;
+        //check if clicked clot not empty
+        if(potInformationHandler.potIngredientHolderList.Count > holderIndex)
+        {
+            //spawn ingredient
+            GameObject spawnedIngredient = Instantiate(potInformationHandler.spawnIngredient_obj, potInformationHandler.ingredientSpawn.position, Quaternion.identity) as GameObject;
 
-        //set ingredient data into handler
-        IngredientItemHandler ingredientItemHandler = spawnedIngredient.GetComponent<IngredientItemHandler>();
-        ingredientItemHandler.shelfIndex = 0;
-        ingredientItemHandler.ingredientIndex = potInformationHandler.potIngredientHolderList[holderIndex];
+            //set ingredient data into handler
+            IngredientItemHandler ingredientItemHandler = spawnedIngredient.GetComponent<IngredientItemHandler>();
+            ingredientItemHandler.shelfIndex = 0;
+            ingredientItemHandler.ingredientIndex = potInformationHandler.potIngredientHolderList[holderIndex];
 
-        //set spawn force
-        spawnedIngredient.GetComponent<IngredientGravity>().ingredientSpawnForce = IngredientGravity.TypeOfSpawnForce.FromPot;
-        spawnedIngredient.GetComponent<IngredientGravity>().SpawnForce();
-        //remove ingredient from pot holder
-        potInformationHandler.potIngredientHolderList.RemoveAt(holderIndex);
+            //set spawn force
+            spawnedIngredient.GetComponent<IngredientGravity>().ingredientSpawnForce = IngredientGravity.TypeOfSpawnForce.FromPot;
+            spawnedIngredient.GetComponent<IngredientGravity>().SpawnForce();
+            //remove ingredient from pot holder
+            potInformationHandler.potIngredientHolderList.RemoveAt(holderIndex);
+        }
     }
 
     public void StartCraftPotion()

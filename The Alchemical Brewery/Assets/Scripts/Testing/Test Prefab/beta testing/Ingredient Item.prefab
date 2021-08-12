@@ -205,7 +205,7 @@ MonoBehaviour:
   rollRotation: {x: 0, y: 0, z: 0, w: 0}
   cameraRotation: {x: 75, y: 0, z: 0}
   ingredientSpawnForce: 0
-  mapCentre: {x: 0, y: 5}
+  mapCentre: {x: 0, y: 6}
   gravityForce: 10
   maxGravityVelocity: 8
   released: 0

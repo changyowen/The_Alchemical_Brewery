@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db0bcb89b4fb5b4439a4a96c7622e539, type: 3}
-  m_Name: Villager
+  m_Name: 5. OasisGuard
   m_EditorClassIdentifier: 
-  customerIndex: 0
-  customerName: Villager
-  customerSprite: {fileID: 21300000, guid: fc0abf6fc6db1e74da774779a5bdc928, type: 3}
-  preferElement: 0000000002000000
+  customerIndex: 5
+  customerName: Oasis Guard
+  customerSprite: {fileID: 21300000, guid: efa449d7f1698b945ad012fc1df371ec, type: 3}
+  preferElement: ffffffff02000000
   preferPotionUsage: 0100000000000000
-  baseAppearRate: 30
-  levelingAppearRate: 4
+  baseAppearRate: 12
+  levelingAppearRate: 7.6
   levelingExperience:
-  - 20
-  - 30
-  - 45
-  - 70
-  - 100
+  - 50
+  - 80
+  - 125
+  - 175
+  - 250

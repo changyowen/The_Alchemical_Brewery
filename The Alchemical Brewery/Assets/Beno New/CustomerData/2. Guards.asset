@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db0bcb89b4fb5b4439a4a96c7622e539, type: 3}
-  m_Name: Noble
+  m_Name: 2. Guards
   m_EditorClassIdentifier: 
-  customerIndex: 3
-  customerName: Noble
-  customerSprite: {fileID: 21300000, guid: f0e97aca32d6767449be39a2190f63e2, type: 3}
-  preferElement: feffffffffffffff
-  preferPotionUsage: ffffffff01000000
-  baseAppearRate: 15
-  levelingAppearRate: 7
+  customerIndex: 2
+  customerName: Guard
+  customerSprite: {fileID: 21300000, guid: 8b4de674c7325bf49a1f270da3b3846c, type: 3}
+  preferElement: feffffff0200000000000000
+  preferPotionUsage: 0100000000000000
+  baseAppearRate: 20
+  levelingAppearRate: 6
   levelingExperience:
-  - 50
-  - 75
-  - 110
-  - 150
+  - 40
+  - 60
+  - 90
+  - 135
   - 200

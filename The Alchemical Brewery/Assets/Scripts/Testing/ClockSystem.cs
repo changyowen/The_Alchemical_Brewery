@@ -12,9 +12,12 @@ public class ClockSystem : MonoBehaviour
     [Range(0, 24)] public float TimeOfDay;
     [SerializeField] private float timeSpeedperHour;
 
+    private bool enableClock = false;
+
     void Awake()
     {
         Instance = this;
+        TimeOfDay = 8f;
     }
 
     void Update()
@@ -23,10 +26,28 @@ public class ClockSystem : MonoBehaviour
         ClockHandRotation();
     }
 
+    public void StartClock()
+    {
+        enableClock = true;
+    }
+
+    public void StopClock()
+    {
+        TimeOfDay = 20f;
+        enableClock = false;
+    }
+
     void TimeCalculation()
     {
-        //(Replace with a reference to the game time)
-        TimeOfDay += Time.deltaTime * timeSpeedperHour;
+        if(!StageManager.accelerateGame)
+        {
+            TimeOfDay += Time.deltaTime * timeSpeedperHour;
+        }
+        else
+        {
+            TimeOfDay += Time.unscaledDeltaTime * timeSpeedperHour;
+        }
+    
         TimeOfDay %= 24; //Modulus to ensure always between 0-24
     }
 

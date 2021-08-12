@@ -31,8 +31,11 @@ public class CustomerHandler : MonoBehaviour
     void Start()
     {
         //DeclareCustomerClass();
-        StartCoroutine(GenerateVillager());
-        StartCoroutine(GenerateCustomer());
+        if(StageManager.dayTimeGameplay)
+        {
+            StartCoroutine(GenerateVillager());
+            StartCoroutine(GenerateCustomer());
+        }
     }
 
     void Update()
@@ -265,6 +268,11 @@ public class CustomerHandler : MonoBehaviour
             Vector3 queuePosition = CustomerQueueHandler.Instance.queuePositionList[queueIndex][i];
             currentQueue[i].JoinQueue(queuePosition);
         }
+    }
+
+    public void ClearAllCustomer()
+    {
+        
     }
 
     public void CustomerDelete(GameObject customer_obj_)

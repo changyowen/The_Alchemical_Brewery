@@ -17,6 +17,7 @@ public class StageManager : MonoBehaviour
     public List<float> customerAppearRateList = new List<float>();
     public float totalCustomerAppearRate = 0;
 
+    public static bool dayTimeGameplay = false;
     public static bool pauseGame = false;
     public static bool accelerateGame = false;
 
@@ -77,7 +78,7 @@ public class StageManager : MonoBehaviour
     {
         StageDataAssign stageData = so_Holder.stageDataSO[stageIndex];
 
-        for (int i = 0; i < stageData.CustomerAppear.Count; i++)
+        for (int i = 0; i < stageData.CustomerAppear.Count && i < 5; i++)
         {
             int customerIndex = stageData.CustomerAppear[i];
             customerTypeToday.Add(so_Holder.customerDataSO[customerIndex]);
@@ -203,5 +204,26 @@ public class StageManager : MonoBehaviour
             //assign pot Index
             potInformationHandler.potIndex = i;
         }
+    }
+
+    void StartDayEffect()
+    {
+
+    }
+
+    public void StartDayTimeScene()
+    {
+        //set daytimeGameplay to true
+        dayTimeGameplay = true;
+        //start clock system
+        ClockSystem.Instance.StartClock();
+    }
+    
+    public void EndDayTimeGamePlay()
+    {
+        //set daytimeGameplay to true
+        dayTimeGameplay = false;
+        //stop clock system
+        ClockSystem.Instance.StopClock();
     }
 }

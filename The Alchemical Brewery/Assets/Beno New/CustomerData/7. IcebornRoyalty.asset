@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db0bcb89b4fb5b4439a4a96c7622e539, type: 3}
-  m_Name: IcebornAdventurer
+  m_Name: 7. IcebornRoyalty
   m_EditorClassIdentifier: 
-  customerIndex: 6
-  customerName: Iceborn Adventurer
-  customerSprite: {fileID: 21300000, guid: 51e0b042506ad6b4db1b9556cf2c6393, type: 3}
-  preferElement: 02000000feffffff
-  preferPotionUsage: ffffffff01000000
-  baseAppearRate: 15
-  levelingAppearRate: 7
+  customerIndex: 7
+  customerName: Iceborn Royalty
+  customerSprite: {fileID: 21300000, guid: 78f9de5e80dd0f445b4a1b2389b4d9de, type: 3}
+  preferElement: 00000000
+  preferPotionUsage: 00000000
+  baseAppearRate: 5
+  levelingAppearRate: 9
   levelingExperience:
-  - 50
-  - 75
-  - 120
-  - 175
-  - 250
+  - 60
+  - 100
+  - 160
+  - 225
+  - 300

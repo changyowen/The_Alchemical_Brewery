@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db0bcb89b4fb5b4439a4a96c7622e539, type: 3}
-  m_Name: DesertMerchant
+  m_Name: 6. IcebornAdventurer
   m_EditorClassIdentifier: 
-  customerIndex: 4
-  customerName: Desert Merchant
-  customerSprite: {fileID: 21300000, guid: c2f56a14861e8bf4eae48e709d484256, type: 3}
-  preferElement: 0200000000000000
-  preferPotionUsage: 0000000001000000
-  baseAppearRate: 18
-  levelingAppearRate: 6.2
+  customerIndex: 6
+  customerName: Iceborn Adventurer
+  customerSprite: {fileID: 21300000, guid: 51e0b042506ad6b4db1b9556cf2c6393, type: 3}
+  preferElement: 02000000feffffff
+  preferPotionUsage: ffffffff01000000
+  baseAppearRate: 15
+  levelingAppearRate: 7
   levelingExperience:
-  - 40
-  - 60
-  - 90
-  - 140
-  - 210
+  - 50
+  - 75
+  - 120
+  - 175
+  - 250

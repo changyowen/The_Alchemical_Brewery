@@ -31,12 +31,14 @@ public class CustomerHandler : MonoBehaviour
     void Start()
     {
         //DeclareCustomerClass();
-        StartCoroutine(GenerateVillager());
-        StartCoroutine(GenerateCustomer());
+        //StartCoroutine(GenerateVillager());
+        //StartCoroutine(GenerateCustomer());
     }
 
     void Update()
     {
+        CustomerReachedDestinationUpdate();
+
         if(currentCustomerTotal < maximumCustomerTotal)
         {
             spawnCustomerBool = true;
@@ -85,67 +87,76 @@ public class CustomerHandler : MonoBehaviour
         maximumCustomerTotal = queueLength * unlockedQueue;
     }
 
-    IEnumerator GenerateCustomer()
+    public IEnumerator GenerateCustomer()
     {
         while(StageManager.dayTimeGameplay)
         {
-            //current customer total + 1
-            currentCustomerTotal++;
-
-            ///Spawn Customer Prefab
-            //random choose spawn point index
-            int choosenSpawnPoint = Random.Range(0, 2);
-            //get spawn point from random z point
-            float randomZ = Random.Range(-(customerSpawnRandomZ), customerSpawnRandomZ);
-            Vector3 newSpawnPoint = customerSpawnPoint[choosenSpawnPoint].position + new Vector3(0, 0, randomZ);
-            //spawn customer at new spawn point
-            GameObject newCustomer = Instantiate(customer_obj, newSpawnPoint, Quaternion.identity) as GameObject;
-            //set parent
-            Transform customerHolder = this.gameObject.transform.GetChild(0).gameObject.transform;
-            newCustomer.transform.SetParent(customerHolder, false);
-
-            ///Get customer type based on appearance rate
-            int getIndex = CustomerTypeWeightedRandom();
-            CustomerData currentCustomerData = StageManager.Instance.customerTypeToday[getIndex];
-
-            ///Declare Customer Class
-            CustomerClass newCustomerClass = new CustomerClass();
-            newCustomerClass.CustomerDeclaration(currentCustomerData, newCustomer);
-            newCustomerClass.CustomerDefine(true);
-            //assign customer class to prefab's information handler
-            newCustomer.GetComponent<CustomerInformationHandler>().customerClass = newCustomerClass;
-
-            //assign into customer class list
-            customerClassList.Add(newCustomerClass);
-
-            //assign prefer potion
-            int temp = Random.Range(0, StageManager.potionListToday.Count);
-            newCustomerClass.preferPotion = temp;
-
-            //get customer navmesh agent
-            NavMeshAgent customerNavMesh = newCustomerClass.customerNavMeshAgent;
-            //set destination
-            switch (choosenSpawnPoint)
+            if(currentCustomerTotal < maximumCustomerTotal)
             {
-                case 0: //if spawn at left
-                    {
-                        Vector3 newDestination = customerDeletation[1].position + new Vector3(0, 0, randomZ);
-                        newCustomerClass.NewDestination(newDestination);
-                        break;
-                    }
-                case 1: //if spawn at right
-                    {
-                        Vector3 newDestination = customerDeletation[0].position + new Vector3(0, 0, randomZ);
-                        newCustomerClass.NewDestination(newDestination);
-                        break;
-                    }
+                //current customer total + 1
+                currentCustomerTotal++;
+
+                ///Spawn Customer Prefab
+                //random choose spawn point index
+                int choosenSpawnPoint = Random.Range(0, 2);
+                //get spawn point from random z point
+                float randomZ = Random.Range(-(customerSpawnRandomZ), customerSpawnRandomZ);
+                Vector3 newSpawnPoint = customerSpawnPoint[choosenSpawnPoint].position + new Vector3(0, 0, randomZ);
+                //spawn customer at new spawn point
+                GameObject newCustomer = Instantiate(customer_obj, newSpawnPoint, Quaternion.identity) as GameObject;
+                //set parent
+                Transform customerHolder = this.gameObject.transform.GetChild(0).gameObject.transform;
+                newCustomer.transform.SetParent(customerHolder, false);
+
+                ///Get customer type based on appearance rate
+                int getIndex = CustomerTypeWeightedRandom();
+                CustomerData currentCustomerData = StageManager.Instance.customerTypeToday[getIndex];
+
+                ///Declare Customer Class
+                CustomerClass newCustomerClass = new CustomerClass();
+                newCustomerClass.CustomerDeclaration(currentCustomerData, newCustomer);
+                newCustomerClass.CustomerDefine(true);
+                //assign customer class to prefab's information handler
+                newCustomer.GetComponent<CustomerInformationHandler>().customerClass = newCustomerClass;
+
+                //assign into customer class list
+                customerClassList.Add(newCustomerClass);
+
+                //assign prefer potion
+                int temp = Random.Range(0, StageManager.potionListToday.Count);
+                newCustomerClass.preferPotion = temp;
+
+                //get customer navmesh agent
+                NavMeshAgent customerNavMesh = newCustomerClass.customerNavMeshAgent;
+                //set destination
+                switch (choosenSpawnPoint)
+                {
+                    case 0: //if spawn at left
+                        {
+                            Vector3 newDestination = customerDeletation[1].position + new Vector3(0, 0, randomZ);
+                            newCustomerClass.NewDestination(newDestination);
+                            break;
+                        }
+                    case 1: //if spawn at right
+                        {
+                            Vector3 newDestination = customerDeletation[0].position + new Vector3(0, 0, randomZ);
+                            newCustomerClass.NewDestination(newDestination);
+                            break;
+                        }
+                }
+                yield return new WaitForSeconds(customerSpawnTime);
+                yield return null;
             }
-            yield return new WaitForSeconds(customerSpawnTime);
-            yield return null;
+            else
+            {
+                yield return new WaitForSeconds(customerSpawnTime);
+                yield return null;
+            }
         }
+
     }
 
-    IEnumerator GenerateVillager()
+    public IEnumerator GenerateVillager()
     {
         while (StageManager.dayTimeGameplay)
         {
@@ -232,6 +243,7 @@ public class CustomerHandler : MonoBehaviour
                 {
                     eachQueueLength.Add(customerClassInQueueList[i].Count);
                 }
+
                 //get index of smallest queue length
                 int minVal = eachQueueLength.Min();
                 int leastQueueIndex = eachQueueLength.IndexOf(minVal);
@@ -241,7 +253,7 @@ public class CustomerHandler : MonoBehaviour
 
                 //get queue position vector3
                 Vector3 queuePosition = CustomerQueueHandler.Instance.queuePositionList[leastQueueIndex][minVal];
-                Debug.Log(queuePosition);
+
                 //customer join queue
                 customerClass.JoinQueue(queuePosition);
             }

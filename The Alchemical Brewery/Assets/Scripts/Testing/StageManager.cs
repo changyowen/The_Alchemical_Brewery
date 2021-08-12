@@ -121,6 +121,10 @@ public class StageManager : MonoBehaviour
 
         //set daytimeGameplay to true
         dayTimeGameplay = true;
+
+        //start spawning villager and customer
+        StartCoroutine(CustomerHandler.Instance.GenerateVillager());
+        StartCoroutine(CustomerHandler.Instance.GenerateCustomer());
     }
 
     //public void EndDayTimeGamePlay()

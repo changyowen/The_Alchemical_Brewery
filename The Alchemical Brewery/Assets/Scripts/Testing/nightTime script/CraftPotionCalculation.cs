@@ -37,7 +37,7 @@ public class CraftPotionCalculation : MonoBehaviour
         for (int i = 0; i < potIngredient.Count; i++)
         {
             //get so_Holder
-            ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+            ScriptableObjectHolder so_Holder = CraftPotionManager.Instance.so_Holder;
             //assign ingredient so into ingredient data list
             ingredientDataList.Add(so_Holder.ingredientSO[potIngredient[i]]);
         }

@@ -4225,10 +4225,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6183debc2656d9e4db324d2db75d82d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  so_Holder: {fileID: 11400000, guid: 8c01756340a37404fb76cdb7ab041e58, type: 2}
   craftButton: {fileID: 419274910}
   craftingAnimation_obj: {fileID: 1715653602}
   blackScreen_obj: {fileID: 1367418172}
   potIngredientList: 
+  potionDataHolder:
+    potionName: 
+    potionFormular: 
+    potionEffectiveScore: 0
+    potionQuality: 0
+    potionElement: 
+    potionUsage: 0
 --- !u!4 &1476282662
 Transform:
   m_ObjectHideFlags: 0
@@ -4984,23 +4992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1679e442b27c2b44a118207199ef750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparentSprite: {fileID: 21300000, guid: 5ea3dd0cd79407749a2b5df42a594b96, type: 3}
-  ingredientSO:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: cebd43c384276b6499eadb635e9dba10, type: 2}
-  - {fileID: 11400000, guid: 46c040e409c1aff48ac13bcfcec408c5, type: 2}
-  - {fileID: 11400000, guid: 9c83091cb8011e744bf256039994a3c6, type: 2}
-  - {fileID: 11400000, guid: dbd0a9ed7e95238458a4db87e0e1be9e, type: 2}
-  - {fileID: 11400000, guid: 836ca4a8a12c7674491934ad79d4bbce, type: 2}
-  - {fileID: 11400000, guid: 7c0602a6624ecdd4284178e2d7855b94, type: 2}
-  - {fileID: 11400000, guid: ce6101eb73142c947b4e514bfd604367, type: 2}
-  - {fileID: 11400000, guid: e9e259fa65f917c49ba87f9df8264113, type: 2}
-  - {fileID: 11400000, guid: 04b32a5ca102eac4c8ff41124b30a7c1, type: 2}
-  - {fileID: 11400000, guid: 4d5e27360794e104f8270ea084b798ca, type: 2}
-  ingredientSpawnForceSO:
-  - {fileID: 11400000, guid: 6487f55a95b7413438e58b52b3434c98, type: 2}
-  - {fileID: 11400000, guid: 9135ed85ef247a346a22cddc7ab6b064, type: 2}
-  - {fileID: 11400000, guid: cf8fe04e2b76770449793f0734632305, type: 2}
 --- !u!4 &1678472185
 Transform:
   m_ObjectHideFlags: 0

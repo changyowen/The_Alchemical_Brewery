@@ -6,6 +6,8 @@ public class CraftPotionManager : MonoBehaviour
 {
     public static CraftPotionManager Instance { get; private set; }
 
+    public ScriptableObjectHolder so_Holder;
+
     public GameObject craftButton;
     public GameObject craftingAnimation_obj;
     public GameObject blackScreen_obj;

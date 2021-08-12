@@ -18,7 +18,7 @@ public class PotIngredientHolderHandler : MonoBehaviour
             if (i < potIngredientList.Count)
             {
                 //get so_Holder
-                ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+                ScriptableObjectHolder so_Holder = CraftPotionManager.Instance.so_Holder;
                 //get ingredient data
                 IngredientData ingData = so_Holder.ingredientSO[potIngredientList[i]];
                 potIngredientHolder[i].sprite = ingData.ingredientSprite;
@@ -26,7 +26,7 @@ public class PotIngredientHolderHandler : MonoBehaviour
             else
             {
                 //get so_Holder
-                ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
+                ScriptableObjectHolder so_Holder = CraftPotionManager.Instance.so_Holder;
                 //get trasparent sprite
                 potIngredientHolder[i].sprite = so_Holder.transparentSprite;
             }

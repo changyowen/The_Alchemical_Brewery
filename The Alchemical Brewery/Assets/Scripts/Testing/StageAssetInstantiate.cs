@@ -8,6 +8,7 @@ public class StageAssetInstantiate : ScriptableObject
     public GameObject player_prefab;
 
     [Header("prefab")]
+    public GameObject dayTimeIntro_prefab;
     public GameObject counter_prefab;
     public GameObject magicChest_prefab;
     public GameObject pot_prefab;

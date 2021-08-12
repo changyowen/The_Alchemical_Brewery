@@ -31,11 +31,8 @@ public class CustomerHandler : MonoBehaviour
     void Start()
     {
         //DeclareCustomerClass();
-        if(StageManager.dayTimeGameplay)
-        {
-            StartCoroutine(GenerateVillager());
-            StartCoroutine(GenerateCustomer());
-        }
+        StartCoroutine(GenerateVillager());
+        StartCoroutine(GenerateCustomer());
     }
 
     void Update()
@@ -47,11 +44,6 @@ public class CustomerHandler : MonoBehaviour
         else
         {
             spawnCustomerBool = false;
-        }
-
-        CustomerReachedDestinationUpdate();
-        if(customerClassList.Count > 0)
-        {
         }
     }
 
@@ -95,7 +87,7 @@ public class CustomerHandler : MonoBehaviour
 
     IEnumerator GenerateCustomer()
     {
-        while(spawnCustomerBool)
+        while(StageManager.dayTimeGameplay)
         {
             //current customer total + 1
             currentCustomerTotal++;
@@ -155,7 +147,7 @@ public class CustomerHandler : MonoBehaviour
 
     IEnumerator GenerateVillager()
     {
-        while (spawnVillagerBool)
+        while (StageManager.dayTimeGameplay)
         {
             //random choose spawn point index
             int choosenSpawnPoint = Random.Range(0, 2);

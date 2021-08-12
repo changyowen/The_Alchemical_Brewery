@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject pausePanel_obj;
+    [SerializeField] private GameObject pausePanel_obj = null;
 
     void Update()
     {

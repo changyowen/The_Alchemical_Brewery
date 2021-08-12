@@ -9,10 +9,8 @@ public class ClockSystem : MonoBehaviour
     public GameObject clockhand_minute_obj;
     public GameObject clockhand_hour_obj;
 
-    [Range(0, 24)] public float TimeOfDay;
+    [Range(0, 24)] public float TimeOfDay = 8;
     [SerializeField] private float timeSpeedperHour;
-
-    private bool enableClock = false;
 
     void Awake()
     {
@@ -22,19 +20,11 @@ public class ClockSystem : MonoBehaviour
 
     void Update()
     {
-        TimeCalculation();
-        ClockHandRotation();
-    }
-
-    public void StartClock()
-    {
-        enableClock = true;
-    }
-
-    public void StopClock()
-    {
-        TimeOfDay = 20f;
-        enableClock = false;
+        if(StageManager.dayTimeGameplay)
+        {
+            TimeCalculation();
+            ClockHandRotation();
+        }
     }
 
     void TimeCalculation()

@@ -15,16 +15,26 @@ MonoBehaviour:
   transparentSprite: {fileID: 21300000, guid: 5ea3dd0cd79407749a2b5df42a594b96, type: 3}
   ingredientSO:
   - {fileID: 0}
-  - {fileID: 11400000, guid: cebd43c384276b6499eadb635e9dba10, type: 2}
-  - {fileID: 11400000, guid: 46c040e409c1aff48ac13bcfcec408c5, type: 2}
-  - {fileID: 11400000, guid: 9c83091cb8011e744bf256039994a3c6, type: 2}
-  - {fileID: 11400000, guid: dbd0a9ed7e95238458a4db87e0e1be9e, type: 2}
-  - {fileID: 11400000, guid: 836ca4a8a12c7674491934ad79d4bbce, type: 2}
-  - {fileID: 11400000, guid: 7c0602a6624ecdd4284178e2d7855b94, type: 2}
-  - {fileID: 11400000, guid: ce6101eb73142c947b4e514bfd604367, type: 2}
-  - {fileID: 11400000, guid: e9e259fa65f917c49ba87f9df8264113, type: 2}
-  - {fileID: 11400000, guid: 04b32a5ca102eac4c8ff41124b30a7c1, type: 2}
-  - {fileID: 11400000, guid: 4d5e27360794e104f8270ea084b798ca, type: 2}
+  - {fileID: 11400000, guid: 34ee3381d5f397e47915ed7b190e4c36, type: 2}
+  - {fileID: 11400000, guid: 073fc5ae8c61c0a46a8679a8f8a08551, type: 2}
+  - {fileID: 11400000, guid: 22ee4b23a5bfe074ebb4dc859dd79fba, type: 2}
+  - {fileID: 11400000, guid: 18be3965a1dc6414fb694500c8abb7c8, type: 2}
+  - {fileID: 11400000, guid: 1fc7d239a51be7f44a5b75b87c878040, type: 2}
+  - {fileID: 11400000, guid: 8bb2aa741e83d974fba3ed50bb2b0b64, type: 2}
+  - {fileID: 11400000, guid: 10675d8678d069b4ab1180f3f53f1b3a, type: 2}
+  - {fileID: 11400000, guid: 13794fb831e1014428aef97eea769406, type: 2}
+  - {fileID: 11400000, guid: 523ebbbadc5c6624a84fc836e1c01e2d, type: 2}
+  - {fileID: 11400000, guid: 50ef02c871add9b44a3d55db8926ffea, type: 2}
+  - {fileID: 11400000, guid: 7739945f42cc3164fadcf3cb417867cf, type: 2}
+  - {fileID: 11400000, guid: f926c880d8c512a4cb8c6f9235a858d4, type: 2}
+  - {fileID: 11400000, guid: 7a902ce0847e00b46b4ae2205160b270, type: 2}
+  - {fileID: 11400000, guid: 8130d759f9de9a74889fc92e1afa7f47, type: 2}
+  - {fileID: 11400000, guid: cc584e2d553293c499170102f1223459, type: 2}
+  - {fileID: 11400000, guid: fe7436e34ea1806449d6f1d9deb33dfe, type: 2}
+  - {fileID: 11400000, guid: 97c14cd3db6271b40946c7c84ed8ebfb, type: 2}
+  - {fileID: 11400000, guid: ed1d54a55380fe24384af78cab16ff8f, type: 2}
+  - {fileID: 11400000, guid: a4e2c0704a361c94da412c9b1169cdf3, type: 2}
+  - {fileID: 11400000, guid: 7e15f3282bff7ee4ab8b09f33d30292d, type: 2}
   ingredientSpawnForceSO:
   - {fileID: 11400000, guid: 6487f55a95b7413438e58b52b3434c98, type: 2}
   - {fileID: 11400000, guid: 9135ed85ef247a346a22cddc7ab6b064, type: 2}

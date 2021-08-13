@@ -11,6 +11,7 @@ public class CraftPotionManager : MonoBehaviour
     public GameObject craftButton;
     public GameObject craftingAnimation_obj;
     public GameObject blackScreen_obj;
+    public GameObject craftingUI_obj;
 
     public List<int> potIngredientList = new List<int>(); //List for Ingredient in pot
 
@@ -24,7 +25,7 @@ public class CraftPotionManager : MonoBehaviour
     void Update()
     {
         CraftButtonHandler();
-
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SaveManager.Load();
@@ -78,9 +79,9 @@ public class CraftPotionManager : MonoBehaviour
 
         //Start potion calculation
         int effectiveScore = CraftPotionCalculation.Instance.PotionEffectiveCalculation(potIngredientList);
-       
+
         //effective score not pass
-        if(effectiveScore <= -25 || effectiveScore > 25)
+        if (/*effectiveScore <= -25 || effectiveScore > 25*/ effectiveScore >= 10000000f)
         {
             //reset pot ingredient list
             ResetPotIngredientList();
@@ -109,6 +110,8 @@ public class CraftPotionManager : MonoBehaviour
 
     void StartingCraftingAnimation()
     {
+        //deactivate crafting ui
+        craftingUI_obj.SetActive(false);
         //set active black screen
         blackScreen_obj.SetActive(true);
         //set active crafting animation
@@ -121,14 +124,16 @@ public class CraftPotionManager : MonoBehaviour
     {
         //Start mini game
         FishingMiniGame.Instance.StartMiniGame();
+        //deactive black screen
+        blackScreen_obj.SetActive(false);
         //deactivate crafting animation
         craftingAnimation_obj.SetActive(false);
     }
 
     public void CraftPotionResult(PotionData newPotionData)
     {
-        //deactivate black screen
-        blackScreen_obj.SetActive(false);
+        //reactivate crafting ui
+        craftingUI_obj.SetActive(true);
         //assign back potion data
         potionDataHolder = newPotionData;
 

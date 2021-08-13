@@ -9,7 +9,9 @@ public class FishingMiniGame : MonoBehaviour
     public Hook hook;
     public FishAI fishAI;
     public GameObject fishingMiniGame_parent_obj;
+    public GameObject rendercanvas_obj;
     public Transform progressBarCenter;
+    public GameObject countDown_obj;
 
     public bool startMiniGame = false;
     public float countDownTime = 8f;
@@ -89,6 +91,8 @@ public class FishingMiniGame : MonoBehaviour
         startMiniGame = false;
         progress = 100;
         perfectResult = false;
+
+        progressBarCenter.localScale = Vector3.one;
     }
 
     public void ResetAllMiniGameValue()
@@ -98,16 +102,49 @@ public class FishingMiniGame : MonoBehaviour
         hook.ResetHookLocation();
     }
 
+    public void StartMiniGame()
+    {
+        //miniGameCountDown.startCountDown = true;
+        SetActiveMiniGameParent(true);
+        //start count down
+        StartCoroutine(StartCountDown());
+    }
+
+    IEnumerator StartCountDown()
+    {
+        //activate count down
+        countDown_obj.SetActive(true);
+
+        float tempTimer = 4;
+        while(tempTimer > 1) //if count down havent finished
+        {
+            tempTimer -= Time.deltaTime;
+
+            int timeLeft = (int)tempTimer;
+            countDown_obj.GetComponent<TextMesh>().text = "" + timeLeft;
+            yield return null;
+        }
+
+        //start fishing game
+        startMiniGame = true;
+
+        //and count down GO!
+        while (tempTimer > 0)
+        {
+            tempTimer -= Time.deltaTime;
+            countDown_obj.GetComponent<TextMesh>().text = "GO!";
+            yield return null;
+        }
+
+        //deactivate countdown
+        countDown_obj.SetActive(false);
+    }
+
     public void SetActiveMiniGameParent(bool active)
     {
         fishingMiniGame_parent_obj.SetActive(active);
+        rendercanvas_obj.SetActive(active);
     }
 
-    public void StartMiniGame()
-    {
-        Debug.Log("YESS");
-        //miniGameCountDown.startCountDown = true;
-        SetActiveMiniGameParent(true);
-        startMiniGame = true;
-    }
+    
 }

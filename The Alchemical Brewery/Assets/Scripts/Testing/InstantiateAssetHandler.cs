@@ -9,6 +9,7 @@ public class InstantiateAssetHandler : MonoBehaviour
     public StageAssetInstantiate stageAssetInstantiate;
 
     public GameObject dayTimeIntro_obj;
+    public GameObject dayTimeOutro_obj;
 
     [Header("Testing Use")]
     public bool testing = false;
@@ -129,5 +130,13 @@ public class InstantiateAssetHandler : MonoBehaviour
     public void DisableDayTimeIntro()
     {
         dayTimeIntro_obj.SetActive(false);
+    }
+
+    public Animator StartDayTimeOutro()
+    {
+        dayTimeOutro_obj.SetActive(true);
+        Animator anim = dayTimeOutro_obj.GetComponent<Animator>();
+
+        return anim;
     }
 }

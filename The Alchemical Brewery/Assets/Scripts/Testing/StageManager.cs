@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Linq;
 
 public class StageManager : MonoBehaviour
@@ -21,6 +22,7 @@ public class StageManager : MonoBehaviour
     public static bool dayTimeGameplay = false;
     public static bool pauseGame = false;
     public static bool accelerateGame = false;
+    private bool endScene = false;
 
     [Header("Testing Use")]
     public bool testing = false;
@@ -55,6 +57,17 @@ public class StageManager : MonoBehaviour
         {
             instantiateAssetHandler.InstantiateAssetPrefab(stageIndex, ingredientOrderToday);
             StartCoroutine(StartDayTimeScene());
+        }
+    }
+
+    void Update()
+    {
+        if(ClockSystem.Instance.TimeOfDay >= 20f)
+        {
+            if(dayTimeGameplay)
+            {
+                StartCoroutine(EndDayTimeGamePlay());
+            }
         }
     }
 
@@ -110,7 +123,7 @@ public class StageManager : MonoBehaviour
     {
         //start day time intro & return its animator
         Animator dayTimeIntro_anim = instantiateAssetHandler.StartDayTimeIntro();
-        Debug.Log("Yes");
+
         //loop if day time intro havent finish
         while(dayTimeIntro_anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
         {
@@ -127,11 +140,26 @@ public class StageManager : MonoBehaviour
         StartCoroutine(CustomerHandler.Instance.GenerateCustomer());
     }
 
-    //public void EndDayTimeGamePlay()
-    //{
-    //    //set daytimeGameplay to true
-    //    dayTimeGameplay = false;
-    //    //stop clock system
-    //    ClockSystem.Instance.StopClock();
-    //}
+    IEnumerator EndDayTimeGamePlay()
+    {
+        //instantiate dayTimeOutro and get its animator
+        Animator dayTimeOutro_anim = instantiateAssetHandler.StartDayTimeOutro();
+
+        //set daytimeGameplay to true
+        dayTimeGameplay = false;
+
+        //clear all customer
+
+        //Start loading next scene
+        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
+        operation.allowSceneActivation = false;
+
+        //loop if day time intro havent finish
+        while (dayTimeOutro_anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
+        {
+            yield return null;
+        }
+        //enable change scene
+        operation.allowSceneActivation = true;
+    }
 }

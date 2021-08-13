@@ -1404,7 +1404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fucking Raw
+  m_Text: Raw
 --- !u!222 &126120593
 CanvasRenderer:
   m_ObjectHideFlags: 0

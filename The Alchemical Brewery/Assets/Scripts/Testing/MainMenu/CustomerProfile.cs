@@ -9,5 +9,5 @@ public class CustomerProfile
 
     public bool unlocked = false;
     [Range(1, 6)] public int customerLevel = 1;
-    public float customerExperience;
+    public int customerExperience;
 }

@@ -28,13 +28,6 @@ public class CustomerHandler : MonoBehaviour
         Instance = this;
     }
 
-    void Start()
-    {
-        //DeclareCustomerClass();
-        //StartCoroutine(GenerateVillager());
-        //StartCoroutine(GenerateCustomer());
-    }
-
     void Update()
     {
         CustomerReachedDestinationUpdate();
@@ -89,6 +82,8 @@ public class CustomerHandler : MonoBehaviour
 
     public IEnumerator GenerateCustomer()
     {
+
+
         while(StageManager.dayTimeGameplay)
         {
             if(currentCustomerTotal < maximumCustomerTotal)

@@ -68172,7 +68172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clockhand_minute_obj: {fileID: 1821774908}
   clockhand_hour_obj: {fileID: 1985886278}
-  TimeOfDay: 10.2
+  TimeOfDay: 12
   timeSpeedperHour: 0.016666668
 --- !u!1 &1232389662
 GameObject:

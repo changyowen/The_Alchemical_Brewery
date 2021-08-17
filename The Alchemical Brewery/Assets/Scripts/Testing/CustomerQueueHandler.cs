@@ -63,7 +63,6 @@ public class CustomerQueueHandler : MonoBehaviour
 
     public void CounterInteraction(int queueIndex)
     {
-        Debug.Log("Interaction");
         List<CustomerClass> currentQueue = CustomerHandler.Instance.customerClassInQueueList[queueIndex];
 
         /////////////////////
@@ -88,14 +87,17 @@ public class CustomerQueueHandler : MonoBehaviour
 
     public void ServeCustomer(List<CustomerClass> currentQueue)
     {
-        //increase money
+        ///INCREASE MONEY
 
-        //clear player potion holder
+        ///RESET PLAYER POTION HOLDER
         PlayerInfoHandler.Instance.playerPotionHolder = 0;
-
+        
+        ///GET CUSTOMER CLASS
         //get customer class
         CustomerClass currentCustomer = currentQueue[0];
 
+
+        ///REMOVE CUSTOMER 
         //remove customer from global customer class list
         CustomerHandler.Instance.customerClassList.Remove(currentCustomer);
         //remove customer from queue
@@ -103,10 +105,42 @@ public class CustomerQueueHandler : MonoBehaviour
         //customer total - 1;
         CustomerHandler.Instance.currentCustomerTotal--;
 
+        ///SET CUSTOMER CLASS TO DELETATION
         //set isCustomer to false
         currentCustomer.isCustomer = false;
         //set customer destination to customer deletation
         int temp = Random.Range(0, 2);
         currentCustomer.NewDestination(CustomerHandler.Instance.customerDeletation[temp].position);
+    }
+
+    public void CustomerAddXP(CustomerClass customerClass)
+    {
+        ///GET CUSTOMER DATA
+        CustomerData customerData = customerClass.customerData;
+        ///GET CUSTOMER PROFILE
+        CustomerProfile currentCustomerProfile = PlayerProfile.customerProfile[customerData.customerIndex];
+
+        /////ADD XP
+        //currentCustomerProfile.customerExperience++;
+
+        /////CHECK LEVEL UP
+        //int customerLevel = currentCustomerProfile.customerLevel;
+        //if (currentCustomerProfile.customerExperience >= customerData.levelingExperience[customerLevel - 1])
+        //{
+        //    CustomerLevelUp(currentCustomerProfile, customerData);
+        //}
+    }
+
+    public void CustomerLevelUp(CustomerProfile currentCustomerProfile, CustomerData customerData)
+    {
+        //get customer current level
+        int customerLevel = currentCustomerProfile.customerLevel;
+
+        //subtract leveling up experience
+        currentCustomerProfile.customerExperience -= (int)customerData.levelingExperience[customerLevel - 1];
+        //leveling up
+        customerLevel++;
+
+        ///LEVELING EFFECT
     }
 }

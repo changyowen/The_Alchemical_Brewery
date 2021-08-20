@@ -3,16 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum RoomStatus
+{
+    Default,
+    PotRoom
+}
+
 public class NightTimeManager : MonoBehaviour
 {
+    public static NightTimeManager Instance { get; private set; }
+
     public GameObject nightTimeIntro_obj;
     public GameObject nightTimeOutro_obj;
+
+    public RoomStatus currentRoomStatus = default;
 
     [Header("Testing Use")]
     public bool testing = false;
 
     void Awake()
     {
+        Instance = this;
+
         if(!testing)
         {
             SaveManager.Load();

@@ -17,6 +17,9 @@ public class CraftPotionManager : MonoBehaviour
 
     public PotionData potionDataHolder = null;
 
+    public bool potFull = false;
+    private bool getPreviousFormular = false;
+
     void Awake()
     {
         Instance = this;
@@ -25,7 +28,8 @@ public class CraftPotionManager : MonoBehaviour
     void Update()
     {
         CraftButtonHandler();
-        
+        CheckPotFull();
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SaveManager.Load();
@@ -43,6 +47,38 @@ public class CraftPotionManager : MonoBehaviour
         {
             craftButton.SetActive(false);
         }
+    }
+
+    void CheckPotFull()
+    {
+        if (!potFull)
+        {
+            if (potIngredientList.Count == 4)
+            {
+                potFull = true;
+                getPreviousFormular = CheckIfGettingPreviousFormular();
+            }
+        }
+        else
+        {
+            if (potIngredientList.Count < 4)
+            {
+                potFull = false;
+            }
+        }
+    }
+
+    bool CheckIfGettingPreviousFormular()
+    {
+        for (int i = 0; i < PlayerProfile.acquiredPotion.Count; i++)
+        {
+            List<int> tempList = new List<int>(PlayerProfile.acquiredPotion[i].potionFormular);
+            bool getSameFormular = CraftPotionCalculation.Instance.CompareLists(tempList, potIngredientList);
+
+            if (getSameFormular)
+                return true;
+        }
+        return false;
     }
 
     public void AddIngredient(int ingredientIndex)
@@ -81,7 +117,7 @@ public class CraftPotionManager : MonoBehaviour
         int effectiveScore = CraftPotionCalculation.Instance.PotionEffectiveCalculation(potIngredientList);
 
         //effective score not pass
-        if (/*effectiveScore <= -25 || effectiveScore > 25*/ effectiveScore >= 10000000f)
+        if (effectiveScore >= 10000000f)
         {
             //reset pot ingredient list
             ResetPotIngredientList();

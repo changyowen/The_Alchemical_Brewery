@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class StateDrivenHandler : MonoBehaviour
 {
+    public static StateDrivenHandler Instance { get; private set; }
+
     Animator anim;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -13,14 +20,34 @@ public class StateDrivenHandler : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            anim.Play("mainRoom");
-        }
+        UpdateCameraState();
+    }
 
-        if (Input.GetKeyDown(KeyCode.N))
+    private void UpdateCameraState()
+    {
+        RoomStatus currentRoomStatus = NightTimeManager.Instance.currentRoomStatus;
+
+        switch(currentRoomStatus)
         {
-            anim.Play("potRoom");
+            case RoomStatus.Default:
+                {
+                    anim.Play("mainRoom");
+                    break;
+                }
+            case RoomStatus.PotRoom:
+                {
+                    bool potFull = CraftPotionManager.Instance.potFull;
+
+                    if(potFull)
+                    {
+                        anim.Play("potRoom_potFull");
+                    }
+                    else
+                    {
+                        anim.Play("potRoom_default");
+                    }
+                    break;
+                }
         }
     }
 }

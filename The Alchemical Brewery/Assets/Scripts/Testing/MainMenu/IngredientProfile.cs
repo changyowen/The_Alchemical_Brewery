@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class CustomerProfile 
+public class IngredientProfile 
 {
-    public int customerIndex;
-
+    public int ingredientIndex;
     public bool unlocked = false;
-    [Range(1, 6)] public int customerLevel = 1;
-    public int customerExperience;
 
-    public void UnlockThisCustomer()
+    public void UnlockThisIngredient()
     {
         unlocked = true;
     }

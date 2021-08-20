@@ -147,10 +147,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 64903706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2dfef4c3aecd9949ad7048de1183347, type: 3}
+  m_Script: {fileID: 11500000, guid: 734e2b8857ea4cd48b3d97cb053459b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisPotionElement: 04000000010000000000000001000000
+  list1: 00000000020000000300000003000000
+  list2: 03000000020000000300000000000000
 --- !u!4 &64903708
 Transform:
   m_ObjectHideFlags: 0
@@ -159,7 +160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64903706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.027149387, y: 2.5588703, z: 15.6642275}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

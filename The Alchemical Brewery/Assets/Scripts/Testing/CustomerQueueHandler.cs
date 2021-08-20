@@ -120,15 +120,15 @@ public class CustomerQueueHandler : MonoBehaviour
         ///GET CUSTOMER PROFILE
         CustomerProfile currentCustomerProfile = PlayerProfile.customerProfile[customerData.customerIndex];
 
-        /////ADD XP
-        //currentCustomerProfile.customerExperience++;
+        ///ADD XP
+        currentCustomerProfile.customerExperience++;
 
-        /////CHECK LEVEL UP
-        //int customerLevel = currentCustomerProfile.customerLevel;
-        //if (currentCustomerProfile.customerExperience >= customerData.levelingExperience[customerLevel - 1])
-        //{
-        //    CustomerLevelUp(currentCustomerProfile, customerData);
-        //}
+        ///CHECK LEVEL UP
+        int customerLevel = currentCustomerProfile.customerLevel;
+        if (currentCustomerProfile.customerExperience >= customerData.levelingExperience[customerLevel - 1])
+        {
+            CustomerLevelUp(currentCustomerProfile, customerData);
+        }
     }
 
     public void CustomerLevelUp(CustomerProfile currentCustomerProfile, CustomerData customerData)
@@ -140,6 +140,9 @@ public class CustomerQueueHandler : MonoBehaviour
         currentCustomerProfile.customerExperience -= (int)customerData.levelingExperience[customerLevel - 1];
         //leveling up
         customerLevel++;
+
+        ///UNLOCK ELEMENT
+        
 
         ///LEVELING EFFECT
     }

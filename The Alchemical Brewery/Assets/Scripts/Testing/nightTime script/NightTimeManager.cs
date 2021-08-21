@@ -88,4 +88,14 @@ public class NightTimeManager : MonoBehaviour
         //enable change scene
         operation.allowSceneActivation = true;
     }
+
+    public void OpenPotRoom()
+    {
+        currentRoomStatus = RoomStatus.PotRoom;
+    }
+
+    public void ReturnLobby()
+    {
+        currentRoomStatus = RoomStatus.Default;
+    }
 }

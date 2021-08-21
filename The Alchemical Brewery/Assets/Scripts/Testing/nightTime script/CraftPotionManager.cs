@@ -7,6 +7,7 @@ public class CraftPotionManager : MonoBehaviour
     public static CraftPotionManager Instance { get; private set; }
 
     public ScriptableObjectHolder so_Holder;
+    public ResultPanelHandler resultPanelHandler;
 
     public GameObject craftButton;
     public GameObject craftingAnimation_obj;
@@ -19,6 +20,7 @@ public class CraftPotionManager : MonoBehaviour
 
     public bool potFull = false;
     private bool getPreviousFormular = false;
+    private int previousFormularIndex = 0;
 
     void Awake()
     {
@@ -56,19 +58,34 @@ public class CraftPotionManager : MonoBehaviour
             if (potIngredientList.Count == 4)
             {
                 potFull = true;
-                getPreviousFormular = CheckIfGettingPreviousFormular();
+
+                int formularIndex = 0;
+                getPreviousFormular = CheckIfGettingPreviousFormular(out formularIndex);
+
+                if(getPreviousFormular)
+                {
+                    resultPanelHandler.AssignPreviousPotion(formularIndex);
+                    previousFormularIndex = formularIndex;
+                }
+                else
+                {
+                    resultPanelHandler.AssignUnknownPotion(potIngredientList);
+                    previousFormularIndex = formularIndex;
+                }
             }
         }
         else
         {
             if (potIngredientList.Count < 4)
             {
+                resultPanelHandler.AssignNullFormular();
+                previousFormularIndex = 0;
                 potFull = false;
             }
         }
     }
 
-    bool CheckIfGettingPreviousFormular()
+    bool CheckIfGettingPreviousFormular(out int formularIndex)
     {
         for (int i = 0; i < PlayerProfile.acquiredPotion.Count; i++)
         {
@@ -76,8 +93,12 @@ public class CraftPotionManager : MonoBehaviour
             bool getSameFormular = CraftPotionCalculation.Instance.CompareLists(tempList, potIngredientList);
 
             if (getSameFormular)
+            {
+                formularIndex = i;
                 return true;
+            }
         }
+        formularIndex = 0;
         return false;
     }
 

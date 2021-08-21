@@ -6,7 +6,15 @@ public class StateDrivenHandler : MonoBehaviour
 {
     public static StateDrivenHandler Instance { get; private set; }
 
-    Animator anim;
+    Animator stateDrivenCamera_anim;
+    public Animator craftPanel_anim;
+    public GameObject craftButton_obj;
+
+    public float potFullAnimationDuration = 1f;
+
+    private RoomStatus currentRoomStatus = RoomStatus.Default;
+    private bool potFull = false;
+    private bool runningPotFullCoroutine = false;
 
     private void Awake()
     {
@@ -15,7 +23,7 @@ public class StateDrivenHandler : MonoBehaviour
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        stateDrivenCamera_anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -25,29 +33,90 @@ public class StateDrivenHandler : MonoBehaviour
 
     private void UpdateCameraState()
     {
-        RoomStatus currentRoomStatus = NightTimeManager.Instance.currentRoomStatus;
-
-        switch(currentRoomStatus)
+        ///CHECK ROOM STATUS
+        RoomStatus roomStatus = NightTimeManager.Instance.currentRoomStatus;
+        if(currentRoomStatus != roomStatus)
         {
-            case RoomStatus.Default:
-                {
-                    anim.Play("mainRoom");
-                    break;
-                }
-            case RoomStatus.PotRoom:
-                {
-                    bool potFull = CraftPotionManager.Instance.potFull;
-
-                    if(potFull)
+            switch(roomStatus)
+            {
+                case RoomStatus.Default:
                     {
-                        anim.Play("potRoom_potFull");
+                        craftPanel_anim.SetBool("potRoom", false);
+                        stateDrivenCamera_anim.Play("mainRoom");
+                        break;
                     }
-                    else
+                case RoomStatus.PotRoom:
                     {
-                        anim.Play("potRoom_default");
+                        if (potFull)
+                        {
+                            stateDrivenCamera_anim.Play("potRoom_potFull");
+                        }
+                        else
+                        {
+                            craftPanel_anim.SetBool("potRoom", true);
+                            stateDrivenCamera_anim.Play("potRoom_default");
+                        }
+                        break;
                     }
-                    break;
-                }
+            }
+            currentRoomStatus = roomStatus;
         }
+
+        ///CHECK POT FULL
+        if(potFull != CraftPotionManager.Instance.potFull)
+        {
+            if(runningPotFullCoroutine)
+            {
+                StopCoroutine("PotFullAnimationCoroutine");
+                runningPotFullCoroutine = false;
+            }
+
+            if(!CraftPotionManager.Instance.potFull)
+            {
+                StartCoroutine(PotFullAnimationCoroutine(false));
+            }
+            else
+            {
+                stateDrivenCamera_anim.Play("potRoom_potFull");
+                StartCoroutine(PotFullAnimationCoroutine(true));
+            }
+            potFull = CraftPotionManager.Instance.potFull;
+        }
+    }
+
+    IEnumerator PotFullAnimationCoroutine(bool _potfull)
+    {
+        runningPotFullCoroutine = true;
+
+        float timeElapsed = 0;
+        while(timeElapsed < potFullAnimationDuration)
+        {
+            if(_potfull)
+            {
+                float temp = Mathf.Lerp(0, 1, timeElapsed / potFullAnimationDuration);
+                craftPanel_anim.SetFloat("potFull", temp); 
+            }
+            else
+            {
+                float temp = Mathf.Lerp(1, 0, timeElapsed / potFullAnimationDuration);
+                craftPanel_anim.SetFloat("potFull", temp);
+            }
+            timeElapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        if(_potfull)
+        {
+            craftPanel_anim.SetFloat("potFull", 1);
+            craftButton_obj.SetActive(true);
+        }
+        else
+        {
+            craftPanel_anim.SetFloat("potFull", 0);
+            craftButton_obj.SetActive(false);
+        }
+
+        runningPotFullCoroutine = false;
     }
 }

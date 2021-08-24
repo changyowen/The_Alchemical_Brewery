@@ -20,7 +20,7 @@ public class CustomerQueueHandler : MonoBehaviour
 
     void Start()
     {
-        //GenerateQueueLocation();
+
     }
 
     public void AssignQueueLocation(GameObject counterPrefab, int queueIndex)

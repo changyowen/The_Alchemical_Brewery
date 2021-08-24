@@ -147,9 +147,17 @@ public class CraftPotionManager : MonoBehaviour
         {
             List<int> sortedPotIngredientList = new List<int>(potIngredientList);
 
-            //create new potion data
-            PotionData newPotionData = new PotionData();
-            potionDataHolder = newPotionData;
+            if (getPreviousFormular) //if its previous formular
+            {
+                //get back previous formular
+                potionDataHolder = PlayerProfile.acquiredPotion[previousFormularIndex];
+            }
+            else //if new formular
+            {
+                //create new potion data
+                PotionData newPotionData = new PotionData();
+                potionDataHolder = newPotionData;
+            }
 
             //assign potion formular into potion data 
             potionDataHolder.AssignListIntoFormular(sortedPotIngredientList);

@@ -1,0 +1,317 @@
+fileFormatVersion: 2
+guid: ae6b9fce6b6845a4ab4c4f7db19ded0d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8519741122866755507
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_0
+  - first:
+      213: 2224281266104900678
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_1
+  - first:
+      213: 365952347673448637
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_2
+  - first:
+      213: -9034698549594046828
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_3
+  - first:
+      213: -1732384008759314191
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_4
+  - first:
+      213: -5852701753195810421
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_5
+  - first:
+      213: -450751135838164835
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_6
+  - first:
+      213: 752780095284825339
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_7
+  - first:
+      213: -6916097809238991526
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_8
+  - first:
+      213: 3904059046164405672
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_9
+  - first:
+      213: 5060192867761692402
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_10
+  - first:
+      213: 8917580325807960945
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_11
+  - first:
+      213: -364040032886643087
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_12
+  - first:
+      213: 8297484899339141317
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_13
+  - first:
+      213: 8484169095865905453
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_14
+  - first:
+      213: -6730502082588835849
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_15
+  - first:
+      213: 7707484552643081730
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_16
+  - first:
+      213: -3167845080900353761
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_17
+  - first:
+      213: -1024584054905010457
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_18
+  - first:
+      213: -4588067997254968531
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_19
+  - first:
+      213: -8851959644876932609
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_20
+  - first:
+      213: 7730558763920280060
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_21
+  - first:
+      213: -7623748105748659592
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_22
+  - first:
+      213: 8860548900646191028
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_23
+  - first:
+      213: -5529942799433555090
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_24
+  - first:
+      213: 6039809658842187332
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_25
+  - first:
+      213: -6341972584200837888
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_26
+  - first:
+      213: 2305813394141019854
+    second: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d484d39969cc3c980800000000000000
+      internalID: -8519741122866755507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 37
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c1dbad60c3ede10800000000000000
+      internalID: 2224281266104900678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 37
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0dbc7a8bf141500800000000000000
+      internalID: 365952347673448637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_3
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 37
+        width: 129
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eb5ba798d4e9280800000000000000
+      internalID: -9034698549594046828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-ayurveda-five-elements-ayurveda-elements-782x168_4
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 37
+        width: 129
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8755f2ce555f7e0800000000000000
+      internalID: -1732384008759314191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 22f5982661173d94aaa38ff9b4dfaf3d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

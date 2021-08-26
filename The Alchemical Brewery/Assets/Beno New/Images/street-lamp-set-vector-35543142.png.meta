@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 6020e9fb800e92e43959d413f88e8cdd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3860864028628012898
+    second: street-lamp-set-vector-35543142_0
+  - first:
+      213: -3886699317427520009
+    second: street-lamp-set-vector-35543142_1
+  - first:
+      213: -5303963462020191849
+    second: street-lamp-set-vector-35543142_2
+  - first:
+      213: -3899379411735141734
+    second: street-lamp-set-vector-35543142_3
+  - first:
+      213: -8890392580152532423
+    second: street-lamp-set-vector-35543142_4
+  - first:
+      213: -2032225958219033017
+    second: street-lamp-set-vector-35543142_5
+  - first:
+      213: -2692816853900319978
+    second: street-lamp-set-vector-35543142_6
+  - first:
+      213: -4043101864996610254
+    second: street-lamp-set-vector-35543142_7
+  - first:
+      213: -514621218417979285
+    second: street-lamp-set-vector-35543142_8
+  - first:
+      213: 1051674865110842650
+    second: street-lamp-set-vector-35543142_9
+  - first:
+      213: -1414412840338103209
+    second: street-lamp-set-vector-35543142_10
+  - first:
+      213: 4856607492532569273
+    second: street-lamp-set-vector-35543142_11
+  - first:
+      213: -1113013194127421378
+    second: street-lamp-set-vector-35543142_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 805
+        width: 173
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e903b872f947b6ac0800000000000000
+      internalID: -3860864028628012898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 715
+        width: 202
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdbafb309baf0ac0800000000000000
+      internalID: -3886699317427520009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 728
+        width: 329
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799a2a835598466b0800000000000000
+      internalID: -5303963462020191849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_3
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 711
+        width: 251
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a922e07b51f92e9c0800000000000000
+      internalID: -3899379411735141734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_4
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 773
+        width: 252
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9326d3a3d0bfe9480800000000000000
+      internalID: -8890392580152532423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 190
+        height: 684
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746d60912451cc3e0800000000000000
+      internalID: -2032225958219033017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_7
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 111
+        width: 252
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f582a664404e7c0800000000000000
+      internalID: -4043101864996610254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_8
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 111
+        width: 254
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60515a7ab2bbd8f0800000000000000
+      internalID: -514621218417979285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 110
+        width: 80
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d7322c7bc489e00800000000000000
+      internalID: 1051674865110842650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_10
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 110
+        width: 126
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75465edf30ffe5ce0800000000000000
+      internalID: -1414412840338103209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street-lamp-set-vector-35543142_11
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 111
+        width: 117
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b487e578c2266340800000000000000
+      internalID: 4856607492532569273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3940fbfdc8e31174bbce7303a4b423f0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

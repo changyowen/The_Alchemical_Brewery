@@ -1,0 +1,6815 @@
+fileFormatVersion: 2
+guid: 44e8117c290f0c648a307c7217a3c134
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1247755375628971949
+    second: Beach Tileset_0
+  - first:
+      213: -8017782470245499802
+    second: Beach Tileset_1
+  - first:
+      213: -6493806035240140837
+    second: Beach Tileset_2
+  - first:
+      213: 963022203583916829
+    second: Beach Tileset_3
+  - first:
+      213: 2514113796980109696
+    second: Beach Tileset_4
+  - first:
+      213: 650242093127747380
+    second: Beach Tileset_5
+  - first:
+      213: 4955977291533208789
+    second: Beach Tileset_6
+  - first:
+      213: -6984408102193596951
+    second: Beach Tileset_7
+  - first:
+      213: -9116886050160221591
+    second: Beach Tileset_8
+  - first:
+      213: 6242262368041670247
+    second: Beach Tileset_9
+  - first:
+      213: -2485830216065932488
+    second: Beach Tileset_10
+  - first:
+      213: -9169353987702016659
+    second: Beach Tileset_11
+  - first:
+      213: 1104516357419074977
+    second: Beach Tileset_12
+  - first:
+      213: -599570560324280208
+    second: Beach Tileset_13
+  - first:
+      213: -1102034412001047519
+    second: Beach Tileset_14
+  - first:
+      213: 3702335334713406743
+    second: Beach Tileset_15
+  - first:
+      213: 5397962845868950397
+    second: Beach Tileset_16
+  - first:
+      213: -945707145439904012
+    second: Beach Tileset_17
+  - first:
+      213: 2820904379632562821
+    second: Beach Tileset_18
+  - first:
+      213: 223832741294406050
+    second: Beach Tileset_19
+  - first:
+      213: 3700096148910540730
+    second: Beach Tileset_20
+  - first:
+      213: -6324158820693874649
+    second: Beach Tileset_21
+  - first:
+      213: -1765493538055696334
+    second: Beach Tileset_22
+  - first:
+      213: -1533947089826053001
+    second: Beach Tileset_23
+  - first:
+      213: -6743665547223552599
+    second: Beach Tileset_24
+  - first:
+      213: -2273840551343214607
+    second: Beach Tileset_25
+  - first:
+      213: 7366471416023258483
+    second: Beach Tileset_26
+  - first:
+      213: -100707422744571513
+    second: Beach Tileset_27
+  - first:
+      213: 1237048894994152983
+    second: Beach Tileset_28
+  - first:
+      213: 1185754946759924425
+    second: Beach Tileset_29
+  - first:
+      213: 7177615686943416061
+    second: Beach Tileset_30
+  - first:
+      213: -468811634852653475
+    second: Beach Tileset_31
+  - first:
+      213: 4242004440515153872
+    second: Beach Tileset_32
+  - first:
+      213: 2579157708117906957
+    second: Beach Tileset_33
+  - first:
+      213: -6500107026419106264
+    second: Beach Tileset_34
+  - first:
+      213: 2018300950427473141
+    second: Beach Tileset_35
+  - first:
+      213: -2662311443174297607
+    second: Beach Tileset_36
+  - first:
+      213: 8429154728924766501
+    second: Beach Tileset_37
+  - first:
+      213: -8592778906119659950
+    second: Beach Tileset_38
+  - first:
+      213: -808628729797834080
+    second: Beach Tileset_39
+  - first:
+      213: -2372862538112197702
+    second: Beach Tileset_40
+  - first:
+      213: -6207321108901268031
+    second: Beach Tileset_41
+  - first:
+      213: -8381975906665817064
+    second: Beach Tileset_42
+  - first:
+      213: 4636430802461152970
+    second: Beach Tileset_43
+  - first:
+      213: 6071975584172540568
+    second: Beach Tileset_44
+  - first:
+      213: -7746328825947431874
+    second: Beach Tileset_45
+  - first:
+      213: 943094580741663356
+    second: Beach Tileset_46
+  - first:
+      213: 8047006828885317477
+    second: Beach Tileset_47
+  - first:
+      213: -3921183858965941631
+    second: Beach Tileset_48
+  - first:
+      213: 4553985993960930259
+    second: Beach Tileset_49
+  - first:
+      213: -6054005810999638104
+    second: Beach Tileset_50
+  - first:
+      213: -1408116596614733631
+    second: Beach Tileset_51
+  - first:
+      213: -3408655374091817844
+    second: Beach Tileset_52
+  - first:
+      213: -6785992952424940975
+    second: Beach Tileset_53
+  - first:
+      213: -6031631029026437244
+    second: Beach Tileset_54
+  - first:
+      213: 4447359013346071683
+    second: Beach Tileset_55
+  - first:
+      213: -3960186882470746657
+    second: Beach Tileset_56
+  - first:
+      213: -4879486193135807937
+    second: Beach Tileset_57
+  - first:
+      213: -8326094939028476980
+    second: Beach Tileset_58
+  - first:
+      213: 3931522444283000279
+    second: Beach Tileset_59
+  - first:
+      213: 1553618086170674556
+    second: Beach Tileset_60
+  - first:
+      213: 6501226396928856010
+    second: Beach Tileset_61
+  - first:
+      213: -638900553366178301
+    second: Beach Tileset_62
+  - first:
+      213: -861479371854620282
+    second: Beach Tileset_63
+  - first:
+      213: 1119469646186137333
+    second: Beach Tileset_64
+  - first:
+      213: 5300661093103436280
+    second: Beach Tileset_65
+  - first:
+      213: 4213674454473910721
+    second: Beach Tileset_66
+  - first:
+      213: -6472261148856213760
+    second: Beach Tileset_67
+  - first:
+      213: 3126585716003654794
+    second: Beach Tileset_68
+  - first:
+      213: 7952372326685262545
+    second: Beach Tileset_69
+  - first:
+      213: -5581330967464123243
+    second: Beach Tileset_70
+  - first:
+      213: -6729656313509288479
+    second: Beach Tileset_71
+  - first:
+      213: 4155224965484512116
+    second: Beach Tileset_72
+  - first:
+      213: 7602968327517032502
+    second: Beach Tileset_73
+  - first:
+      213: 4963371744694327673
+    second: Beach Tileset_74
+  - first:
+      213: 3091456095280179312
+    second: Beach Tileset_75
+  - first:
+      213: 909809305659652693
+    second: Beach Tileset_76
+  - first:
+      213: 8785332320520746446
+    second: Beach Tileset_77
+  - first:
+      213: -5039253486257615098
+    second: Beach Tileset_78
+  - first:
+      213: -2501863694988331760
+    second: Beach Tileset_79
+  - first:
+      213: 8901452231232133759
+    second: Beach Tileset_80
+  - first:
+      213: 2013543680781572380
+    second: Beach Tileset_81
+  - first:
+      213: -3184618645006546740
+    second: Beach Tileset_82
+  - first:
+      213: 7513564948108246570
+    second: Beach Tileset_83
+  - first:
+      213: 6664873481733160475
+    second: Beach Tileset_84
+  - first:
+      213: -296256191507738832
+    second: Beach Tileset_85
+  - first:
+      213: 9033807982520814907
+    second: Beach Tileset_86
+  - first:
+      213: -6223030204995061453
+    second: Beach Tileset_87
+  - first:
+      213: 8458997201049557679
+    second: Beach Tileset_88
+  - first:
+      213: 3018039651033341452
+    second: Beach Tileset_89
+  - first:
+      213: -8723233511914655830
+    second: Beach Tileset_90
+  - first:
+      213: 7156122600580794409
+    second: Beach Tileset_91
+  - first:
+      213: -1363281525351691992
+    second: Beach Tileset_92
+  - first:
+      213: 8021370919367412642
+    second: Beach Tileset_93
+  - first:
+      213: -731333776253274886
+    second: Beach Tileset_94
+  - first:
+      213: -6738835793506572620
+    second: Beach Tileset_95
+  - first:
+      213: -2389010253719824344
+    second: Beach Tileset_96
+  - first:
+      213: -7669715150030317042
+    second: Beach Tileset_97
+  - first:
+      213: 5160005233607421585
+    second: Beach Tileset_98
+  - first:
+      213: 4422889469419874343
+    second: Beach Tileset_99
+  - first:
+      213: 3500320722497458404
+    second: Beach Tileset_100
+  - first:
+      213: 877701395669393743
+    second: Beach Tileset_101
+  - first:
+      213: 646136492617941533
+    second: Beach Tileset_102
+  - first:
+      213: 433606315786648493
+    second: Beach Tileset_103
+  - first:
+      213: 938897557630775838
+    second: Beach Tileset_104
+  - first:
+      213: 4214785672365361539
+    second: Beach Tileset_105
+  - first:
+      213: -3478966630642136484
+    second: Beach Tileset_106
+  - first:
+      213: -8363570386765250324
+    second: Beach Tileset_107
+  - first:
+      213: 3189981219445867702
+    second: Beach Tileset_108
+  - first:
+      213: 2212105475335894801
+    second: Beach Tileset_109
+  - first:
+      213: -4098594154102450209
+    second: Beach Tileset_110
+  - first:
+      213: 6272325845399114808
+    second: Beach Tileset_111
+  - first:
+      213: 4873799471734635413
+    second: Beach Tileset_112
+  - first:
+      213: 3170432953374607841
+    second: Beach Tileset_113
+  - first:
+      213: 2296574394791508214
+    second: Beach Tileset_114
+  - first:
+      213: -2253565218841194736
+    second: Beach Tileset_115
+  - first:
+      213: -4358066361063787395
+    second: Beach Tileset_116
+  - first:
+      213: 3159842256430837105
+    second: Beach Tileset_117
+  - first:
+      213: -3945735966719708028
+    second: Beach Tileset_118
+  - first:
+      213: 695914441842373859
+    second: Beach Tileset_119
+  - first:
+      213: -5126151848797592867
+    second: Beach Tileset_120
+  - first:
+      213: 2636813275430306737
+    second: Beach Tileset_121
+  - first:
+      213: 8913507888797167802
+    second: Beach Tileset_122
+  - first:
+      213: 5333526289378560765
+    second: Beach Tileset_123
+  - first:
+      213: -6512014996964946630
+    second: Beach Tileset_124
+  - first:
+      213: -7695073033855369185
+    second: Beach Tileset_125
+  - first:
+      213: -2234492247411963752
+    second: Beach Tileset_126
+  - first:
+      213: -8455229004957660921
+    second: Beach Tileset_127
+  - first:
+      213: 4745164075893237228
+    second: Beach Tileset_128
+  - first:
+      213: -4869096541027257295
+    second: Beach Tileset_129
+  - first:
+      213: -1736505050527410835
+    second: Beach Tileset_130
+  - first:
+      213: -5768816350369250306
+    second: Beach Tileset_131
+  - first:
+      213: -1958349857476814951
+    second: Beach Tileset_132
+  - first:
+      213: 2061806380353623743
+    second: Beach Tileset_133
+  - first:
+      213: 8435364164712880226
+    second: Beach Tileset_134
+  - first:
+      213: -3293263855861649711
+    second: Beach Tileset_135
+  - first:
+      213: 7254480605263596970
+    second: Beach Tileset_136
+  - first:
+      213: -3160550627261998652
+    second: Beach Tileset_137
+  - first:
+      213: 813560835300348851
+    second: Beach Tileset_138
+  - first:
+      213: -9140129341592571516
+    second: Beach Tileset_139
+  - first:
+      213: 2883911032566107014
+    second: Beach Tileset_140
+  - first:
+      213: 5033548787242154475
+    second: Beach Tileset_141
+  - first:
+      213: -7223321956910664853
+    second: Beach Tileset_142
+  - first:
+      213: 2998970089812513631
+    second: Beach Tileset_143
+  - first:
+      213: -8857611872719331970
+    second: Beach Tileset_144
+  - first:
+      213: 115343419915143665
+    second: Beach Tileset_145
+  - first:
+      213: 5559060049612696124
+    second: Beach Tileset_146
+  - first:
+      213: 6250736073245541220
+    second: Beach Tileset_147
+  - first:
+      213: 7931618149255396375
+    second: Beach Tileset_148
+  - first:
+      213: -692434536910367910
+    second: Beach Tileset_149
+  - first:
+      213: 5390077437205571536
+    second: Beach Tileset_150
+  - first:
+      213: 675416866979756606
+    second: Beach Tileset_151
+  - first:
+      213: 51266545753903798
+    second: Beach Tileset_152
+  - first:
+      213: -8558039471693712385
+    second: Beach Tileset_153
+  - first:
+      213: -2061244537092480550
+    second: Beach Tileset_154
+  - first:
+      213: -8340757309602431963
+    second: Beach Tileset_155
+  - first:
+      213: -7876553303983004062
+    second: Beach Tileset_156
+  - first:
+      213: -7343049178475100457
+    second: Beach Tileset_157
+  - first:
+      213: 1805426194091300468
+    second: Beach Tileset_158
+  - first:
+      213: -6943787673786031124
+    second: Beach Tileset_159
+  - first:
+      213: 1881333938752917364
+    second: Beach Tileset_160
+  - first:
+      213: -6466391172284196135
+    second: Beach Tileset_161
+  - first:
+      213: -4734172227164482022
+    second: Beach Tileset_162
+  - first:
+      213: -2638155869447558100
+    second: Beach Tileset_163
+  - first:
+      213: 1182681872412783268
+    second: Beach Tileset_164
+  - first:
+      213: -6118876942939256917
+    second: Beach Tileset_165
+  - first:
+      213: 6176068088443102076
+    second: Beach Tileset_166
+  - first:
+      213: 1030293284243452216
+    second: Beach Tileset_167
+  - first:
+      213: -9144863864860784095
+    second: Beach Tileset_168
+  - first:
+      213: -7879958259240696387
+    second: Beach Tileset_169
+  - first:
+      213: 5277436185081827848
+    second: Beach Tileset_170
+  - first:
+      213: 3921100509947277805
+    second: Beach Tileset_171
+  - first:
+      213: -6373670683174970082
+    second: Beach Tileset_172
+  - first:
+      213: 9006568192397271470
+    second: Beach Tileset_173
+  - first:
+      213: -8616034124295108303
+    second: Beach Tileset_174
+  - first:
+      213: -3521880632173738361
+    second: Beach Tileset_175
+  - first:
+      213: -2557516409850864439
+    second: Beach Tileset_176
+  - first:
+      213: -7050321312397678628
+    second: Beach Tileset_177
+  - first:
+      213: -4614504680057392210
+    second: Beach Tileset_178
+  - first:
+      213: -2555417716444875312
+    second: Beach Tileset_179
+  - first:
+      213: -6350652755122286428
+    second: Beach Tileset_180
+  - first:
+      213: -3629300003512383099
+    second: Beach Tileset_181
+  - first:
+      213: -6166708317681943811
+    second: Beach Tileset_182
+  - first:
+      213: -5645207429807712962
+    second: Beach Tileset_183
+  - first:
+      213: -1744972976781530758
+    second: Beach Tileset_184
+  - first:
+      213: 4974243733100364818
+    second: Beach Tileset_185
+  - first:
+      213: 2178483582786102176
+    second: Beach Tileset_186
+  - first:
+      213: -3393759317602343947
+    second: Beach Tileset_187
+  - first:
+      213: 2972616064828550202
+    second: Beach Tileset_188
+  - first:
+      213: -4834998677750207623
+    second: Beach Tileset_189
+  - first:
+      213: 8381985019612589326
+    second: Beach Tileset_190
+  - first:
+      213: 1685655443493460489
+    second: Beach Tileset_191
+  - first:
+      213: -7966871459489176144
+    second: Beach Tileset_192
+  - first:
+      213: 2457411138447847014
+    second: Beach Tileset_193
+  - first:
+      213: -7197153538646213275
+    second: Beach Tileset_194
+  - first:
+      213: 5571730707710385009
+    second: Beach Tileset_195
+  - first:
+      213: 6142072147841478393
+    second: Beach Tileset_196
+  - first:
+      213: 8574239518548623648
+    second: Beach Tileset_197
+  - first:
+      213: 591157070284115444
+    second: Beach Tileset_198
+  - first:
+      213: 8896367167087714165
+    second: Beach Tileset_199
+  - first:
+      213: 1992029873507202310
+    second: Beach Tileset_200
+  - first:
+      213: -5462929369532057647
+    second: Beach Tileset_201
+  - first:
+      213: -7550990396636565726
+    second: Beach Tileset_202
+  - first:
+      213: 5929493222582864241
+    second: Beach Tileset_203
+  - first:
+      213: -141569913914805098
+    second: Beach Tileset_204
+  - first:
+      213: 820354957383572485
+    second: Beach Tileset_205
+  - first:
+      213: -3608420464241412865
+    second: Beach Tileset_206
+  - first:
+      213: -7585676155886877265
+    second: Beach Tileset_207
+  - first:
+      213: -2440185982797653758
+    second: Beach Tileset_208
+  - first:
+      213: -4178545127522614674
+    second: Beach Tileset_209
+  - first:
+      213: 3870375211799922058
+    second: Beach Tileset_210
+  - first:
+      213: -1211202606599397345
+    second: Beach Tileset_211
+  - first:
+      213: -3632415606411199780
+    second: Beach Tileset_212
+  - first:
+      213: -1509946704226251331
+    second: Beach Tileset_213
+  - first:
+      213: 1103087140949938335
+    second: Beach Tileset_214
+  - first:
+      213: -4051582266073785434
+    second: Beach Tileset_215
+  - first:
+      213: 1985225783052341945
+    second: Beach Tileset_216
+  - first:
+      213: -2736282479237043643
+    second: Beach Tileset_217
+  - first:
+      213: 7100762638007039873
+    second: Beach Tileset_218
+  - first:
+      213: -2905967273165215270
+    second: Beach Tileset_219
+  - first:
+      213: -1916472475323330992
+    second: Beach Tileset_220
+  - first:
+      213: 1849564171630293979
+    second: Beach Tileset_221
+  - first:
+      213: 4602258180832467785
+    second: Beach Tileset_222
+  - first:
+      213: 6433116294621757709
+    second: Beach Tileset_223
+  - first:
+      213: 8080828927426798431
+    second: Beach Tileset_224
+  - first:
+      213: 2148115941603579327
+    second: Beach Tileset_225
+  - first:
+      213: -5812875324349629817
+    second: Beach Tileset_226
+  - first:
+      213: -8403793799510319263
+    second: Beach Tileset_227
+  - first:
+      213: 7527196459048125949
+    second: Beach Tileset_228
+  - first:
+      213: 1041861411807833603
+    second: Beach Tileset_229
+  - first:
+      213: 4687202125109106788
+    second: Beach Tileset_230
+  - first:
+      213: -2490951720148280668
+    second: Beach Tileset_231
+  - first:
+      213: -5741148851440529366
+    second: Beach Tileset_232
+  - first:
+      213: -7094657280700412758
+    second: Beach Tileset_233
+  - first:
+      213: -311922188529939768
+    second: Beach Tileset_234
+  - first:
+      213: 7789600125616157113
+    second: Beach Tileset_235
+  - first:
+      213: -1701402937187348607
+    second: Beach Tileset_236
+  - first:
+      213: -6261481271450423185
+    second: Beach Tileset_237
+  - first:
+      213: -4722983130745948089
+    second: Beach Tileset_238
+  - first:
+      213: -3512466847751813124
+    second: Beach Tileset_239
+  - first:
+      213: -8631768509168055326
+    second: Beach Tileset_240
+  - first:
+      213: -5357278770851486290
+    second: Beach Tileset_241
+  - first:
+      213: 7448043666935345847
+    second: Beach Tileset_242
+  - first:
+      213: -3420043190694436838
+    second: Beach Tileset_243
+  - first:
+      213: 5403588710006891216
+    second: Beach Tileset_244
+  - first:
+      213: 1128905619698613421
+    second: Beach Tileset_245
+  - first:
+      213: 3283845241108679538
+    second: Beach Tileset_246
+  - first:
+      213: 5775477486141638291
+    second: Beach Tileset_247
+  - first:
+      213: -613955569541759725
+    second: Beach Tileset_248
+  - first:
+      213: 1911974531857312842
+    second: Beach Tileset_249
+  - first:
+      213: 6071380472260080656
+    second: Beach Tileset_250
+  - first:
+      213: 4736560363222393558
+    second: Beach Tileset_251
+  - first:
+      213: 3689414696218499405
+    second: Beach Tileset_252
+  - first:
+      213: 2661495569917058716
+    second: Beach Tileset_253
+  - first:
+      213: -7563864137814467117
+    second: Beach Tileset_254
+  - first:
+      213: 228805291256655194
+    second: Beach Tileset_255
+  - first:
+      213: 5638271158531827256
+    second: Beach Tileset_256
+  - first:
+      213: -2676311548856557419
+    second: Beach Tileset_257
+  - first:
+      213: 4274686593569156407
+    second: Beach Tileset_258
+  - first:
+      213: -7611219820273403470
+    second: Beach Tileset_259
+  - first:
+      213: -5641221682375607836
+    second: Beach Tileset_260
+  - first:
+      213: -5938443492664558725
+    second: Beach Tileset_261
+  - first:
+      213: 903375285650318563
+    second: Beach Tileset_262
+  - first:
+      213: 6217856882238982500
+    second: Beach Tileset_263
+  - first:
+      213: 7534967812746962132
+    second: Beach Tileset_264
+  - first:
+      213: 293991880956296493
+    second: Beach Tileset_265
+  - first:
+      213: -8763188785757674005
+    second: Beach Tileset_266
+  - first:
+      213: 3019722046831713621
+    second: Beach Tileset_267
+  - first:
+      213: -2661039109152873226
+    second: Beach Tileset_268
+  - first:
+      213: 8813711021934713570
+    second: Beach Tileset_269
+  - first:
+      213: -7672328283024206967
+    second: Beach Tileset_270
+  - first:
+      213: -112379304336467304
+    second: Beach Tileset_271
+  - first:
+      213: 6288474830641540843
+    second: Beach Tileset_272
+  - first:
+      213: 7081102238431778525
+    second: Beach Tileset_273
+  - first:
+      213: -6546910760121153076
+    second: Beach Tileset_274
+  - first:
+      213: -5814455369034189122
+    second: Beach Tileset_275
+  - first:
+      213: -5278556487582850270
+    second: Beach Tileset_276
+  - first:
+      213: 2485373037958067317
+    second: Beach Tileset_277
+  - first:
+      213: -1355054742026292217
+    second: Beach Tileset_278
+  - first:
+      213: -8151576908101427104
+    second: Beach Tileset_279
+  - first:
+      213: -2147790930997850448
+    second: Beach Tileset_280
+  - first:
+      213: -7706897684214253732
+    second: Beach Tileset_281
+  - first:
+      213: 8824828820568245429
+    second: Beach Tileset_282
+  - first:
+      213: -1458716263719147927
+    second: Beach Tileset_283
+  - first:
+      213: 6156372559214973168
+    second: Beach Tileset_284
+  - first:
+      213: 492700871964448653
+    second: Beach Tileset_285
+  - first:
+      213: 6658280573647703984
+    second: Beach Tileset_286
+  - first:
+      213: 6199722927656143000
+    second: Beach Tileset_287
+  - first:
+      213: 5911804346245316010
+    second: Beach Tileset_288
+  - first:
+      213: -865750626136256317
+    second: Beach Tileset_289
+  - first:
+      213: -8881453895528741362
+    second: Beach Tileset_290
+  - first:
+      213: 8295936291101517649
+    second: Beach Tileset_291
+  - first:
+      213: 2755597581367299179
+    second: Beach Tileset_292
+  - first:
+      213: 7136427231393947336
+    second: Beach Tileset_293
+  - first:
+      213: -2446739783467323660
+    second: Beach Tileset_294
+  - first:
+      213: -2033648453378060814
+    second: Beach Tileset_295
+  - first:
+      213: 793610759613917129
+    second: Beach Tileset_296
+  - first:
+      213: -8593097354887727358
+    second: Beach Tileset_297
+  - first:
+      213: -1856060525806409190
+    second: Beach Tileset_298
+  - first:
+      213: 2367155618467821739
+    second: Beach Tileset_299
+  - first:
+      213: 1691692451373240168
+    second: Beach Tileset_300
+  - first:
+      213: 6214823265016585629
+    second: Beach Tileset_301
+  - first:
+      213: -7536607895943592544
+    second: Beach Tileset_302
+  - first:
+      213: 2672539865176975869
+    second: Beach Tileset_303
+  - first:
+      213: -4857629205006800537
+    second: Beach Tileset_304
+  - first:
+      213: 1724060276850167430
+    second: Beach Tileset_305
+  - first:
+      213: 5386405647880454161
+    second: Beach Tileset_306
+  - first:
+      213: -6884982272747373323
+    second: Beach Tileset_307
+  - first:
+      213: 6250773948526619146
+    second: Beach Tileset_308
+  - first:
+      213: 7755380417325079220
+    second: Beach Tileset_309
+  - first:
+      213: -8637314307546287700
+    second: Beach Tileset_310
+  - first:
+      213: -1402986101307899013
+    second: Beach Tileset_311
+  - first:
+      213: 632058941010250606
+    second: Beach Tileset_312
+  - first:
+      213: 4886189742993945732
+    second: Beach Tileset_313
+  - first:
+      213: -1055492129890617016
+    second: Beach Tileset_314
+  - first:
+      213: -413629193947916942
+    second: Beach Tileset_315
+  - first:
+      213: -4735363127734864208
+    second: Beach Tileset_316
+  - first:
+      213: -1189890399968434384
+    second: Beach Tileset_317
+  - first:
+      213: 1313083360251918645
+    second: Beach Tileset_318
+  - first:
+      213: -1296885371883897573
+    second: Beach Tileset_319
+  - first:
+      213: -9056251244048972805
+    second: Beach Tileset_320
+  - first:
+      213: 6636329880998928810
+    second: Beach Tileset_321
+  - first:
+      213: -6980184726164529119
+    second: Beach Tileset_322
+  - first:
+      213: 784467361373616408
+    second: Beach Tileset_323
+  - first:
+      213: 8422553507329479446
+    second: Beach Tileset_324
+  - first:
+      213: -9222977404374879686
+    second: Beach Tileset_325
+  - first:
+      213: 1736566297707843425
+    second: Beach Tileset_326
+  - first:
+      213: 1741590334453732125
+    second: Beach Tileset_327
+  - first:
+      213: -4480337082413093571
+    second: Beach Tileset_328
+  - first:
+      213: 46556683076252428
+    second: Beach Tileset_329
+  - first:
+      213: 8637689061539679790
+    second: Beach Tileset_330
+  - first:
+      213: -1908636774812536462
+    second: Beach Tileset_331
+  - first:
+      213: 2386878015756624171
+    second: Beach Tileset_332
+  - first:
+      213: -4784419172526419676
+    second: Beach Tileset_333
+  - first:
+      213: 2577160562620396698
+    second: Beach Tileset_334
+  - first:
+      213: 6621139307062063762
+    second: Beach Tileset_335
+  - first:
+      213: -8699352205823178893
+    second: Beach Tileset_336
+  - first:
+      213: 8136210185558822436
+    second: Beach Tileset_337
+  - first:
+      213: 3456763057862477597
+    second: Beach Tileset_338
+  - first:
+      213: 2171589547543534705
+    second: Beach Tileset_339
+  - first:
+      213: 3399312516770388216
+    second: Beach Tileset_340
+  - first:
+      213: -2182137217312250097
+    second: Beach Tileset_341
+  - first:
+      213: 3645137031349363082
+    second: Beach Tileset_342
+  - first:
+      213: 4036909314109237775
+    second: Beach Tileset_343
+  - first:
+      213: 8459925583333029416
+    second: Beach Tileset_344
+  - first:
+      213: 6009843685798461468
+    second: Beach Tileset_345
+  - first:
+      213: -2193058301051127215
+    second: Beach Tileset_346
+  - first:
+      213: -9051973209291198138
+    second: Beach Tileset_347
+  - first:
+      213: -5443241192985050559
+    second: Beach Tileset_348
+  - first:
+      213: 7411631729669830268
+    second: Beach Tileset_349
+  - first:
+      213: -507010009657758096
+    second: Beach Tileset_350
+  - first:
+      213: -8685682515404274935
+    second: Beach Tileset_351
+  - first:
+      213: -5505331479835135407
+    second: Beach Tileset_352
+  - first:
+      213: 6604756111922245654
+    second: Beach Tileset_353
+  - first:
+      213: -1320831734098794532
+    second: Beach Tileset_354
+  - first:
+      213: 4966187595875195827
+    second: Beach Tileset_355
+  - first:
+      213: 4310153559574575442
+    second: Beach Tileset_356
+  - first:
+      213: 3820651292293010847
+    second: Beach Tileset_357
+  - first:
+      213: -5137950925459732067
+    second: Beach Tileset_358
+  - first:
+      213: -8444631620140785260
+    second: Beach Tileset_359
+  - first:
+      213: -7139192155229748081
+    second: Beach Tileset_360
+  - first:
+      213: -4691152840429373321
+    second: Beach Tileset_361
+  - first:
+      213: -8303787766163107175
+    second: Beach Tileset_362
+  - first:
+      213: -1143215370041952750
+    second: Beach Tileset_363
+  - first:
+      213: 1715558763644131847
+    second: Beach Tileset_364
+  - first:
+      213: 3930925224340484446
+    second: Beach Tileset_365
+  - first:
+      213: -8239873684841005847
+    second: Beach Tileset_366
+  - first:
+      213: -5610583523626185754
+    second: Beach Tileset_367
+  - first:
+      213: -8168883255826000032
+    second: Beach Tileset_368
+  - first:
+      213: 4802864252269836870
+    second: Beach Tileset_369
+  - first:
+      213: -2702487777057148649
+    second: Beach Tileset_370
+  - first:
+      213: -8039820701016038949
+    second: Beach Tileset_371
+  - first:
+      213: 7365018730972827174
+    second: Beach Tileset_372
+  - first:
+      213: 5260999070692141218
+    second: Beach Tileset_373
+  - first:
+      213: 8787415370035704575
+    second: Beach Tileset_374
+  - first:
+      213: 2141526855164648106
+    second: Beach Tileset_375
+  - first:
+      213: 6162509723799153190
+    second: Beach Tileset_376
+  - first:
+      213: -8527050957819907250
+    second: Beach Tileset_377
+  - first:
+      213: 6913164764664025377
+    second: Beach Tileset_378
+  - first:
+      213: 6121734462555104582
+    second: Beach Tileset_379
+  - first:
+      213: 266048980996967131
+    second: Beach Tileset_380
+  - first:
+      213: -1524205123610995629
+    second: Beach Tileset_381
+  - first:
+      213: 5699543264980253692
+    second: Beach Tileset_382
+  - first:
+      213: -2289487471701759724
+    second: Beach Tileset_383
+  - first:
+      213: -4406443795127318561
+    second: Beach Tileset_384
+  - first:
+      213: -4947317011555048684
+    second: Beach Tileset_385
+  - first:
+      213: -3288063875454548147
+    second: Beach Tileset_386
+  - first:
+      213: -2138788343759200471
+    second: Beach Tileset_387
+  - first:
+      213: 3907710516508423367
+    second: Beach Tileset_388
+  - first:
+      213: -3453752454951010336
+    second: Beach Tileset_389
+  - first:
+      213: -401156553110481923
+    second: Beach Tileset_390
+  - first:
+      213: 8189940455754134970
+    second: Beach Tileset_391
+  - first:
+      213: 1189720647778285000
+    second: Beach Tileset_392
+  - first:
+      213: -9112778643402575977
+    second: Beach Tileset_393
+  - first:
+      213: -4587933384846586943
+    second: Beach Tileset_394
+  - first:
+      213: -5415841011654882460
+    second: Beach Tileset_395
+  - first:
+      213: -4218735762197066165
+    second: Beach Tileset_396
+  - first:
+      213: -8928713702681680006
+    second: Beach Tileset_397
+  - first:
+      213: -7089858232842776346
+    second: Beach Tileset_398
+  - first:
+      213: 4012423483262656565
+    second: Beach Tileset_399
+  - first:
+      213: 4009138469168106496
+    second: Beach Tileset_400
+  - first:
+      213: -5318046420130622452
+    second: Beach Tileset_401
+  - first:
+      213: -3892837206509058276
+    second: Beach Tileset_402
+  - first:
+      213: -1041770144914715704
+    second: Beach Tileset_403
+  - first:
+      213: -6919323382967252578
+    second: Beach Tileset_404
+  - first:
+      213: -5527231659934972322
+    second: Beach Tileset_405
+  - first:
+      213: 9146132349361835789
+    second: Beach Tileset_406
+  - first:
+      213: -1471276978801375957
+    second: Beach Tileset_407
+  - first:
+      213: 6931830968414455038
+    second: Beach Tileset_408
+  - first:
+      213: -6866028162443308917
+    second: Beach Tileset_409
+  - first:
+      213: 8417945872511605376
+    second: Beach Tileset_410
+  - first:
+      213: -486955955601984051
+    second: Beach Tileset_411
+  - first:
+      213: -5029679886331778659
+    second: Beach Tileset_412
+  - first:
+      213: 8865027774376304542
+    second: Beach Tileset_413
+  - first:
+      213: 8989168516381985839
+    second: Beach Tileset_414
+  - first:
+      213: -2560776307396605333
+    second: Beach Tileset_415
+  - first:
+      213: 4975961762165871135
+    second: Beach Tileset_416
+  - first:
+      213: -6943805611264351670
+    second: Beach Tileset_417
+  - first:
+      213: -1106727818314635055
+    second: Beach Tileset_418
+  - first:
+      213: 8387743186237803044
+    second: Beach Tileset_419
+  - first:
+      213: 8488884164066945744
+    second: Beach Tileset_420
+  - first:
+      213: -5161349539517704473
+    second: Beach Tileset_421
+  - first:
+      213: 6404238838775065834
+    second: Beach Tileset_422
+  - first:
+      213: 6766301420837298647
+    second: Beach Tileset_423
+  - first:
+      213: -4697039363337789520
+    second: Beach Tileset_424
+  - first:
+      213: 2234994398397619939
+    second: Beach Tileset_425
+  - first:
+      213: 7097919323083526086
+    second: Beach Tileset_426
+  - first:
+      213: -7334968673361442249
+    second: Beach Tileset_427
+  - first:
+      213: 8852483396028126138
+    second: Beach Tileset_428
+  - first:
+      213: 4022558663389427497
+    second: Beach Tileset_429
+  - first:
+      213: 2232867265176337587
+    second: Beach Tileset_430
+  - first:
+      213: 461125550165501269
+    second: Beach Tileset_431
+  - first:
+      213: -5072205182482250497
+    second: Beach Tileset_432
+  - first:
+      213: -7622935281283811727
+    second: Beach Tileset_433
+  - first:
+      213: 514366066509369587
+    second: Beach Tileset_434
+  - first:
+      213: 5203095440127036806
+    second: Beach Tileset_435
+  - first:
+      213: 4294671949232358456
+    second: Beach Tileset_436
+  - first:
+      213: -6290236074797864877
+    second: Beach Tileset_437
+  - first:
+      213: -3646556747108599431
+    second: Beach Tileset_438
+  - first:
+      213: 2033644510734743294
+    second: Beach Tileset_439
+  - first:
+      213: 3125421268292962032
+    second: Beach Tileset_440
+  - first:
+      213: 1695144243503295433
+    second: Beach Tileset_441
+  - first:
+      213: 2268993584094417437
+    second: Beach Tileset_442
+  - first:
+      213: -5413922915052984937
+    second: Beach Tileset_443
+  - first:
+      213: 3662031194482391154
+    second: Beach Tileset_444
+  - first:
+      213: 7063940391483966783
+    second: Beach Tileset_445
+  - first:
+      213: 760790070265491638
+    second: Beach Tileset_446
+  - first:
+      213: -4912936226960906686
+    second: Beach Tileset_447
+  - first:
+      213: 3539597986394852123
+    second: Beach Tileset_448
+  - first:
+      213: -1452314567987241540
+    second: Beach Tileset_449
+  - first:
+      213: 8531491863027120799
+    second: Beach Tileset_450
+  - first:
+      213: 4706407909541866123
+    second: Beach Tileset_451
+  - first:
+      213: 7379773728280212178
+    second: Beach Tileset_452
+  - first:
+      213: -4777852223242792089
+    second: Beach Tileset_453
+  - first:
+      213: 4930847153771381543
+    second: Beach Tileset_454
+  - first:
+      213: 8044317689367900381
+    second: Beach Tileset_455
+  - first:
+      213: 4502330315568842015
+    second: Beach Tileset_456
+  - first:
+      213: -4913613898343198971
+    second: Beach Tileset_457
+  - first:
+      213: 5660993820728001578
+    second: Beach Tileset_458
+  - first:
+      213: -2242317622089058346
+    second: Beach Tileset_459
+  - first:
+      213: 3137884506649683245
+    second: Beach Tileset_460
+  - first:
+      213: -3218560021188637868
+    second: Beach Tileset_461
+  - first:
+      213: -4219911719337900184
+    second: Beach Tileset_462
+  - first:
+      213: -4655209907139618421
+    second: Beach Tileset_463
+  - first:
+      213: 2530766298504723320
+    second: Beach Tileset_464
+  - first:
+      213: -4897872535799161614
+    second: Beach Tileset_465
+  - first:
+      213: 3658189159118388530
+    second: Beach Tileset_466
+  - first:
+      213: 4018418930554083305
+    second: Beach Tileset_467
+  - first:
+      213: -1237335452312849996
+    second: Beach Tileset_468
+  - first:
+      213: 3162114817986157447
+    second: Beach Tileset_469
+  - first:
+      213: -1449137569620256532
+    second: Beach Tileset_470
+  - first:
+      213: 4962721171170314020
+    second: Beach Tileset_471
+  - first:
+      213: 2818054232662931951
+    second: Beach Tileset_472
+  - first:
+      213: 4485232935014404916
+    second: Beach Tileset_473
+  - first:
+      213: -1865150101094161488
+    second: Beach Tileset_474
+  - first:
+      213: 5128451201637832419
+    second: Beach Tileset_475
+  - first:
+      213: 5398581358360909163
+    second: Beach Tileset_476
+  - first:
+      213: -3596592046817558921
+    second: Beach Tileset_477
+  - first:
+      213: -7711174839776003076
+    second: Beach Tileset_478
+  - first:
+      213: -5665862676652312490
+    second: Beach Tileset_479
+  - first:
+      213: -390576283299376032
+    second: Beach Tileset_480
+  - first:
+      213: -2484122935433584994
+    second: Beach Tileset_481
+  - first:
+      213: -4364490745798399376
+    second: Beach Tileset_482
+  - first:
+      213: -8085939798305392442
+    second: Beach Tileset_483
+  - first:
+      213: 5093998394893343195
+    second: Beach Tileset_484
+  - first:
+      213: 135015807930328355
+    second: Beach Tileset_485
+  - first:
+      213: 8819365317561872038
+    second: Beach Tileset_486
+  - first:
+      213: -8642772651085989249
+    second: Beach Tileset_487
+  - first:
+      213: 8166809707653565512
+    second: Beach Tileset_488
+  - first:
+      213: -2370316962933264018
+    second: Beach Tileset_489
+  - first:
+      213: 1747725125438141507
+    second: Beach Tileset_490
+  - first:
+      213: -2152040216262514788
+    second: Beach Tileset_491
+  - first:
+      213: -8103183285013964419
+    second: Beach Tileset_492
+  - first:
+      213: -3536412734168209800
+    second: Beach Tileset_493
+  - first:
+      213: -7308130508499891907
+    second: Beach Tileset_494
+  - first:
+      213: -716980666647231138
+    second: Beach Tileset_495
+  - first:
+      213: 1633609464692639231
+    second: Beach Tileset_496
+  - first:
+      213: 2577166115086426159
+    second: Beach Tileset_497
+  - first:
+      213: 811095823955481394
+    second: Beach Tileset_498
+  - first:
+      213: -5234334010021457580
+    second: Beach Tileset_499
+  - first:
+      213: 1934183187805824802
+    second: Beach Tileset_500
+  - first:
+      213: -6625618735005777736
+    second: Beach Tileset_501
+  - first:
+      213: 4702437120639230226
+    second: Beach Tileset_502
+  - first:
+      213: -1665545637203017036
+    second: Beach Tileset_503
+  - first:
+      213: -6823150090833534716
+    second: Beach Tileset_504
+  - first:
+      213: 1974504337538703732
+    second: Beach Tileset_505
+  - first:
+      213: -5530405009643805100
+    second: Beach Tileset_506
+  - first:
+      213: 2221900373630628139
+    second: Beach Tileset_507
+  - first:
+      213: -2631776763277570260
+    second: Beach Tileset_508
+  - first:
+      213: -3700890821891965131
+    second: Beach Tileset_509
+  - first:
+      213: -6087978058211614071
+    second: Beach Tileset_510
+  - first:
+      213: 858484197049364390
+    second: Beach Tileset_511
+  - first:
+      213: 4464241325143259541
+    second: Beach Tileset_512
+  - first:
+      213: 6439352711263651441
+    second: Beach Tileset_513
+  - first:
+      213: -6045677313331656510
+    second: Beach Tileset_514
+  - first:
+      213: -3511932950207858546
+    second: Beach Tileset_515
+  - first:
+      213: 6295517975868610128
+    second: Beach Tileset_516
+  - first:
+      213: -7995813279897469351
+    second: Beach Tileset_517
+  - first:
+      213: -5023895525904131551
+    second: Beach Tileset_518
+  - first:
+      213: 59071014967770452
+    second: Beach Tileset_519
+  - first:
+      213: -4285917587017318264
+    second: Beach Tileset_520
+  - first:
+      213: -2803714462857999098
+    second: Beach Tileset_521
+  - first:
+      213: 5122947991066000006
+    second: Beach Tileset_522
+  - first:
+      213: -6338856233018847560
+    second: Beach Tileset_523
+  - first:
+      213: -7998953939820610209
+    second: Beach Tileset_524
+  - first:
+      213: 331067396790475840
+    second: Beach Tileset_525
+  - first:
+      213: -2505823484365648749
+    second: Beach Tileset_526
+  - first:
+      213: 5901957742758904935
+    second: Beach Tileset_527
+  - first:
+      213: 6907524102989153387
+    second: Beach Tileset_528
+  - first:
+      213: -734484631929669617
+    second: Beach Tileset_529
+  - first:
+      213: 6056502989341289513
+    second: Beach Tileset_530
+  - first:
+      213: -6203249325605053482
+    second: Beach Tileset_531
+  - first:
+      213: -3690224707618514458
+    second: Beach Tileset_532
+  - first:
+      213: -7045533592395588153
+    second: Beach Tileset_533
+  - first:
+      213: 1869313012180714983
+    second: Beach Tileset_534
+  - first:
+      213: -5291804556867484691
+    second: Beach Tileset_535
+  - first:
+      213: -1594654443563109388
+    second: Beach Tileset_536
+  - first:
+      213: -711817624868432521
+    second: Beach Tileset_537
+  - first:
+      213: 2480794273224829771
+    second: Beach Tileset_538
+  - first:
+      213: 6382699907052566314
+    second: Beach Tileset_539
+  - first:
+      213: -4096261630835713125
+    second: Beach Tileset_540
+  - first:
+      213: -4385982584813950492
+    second: Beach Tileset_541
+  - first:
+      213: -3120171410854180353
+    second: Beach Tileset_542
+  - first:
+      213: 4760007841740735855
+    second: Beach Tileset_543
+  - first:
+      213: -651898142578794625
+    second: Beach Tileset_544
+  - first:
+      213: 9061591334529195613
+    second: Beach Tileset_545
+  - first:
+      213: 8973561211144812122
+    second: Beach Tileset_546
+  - first:
+      213: -8078859338662073374
+    second: Beach Tileset_547
+  - first:
+      213: -2634507912345554385
+    second: Beach Tileset_548
+  - first:
+      213: -8582147312785606727
+    second: Beach Tileset_549
+  - first:
+      213: -9176435801401118797
+    second: Beach Tileset_550
+  - first:
+      213: 4550979880049998470
+    second: Beach Tileset_551
+  - first:
+      213: -5323709233525853566
+    second: Beach Tileset_552
+  - first:
+      213: -1540539862267444503
+    second: Beach Tileset_553
+  - first:
+      213: 5780051530169780057
+    second: Beach Tileset_554
+  - first:
+      213: -5918986533337456286
+    second: Beach Tileset_555
+  - first:
+      213: 4240757700884426852
+    second: Beach Tileset_556
+  - first:
+      213: -363775147916459025
+    second: Beach Tileset_557
+  - first:
+      213: 3698795063792015221
+    second: Beach Tileset_558
+  - first:
+      213: -8490610975326421408
+    second: Beach Tileset_559
+  - first:
+      213: 4433078703519001124
+    second: Beach Tileset_560
+  - first:
+      213: -410435136258303079
+    second: Beach Tileset_561
+  - first:
+      213: -5769313712447958821
+    second: Beach Tileset_562
+  - first:
+      213: 4019490838636057147
+    second: Beach Tileset_563
+  - first:
+      213: -3916789837529433229
+    second: Beach Tileset_564
+  - first:
+      213: 2993647080226522825
+    second: Beach Tileset_565
+  - first:
+      213: -3951421441032320541
+    second: Beach Tileset_566
+  - first:
+      213: -8257812923876543716
+    second: Beach Tileset_567
+  - first:
+      213: 3170870811007186063
+    second: Beach Tileset_568
+  - first:
+      213: -5895629620441528527
+    second: Beach Tileset_569
+  - first:
+      213: -68886652777627941
+    second: Beach Tileset_570
+  - first:
+      213: -7310162207329879491
+    second: Beach Tileset_571
+  - first:
+      213: -4284366663759917747
+    second: Beach Tileset_572
+  - first:
+      213: 7987005564227125050
+    second: Beach Tileset_573
+  - first:
+      213: -1937553033427667953
+    second: Beach Tileset_574
+  - first:
+      213: 4920740256061842142
+    second: Beach Tileset_575
+  - first:
+      213: 7558991740340802103
+    second: Beach Tileset_576
+  - first:
+      213: -8189552034316941656
+    second: Beach Tileset_577
+  - first:
+      213: -3634405270001528993
+    second: Beach Tileset_578
+  - first:
+      213: 5958231508724397530
+    second: Beach Tileset_579
+  - first:
+      213: 3400875825858870621
+    second: Beach Tileset_580
+  - first:
+      213: -4542585324311342506
+    second: Beach Tileset_581
+  - first:
+      213: -6167651104746740827
+    second: Beach Tileset_582
+  - first:
+      213: 7971254795514863755
+    second: Beach Tileset_583
+  - first:
+      213: -324477922410260542
+    second: Beach Tileset_584
+  - first:
+      213: -8942950531591492688
+    second: Beach Tileset_585
+  - first:
+      213: -7887450618718880337
+    second: Beach Tileset_586
+  - first:
+      213: -3816983314173860014
+    second: Beach Tileset_587
+  - first:
+      213: -5628910266183526946
+    second: Beach Tileset_588
+  - first:
+      213: -3839368539948621057
+    second: Beach Tileset_589
+  - first:
+      213: 4358746571787712748
+    second: Beach Tileset_590
+  - first:
+      213: -8622200818563275705
+    second: Beach Tileset_591
+  - first:
+      213: 8825973491973245600
+    second: Beach Tileset_592
+  - first:
+      213: -8730312496061790617
+    second: Beach Tileset_593
+  - first:
+      213: -1703103325952626934
+    second: Beach Tileset_594
+  - first:
+      213: 7567159162095985568
+    second: Beach Tileset_595
+  - first:
+      213: 5011640648060580168
+    second: Beach Tileset_596
+  - first:
+      213: 7398766236579989361
+    second: Beach Tileset_597
+  - first:
+      213: -7424992017559037023
+    second: Beach Tileset_598
+  - first:
+      213: -1155899106493674080
+    second: Beach Tileset_599
+  - first:
+      213: 409540247230194491
+    second: Beach Tileset_600
+  - first:
+      213: 5462233171166843225
+    second: Beach Tileset_601
+  - first:
+      213: 965983204812597871
+    second: Beach Tileset_602
+  - first:
+      213: 9031358944430488065
+    second: Beach Tileset_603
+  - first:
+      213: 6137605595069425407
+    second: Beach Tileset_604
+  - first:
+      213: -4802353583936659854
+    second: Beach Tileset_605
+  - first:
+      213: -6145311345833471668
+    second: Beach Tileset_606
+  - first:
+      213: 4970396908710377309
+    second: Beach Tileset_607
+  - first:
+      213: 5477567400480427106
+    second: Beach Tileset_608
+  - first:
+      213: 5045552341411103751
+    second: Beach Tileset_609
+  - first:
+      213: -4718626861675822586
+    second: Beach Tileset_610
+  - first:
+      213: -45765783549472417
+    second: Beach Tileset_611
+  - first:
+      213: 215777856978333147
+    second: Beach Tileset_612
+  - first:
+      213: 8992621779225896841
+    second: Beach Tileset_613
+  - first:
+      213: -5665918433946431123
+    second: Beach Tileset_614
+  - first:
+      213: 3140870831581963272
+    second: Beach Tileset_615
+  - first:
+      213: -701779056192232322
+    second: Beach Tileset_616
+  - first:
+      213: 3417870535177898757
+    second: Beach Tileset_617
+  - first:
+      213: -8162165207389080375
+    second: Beach Tileset_618
+  - first:
+      213: -4054177706479392849
+    second: Beach Tileset_619
+  - first:
+      213: 7556325316056270986
+    second: Beach Tileset_620
+  - first:
+      213: -4916007055795085636
+    second: Beach Tileset_621
+  - first:
+      213: -8199652125756571816
+    second: Beach Tileset_622
+  - first:
+      213: -1082105437416587656
+    second: Beach Tileset_623
+  - first:
+      213: -6836502008336675037
+    second: Beach Tileset_624
+  - first:
+      213: 2442428839151815897
+    second: Beach Tileset_625
+  - first:
+      213: -5393053811950385863
+    second: Beach Tileset_626
+  - first:
+      213: 3527866878143673770
+    second: Beach Tileset_627
+  - first:
+      213: 4679370576503796925
+    second: Beach Tileset_628
+  - first:
+      213: 440136346968723469
+    second: Beach Tileset_629
+  - first:
+      213: 6587874939940928991
+    second: Beach Tileset_630
+  - first:
+      213: -7190371260162797129
+    second: Beach Tileset_631
+  - first:
+      213: 1263561407592581725
+    second: Beach Tileset_632
+  - first:
+      213: -6059291651327683088
+    second: Beach Tileset_633
+  - first:
+      213: -9190307986271404753
+    second: Beach Tileset_634
+  - first:
+      213: -2310602625630473721
+    second: Beach Tileset_635
+  - first:
+      213: 4771399102323954291
+    second: Beach Tileset_636
+  - first:
+      213: -1900959780201634263
+    second: Beach Tileset_637
+  - first:
+      213: 7003076444203651563
+    second: Beach Tileset_638
+  - first:
+      213: 7571133006676449728
+    second: Beach Tileset_639
+  - first:
+      213: -4014139057739472417
+    second: Beach Tileset_640
+  - first:
+      213: 2655528297316210970
+    second: Beach Tileset_641
+  - first:
+      213: 5219685329763755425
+    second: Beach Tileset_642
+  - first:
+      213: 9193955635219190998
+    second: Beach Tileset_643
+  - first:
+      213: -7190043642793062878
+    second: Beach Tileset_644
+  - first:
+      213: 4843201205396837918
+    second: Beach Tileset_645
+  - first:
+      213: 8441432251666403461
+    second: Beach Tileset_646
+  - first:
+      213: 5893976134133947811
+    second: Beach Tileset_647
+  - first:
+      213: -8815308284434261148
+    second: Beach Tileset_648
+  - first:
+      213: 2321849980650396510
+    second: Beach Tileset_649
+  - first:
+      213: -1534513763771770633
+    second: Beach Tileset_650
+  - first:
+      213: 8648223329476595573
+    second: Beach Tileset_651
+  - first:
+      213: 3779419355246224452
+    second: Beach Tileset_652
+  - first:
+      213: -7910751858172033646
+    second: Beach Tileset_653
+  - first:
+      213: -3183065912835180793
+    second: Beach Tileset_654
+  - first:
+      213: 3169846934067505233
+    second: Beach Tileset_655
+  - first:
+      213: 3032338584692365000
+    second: Beach Tileset_656
+  - first:
+      213: -8507129196592499415
+    second: Beach Tileset_657
+  - first:
+      213: -553666797550473712
+    second: Beach Tileset_658
+  - first:
+      213: 4601836366542731191
+    second: Beach Tileset_659
+  - first:
+      213: 272742307279021292
+    second: Beach Tileset_660
+  - first:
+      213: 7556325689649246538
+    second: Beach Tileset_661
+  - first:
+      213: 5363655718948575679
+    second: Beach Tileset_662
+  - first:
+      213: -4046502692982585870
+    second: Beach Tileset_663
+  - first:
+      213: -2635052611706291940
+    second: Beach Tileset_664
+  - first:
+      213: 2967313436218712079
+    second: Beach Tileset_665
+  - first:
+      213: 5901270330610625317
+    second: Beach Tileset_666
+  - first:
+      213: -7187769954301488854
+    second: Beach Tileset_667
+  - first:
+      213: 2259858028343722340
+    second: Beach Tileset_668
+  - first:
+      213: 2768777572300069486
+    second: Beach Tileset_669
+  - first:
+      213: 5137412902510611941
+    second: Beach Tileset_670
+  - first:
+      213: 6750523899045668035
+    second: Beach Tileset_671
+  - first:
+      213: -7132923880064177685
+    second: Beach Tileset_672
+  - first:
+      213: 9091465298094416083
+    second: Beach Tileset_673
+  - first:
+      213: -6435908740776267531
+    second: Beach Tileset_674
+  - first:
+      213: -8938106154463153931
+    second: Beach Tileset_675
+  - first:
+      213: 3586879024465519382
+    second: Beach Tileset_676
+  - first:
+      213: -4125776090988782233
+    second: Beach Tileset_677
+  - first:
+      213: 376023239836690295
+    second: Beach Tileset_678
+  - first:
+      213: 315703094154866637
+    second: Beach Tileset_679
+  - first:
+      213: -3401010638102200841
+    second: Beach Tileset_680
+  - first:
+      213: 5200182552763048347
+    second: Beach Tileset_681
+  - first:
+      213: 790763392412778731
+    second: Beach Tileset_682
+  - first:
+      213: 340901366360823615
+    second: Beach Tileset_683
+  - first:
+      213: -314095209059740943
+    second: Beach Tileset_684
+  - first:
+      213: 2889230651999772870
+    second: Beach Tileset_685
+  - first:
+      213: -5002538029939191346
+    second: Beach Tileset_686
+  - first:
+      213: 4053833508659940464
+    second: Beach Tileset_687
+  - first:
+      213: 734181284194463318
+    second: Beach Tileset_688
+  - first:
+      213: 8902626965363481605
+    second: Beach Tileset_689
+  - first:
+      213: -8934825135522481973
+    second: Beach Tileset_690
+  - first:
+      213: 1137930527830684193
+    second: Beach Tileset_691
+  - first:
+      213: -7539602639798902556
+    second: Beach Tileset_692
+  - first:
+      213: -2098240750020370880
+    second: Beach Tileset_693
+  - first:
+      213: 8898881176016455916
+    second: Beach Tileset_694
+  - first:
+      213: -1395098348499154309
+    second: Beach Tileset_695
+  - first:
+      213: -2321797681915955735
+    second: Beach Tileset_696
+  - first:
+      213: 8446822802816755545
+    second: Beach Tileset_697
+  - first:
+      213: 3302164801612885513
+    second: Beach Tileset_698
+  - first:
+      213: -9199631646317885467
+    second: Beach Tileset_699
+  - first:
+      213: -4436755051622431381
+    second: Beach Tileset_700
+  - first:
+      213: -8813553009577210802
+    second: Beach Tileset_701
+  - first:
+      213: -5406220025425826453
+    second: Beach Tileset_702
+  - first:
+      213: -9034055988412981838
+    second: Beach Tileset_703
+  - first:
+      213: -5007769900327671306
+    second: Beach Tileset_704
+  - first:
+      213: -8805294462456562208
+    second: Beach Tileset_705
+  - first:
+      213: -6421828071020763821
+    second: Beach Tileset_706
+  - first:
+      213: -5735820001067070153
+    second: Beach Tileset_707
+  - first:
+      213: 8774514855804049943
+    second: Beach Tileset_708
+  - first:
+      213: 2496012381547512764
+    second: Beach Tileset_709
+  - first:
+      213: 3686956623834298876
+    second: Beach Tileset_710
+  - first:
+      213: 5707730298094741054
+    second: Beach Tileset_711
+  - first:
+      213: 1477836723527898341
+    second: Beach Tileset_712
+  - first:
+      213: 2688030074517048615
+    second: Beach Tileset_713
+  - first:
+      213: 1052308410032168568
+    second: Beach Tileset_714
+  - first:
+      213: 5623297272985044348
+    second: Beach Tileset_715
+  - first:
+      213: 2056270075645497425
+    second: Beach Tileset_716
+  - first:
+      213: -968668349598853302
+    second: Beach Tileset_717
+  - first:
+      213: 4552427841765475879
+    second: Beach Tileset_718
+  - first:
+      213: 2574278600431899882
+    second: Beach Tileset_719
+  - first:
+      213: 5450270897741128533
+    second: Beach Tileset_720
+  - first:
+      213: -5994686203189980451
+    second: Beach Tileset_721
+  - first:
+      213: 6113960551285534439
+    second: Beach Tileset_722
+  - first:
+      213: -8096542052854203417
+    second: Beach Tileset_723
+  - first:
+      213: 6541082015722727275
+    second: Beach Tileset_724
+  - first:
+      213: -2634442896964429599
+    second: Beach Tileset_725
+  - first:
+      213: -3672484640189636998
+    second: Beach Tileset_726
+  - first:
+      213: -3675261384422363509
+    second: Beach Tileset_727
+  - first:
+      213: 6371237108200448326
+    second: Beach Tileset_728
+  - first:
+      213: -8088741855410018879
+    second: Beach Tileset_729
+  - first:
+      213: -2023269722944291619
+    second: Beach Tileset_730
+  - first:
+      213: -4274938284027632537
+    second: Beach Tileset_731
+  - first:
+      213: -5396867810225530342
+    second: Beach Tileset_732
+  - first:
+      213: 4170886016641607193
+    second: Beach Tileset_733
+  - first:
+      213: 9028926827919114709
+    second: Beach Tileset_734
+  - first:
+      213: 8979217008148198238
+    second: Beach Tileset_735
+  - first:
+      213: 180591495225546380
+    second: Beach Tileset_736
+  - first:
+      213: 2010130532564699312
+    second: Beach Tileset_737
+  - first:
+      213: -4736320202100200916
+    second: Beach Tileset_738
+  - first:
+      213: 3834089413381809406
+    second: Beach Tileset_739
+  - first:
+      213: 7248322854644324498
+    second: Beach Tileset_740
+  - first:
+      213: 1455575536398079854
+    second: Beach Tileset_741
+  - first:
+      213: -1615842763463941135
+    second: Beach Tileset_742
+  - first:
+      213: -8386714434861402371
+    second: Beach Tileset_743
+  - first:
+      213: 8869846358540899014
+    second: Beach Tileset_744
+  - first:
+      213: -7909866704699054440
+    second: Beach Tileset_745
+  - first:
+      213: -6069106409518212244
+    second: Beach Tileset_746
+  - first:
+      213: 7890729742506913821
+    second: Beach Tileset_747
+  - first:
+      213: -5012380151818822101
+    second: Beach Tileset_748
+  - first:
+      213: -5948256656907984482
+    second: Beach Tileset_749
+  - first:
+      213: -7602798572957805977
+    second: Beach Tileset_750
+  - first:
+      213: -2048235996536720109
+    second: Beach Tileset_751
+  - first:
+      213: -8634532327655248126
+    second: Beach Tileset_752
+  - first:
+      213: 4078801099656128579
+    second: Beach Tileset_753
+  - first:
+      213: -584183255759391109
+    second: Beach Tileset_754
+  - first:
+      213: 7415972996529662761
+    second: Beach Tileset_755
+  - first:
+      213: -4476227527469889366
+    second: Beach Tileset_756
+  - first:
+      213: -9170782935232296808
+    second: Beach Tileset_757
+  - first:
+      213: 1047558409426150969
+    second: Beach Tileset_758
+  - first:
+      213: 1145585826351549116
+    second: Beach Tileset_759
+  - first:
+      213: -4800619838009218366
+    second: Beach Tileset_760
+  - first:
+      213: -3477575403348709322
+    second: Beach Tileset_761
+  - first:
+      213: 6349986773441150761
+    second: Beach Tileset_762
+  - first:
+      213: -7738953215464639187
+    second: Beach Tileset_763
+  - first:
+      213: 7358626920067171487
+    second: Beach Tileset_764
+  - first:
+      213: 7725067973974917980
+    second: Beach Tileset_765
+  - first:
+      213: 452436238713722712
+    second: Beach Tileset_766
+  - first:
+      213: 1584661569577520769
+    second: Beach Tileset_767
+  - first:
+      213: 3811987275951955290
+    second: Beach Tileset_768
+  - first:
+      213: -5028195015139477759
+    second: Beach Tileset_769
+  - first:
+      213: 5350137358956841567
+    second: Beach Tileset_770
+  - first:
+      213: 6922879144191984329
+    second: Beach Tileset_771
+  - first:
+      213: 4740685553416923927
+    second: Beach Tileset_772
+  - first:
+      213: 7218827643008197598
+    second: Beach Tileset_773
+  - first:
+      213: -6820076765003658632
+    second: Beach Tileset_774
+  - first:
+      213: 118970640209798498
+    second: Beach Tileset_775
+  - first:
+      213: -7879818484716163207
+    second: Beach Tileset_776
+  - first:
+      213: -8525070349610295501
+    second: Beach Tileset_777
+  - first:
+      213: -4221375470066546214
+    second: Beach Tileset_778
+  - first:
+      213: -5250961850544414181
+    second: Beach Tileset_779
+  - first:
+      213: 1532515884165164500
+    second: Beach Tileset_780
+  - first:
+      213: -908518354581493592
+    second: Beach Tileset_781
+  - first:
+      213: -6555909150936547367
+    second: Beach Tileset_782
+  - first:
+      213: -6489069844795681682
+    second: Beach Tileset_783
+  - first:
+      213: -1049204332609166101
+    second: Beach Tileset_784
+  - first:
+      213: 3842601525259686650
+    second: Beach Tileset_785
+  - first:
+      213: 1997174879613206677
+    second: Beach Tileset_786
+  - first:
+      213: -137263396266343854
+    second: Beach Tileset_787
+  - first:
+      213: 6050282530307708916
+    second: Beach Tileset_788
+  - first:
+      213: 2135833300949397555
+    second: Beach Tileset_789
+  - first:
+      213: -9178178204046329647
+    second: Beach Tileset_790
+  - first:
+      213: -5622010682244184190
+    second: Beach Tileset_791
+  - first:
+      213: 8842561870220706226
+    second: Beach Tileset_792
+  - first:
+      213: -4577810269435886346
+    second: Beach Tileset_793
+  - first:
+      213: -8972512442105263099
+    second: Beach Tileset_794
+  - first:
+      213: -3699206484461053435
+    second: Beach Tileset_795
+  - first:
+      213: -8077625428894569955
+    second: Beach Tileset_796
+  - first:
+      213: 7322058042888958678
+    second: Beach Tileset_797
+  - first:
+      213: 4312269277326387182
+    second: Beach Tileset_798
+  - first:
+      213: -3630452498984523705
+    second: Beach Tileset_799
+  - first:
+      213: -3823342123225092131
+    second: Beach Tileset_800
+  - first:
+      213: -7451213941025473928
+    second: Beach Tileset_801
+  - first:
+      213: -4545641983728574920
+    second: Beach Tileset_802
+  - first:
+      213: -3983398557188616548
+    second: Beach Tileset_803
+  - first:
+      213: 6291909991479267612
+    second: Beach Tileset_804
+  - first:
+      213: 2440817229938401858
+    second: Beach Tileset_805
+  - first:
+      213: -369391193070562908
+    second: Beach Tileset_806
+  - first:
+      213: -6548913824906408995
+    second: Beach Tileset_807
+  - first:
+      213: 7228780607872557685
+    second: Beach Tileset_808
+  - first:
+      213: -3884957061748724057
+    second: Beach Tileset_809
+  - first:
+      213: 1564407216852954154
+    second: Beach Tileset_810
+  - first:
+      213: -7835047141036458161
+    second: Beach Tileset_811
+  - first:
+      213: -7724845130685686850
+    second: Beach Tileset_812
+  - first:
+      213: 6173339356158189448
+    second: Beach Tileset_813
+  - first:
+      213: 7009160098797619621
+    second: Beach Tileset_814
+  - first:
+      213: 4089861040478875477
+    second: Beach Tileset_815
+  - first:
+      213: -273883456998698745
+    second: Beach Tileset_816
+  - first:
+      213: 5983946538783044799
+    second: Beach Tileset_817
+  - first:
+      213: -1881836188643532428
+    second: Beach Tileset_818
+  - first:
+      213: -6762536514544914273
+    second: Beach Tileset_819
+  - first:
+      213: -6953961940927088500
+    second: Beach Tileset_820
+  - first:
+      213: 2289046342077947452
+    second: Beach Tileset_821
+  - first:
+      213: -4936233674509332561
+    second: Beach Tileset_822
+  - first:
+      213: -7601878121616514692
+    second: Beach Tileset_823
+  - first:
+      213: -7141383603750294349
+    second: Beach Tileset_824
+  - first:
+      213: 3479194287184325386
+    second: Beach Tileset_825
+  - first:
+      213: 7084116978663046890
+    second: Beach Tileset_826
+  - first:
+      213: 1172236139317036531
+    second: Beach Tileset_827
+  - first:
+      213: 7373392044740448498
+    second: Beach Tileset_828
+  - first:
+      213: 8045547920457671483
+    second: Beach Tileset_829
+  - first:
+      213: -6385587513813271727
+    second: Beach Tileset_830
+  - first:
+      213: -2817837747396188778
+    second: Beach Tileset_831
+  - first:
+      213: 1681492720077581883
+    second: Beach Tileset_832
+  - first:
+      213: 8389003193671363587
+    second: Beach Tileset_833
+  - first:
+      213: 5411452260068749383
+    second: Beach Tileset_834
+  - first:
+      213: -5673082547225188594
+    second: Beach Tileset_835
+  - first:
+      213: 8427873074522398032
+    second: Beach Tileset_836
+  - first:
+      213: -2087280774332625306
+    second: Beach Tileset_837
+  - first:
+      213: 5921201938571214264
+    second: Beach Tileset_838
+  - first:
+      213: 5038500384298134722
+    second: Beach Tileset_839
+  - first:
+      213: 2309449953727875520
+    second: Beach Tileset_840
+  - first:
+      213: -2777465539174192313
+    second: Beach Tileset_841
+  - first:
+      213: 5960418022010421672
+    second: Beach Tileset_842
+  - first:
+      213: -2871034806367204466
+    second: Beach Tileset_843
+  - first:
+      213: 4025484478078088179
+    second: Beach Tileset_844
+  - first:
+      213: -6467958426774615014
+    second: Beach Tileset_845
+  - first:
+      213: -5846941388932507926
+    second: Beach Tileset_846
+  - first:
+      213: -3880806885221326593
+    second: Beach Tileset_847
+  - first:
+      213: 7856438914460102982
+    second: Beach Tileset_848
+  - first:
+      213: 2342178081454308132
+    second: Beach Tileset_849
+  - first:
+      213: 6946420377214984332
+    second: Beach Tileset_850
+  - first:
+      213: 6202044592069916756
+    second: Beach Tileset_851
+  - first:
+      213: -1883592307287241091
+    second: Beach Tileset_852
+  - first:
+      213: 3049562689249408659
+    second: Beach Tileset_853
+  - first:
+      213: -5325640916976675684
+    second: Beach Tileset_854
+  - first:
+      213: -2195118206862287960
+    second: Beach Tileset_855
+  - first:
+      213: -703022499217280004
+    second: Beach Tileset_856
+  - first:
+      213: -5793157938060341495
+    second: Beach Tileset_857
+  - first:
+      213: 1874302135534466115
+    second: Beach Tileset_858
+  - first:
+      213: -9214787432473487075
+    second: Beach Tileset_859
+  - first:
+      213: -7342095811332222480
+    second: Beach Tileset_860
+  - first:
+      213: -6665210979042886131
+    second: Beach Tileset_861
+  - first:
+      213: -4375159289055939204
+    second: Beach Tileset_862
+  - first:
+      213: -7209521935691608949
+    second: Beach Tileset_863
+  - first:
+      213: -5966396293024919773
+    second: Beach Tileset_864
+  - first:
+      213: -7563343849189683521
+    second: Beach Tileset_865
+  - first:
+      213: -6762728812372711617
+    second: Beach Tileset_866
+  - first:
+      213: -8700883411419359331
+    second: Beach Tileset_867
+  - first:
+      213: 2794506245865670080
+    second: Beach Tileset_868
+  - first:
+      213: -4831807388825398797
+    second: Beach Tileset_869
+  - first:
+      213: -586823432680009667
+    second: Beach Tileset_870
+  - first:
+      213: -1137417790003626299
+    second: Beach Tileset_871
+  - first:
+      213: 1753597952738993656
+    second: Beach Tileset_872
+  - first:
+      213: -871646246765145450
+    second: Beach Tileset_873
+  - first:
+      213: 5489306983943261984
+    second: Beach Tileset_874
+  - first:
+      213: -415812578754847842
+    second: Beach Tileset_875
+  - first:
+      213: -1756208502276705407
+    second: Beach Tileset_876
+  - first:
+      213: 1959782698102681770
+    second: Beach Tileset_877
+  - first:
+      213: -2200471345899825362
+    second: Beach Tileset_878
+  - first:
+      213: -6423924005648216235
+    second: Beach Tileset_879
+  - first:
+      213: -4588445983878627393
+    second: Beach Tileset_880
+  - first:
+      213: -3337313736493444444
+    second: Beach Tileset_881
+  - first:
+      213: 4740909487547677822
+    second: Beach Tileset_882
+  - first:
+      213: -8120655529400761353
+    second: Beach Tileset_883
+  - first:
+      213: 3411571915447941414
+    second: Beach Tileset_884
+  - first:
+      213: -4827063481163829975
+    second: Beach Tileset_885
+  - first:
+      213: 7839881810123007280
+    second: Beach Tileset_886
+  - first:
+      213: 1989874629700809261
+    second: Beach Tileset_887
+  - first:
+      213: -6102539354110128474
+    second: Beach Tileset_888
+  - first:
+      213: -3379213141936113811
+    second: Beach Tileset_889
+  - first:
+      213: -3438993668529248392
+    second: Beach Tileset_890
+  - first:
+      213: 8603008114154525732
+    second: Beach Tileset_891
+  - first:
+      213: -3033833652790048414
+    second: Beach Tileset_892
+  - first:
+      213: 2499614686777415856
+    second: Beach Tileset_893
+  - first:
+      213: 1511148379534042400
+    second: Beach Tileset_894
+  - first:
+      213: -3911945281986529467
+    second: Beach Tileset_895
+  - first:
+      213: 3883793624883377732
+    second: Beach Tileset_896
+  - first:
+      213: -4728278422216825891
+    second: Beach Tileset_897
+  - first:
+      213: 3892970719349093266
+    second: Beach Tileset_898
+  - first:
+      213: 7897015835137659640
+    second: Beach Tileset_899
+  - first:
+      213: 7312878238585861419
+    second: Beach Tileset_900
+  - first:
+      213: -9121260237587692992
+    second: Beach Tileset_901
+  - first:
+      213: 2963240851436058087
+    second: Beach Tileset_902
+  - first:
+      213: 3539695386487847898
+    second: Beach Tileset_903
+  - first:
+      213: 8206283109051415726
+    second: Beach Tileset_904
+  - first:
+      213: -1494942929536490361
+    second: Beach Tileset_905
+  - first:
+      213: -2170347815648486669
+    second: Beach Tileset_906
+  - first:
+      213: 3507112087363729099
+    second: Beach Tileset_907
+  - first:
+      213: -4219892235385592711
+    second: Beach Tileset_908
+  - first:
+      213: 6123552665015389117
+    second: Beach Tileset_909
+  - first:
+      213: -6521089446975015294
+    second: Beach Tileset_910
+  - first:
+      213: -2315768503045752801
+    second: Beach Tileset_911
+  - first:
+      213: 7358867306999288426
+    second: Beach Tileset_912
+  - first:
+      213: 5154457170631723649
+    second: Beach Tileset_913
+  - first:
+      213: 6411617315305816087
+    second: Beach Tileset_914
+  - first:
+      213: -8005158359823166235
+    second: Beach Tileset_915
+  - first:
+      213: 6582945367401302643
+    second: Beach Tileset_916
+  - first:
+      213: -460604235757501698
+    second: Beach Tileset_917
+  - first:
+      213: 2322062978673333557
+    second: Beach Tileset_918
+  - first:
+      213: -2091535105921829359
+    second: Beach Tileset_919
+  - first:
+      213: -2997263789279237944
+    second: Beach Tileset_920
+  - first:
+      213: -7718955945186631901
+    second: Beach Tileset_921
+  - first:
+      213: -2985889759721209621
+    second: Beach Tileset_922
+  - first:
+      213: -2565521827516934655
+    second: Beach Tileset_923
+  - first:
+      213: 3755274434248697058
+    second: Beach Tileset_924
+  - first:
+      213: -6396018620589304910
+    second: Beach Tileset_925
+  - first:
+      213: 635516888394159540
+    second: Beach Tileset_926
+  - first:
+      213: -3163415334820560281
+    second: Beach Tileset_927
+  - first:
+      213: 816964631613827343
+    second: Beach Tileset_928
+  - first:
+      213: 4136754475961805638
+    second: Beach Tileset_929
+  - first:
+      213: -10660583651570978
+    second: Beach Tileset_930
+  - first:
+      213: 690693865921153109
+    second: Beach Tileset_931
+  - first:
+      213: -5621951720258462494
+    second: Beach Tileset_932
+  - first:
+      213: 5452419546561832036
+    second: Beach Tileset_933
+  - first:
+      213: 6378821397265169376
+    second: Beach Tileset_934
+  - first:
+      213: -401422616574945317
+    second: Beach Tileset_935
+  - first:
+      213: -1170800580900509367
+    second: Beach Tileset_936
+  - first:
+      213: -933005832290373196
+    second: Beach Tileset_937
+  - first:
+      213: 6530330158494223971
+    second: Beach Tileset_938
+  - first:
+      213: -173343614127391303
+    second: Beach Tileset_939
+  - first:
+      213: 1932066991735701021
+    second: Beach Tileset_940
+  - first:
+      213: 8347870890628203962
+    second: Beach Tileset_941
+  - first:
+      213: -3594369372498783149
+    second: Beach Tileset_942
+  - first:
+      213: 6159065769132078235
+    second: Beach Tileset_943
+  - first:
+      213: -1949681525414587862
+    second: Beach Tileset_944
+  - first:
+      213: -9085814047427849433
+    second: Beach Tileset_945
+  - first:
+      213: 8287454222679811580
+    second: Beach Tileset_946
+  - first:
+      213: 989845005798832722
+    second: Beach Tileset_947
+  - first:
+      213: -6797606060898283467
+    second: Beach Tileset_948
+  - first:
+      213: -4171614142755682038
+    second: Beach Tileset_949
+  - first:
+      213: -5761219093961453054
+    second: Beach Tileset_950
+  - first:
+      213: -8630637833628666720
+    second: Beach Tileset_951
+  - first:
+      213: 3568396604256884429
+    second: Beach Tileset_952
+  - first:
+      213: -7740548577244687766
+    second: Beach Tileset_953
+  - first:
+      213: -5384497793063922570
+    second: Beach Tileset_954
+  - first:
+      213: -4835744581097686678
+    second: Beach Tileset_955
+  - first:
+      213: -5689134297863917367
+    second: Beach Tileset_956
+  - first:
+      213: -159239088476168136
+    second: Beach Tileset_957
+  - first:
+      213: 1071008342131232726
+    second: Beach Tileset_958
+  - first:
+      213: -6307108919821809778
+    second: Beach Tileset_959
+  - first:
+      213: -683062485993145591
+    second: Beach Tileset_960
+  - first:
+      213: 7310941691232526579
+    second: Beach Tileset_961
+  - first:
+      213: -5052305967793342247
+    second: Beach Tileset_962
+  - first:
+      213: 1195207503808131871
+    second: Beach Tileset_963
+  - first:
+      213: 768250760849704528
+    second: Beach Tileset_964
+  - first:
+      213: -9076728663873390189
+    second: Beach Tileset_965
+  - first:
+      213: 3263192630466904799
+    second: Beach Tileset_966
+  - first:
+      213: -4266532990251970230
+    second: Beach Tileset_967
+  - first:
+      213: 3651577395809037166
+    second: Beach Tileset_968
+  - first:
+      213: -6990051572160998945
+    second: Beach Tileset_969
+  - first:
+      213: -2660615225067813881
+    second: Beach Tileset_970
+  - first:
+      213: 614677833401830761
+    second: Beach Tileset_971
+  - first:
+      213: 3444399751972885191
+    second: Beach Tileset_972
+  - first:
+      213: -8769099304158259930
+    second: Beach Tileset_973
+  - first:
+      213: -9012231043308825726
+    second: Beach Tileset_974
+  - first:
+      213: 3070311174237570081
+    second: Beach Tileset_975
+  - first:
+      213: 94193914846045541
+    second: Beach Tileset_976
+  - first:
+      213: -3513407656450319512
+    second: Beach Tileset_977
+  - first:
+      213: 5047562337239250896
+    second: Beach Tileset_978
+  - first:
+      213: 6568667765403124056
+    second: Beach Tileset_979
+  - first:
+      213: 5424599148195850731
+    second: Beach Tileset_980
+  - first:
+      213: -1578377868933948353
+    second: Beach Tileset_981
+  - first:
+      213: 7407475728080673687
+    second: Beach Tileset_982
+  - first:
+      213: -3502035757455501536
+    second: Beach Tileset_983
+  - first:
+      213: 6082887298663787641
+    second: Beach Tileset_984
+  - first:
+      213: 9031737571040422762
+    second: Beach Tileset_985
+  - first:
+      213: -2216314194619953827
+    second: Beach Tileset_986
+  - first:
+      213: -1429213321265886149
+    second: Beach Tileset_987
+  - first:
+      213: -7192408743982660307
+    second: Beach Tileset_988
+  - first:
+      213: -4675133494725249411
+    second: Beach Tileset_989
+  - first:
+      213: -8246964281843802981
+    second: Beach Tileset_990
+  - first:
+      213: -4244287031396784527
+    second: Beach Tileset_991
+  - first:
+      213: 6448656198390092888
+    second: Beach Tileset_992
+  - first:
+      213: -6587754612512308930
+    second: Beach Tileset_993
+  - first:
+      213: -927646745183029748
+    second: Beach Tileset_994
+  - first:
+      213: 3054808009873354563
+    second: Beach Tileset_995
+  - first:
+      213: -7168849534098525927
+    second: Beach Tileset_996
+  - first:
+      213: -5325802574862519382
+    second: Beach Tileset_997
+  - first:
+      213: 5654276171231779128
+    second: Beach Tileset_998
+  - first:
+      213: 2687449902260229439
+    second: Beach Tileset_999
+  - first:
+      213: 5321290932422549202
+    second: Beach Tileset_1000
+  - first:
+      213: 6448940847411753859
+    second: Beach Tileset_1001
+  - first:
+      213: -3628071386403903942
+    second: Beach Tileset_1002
+  - first:
+      213: 338624437240196516
+    second: Beach Tileset_1003
+  - first:
+      213: 6988391509803969573
+    second: Beach Tileset_1004
+  - first:
+      213: -4249725574106260878
+    second: Beach Tileset_1005
+  - first:
+      213: -6725718713578595708
+    second: Beach Tileset_1006
+  - first:
+      213: -9013971839343473179
+    second: Beach Tileset_1007
+  - first:
+      213: -1785564739632004613
+    second: Beach Tileset_1008
+  - first:
+      213: -7605299366254247776
+    second: Beach Tileset_1009
+  - first:
+      213: 6846964628069776148
+    second: Beach Tileset_1010
+  - first:
+      213: -3118687271265230862
+    second: Beach Tileset_1011
+  - first:
+      213: -3016346754766906181
+    second: Beach Tileset_1012
+  - first:
+      213: 6539204857879358615
+    second: Beach Tileset_1013
+  - first:
+      213: -1744817295199070893
+    second: Beach Tileset_1014
+  - first:
+      213: 7426387257658656105
+    second: Beach Tileset_1015
+  - first:
+      213: -5756320898482393309
+    second: Beach Tileset_1016
+  - first:
+      213: -6851281202906262359
+    second: Beach Tileset_1017
+  - first:
+      213: 1139071329831098682
+    second: Beach Tileset_1018
+  - first:
+      213: -275978317670012149
+    second: Beach Tileset_1019
+  - first:
+      213: -8905156449768188320
+    second: Beach Tileset_1020
+  - first:
+      213: -6122968336063315892
+    second: Beach Tileset_1021
+  - first:
+      213: -5289197432394289873
+    second: Beach Tileset_1022
+  - first:
+      213: -8871195905113286827
+    second: Beach Tileset_1023
+  - first:
+      213: -2892284125671675537
+    second: Beach Tileset_1024
+  - first:
+      213: -4003560121047181595
+    second: Beach Tileset_1025
+  - first:
+      213: -1350879334979939995
+    second: Beach Tileset_1026
+  - first:
+      213: -8031882362260385789
+    second: Beach Tileset_1027
+  - first:
+      213: 3259224623658670993
+    second: Beach Tileset_1028
+  - first:
+      213: 1967608886784393214
+    second: Beach Tileset_1029
+  - first:
+      213: -7473587796999180316
+    second: Beach Tileset_1030
+  - first:
+      213: -6099284215512769816
+    second: Beach Tileset_1031
+  - first:
+      213: -4590949357632864516
+    second: Beach Tileset_1032
+  - first:
+      213: 965197735012955919
+    second: Beach Tileset_1033
+  - first:
+      213: 5386430861916365670
+    second: Beach Tileset_1034
+  - first:
+      213: 2342707338586508985
+    second: Beach Tileset_1035
+  - first:
+      213: -7863812548193123484
+    second: Beach Tileset_1036
+  - first:
+      213: -5271548339415007051
+    second: Beach Tileset_1037
+  - first:
+      213: 4992890053434394564
+    second: Beach Tileset_1038
+  - first:
+      213: -2286565816408156410
+    second: Beach Tileset_1039
+  - first:
+      213: -9076638230693069927
+    second: Beach Tileset_1040
+  - first:
+      213: -2921603936812138480
+    second: Beach Tileset_1041
+  - first:
+      213: 4299972047886666649
+    second: Beach Tileset_1042
+  - first:
+      213: -5149213158796009450
+    second: Beach Tileset_1043
+  - first:
+      213: -6448242262992444893
+    second: Beach Tileset_1044
+  - first:
+      213: -5923117277194780636
+    second: Beach Tileset_1045
+  - first:
+      213: 5349464394930047947
+    second: Beach Tileset_1046
+  - first:
+      213: -2216318218915428214
+    second: Beach Tileset_1047
+  - first:
+      213: 2120481266299591490
+    second: Beach Tileset_1048
+  - first:
+      213: 6219059008173370231
+    second: Beach Tileset_1049
+  - first:
+      213: -253173511795703283
+    second: Beach Tileset_1050
+  - first:
+      213: 7415243965133751329
+    second: Beach Tileset_1051
+  - first:
+      213: -442764760682370755
+    second: Beach Tileset_1052
+  - first:
+      213: -900399977144572265
+    second: Beach Tileset_1053
+  - first:
+      213: -6576023339279467125
+    second: Beach Tileset_1054
+  - first:
+      213: -5899496385138309282
+    second: Beach Tileset_1055
+  - first:
+      213: -5352348035200656446
+    second: Beach Tileset_1056
+  - first:
+      213: -3057819851718595502
+    second: Beach Tileset_1057
+  - first:
+      213: 8263047402592336699
+    second: Beach Tileset_1058
+  - first:
+      213: -3647708610657969334
+    second: Beach Tileset_1059
+  - first:
+      213: 7746731830772369472
+    second: Beach Tileset_1060
+  - first:
+      213: -8441351050332028243
+    second: Beach Tileset_1061
+  - first:
+      213: 6718183757960951667
+    second: Beach Tileset_1062
+  - first:
+      213: 63765514948894905
+    second: Beach Tileset_1063
+  - first:
+      213: -3145005426589941575
+    second: Beach Tileset_1064
+  - first:
+      213: 3564955354669198906
+    second: Beach Tileset_1065
+  - first:
+      213: 3002661126085002102
+    second: Beach Tileset_1066
+  - first:
+      213: 8355988472806967769
+    second: Beach Tileset_1067
+  - first:
+      213: -7510559050344668723
+    second: Beach Tileset_1068
+  - first:
+      213: 8881476149358708140
+    second: Beach Tileset_1069
+  - first:
+      213: -7031262293119306023
+    second: Beach Tileset_1070
+  - first:
+      213: -3110933450512360671
+    second: Beach Tileset_1071
+  - first:
+      213: 6640637462307365305
+    second: Beach Tileset_1072
+  - first:
+      213: -511242628491260460
+    second: Beach Tileset_1073
+  - first:
+      213: 3988257931975943612
+    second: Beach Tileset_1074
+  - first:
+      213: -5026262714155836723
+    second: Beach Tileset_1075
+  - first:
+      213: 7119190296725675890
+    second: Beach Tileset_1076
+  - first:
+      213: 619075288800374691
+    second: Beach Tileset_1077
+  - first:
+      213: 4885529981191452355
+    second: Beach Tileset_1078
+  - first:
+      213: 4959046670915714105
+    second: Beach Tileset_1079
+  - first:
+      213: -3498525933453454448
+    second: Beach Tileset_1080
+  - first:
+      213: -2798932904489966918
+    second: Beach Tileset_1081
+  - first:
+      213: -5274898519570172214
+    second: Beach Tileset_1082
+  - first:
+      213: -2552369601689500099
+    second: Beach Tileset_1083
+  - first:
+      213: -4635760030682505097
+    second: Beach Tileset_1084
+  - first:
+      213: -1653078788422658440
+    second: Beach Tileset_1085
+  - first:
+      213: -9181603152978016813
+    second: Beach Tileset_1086
+  - first:
+      213: 4833558057626618315
+    second: Beach Tileset_1087
+  - first:
+      213: 3974349085083600772
+    second: Beach Tileset_1088
+  - first:
+      213: 3891710824618222626
+    second: Beach Tileset_1089
+  - first:
+      213: -6558861430397015528
+    second: Beach Tileset_1090
+  - first:
+      213: -4658029402415652637
+    second: Beach Tileset_1091
+  - first:
+      213: 5522608046287088035
+    second: Beach Tileset_1092
+  - first:
+      213: 6550967711247544662
+    second: Beach Tileset_1093
+  - first:
+      213: 2147475349154223350
+    second: Beach Tileset_1094
+  - first:
+      213: 2412455536023184999
+    second: Beach Tileset_1095
+  - first:
+      213: -7644911763144379038
+    second: Beach Tileset_1096
+  - first:
+      213: -8669887477749704011
+    second: Beach Tileset_1097
+  - first:
+      213: -1448160665051519564
+    second: Beach Tileset_1098
+  - first:
+      213: -6910699293335783523
+    second: Beach Tileset_1099
+  - first:
+      213: -6967963825392067913
+    second: Beach Tileset_1100
+  - first:
+      213: 8151434521435664091
+    second: Beach Tileset_1101
+  - first:
+      213: -5097308659611670786
+    second: Beach Tileset_1102
+  - first:
+      213: -5665251998870357329
+    second: Beach Tileset_1103
+  - first:
+      213: 827022741514432751
+    second: Beach Tileset_1104
+  - first:
+      213: -8360069519069408187
+    second: Beach Tileset_1105
+  - first:
+      213: 690906462915215855
+    second: Beach Tileset_1106
+  - first:
+      213: -6679943157641960025
+    second: Beach Tileset_1107
+  - first:
+      213: -9049967404697356281
+    second: Beach Tileset_1108
+  - first:
+      213: -2727389372890209203
+    second: Beach Tileset_1109
+  - first:
+      213: -7575713853081829032
+    second: Beach Tileset_1110
+  - first:
+      213: 338172349453618185
+    second: Beach Tileset_1111
+  - first:
+      213: -7108666152867463705
+    second: Beach Tileset_1112
+  - first:
+      213: 4379312465553811925
+    second: Beach Tileset_1113
+  - first:
+      213: 139432266607347274
+    second: Beach Tileset_1114
+  - first:
+      213: -8198236190093364677
+    second: Beach Tileset_1115
+  - first:
+      213: -607596576504770490
+    second: Beach Tileset_1116
+  - first:
+      213: -6786822613329853466
+    second: Beach Tileset_1117
+  - first:
+      213: 740617560040465790
+    second: Beach Tileset_1118
+  - first:
+      213: 5028786219802498716
+    second: Beach Tileset_1119
+  - first:
+      213: 1529119896878736747
+    second: Beach Tileset_1120
+  - first:
+      213: -4610294027785255398
+    second: Beach Tileset_1121
+  - first:
+      213: 5029356716519469047
+    second: Beach Tileset_1122
+  - first:
+      213: -4869911783584471589
+    second: Beach Tileset_1123
+  - first:
+      213: 1725681588332353713
+    second: Beach Tileset_1124
+  - first:
+      213: 2637046133769357531
+    second: Beach Tileset_1125
+  - first:
+      213: 6513809992457019994
+    second: Beach Tileset_1126
+  - first:
+      213: 334683682562283286
+    second: Beach Tileset_1127
+  - first:
+      213: 2423981356438507114
+    second: Beach Tileset_1128
+  - first:
+      213: -334286370806132906
+    second: Beach Tileset_1129
+  - first:
+      213: -1381610065381338528
+    second: Beach Tileset_1130
+  - first:
+      213: -8742793066891818782
+    second: Beach Tileset_1131
+  - first:
+      213: -7691262094924493682
+    second: Beach Tileset_1132
+  - first:
+      213: -6892379907880196948
+    second: Beach Tileset_1133
+  - first:
+      213: -5342821728200925999
+    second: Beach Tileset_1134
+  - first:
+      213: -2049108644965911815
+    second: Beach Tileset_1135
+  - first:
+      213: 4198166463981009968
+    second: Beach Tileset_1136
+  - first:
+      213: 8391009584353465496
+    second: Beach Tileset_1137
+  - first:
+      213: 2777744187329532466
+    second: Beach Tileset_1138
+  - first:
+      213: 44706428620417918
+    second: Beach Tileset_1139
+  - first:
+      213: 4071094277608760849
+    second: Beach Tileset_1140
+  - first:
+      213: -4377047589162924424
+    second: Beach Tileset_1141
+  - first:
+      213: -4470517811716103999
+    second: Beach Tileset_1142
+  - first:
+      213: 4093080915868389686
+    second: Beach Tileset_1143
+  - first:
+      213: 5633486262959717144
+    second: Beach Tileset_1144
+  - first:
+      213: -7835877175646824298
+    second: Beach Tileset_1145
+  - first:
+      213: 7894765745650947496
+    second: Beach Tileset_1146
+  - first:
+      213: -2083477006349405011
+    second: Beach Tileset_1147
+  - first:
+      213: -8008537158259330604
+    second: Beach Tileset_1148
+  - first:
+      213: 6232322158593033051
+    second: Beach Tileset_1149
+  - first:
+      213: 4520729605907748758
+    second: Beach Tileset_1150
+  - first:
+      213: 7412998790236288512
+    second: Beach Tileset_1151
+  - first:
+      213: -17704869657698149
+    second: Beach Tileset_1152
+  - first:
+      213: -7796415957546509533
+    second: Beach Tileset_1153
+  - first:
+      213: -7039170197265367047
+    second: Beach Tileset_1154
+  - first:
+      213: -4180674305551105747
+    second: Beach Tileset_1155
+  - first:
+      213: -2712902765261804035
+    second: Beach Tileset_1156
+  - first:
+      213: -8462543003675705877
+    second: Beach Tileset_1157
+  - first:
+      213: -3226786775130274439
+    second: Beach Tileset_1158
+  - first:
+      213: -629542279310955828
+    second: Beach Tileset_1159
+  - first:
+      213: -2412562774887681008
+    second: Beach Tileset_1160
+  - first:
+      213: 1711689869833092475
+    second: Beach Tileset_1161
+  - first:
+      213: -2536485920277662309
+    second: Beach Tileset_1162
+  - first:
+      213: -3843259186111697683
+    second: Beach Tileset_1163
+  - first:
+      213: -5334169421219472660
+    second: Beach Tileset_1164
+  - first:
+      213: 7437467530801093019
+    second: Beach Tileset_1165
+  - first:
+      213: 2064295247587372747
+    second: Beach Tileset_1166
+  - first:
+      213: -6255382472474616017
+    second: Beach Tileset_1167
+  - first:
+      213: -5611554059317530679
+    second: Beach Tileset_1168
+  - first:
+      213: 7758418769954976778
+    second: Beach Tileset_1169
+  - first:
+      213: 5419475300269454289
+    second: Beach Tileset_1170
+  - first:
+      213: 3564243323075482202
+    second: Beach Tileset_1171
+  - first:
+      213: 6003125129284842282
+    second: Beach Tileset_1172
+  - first:
+      213: 8594655584847686545
+    second: Beach Tileset_1173
+  - first:
+      213: 8533457309978636231
+    second: Beach Tileset_1174
+  - first:
+      213: -483699396898589951
+    second: Beach Tileset_1175
+  - first:
+      213: -6802226044780616293
+    second: Beach Tileset_1176
+  - first:
+      213: 8297655388682107695
+    second: Beach Tileset_1177
+  - first:
+      213: 1455143043498356086
+    second: Beach Tileset_1178
+  - first:
+      213: 2659656766280246800
+    second: Beach Tileset_1179
+  - first:
+      213: 2970695720041503874
+    second: Beach Tileset_1180
+  - first:
+      213: 787246916400547991
+    second: Beach Tileset_1181
+  - first:
+      213: -6274554298921080867
+    second: Beach Tileset_1182
+  - first:
+      213: 3960434168601938602
+    second: Beach Tileset_1183
+  - first:
+      213: 5361166165636627639
+    second: Beach Tileset_1184
+  - first:
+      213: -5044553161454323034
+    second: Beach Tileset_1185
+  - first:
+      213: 5704372253335086461
+    second: Beach Tileset_1186
+  - first:
+      213: -5915636212943079332
+    second: Beach Tileset_1187
+  - first:
+      213: 8283147539296960648
+    second: Beach Tileset_1188
+  - first:
+      213: -820819332844196824
+    second: Beach Tileset_1189
+  - first:
+      213: 4667584724109229643
+    second: Beach Tileset_1190
+  - first:
+      213: 6611374771140593689
+    second: Beach Tileset_1191
+  - first:
+      213: 5759942724217230532
+    second: Beach Tileset_1192
+  - first:
+      213: 4742594786089545658
+    second: Beach Tileset_1193
+  - first:
+      213: -7176632830458647831
+    second: Beach Tileset_1194
+  - first:
+      213: -1447112750523212860
+    second: Beach Tileset_1195
+  - first:
+      213: 1164639974036212527
+    second: Beach Tileset_1196
+  - first:
+      213: 8247827959296203182
+    second: Beach Tileset_1197
+  - first:
+      213: 8084897473818742229
+    second: Beach Tileset_1198
+  - first:
+      213: -2693349815722010107
+    second: Beach Tileset_1199
+  - first:
+      213: -8972846488231955372
+    second: Beach Tileset_1200
+  - first:
+      213: -4023967211508313321
+    second: Beach Tileset_1201
+  - first:
+      213: -1137818459119908132
+    second: Beach Tileset_1202
+  - first:
+      213: -2861281307663857501
+    second: Beach Tileset_1203
+  - first:
+      213: 5994329418980390296
+    second: Beach Tileset_1204
+  - first:
+      213: 1384362108232545012
+    second: Beach Tileset_1205
+  - first:
+      213: -2871374646492057747
+    second: Beach Tileset_1206
+  - first:
+      213: -4220079442404318582
+    second: Beach Tileset_1207
+  - first:
+      213: -4830951389706541676
+    second: Beach Tileset_1208
+  - first:
+      213: 4302015174503312500
+    second: Beach Tileset_1209
+  - first:
+      213: -5732028250069287446
+    second: Beach Tileset_1210
+  - first:
+      213: -8004624575151519246
+    second: Beach Tileset_1211
+  - first:
+      213: 7626302541916812195
+    second: Beach Tileset_1212
+  - first:
+      213: 4113294769521188262
+    second: Beach Tileset_1213
+  - first:
+      213: -6599225214342442820
+    second: Beach Tileset_1214
+  - first:
+      213: 1072852170477671440
+    second: Beach Tileset_1215
+  - first:
+      213: 5922974333438905458
+    second: Beach Tileset_1216
+  - first:
+      213: -749509630409323463
+    second: Beach Tileset_1217
+  - first:
+      213: -6261467606117740217
+    second: Beach Tileset_1218
+  - first:
+      213: 2630807988800120638
+    second: Beach Tileset_1219
+  - first:
+      213: 4258152442049272320
+    second: Beach Tileset_1220
+  - first:
+      213: -9113392942996165119
+    second: Beach Tileset_1221
+  - first:
+      213: -6010411009747780108
+    second: Beach Tileset_1222
+  - first:
+      213: 6692456357502956665
+    second: Beach Tileset_1223
+  - first:
+      213: -9192287148623122255
+    second: Beach Tileset_1224
+  - first:
+      213: 7706146556739722469
+    second: Beach Tileset_1225
+  - first:
+      213: -6815019266947968471
+    second: Beach Tileset_1226
+  - first:
+      213: 8338283202008230020
+    second: Beach Tileset_1227
+  - first:
+      213: 233548739676567470
+    second: Beach Tileset_1228
+  - first:
+      213: 1551666621335332784
+    second: Beach Tileset_1229
+  - first:
+      213: 2906030155399671238
+    second: Beach Tileset_1230
+  - first:
+      213: 4477656662283089301
+    second: Beach Tileset_1231
+  - first:
+      213: 3949405950801200403
+    second: Beach Tileset_1232
+  - first:
+      213: -5262825693047141733
+    second: Beach Tileset_1233
+  - first:
+      213: -6390852056237256996
+    second: Beach Tileset_1234
+  - first:
+      213: -7587829352008007333
+    second: Beach Tileset_1235
+  - first:
+      213: -4451959658909045539
+    second: Beach Tileset_1236
+  - first:
+      213: -5027998114951538223
+    second: Beach Tileset_1237
+  - first:
+      213: -3429784723021726711
+    second: Beach Tileset_1238
+  - first:
+      213: 4905104514982649619
+    second: Beach Tileset_1239
+  - first:
+      213: 8785797881402971043
+    second: Beach Tileset_1240
+  - first:
+      213: -2596903644265241573
+    second: Beach Tileset_1241
+  - first:
+      213: 7880258833295475501
+    second: Beach Tileset_1242
+  - first:
+      213: 2210801587774706852
+    second: Beach Tileset_1243
+  - first:
+      213: -6992716178927911668
+    second: Beach Tileset_1244
+  - first:
+      213: -8956890233383424162
+    second: Beach Tileset_1245
+  - first:
+      213: -7230013675913564295
+    second: Beach Tileset_1246
+  - first:
+      213: 361992400623047659
+    second: Beach Tileset_1247
+  - first:
+      213: -4126068298170214145
+    second: Beach Tileset_1248
+  - first:
+      213: -7418252884476548711
+    second: Beach Tileset_1249
+  - first:
+      213: 3092147422413714528
+    second: Beach Tileset_1250
+  - first:
+      213: -481412739287455204
+    second: Beach Tileset_1251
+  - first:
+      213: -7715365897669486464
+    second: Beach Tileset_1252
+  - first:
+      213: 8583717337379466559
+    second: Beach Tileset_1253
+  - first:
+      213: 1122411173690692542
+    second: Beach Tileset_1254
+  - first:
+      213: 3312350795906791360
+    second: Beach Tileset_1255
+  - first:
+      213: -8429016712952671120
+    second: Beach Tileset_1256
+  - first:
+      213: 4708784529328871194
+    second: Beach Tileset_1257
+  - first:
+      213: 1937406609692429826
+    second: Beach Tileset_1258
+  - first:
+      213: 3667177335697030958
+    second: Beach Tileset_1259
+  - first:
+      213: -7125591152162879596
+    second: Beach Tileset_1260
+  - first:
+      213: -8551734980973618153
+    second: Beach Tileset_1261
+  - first:
+      213: 2752970289021222720
+    second: Beach Tileset_1262
+  - first:
+      213: -9078053907329300760
+    second: Beach Tileset_1263
+  - first:
+      213: -861041833595560484
+    second: Beach Tileset_1264
+  - first:
+      213: -4984766009202662333
+    second: Beach Tileset_1265
+  - first:
+      213: 1926020520890650671
+    second: Beach Tileset_1266
+  - first:
+      213: 7521488205199679435
+    second: Beach Tileset_1267
+  - first:
+      213: 6603088004217049205
+    second: Beach Tileset_1268
+  - first:
+      213: -4286206924116489296
+    second: Beach Tileset_1269
+  - first:
+      213: 1242211461519449425
+    second: Beach Tileset_1270
+  - first:
+      213: 6347955953210948878
+    second: Beach Tileset_1271
+  - first:
+      213: 5722856969128921064
+    second: Beach Tileset_1272
+  - first:
+      213: -5445460332653608933
+    second: Beach Tileset_1273
+  - first:
+      213: 4534381225652592688
+    second: Beach Tileset_1274
+  - first:
+      213: -4511035259833180353
+    second: Beach Tileset_1275
+  - first:
+      213: -5362483449170605807
+    second: Beach Tileset_1276
+  - first:
+      213: 1350451195769384851
+    second: Beach Tileset_1277
+  - first:
+      213: 4301896058381006458
+    second: Beach Tileset_1278
+  - first:
+      213: 871913890593329442
+    second: Beach Tileset_1279
+  - first:
+      213: 6460505633593008275
+    second: Beach Tileset_1280
+  - first:
+      213: -9109864047658016126
+    second: Beach Tileset_1281
+  - first:
+      213: -3330007138384450608
+    second: Beach Tileset_1282
+  - first:
+      213: -6532742934679719651
+    second: Beach Tileset_1283
+  - first:
+      213: 7446512982436133708
+    second: Beach Tileset_1284
+  - first:
+      213: -3256268062899922255
+    second: Beach Tileset_1285
+  - first:
+      213: 2777358057983503827
+    second: Beach Tileset_1286
+  - first:
+      213: 7073304287826614366
+    second: Beach Tileset_1287
+  - first:
+      213: 2176411831198776135
+    second: Beach Tileset_1288
+  - first:
+      213: 4778468345682554167
+    second: Beach Tileset_1289
+  - first:
+      213: -3193822131422289652
+    second: Beach Tileset_1290
+  - first:
+      213: -2285466423753433178
+    second: Beach Tileset_1291
+  - first:
+      213: 5485803397540230285
+    second: Beach Tileset_1292
+  - first:
+      213: 8920810953215361162
+    second: Beach Tileset_1293
+  - first:
+      213: 1351884985067289515
+    second: Beach Tileset_1294
+  - first:
+      213: -627912546870443640
+    second: Beach Tileset_1295
+  - first:
+      213: 860295111790284691
+    second: Beach Tileset_1296
+  - first:
+      213: -2305390612144727429
+    second: Beach Tileset_1297
+  - first:
+      213: -8368487312370099002
+    second: Beach Tileset_1298
+  - first:
+      213: 7966497765373304969
+    second: Beach Tileset_1299
+  - first:
+      213: 7782908063673246948
+    second: Beach Tileset_1300
+  - first:
+      213: 4993318127123598194
+    second: Beach Tileset_1301
+  - first:
+      213: 764110567193045402
+    second: Beach Tileset_1302
+  - first:
+      213: 8069254387585420928
+    second: Beach Tileset_1303
+  - first:
+      213: -3722632531171304211
+    second: Beach Tileset_1304
+  - first:
+      213: -7478155023244272369
+    second: Beach Tileset_1305
+  - first:
+      213: -4411000947492529465
+    second: Beach Tileset_1306
+  - first:
+      213: -8579927071732238521
+    second: Beach Tileset_1307
+  - first:
+      213: 2623505490549343439
+    second: Beach Tileset_1308
+  - first:
+      213: 5884462701036946628
+    second: Beach Tileset_1309
+  - first:
+      213: 8877162525803667306
+    second: Beach Tileset_1310
+  - first:
+      213: -5778467075260529726
+    second: Beach Tileset_1311
+  - first:
+      213: 2460224605997630567
+    second: Beach Tileset_1312
+  - first:
+      213: -202551487246737152
+    second: Beach Tileset_1313
+  - first:
+      213: -2441033577191106730
+    second: Beach Tileset_1314
+  - first:
+      213: 6743048301642145514
+    second: Beach Tileset_1315
+  - first:
+      213: 928669196631996114
+    second: Beach Tileset_1316
+  - first:
+      213: 5851240638206078012
+    second: Beach Tileset_1317
+  - first:
+      213: -1276090270482266398
+    second: Beach Tileset_1318
+  - first:
+      213: -6948124951849368007
+    second: Beach Tileset_1319
+  - first:
+      213: -3808429004885265180
+    second: Beach Tileset_1320
+  - first:
+      213: -1481489246934553916
+    second: Beach Tileset_1321
+  - first:
+      213: -5198899787557111352
+    second: Beach Tileset_1322
+  - first:
+      213: 8135934266362968490
+    second: Beach Tileset_1323
+  - first:
+      213: 4091779422410789559
+    second: Beach Tileset_1324
+  - first:
+      213: 7692509837209458644
+    second: Beach Tileset_1325
+  - first:
+      213: 6028812620750860299
+    second: Beach Tileset_1326
+  - first:
+      213: 6771685266667205660
+    second: Beach Tileset_1327
+  - first:
+      213: -8559689056380103913
+    second: Beach Tileset_1328
+  - first:
+      213: -1373524392353042954
+    second: Beach Tileset_1329
+  - first:
+      213: 7382791825851934666
+    second: Beach Tileset_1330
+  - first:
+      213: 2616649557085509732
+    second: Beach Tileset_1331
+  - first:
+      213: 4195387973661675379
+    second: Beach Tileset_1332
+  - first:
+      213: -3914086109136436162
+    second: Beach Tileset_1333
+  - first:
+      213: -7317491113273372186
+    second: Beach Tileset_1334
+  - first:
+      213: -1225001934127743557
+    second: Beach Tileset_1335
+  - first:
+      213: -2141144993260024089
+    second: Beach Tileset_1336
+  - first:
+      213: -5876671816390812552
+    second: Beach Tileset_1337
+  - first:
+      213: 2510550955917011486
+    second: Beach Tileset_1338
+  - first:
+      213: 228428311360805546
+    second: Beach Tileset_1339
+  - first:
+      213: 6648172691779304823
+    second: Beach Tileset_1340
+  - first:
+      213: -7105569266435345141
+    second: Beach Tileset_1341
+  - first:
+      213: 4204648905428136179
+    second: Beach Tileset_1342
+  - first:
+      213: 2411526729721681282
+    second: Beach Tileset_1343
+  - first:
+      213: 4874991232039198492
+    second: Beach Tileset_1344
+  - first:
+      213: -346810817873627641
+    second: Beach Tileset_1345
+  - first:
+      213: -4607682295498055212
+    second: Beach Tileset_1346
+  - first:
+      213: -5325666994743144457
+    second: Beach Tileset_1347
+  - first:
+      213: -4661196242244378261
+    second: Beach Tileset_1348
+  - first:
+      213: -3269635471803816347
+    second: Beach Tileset_1349
+  - first:
+      213: -892955921621155757
+    second: Beach Tileset_1350
+  - first:
+      213: -5255258501405402929
+    second: Beach Tileset_1351
+  - first:
+      213: 7266494089219093441
+    second: Beach Tileset_1352
+  - first:
+      213: -8000843145607131404
+    second: Beach Tileset_1353
+  - first:
+      213: -373995766682664203
+    second: Beach Tileset_1354
+  - first:
+      213: 7009157224348113344
+    second: Beach Tileset_1355
+  - first:
+      213: -6396250313523103106
+    second: Beach Tileset_1356
+  - first:
+      213: -2425176153669531901
+    second: Beach Tileset_1357
+  - first:
+      213: 2915457453911088532
+    second: Beach Tileset_1358
+  - first:
+      213: -9071129938266607124
+    second: Beach Tileset_1359
+  - first:
+      213: 3876013141691971349
+    second: Beach Tileset_1360
+  - first:
+      213: -5725797232815682642
+    second: Beach Tileset_1361
+  - first:
+      213: -3204404484117187054
+    second: Beach Tileset_1362
+  - first:
+      213: -2674507114070731923
+    second: Beach Tileset_1363
+  - first:
+      213: 3375599448984739105
+    second: Beach Tileset_1364
+  - first:
+      213: 5614024900175901809
+    second: Beach Tileset_1365
+  - first:
+      213: -1910282826048458589
+    second: Beach Tileset_1366
+  - first:
+      213: -2293397187278026190
+    second: Beach Tileset_1367
+  - first:
+      213: -1674228982090797718
+    second: Beach Tileset_1368
+  - first:
+      213: 3356722135563197916
+    second: Beach Tileset_1369
+  - first:
+      213: 8954789411356708540
+    second: Beach Tileset_1370
+  - first:
+      213: -514821680507283482
+    second: Beach Tileset_1371
+  - first:
+      213: 9041594215287055174
+    second: Beach Tileset_1372
+  - first:
+      213: -6189314056557226585
+    second: Beach Tileset_1373
+  - first:
+      213: -8615615811344811493
+    second: Beach Tileset_1374
+  - first:
+      213: 4591988845270015947
+    second: Beach Tileset_1375
+  - first:
+      213: -4709507045104207288
+    second: Beach Tileset_1376
+  - first:
+      213: 691330215691530932
+    second: Beach Tileset_1377
+  - first:
+      213: 59825696206367123
+    second: Beach Tileset_1378
+  - first:
+      213: 1291081308534043760
+    second: Beach Tileset_1379
+  - first:
+      213: 2604272838207090401
+    second: Beach Tileset_1380
+  - first:
+      213: -1035912125049532718
+    second: Beach Tileset_1381
+  - first:
+      213: 4769096261929442309
+    second: Beach Tileset_1382
+  - first:
+      213: -740046513748669585
+    second: Beach Tileset_1383
+  - first:
+      213: 5152054128942851255
+    second: Beach Tileset_1384
+  - first:
+      213: -8275739547661706617
+    second: Beach Tileset_1385
+  - first:
+      213: 2047562224967063823
+    second: Beach Tileset_1386
+  - first:
+      213: -5096616804301361829
+    second: Beach Tileset_1387
+  - first:
+      213: 6996828403667492246
+    second: Beach Tileset_1388
+  - first:
+      213: 3557190778513451403
+    second: Beach Tileset_1389
+  - first:
+      213: 8777607478765913344
+    second: Beach Tileset_1390
+  - first:
+      213: 7840726903595868014
+    second: Beach Tileset_1391
+  - first:
+      213: 5570985741336119020
+    second: Beach Tileset_1392
+  - first:
+      213: -8735438014481821529
+    second: Beach Tileset_1393
+  - first:
+      213: 8863016773198108624
+    second: Beach Tileset_1394
+  - first:
+      213: 6586877785365321978
+    second: Beach Tileset_1395
+  - first:
+      213: -645203990837195310
+    second: Beach Tileset_1396
+  - first:
+      213: 691898454320939507
+    second: Beach Tileset_1397
+  - first:
+      213: -9009570721285547519
+    second: Beach Tileset_1398
+  - first:
+      213: -9146175352509335375
+    second: Beach Tileset_1399
+  - first:
+      213: 9152706648322594961
+    second: Beach Tileset_1400
+  - first:
+      213: -7024666458373733017
+    second: Beach Tileset_1401
+  - first:
+      213: 6163894878192865329
+    second: Beach Tileset_1402
+  - first:
+      213: 2878689525849320072
+    second: Beach Tileset_1403
+  - first:
+      213: -4600832321936263219
+    second: Beach Tileset_1404
+  - first:
+      213: 8079873567012309333
+    second: Beach Tileset_1405
+  - first:
+      213: -1576749777409786161
+    second: Beach Tileset_1406
+  - first:
+      213: 4054860861032540482
+    second: Beach Tileset_1407
+  - first:
+      213: -8365432684222352669
+    second: Beach Tileset_1408
+  - first:
+      213: -4413538403761700145
+    second: Beach Tileset_1409
+  - first:
+      213: 5482561424134005378
+    second: Beach Tileset_1410
+  - first:
+      213: 1250500060299906497
+    second: Beach Tileset_1411
+  - first:
+      213: -2531633286859785167
+    second: Beach Tileset_1412
+  - first:
+      213: -4354177693801757285
+    second: Beach Tileset_1413
+  - first:
+      213: 3044760431667337710
+    second: Beach Tileset_1414
+  - first:
+      213: -7437522268934828916
+    second: Beach Tileset_1415
+  - first:
+      213: -1328015506489892497
+    second: Beach Tileset_1416
+  - first:
+      213: 3854696103787744695
+    second: Beach Tileset_1417
+  - first:
+      213: 2906407522850605161
+    second: Beach Tileset_1418
+  - first:
+      213: 3382733919440480740
+    second: Beach Tileset_1419
+  - first:
+      213: -1942993368271931092
+    second: Beach Tileset_1420
+  - first:
+      213: -2048734986574267755
+    second: Beach Tileset_1421
+  - first:
+      213: -7851767084964074792
+    second: Beach Tileset_1422
+  - first:
+      213: -6396317006227422098
+    second: Beach Tileset_1423
+  - first:
+      213: 4395471487544905358
+    second: Beach Tileset_1424
+  - first:
+      213: 4984298030966393978
+    second: Beach Tileset_1425
+  - first:
+      213: 8806837273133274736
+    second: Beach Tileset_1426
+  - first:
+      213: -5088953012635346886
+    second: Beach Tileset_1427
+  - first:
+      213: -7167032294799679275
+    second: Beach Tileset_1428
+  - first:
+      213: 4457941083593506526
+    second: Beach Tileset_1429
+  - first:
+      213: -7425728699602550133
+    second: Beach Tileset_1430
+  - first:
+      213: 4105235652896371519
+    second: Beach Tileset_1431
+  - first:
+      213: -8532898362966873112
+    second: Beach Tileset_1432
+  - first:
+      213: -6708379238542269177
+    second: Beach Tileset_1433
+  - first:
+      213: -3393812525936543804
+    second: Beach Tileset_1434
+  - first:
+      213: -4832325824685294527
+    second: Beach Tileset_1435
+  - first:
+      213: -3536821726761687820
+    second: Beach Tileset_1436
+  - first:
+      213: -1243184606229419155
+    second: Beach Tileset_1437
+  - first:
+      213: 7852932900026886924
+    second: Beach Tileset_1438
+  - first:
+      213: 950920587721493719
+    second: Beach Tileset_1439
+  - first:
+      213: -6589929411724962372
+    second: Beach Tileset_1440
+  - first:
+      213: -2751348822050121768
+    second: Beach Tileset_1441
+  - first:
+      213: 5130191468410560464
+    second: Beach Tileset_1442
+  - first:
+      213: -6706603976986488181
+    second: Beach Tileset_1443
+  - first:
+      213: 4376297792851516301
+    second: Beach Tileset_1444
+  - first:
+      213: -6525363701308922832
+    second: Beach Tileset_1445
+  - first:
+      213: 4591186045491602663
+    second: Beach Tileset_1446
+  - first:
+      213: 6509990465782121031
+    second: Beach Tileset_1447
+  - first:
+      213: 3690587832685386805
+    second: Beach Tileset_1448
+  - first:
+      213: 2517379985083286306
+    second: Beach Tileset_1449
+  - first:
+      213: 6330393485839289166
+    second: Beach Tileset_1450
+  - first:
+      213: -6924227902508648512
+    second: Beach Tileset_1451
+  - first:
+      213: 1064006942946692900
+    second: Beach Tileset_1452
+  - first:
+      213: 8045673993551931030
+    second: Beach Tileset_1453
+  - first:
+      213: 3352413069727376975
+    second: Beach Tileset_1454
+  - first:
+      213: 6047581991129461012
+    second: Beach Tileset_1455
+  - first:
+      213: -6039359835270635751
+    second: Beach Tileset_1456
+  - first:
+      213: 3124965208338561423
+    second: Beach Tileset_1457
+  - first:
+      213: -2508879405515189566
+    second: Beach Tileset_1458
+  - first:
+      213: -3145081026936259702
+    second: Beach Tileset_1459
+  - first:
+      213: -1422873358672025075
+    second: Beach Tileset_1460
+  - first:
+      213: -4792130527333145371
+    second: Beach Tileset_1461
+  - first:
+      213: 2260691151113012631
+    second: Beach Tileset_1462
+  - first:
+      213: -7211473710500994221
+    second: Beach Tileset_1463
+  - first:
+      213: 3448831457318908774
+    second: Beach Tileset_1464
+  - first:
+      213: -4931597065246885595
+    second: Beach Tileset_1465
+  - first:
+      213: -2004212059683589750
+    second: Beach Tileset_1466
+  - first:
+      213: 3685844396748528373
+    second: Beach Tileset_1467
+  - first:
+      213: 2560750597639476563
+    second: Beach Tileset_1468
+  - first:
+      213: 6263882748050816002
+    second: Beach Tileset_1469
+  - first:
+      213: 613640348767464528
+    second: Beach Tileset_1470
+  - first:
+      213: -3667895955685902955
+    second: Beach Tileset_1471
+  - first:
+      213: -6943324285433819938
+    second: Beach Tileset_1472
+  - first:
+      213: -1139884696093420810
+    second: Beach Tileset_1473
+  - first:
+      213: 1668944677439797145
+    second: Beach Tileset_1474
+  - first:
+      213: -4753318116292257908
+    second: Beach Tileset_1475
+  - first:
+      213: 118571999974651083
+    second: Beach Tileset_1476
+  - first:
+      213: 1712779583308270436
+    second: Beach Tileset_1477
+  - first:
+      213: 988170174258300791
+    second: Beach Tileset_1478
+  - first:
+      213: -327607108075564369
+    second: Beach Tileset_1479
+  - first:
+      213: 1194250974786973414
+    second: Beach Tileset_1480
+  - first:
+      213: 4818362533125032080
+    second: Beach Tileset_1481
+  - first:
+      213: -208915187854079326
+    second: Beach Tileset_1482
+  - first:
+      213: -5796196631981077584
+    second: Beach Tileset_1483
+  - first:
+      213: -7794148415580011092
+    second: Beach Tileset_1484
+  - first:
+      213: 3929551270808500399
+    second: Beach Tileset_1485
+  - first:
+      213: -661009074597357855
+    second: Beach Tileset_1486
+  - first:
+      213: 8330718827311880015
+    second: Beach Tileset_1487
+  - first:
+      213: -341234657898405181
+    second: Beach Tileset_1488
+  - first:
+      213: 1597312029380551628
+    second: Beach Tileset_1489
+  - first:
+      213: -4817129513192082713
+    second: Beach Tileset_1490
+  - first:
+      213: -8860702511563260714
+    second: Beach Tileset_1491
+  - first:
+      213: 292659671094687137
+    second: Beach Tileset_1492
+  - first:
+      213: 3097642095375244481
+    second: Beach Tileset_1493
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beach Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafe2fa37eae05110800000000000000
+      internalID: 1247755375628971949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cb9a6c25d1bb090800000000000000
+      internalID: -8017782470245499802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf393d01dd51e5a0800000000000000
+      internalID: -6493806035240140837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bee6387975d5d00800000000000000
+      internalID: 963022203583916829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08178e19d2de3e220800000000000000
+      internalID: 2514113796980109696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437c2e21dbf160900800000000000000
+      internalID: 650242093127747380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc4db8b61b27c440800000000000000
+      internalID: 4955977291533208789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5f36606d5621f90800000000000000
+      internalID: -6984408102193596951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9626c72d0705a7180800000000000000
+      internalID: -9116886050160221591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76699e10d88f0a650800000000000000
+      internalID: 6242262368041670247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8332577c69e808dd0800000000000000
+      internalID: -2485830216065932488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65b5372129efb080800000000000000
+      internalID: -9169353987702016659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5829c66c7045f00800000000000000
+      internalID: 1104516357419074977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070e61680c5eda7f0800000000000000
+      internalID: -599570560324280208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ccb668a89c4b0f0800000000000000
+      internalID: -1102034412001047519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71538f00f56516330800000000000000
+      internalID: 3702335334713406743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7386c2db9a69ea40800000000000000
+      internalID: 5397962845868950397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe718e9c5c20e2f0800000000000000
+      internalID: -945707145439904012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582b755669dd52720800000000000000
+      internalID: 2820904379632562821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a974f931b63b1300800000000000000
+      internalID: 223832741294406050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab78a9ee7d1695330800000000000000
+      internalID: 3700096148910540730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72863653f031c38a0800000000000000
+      internalID: -6324158820693874649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23051fa2bf4bf77e0800000000000000
+      internalID: -1765493538055696334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7748caebf3356bae0800000000000000
+      internalID: -1533947089826053001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad23bd0aefa962a0800000000000000
+      internalID: -6743665547223552599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff2f4dd012b170e0800000000000000
+      internalID: -2273840551343214607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375922049b6fa3660800000000000000
+      internalID: 7366471416023258483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7819011f1273a9ef0800000000000000
+      internalID: -100707422744571513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e7ae37a61ea2110800000000000000
+      internalID: 1237048894994152983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca994877d5a47010800000000000000
+      internalID: 1185754946759924425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe988a40730c9360800000000000000
+      internalID: 7177615686943416061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56990e4d427e79f0800000000000000
+      internalID: -468811634852653475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df09844090aeda30800000000000000
+      internalID: 4242004440515153872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06141445420bc320800000000000000
+      internalID: 2579157708117906957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82eb448391bfac5a0800000000000000
+      internalID: -6500107026419106264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_35
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f410106502720c10800000000000000
+      internalID: 2018300950427473141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_36
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff632419d19d0bd0800000000000000
+      internalID: -2662311443174297607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_37
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5216d5ef09f5af470800000000000000
+      internalID: 8429154728924766501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e94438c1150c880800000000000000
+      internalID: -8592778906119659950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_39
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa893d547c27c4f0800000000000000
+      internalID: -808628729797834080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_40
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb9df2f716e11fd0800000000000000
+      internalID: -2372862538112197702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5f729d65a2bd9a0800000000000000
+      internalID: -6207321108901268031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c1d4f825d3dab80800000000000000
+      internalID: -8381975906665817064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6506eff39e75040800000000000000
+      internalID: 4636430802461152970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89203738f9df34450800000000000000
+      internalID: 6071975584172540568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cd80089f28f7490800000000000000
+      internalID: -7746328825947431874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ae3b2468b861d00800000000000000
+      internalID: 943094580741663356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_47
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5671ad47316bcaf60800000000000000
+      internalID: 8047006828885317477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_48
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182f65b3e082599c0800000000000000
+      internalID: -3921183858965941631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db352a2222033f30800000000000000
+      internalID: 4553985993960930259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_50
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a747375ac9dbfba0800000000000000
+      internalID: -6054005810999638104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_51
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c062787a6d557ce0800000000000000
+      internalID: -1408116596614733631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ce7814ff502b0d0800000000000000
+      internalID: -3408655374091817844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_53
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a386e0d5f43d1a0800000000000000
+      internalID: -6785992952424940975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_54
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487c7aa39875b4ca0800000000000000
+      internalID: -6031631029026437244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_55
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384df13a57138bd30800000000000000
+      internalID: 4447359013346071683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd56b2a23079a09c0800000000000000
+      internalID: -3960186882470746657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3297b3f825984cb0800000000000000
+      internalID: -4879486193135807937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccba70934c4c37c80800000000000000
+      internalID: -8326094939028476980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5b6fd35d29f8630800000000000000
+      internalID: 3931522444283000279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7543defa6f8f8510800000000000000
+      internalID: 1553618086170674556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf465986fef83a50800000000000000
+      internalID: 6501226396928856010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306fecde45b2227f0800000000000000
+      internalID: -638900553366178301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689574b53196b04f0800000000000000
+      internalID: -861479371854620282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6c1c546b7298f00800000000000000
+      internalID: 1119469646186137333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_65
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f10a291e2bbf8940800000000000000
+      internalID: 5300661093103436280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c92e02679af97a30800000000000000
+      internalID: 4213674454473910721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_67
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f1dd0d6c8ed26a0800000000000000
+      internalID: -6472261148856213760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c4532b42dd36b20800000000000000
+      internalID: 3126585716003654794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_69
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2c8b56f708c5e60800000000000000
+      internalID: 7952372326685262545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_70
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594e9666e012b82b0800000000000000
+      internalID: -5581330967464123243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_71
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e560d4fc357b92a0800000000000000
+      internalID: -6729656313509288479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_72
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4730a8d37135aa930800000000000000
+      internalID: 4155224965484512116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_73
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630d230696b238960800000000000000
+      internalID: 7602968327517032502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97957b20e4071e440800000000000000
+      internalID: 4963371744694327673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07824ed70fe07ea20800000000000000
+      internalID: 3091456095280179312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a303d3eba40ac00800000000000000
+      internalID: 909809305659652693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_77
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5b566e235cbe970800000000000000
+      internalID: 8785332320520746446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f477247a9f01ab0800000000000000
+      internalID: -5039253486257615098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_79
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01536cf8938974dd0800000000000000
+      internalID: -2501863694988331760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a13b374af488b70800000000000000
+      internalID: 8901452231232133759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_81
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19d7b83f4b81fb10800000000000000
+      internalID: 2013543680781572380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_82
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc88c471736fdc3d0800000000000000
+      internalID: -3184618645006546740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_83
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e71d0038b854860800000000000000
+      internalID: 7513564948108246570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_84
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e30af9e136e7c50800000000000000
+      internalID: 6664873481733160475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_85
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fcbae309c73ebf0800000000000000
+      internalID: -296256191507738832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_86
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dcd373f788e5d70800000000000000
+      internalID: 9033807982520814907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3393eb4effa53a9a0800000000000000
+      internalID: -6223030204995061453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_88
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa159cf225646570800000000000000
+      internalID: 8458997201049557679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_89
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ed2e5821b32e920800000000000000
+      internalID: 3018039651033341452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_90
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf2b8da659d0f680800000000000000
+      internalID: -8723233511914655830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_91
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92843c82797af4360800000000000000
+      internalID: 7156122600580794409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8294f88fca6a41de0800000000000000
+      internalID: -1363281525351691992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_93
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab0b842a52a15f60800000000000000
+      internalID: 8021370919367412642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4bd262ec7c9d5f0800000000000000
+      internalID: -731333776253274886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_95
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b66a58bc88da72a0800000000000000
+      internalID: -6738835793506572620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_96
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828934ee4d788ded0800000000000000
+      internalID: -2389010253719824344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_97
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ad20af4b2bf8590800000000000000
+      internalID: -7669715150030317042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ea35ccb650c9740800000000000000
+      internalID: 5160005233607421585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_99
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7286699f982416d30800000000000000
+      internalID: 4422889469419874343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_100
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e05660d623a39030800000000000000
+      internalID: 3500320722497458404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_101
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f412db3e4c83e2c00800000000000000
+      internalID: 877701395669393743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12c8e677b987f800800000000000000
+      internalID: 646136492617941533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_103
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab34d895aa740600800000000000000
+      internalID: 433606315786648493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Tileset_104
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12701baa52a70d00800000000000000
+      internalID: 938897557630775838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4096fc714d7f0ee498b67fb0a7fc787d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum UnlockType
+{
+    Ingredient,
+    Customer,
+    MagicChest,
+    Pot,
+    Counter,
+    RefinementStation,
+    Region,
+    CustomerAppearRate
+}
+
 [CreateAssetMenu(fileName = "New Customer", menuName = "Customer Data")]
 public class CustomerData : ScriptableObject
 {
-    public enum UnlockType
-    {
-        Ingredient,
-        Customer,
-        MagicChest,
-        Pot,
-        Counter,
-        RefinementStation,
-        Region,
-        CustomerAppearRate
-    }
-
     [Header("Customer Information")]
     public int customerIndex;
     public string customerName;
@@ -89,31 +89,37 @@ public class CustomerData : ScriptableObject
     void UnlockIngredient(int index)
     {
         PlayerProfile.ingredientProfile[index - 1].UnlockThisIngredient();
+        CreateTodayUnlockStuff(UnlockType.Ingredient, index);
     }
 
     void UnlockCustomer(int index)
     {
         PlayerProfile.customerProfile[index].UnlockThisCustomer();
+        CreateTodayUnlockStuff(UnlockType.Customer, index);
     }
 
     void UnlockMagicChest()
     {
         PlayerProfile.fairyShopProfile.magicChestUnlocked++;
+        CreateTodayUnlockStuff(UnlockType.MagicChest, 0);
     }
 
     void UnlockPot()
     {
         PlayerProfile.fairyShopProfile.potUnlocked++;
+        CreateTodayUnlockStuff(UnlockType.Pot, 0);
     }
 
     void UnlockCounter()
     {
         PlayerProfile.fairyShopProfile.counterUnlocked++;
+        CreateTodayUnlockStuff(UnlockType.Counter, 0);
     }
 
     void UnlockRefinementStation(int index)
     {
         PlayerProfile.fairyShopProfile.refinementStationUnlocked[index] = true;
+        CreateTodayUnlockStuff(UnlockType.RefinementStation, index);
     }
 
     void UnlockRegion(int index)
@@ -124,5 +130,18 @@ public class CustomerData : ScriptableObject
     void IncreaseCustomerAppearRate()
     {
         PlayerProfile.shopProfile.increaseCustomerAppearRate = true;
+        CreateTodayUnlockStuff(UnlockType.CustomerAppearRate, 0);
+    }
+
+    void CreateTodayUnlockStuff(UnlockType _unlockType, int _unlockedIndex)
+    {
+        if (ResultManager.Instance != null)
+        {
+            TodayUnlockStuff newTodayUnlockStuff = new TodayUnlockStuff();
+            newTodayUnlockStuff.unlockType = _unlockType;
+            newTodayUnlockStuff.unlockedIndex = _unlockedIndex;
+
+            ResultManager.Instance.todayUnlockedStuff.Add(newTodayUnlockStuff);
+        }
     }
 }

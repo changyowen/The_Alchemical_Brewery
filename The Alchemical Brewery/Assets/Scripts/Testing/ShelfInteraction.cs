@@ -60,7 +60,6 @@ public class ShelfInteraction : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("interact");
         //if player still far from shelf
         float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, transform.position);
         if (dist > 4f)

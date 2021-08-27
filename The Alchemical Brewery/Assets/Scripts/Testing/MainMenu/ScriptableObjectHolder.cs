@@ -11,4 +11,12 @@ public class ScriptableObjectHolder: ScriptableObject
     public CustomerData[] customerDataSO;
 
     public StageDataAssign[] stageDataSO;
+
+    [Header("other sprites")]
+    public Sprite magicChestSprite;
+    public Sprite potSprite;
+    public Sprite counterSprite;
+    public Sprite[] refinementStationSprite;
+    public Sprite[] regionSprite;
+    public Sprite customerAppearRateSprite;
 }

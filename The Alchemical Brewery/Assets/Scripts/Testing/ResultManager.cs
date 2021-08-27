@@ -10,10 +10,12 @@ public class ResultManager : MonoBehaviour
     public CustomerResultPanel customerResultPanel;
 
     public GameObject customerResultPanel_obj;
+    public GameObject unlockStuffPanel_obj;
 
     CustomerLevelStoring[] initialCustomerLevelArray;
     CustomerLevelStoring[] finalCustomerLevelArray;
 
+    public List<TodayUnlockStuff> todayUnlockedStuff = new List<TodayUnlockStuff>();
     bool showingCustomerContent = false;
 
     private void Awake()
@@ -63,22 +65,26 @@ public class ResultManager : MonoBehaviour
             }
             //assign into customer storing array
             finalCustomerLevelArray[i] = newCustomerLevelStoring;
+            Debug.Log(currentCustomerProfile.customerExperience);
+            Debug.Log((float)_customerTypeToday[i].levelingExperience[currentCustomerProfile.customerLevel - 1]);
         }
     }
 
     public IEnumerator StartResult()
     {
         ///SHOW CUSTOMER LEVELING RESULT
-        StartCoroutine(StartCustomerResultPanel());
+        yield return StartCoroutine(StartCustomerResultPanel());
 
-        //show each unlocked stuff
-        yield return null;
-        
+        ///START UNLOCKED STUFF PANEL ANIMATION
+        yield return StartCoroutine(StartUnlockStuffPanel());
+
+        yield return new WaitForSeconds(1f);
+
+        //end scene
     }
 
-    public IEnumerator StartCustomerResultPanel()
+    IEnumerator StartCustomerResultPanel()
     {
-        bool skip = false;
         ///ACTIVATE CUSTOMER RESULT PANEL
         customerResultPanel_obj.SetActive(true);
         yield return new WaitForSeconds(0.5f);
@@ -89,15 +95,45 @@ public class ResultManager : MonoBehaviour
         showingCustomerContent = false;
 
         ///WAIT TILL PLAYER CLICK
-        while (!skip)
-        {
-            if (Input.GetMouseButtonDown(0))
-                skip = true;
-            else
-                yield return null;
-        }
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         ///DEACTIVATE CUSTOMER RESULT PANEL
         customerResultPanel_obj.SetActive(false);
+    }
+
+    IEnumerator StartUnlockStuffPanel()
+    {
+        ///START UNLOCKED STUFF PANEL ANIMATION
+        if (todayUnlockedStuff.Count > 0)
+        {
+            for (int i = 0; i < todayUnlockedStuff.Count; i++)
+            {
+                //instantiate unlocked Stuff Panel
+                GameObject newUnlockStuffPanel = Instantiate(unlockStuffPanel_obj, Vector3.zero, Quaternion.identity, this.transform);
+                //assign data
+                UnlockedStuffPanel currentUnlockStuffPanel = newUnlockStuffPanel.GetComponent<UnlockedStuffPanel>();
+                currentUnlockStuffPanel.AssignData(todayUnlockedStuff[i]);
+
+                //wait until enabled skip
+                while (!currentUnlockStuffPanel.enabledSkip)
+                {
+                    yield return null;
+                }
+                //wait until player click to skip
+                while (currentUnlockStuffPanel.enabledSkip)
+                {
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        currentUnlockStuffPanel.enabledSkip = false;
+                    }
+                    else
+                    {
+                        yield return null;
+                    }
+                }
+                //destroy current unlock stuff panel
+                Destroy(currentUnlockStuffPanel);
+            }
+        }
     }
 }
 
@@ -107,4 +143,10 @@ public class CustomerLevelStoring
     public string customerName; //customer name
     public int customerLevel; //customer current level
     public float customerExperiencePercentage = 1; //customer current experience bar percentage
+}
+
+public class TodayUnlockStuff
+{
+    public UnlockType unlockType;
+    public int unlockedIndex;
 }

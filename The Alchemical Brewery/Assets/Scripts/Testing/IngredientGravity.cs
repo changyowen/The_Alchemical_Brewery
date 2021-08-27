@@ -160,7 +160,6 @@ public class IngredientGravity : MonoBehaviour
         {
             if (hitCollider.tag == "Ground")
             {
-                Debug.Log("touch");
                 isGrounded_ = true;
             }
         }

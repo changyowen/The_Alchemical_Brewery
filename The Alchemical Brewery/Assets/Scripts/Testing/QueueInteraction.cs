@@ -21,7 +21,6 @@ public class QueueInteraction : MonoBehaviour
     {
         //if player still far from counter
         Vector3 counterPosition = transform.position + counterPositionOffset;
-        Debug.Log(counterPosition);
         float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, counterPosition);
         if (dist > 3f)
         {

@@ -96,6 +96,8 @@ public class CustomerQueueHandler : MonoBehaviour
         //get customer class
         CustomerClass currentCustomer = currentQueue[0];
 
+        ///CUSTOMER ADD XP
+        CustomerAddXP(currentCustomer);
 
         ///REMOVE CUSTOMER 
         //remove customer from global customer class list
@@ -120,30 +122,29 @@ public class CustomerQueueHandler : MonoBehaviour
         ///GET CUSTOMER PROFILE
         CustomerProfile currentCustomerProfile = PlayerProfile.customerProfile[customerData.customerIndex];
 
-        ///ADD XP
-        currentCustomerProfile.customerExperience++;
-
-        ///CHECK LEVEL UP
+        //get customer level
         int customerLevel = currentCustomerProfile.customerLevel;
-        if (currentCustomerProfile.customerExperience >= customerData.levelingExperience[customerLevel - 1])
+        if (customerLevel < 6) //if customer havent max level
         {
-            CustomerLevelUp(currentCustomerProfile, customerData);
+            ///ADD XP
+            currentCustomerProfile.customerExperience += 1;
+
+            ///CHECK LEVEL UP
+            if (currentCustomerProfile.customerExperience >= customerData.levelingExperience[customerLevel - 1])
+            {
+                CustomerLevelUp(currentCustomerProfile, customerData);
+            }
         }
     }
 
     public void CustomerLevelUp(CustomerProfile currentCustomerProfile, CustomerData customerData)
     {
-        //get customer current level
-        int customerLevel = currentCustomerProfile.customerLevel;
-
         //subtract leveling up experience
-        currentCustomerProfile.customerExperience -= (int)customerData.levelingExperience[customerLevel - 1];
+        currentCustomerProfile.customerExperience -= (int)customerData.levelingExperience[currentCustomerProfile.customerLevel - 1];
         //leveling up
-        customerLevel++;
+        currentCustomerProfile.customerLevel += 1;
 
         ///UNLOCK ELEMENT
-        
-
-        ///LEVELING EFFECT
+        customerData.LevelUpUnlock(currentCustomerProfile.customerLevel);
     }
 }

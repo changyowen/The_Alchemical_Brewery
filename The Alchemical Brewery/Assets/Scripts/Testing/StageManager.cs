@@ -56,6 +56,7 @@ public class StageManager : MonoBehaviour
         if(testing)
         {
             instantiateAssetHandler.InstantiateAssetPrefab(stageIndex, ingredientOrderToday);
+            ResultManager.Instance.AssignInitialCustomerLevelArray(customerTypeToday);
             StartCoroutine(StartDayTimeScene());
         }
     }
@@ -159,6 +160,10 @@ public class StageManager : MonoBehaviour
         {
             yield return null;
         }
+
+        ResultManager.Instance.AssignFinalCustomerLevelArray(customerTypeToday);
+        yield return StartCoroutine(ResultManager.Instance.StartResult());
+
         //enable change scene
         operation.allowSceneActivation = true;
     }

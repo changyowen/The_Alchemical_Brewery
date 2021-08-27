@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
+  m_Name: Extract18
+  m_EditorClassIdentifier: 
+  ingredientIndex: 57
+  ingredientName: Freezing Fruit Extract
+  ingredientSprite: {fileID: 21300000, guid: d67a180d6ef882241a5e934cd0d08e2e, type: 3}
+  ingredientDescription: 'A fruit that will freeze anyone who consumes it. It is
+    nowadays normally used in alchemy to create potions that will freeze the enemies.
+
+    Not
+    compatible with anything that produce heat within the target.
+
+    Has been extracted
+    to maintain maximum efficiency.'
+  priceVariable: 30
+  effectiveVariable: -27
+  elementType: -2
+  ingredientUsage: -1
+  ingredientColor: {r: 0, g: 0, b: 0, a: 0}
+  refineStage: 

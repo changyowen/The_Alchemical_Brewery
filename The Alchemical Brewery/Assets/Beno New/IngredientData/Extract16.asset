@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
-  m_Name: Crushed16
+  m_Name: Extract16
   m_EditorClassIdentifier: 
-  ingredientIndex: 35
-  ingredientName: Crushed Heat Flower
-  ingredientSprite: {fileID: 21300000, guid: 326169870d23c654da49a0f6535bb8c8, type: 3}
+  ingredientIndex: 55
+  ingredientName: Heat Flower Extract
+  ingredientSprite: {fileID: 21300000, guid: 0f9ab7de60eb5f144bd33181ed0aa547, type: 3}
   ingredientDescription: "A flower that magically is able to generate heat despite
     being in a cold environment.\nIt is often used to create potions to make the
     consumer feel warm after a long period of time. \nIt is not compatible with ingredients
-    that create cold effects.\nHas been crushed to allow it to be more easier to
-    be used in alchemy."
-  priceVariable: 20
-  effectiveVariable: 5
+    that create cold effects.\nHas been extracted to maintain maximum efficiency."
+  priceVariable: 25
+  effectiveVariable: 7
   elementType: 2
   ingredientUsage: 1
   ingredientColor: {r: 1, g: 0, b: 0.54901963, a: 0}

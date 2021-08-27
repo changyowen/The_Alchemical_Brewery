@@ -20,8 +20,10 @@ MonoBehaviour:
   baseAppearRate: 5
   levelingAppearRate: 9
   levelingExperience:
-  - 60
-  - 100
-  - 160
-  - 225
-  - 300
+  - 30
+  - 50
+  - 80
+  - 110
+  - 150
+  unlockTypes: 0000000005000000020000000700000000000000
+  unlockIndex: 1100000001000000000000000000000013000000

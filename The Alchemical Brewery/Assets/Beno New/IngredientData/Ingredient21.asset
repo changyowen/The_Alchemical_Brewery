@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient21
   m_EditorClassIdentifier: 
-  ingredientIndex: 0
-  ingredientName: 
-  ingredientSprite: {fileID: 0}
+  ingredientIndex: 20
+  ingredientName: Crushed Healing Grass
+  ingredientSprite: {fileID: 21300000, guid: 5e63b34744812ef429b09ec400601886, type: 3}
   ingredientDescription: 
   priceVariable: 0
   effectiveVariable: 0
   elementType: 0
   ingredientUsage: 0
-  ingredientColor: {r: 0, g: 0, b: 0, a: 0}
+  ingredientColor: {r: 0.6313726, g: 1, b: 0, a: 0}
   refineStage: 

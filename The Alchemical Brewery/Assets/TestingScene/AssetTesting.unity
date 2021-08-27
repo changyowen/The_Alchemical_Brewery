@@ -854,7 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5176471, g: 0.30588236, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1665,7 +1665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5176471, g: 0.30588236, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2542,7 +2542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5188679, g: 0.3055737, b: 0.07587219, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3519,7 +3519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5176471, g: 0.30588236, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -68399,7 +68399,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294647668}
-  - component: {fileID: 1294647669}
   m_Layer: 0
   m_Name: ResultPanel
   m_TagString: Untagged
@@ -68427,22 +68426,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1294647669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294647667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17b6f30464fa4e043b58b6a291cbcf07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customerResultPanel: {fileID: 517232250}
-  customerResultPanel_obj: {fileID: 517232248}
-  unlockStuffPanel_obj: {fileID: 3328992974521782429, guid: 42fce68ccc0353b428b3165d997ab3c0,
-    type: 3}
 --- !u!1 &1299613573
 GameObject:
   m_ObjectHideFlags: 0
@@ -69857,7 +69840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5176471, g: 0.30588236, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -69925,8 +69908,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerResultPanel: {fileID: 517232250}
+  resultPanel_obj: {fileID: 1294647667}
   customerResultPanel_obj: {fileID: 517232248}
-  unlockStuffPanel_obj: {fileID: 0}
+  unlockStuffPanel_obj: {fileID: 3328992974521782429, guid: 42fce68ccc0353b428b3165d997ab3c0,
+    type: 3}
 --- !u!1 &1850133819
 GameObject:
   m_ObjectHideFlags: 0

@@ -35,8 +35,8 @@ public class StageManager : MonoBehaviour
 
         if(testing)
         {
+            //PlayerProfile.GM_TestingUse();
             SaveManager.Load();
-            PlayerProfile.GM_TestingUse();
 
             //assign potion sell today
             AssignPotionToday();

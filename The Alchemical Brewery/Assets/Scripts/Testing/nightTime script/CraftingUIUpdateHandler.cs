@@ -7,7 +7,6 @@ public class CraftingUIUpdateHandler : MonoBehaviour
 {
     ScriptableObjectHolder so_Holder;
 
-    public Image[] ingredientButtonImage;
     public Image[] potIngredientImage;
 
     void Start()
@@ -17,17 +16,7 @@ public class CraftingUIUpdateHandler : MonoBehaviour
 
     void Update()
     {
-        IngredientButtonImageUpdate();
         PotIngredientImageUpdate();
-    }
-
-    void IngredientButtonImageUpdate()
-    {
-        for (int i = 1; i < ingredientButtonImage.Length + 1; i++)
-        {
-            Sprite ingSprite = so_Holder.ingredientSO[i].ingredientSprite;
-            ingredientButtonImage[i - 1].sprite = ingSprite;
-        }
     }
 
     void PotIngredientImageUpdate()

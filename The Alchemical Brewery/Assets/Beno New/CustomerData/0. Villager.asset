@@ -20,7 +20,7 @@ MonoBehaviour:
   baseAppearRate: 30
   levelingAppearRate: 4
   levelingExperience:
-  - 20
+  - 1
   - 30
   - 45
   - 70

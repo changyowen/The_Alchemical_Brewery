@@ -96,6 +96,8 @@ public static class PlayerProfile
 [Serializable]
 public class ShopProfile
 {
+    public int[] ingredientPurchased = new int[60];
+
     [Range(1, 3)] public int counterPurchased = 1;
     [Range(1, 10)] public int magicChestPurchased = 4;
     [Range(1, 3)] public int potPurchased = 1;
@@ -105,6 +107,11 @@ public class ShopProfile
 
     public void PurchaseAll()
     {
+        for (int i = 0; i < ingredientPurchased.Length; i++)
+        {
+            ingredientPurchased[i] = 75;
+        }
+
         counterPurchased = 3;
         magicChestPurchased = 10;
         potPurchased = 3;
@@ -141,5 +148,8 @@ public class SaveData
 {
     public string profileName = PlayerProfile.profileName;
     public List<PotionData> acquiredPotion = PlayerProfile.acquiredPotion;
+    public IngredientProfile[] ingredientProfile = PlayerProfile.ingredientProfile;
     public CustomerProfile[] customerProfile = PlayerProfile.customerProfile;
+    public FairyShopProfile fairyShopProfile = PlayerProfile.fairyShopProfile;
+    public ShopProfile shopProfile = PlayerProfile.shopProfile;
 }

@@ -109,9 +109,8 @@ public class CraftPotionManager : MonoBehaviour
         {
             //Add into potIngredientList
             potIngredientList.Add(ingredientIndex);
-
-            //get button index
-            int buttonIndex = potIngredientList.Count - 1;
+            //Subtract from player ingredient purchased total;
+            PlayerProfile.shopProfile.ingredientPurchased[ingredientIndex - 1] -= 1;
         }
     }
 
@@ -120,13 +119,33 @@ public class CraftPotionManager : MonoBehaviour
         //remove from ingredientList
         if(potIngredientList.Count > buttonIndex)
         {
+            //Return to player ingredient purchased total;
+            PlayerProfile.shopProfile.ingredientPurchased[potIngredientList[buttonIndex] - 1] += 1;
+            //remove from pot ingredient list
             potIngredientList.RemoveAt(buttonIndex);
         }
     }
 
-    public void ResetPotIngredientList()
+    public void ResetPotIngredientList(bool returnIngredient)
     {
-        potIngredientList.Clear();
+        if(potIngredientList.Count > 0) //if pot has any ingredient
+        {
+            if (returnIngredient)
+            {
+                //return all to ingredient purchased total
+                for (int i = 0; i < potIngredientList.Count; i++)
+                {
+                    PlayerProfile.shopProfile.ingredientPurchased[potIngredientList[i] - 1] += 1;
+                }
+                //clear pot
+                potIngredientList.Clear();
+            }
+            else
+            {
+                //clear pot
+                potIngredientList.Clear();
+            }
+        }
     }
 
     public void StartCraftPotion()
@@ -141,7 +160,7 @@ public class CraftPotionManager : MonoBehaviour
         if (effectiveScore >= 10000000f)
         {
             //reset pot ingredient list
-            ResetPotIngredientList();
+            ResetPotIngredientList(false);
         }
         else //effective score pass
         {

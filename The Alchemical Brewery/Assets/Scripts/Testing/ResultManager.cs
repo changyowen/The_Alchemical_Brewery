@@ -9,6 +9,7 @@ public class ResultManager : MonoBehaviour
 
     public CustomerResultPanel customerResultPanel;
 
+    public GameObject resultPanel_obj;
     public GameObject customerResultPanel_obj;
     public GameObject unlockStuffPanel_obj;
 
@@ -35,6 +36,7 @@ public class ResultManager : MonoBehaviour
             CustomerProfile currentCustomerProfile = PlayerProfile.customerProfile[_customerTypeToday[i].customerIndex];
             //assign data
             CustomerLevelStoring newCustomerLevelStoring = new CustomerLevelStoring();
+            newCustomerLevelStoring.customerSprite = _customerTypeToday[i].customerSprite;
             newCustomerLevelStoring.customerName = _customerTypeToday[i].customerName;
             newCustomerLevelStoring.customerLevel = currentCustomerProfile.customerLevel;
             if (newCustomerLevelStoring.customerLevel != 6)
@@ -57,6 +59,7 @@ public class ResultManager : MonoBehaviour
             CustomerProfile currentCustomerProfile = PlayerProfile.customerProfile[_customerTypeToday[i].customerIndex];
             //assign data
             CustomerLevelStoring newCustomerLevelStoring = new CustomerLevelStoring();
+            newCustomerLevelStoring.customerSprite = _customerTypeToday[i].customerSprite;
             newCustomerLevelStoring.customerName = _customerTypeToday[i].customerName;
             newCustomerLevelStoring.customerLevel = currentCustomerProfile.customerLevel;
             if(newCustomerLevelStoring.customerLevel != 6)
@@ -79,8 +82,6 @@ public class ResultManager : MonoBehaviour
         yield return StartCoroutine(StartUnlockStuffPanel());
 
         yield return new WaitForSeconds(1f);
-
-        //end scene
     }
 
     IEnumerator StartCustomerResultPanel()
@@ -108,7 +109,8 @@ public class ResultManager : MonoBehaviour
             for (int i = 0; i < todayUnlockedStuff.Count; i++)
             {
                 //instantiate unlocked Stuff Panel
-                GameObject newUnlockStuffPanel = Instantiate(unlockStuffPanel_obj, Vector3.zero, Quaternion.identity, this.transform);
+                GameObject newUnlockStuffPanel = Instantiate(unlockStuffPanel_obj, Vector3.zero, Quaternion.identity) as GameObject;
+                newUnlockStuffPanel.transform.SetParent(resultPanel_obj.transform, false);
                 //assign data
                 UnlockedStuffPanel currentUnlockStuffPanel = newUnlockStuffPanel.GetComponent<UnlockedStuffPanel>();
                 currentUnlockStuffPanel.AssignData(todayUnlockedStuff[i]);
@@ -123,6 +125,8 @@ public class ResultManager : MonoBehaviour
                 {
                     if (Input.GetMouseButtonDown(0))
                     {
+                        Debug.Log("test");
+                        newUnlockStuffPanel.GetComponent<Animator>().SetTrigger("enabledExit");
                         currentUnlockStuffPanel.enabledSkip = false;
                     }
                     else
@@ -130,8 +134,10 @@ public class ResultManager : MonoBehaviour
                         yield return null;
                     }
                 }
+                //wait till finish animation
+                yield return new WaitUntil(() => newUnlockStuffPanel.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("closing"));
                 //destroy current unlock stuff panel
-                Destroy(currentUnlockStuffPanel);
+                Destroy(newUnlockStuffPanel);
             }
         }
     }

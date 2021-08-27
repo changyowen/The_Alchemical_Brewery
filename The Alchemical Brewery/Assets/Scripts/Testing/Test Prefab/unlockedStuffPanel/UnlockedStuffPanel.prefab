@@ -315,6 +315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3328992974521782402}
   - component: {fileID: 315472196787541804}
+  - component: {fileID: 1338187519}
   m_Layer: 0
   m_Name: UnlockedStuffPanel
   m_TagString: Untagged
@@ -360,6 +361,25 @@ MonoBehaviour:
   unlockedStuff_image: {fileID: 3328992972633878798}
   unlockedStuff_text: {fileID: 3328992972602350181}
   enabledSkip: 0
+--- !u!95 &1338187519
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3328992974521782429}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3dfc82f10e4e22449bd15f97cf007a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5756041957750956799
 GameObject:
   m_ObjectHideFlags: 0

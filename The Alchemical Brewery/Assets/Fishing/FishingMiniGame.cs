@@ -78,7 +78,7 @@ public class FishingMiniGame : MonoBehaviour
         //close fish minigame
         SetActiveMiniGameParent(false);
         //reset potIngredientList
-        CraftPotionManager.Instance.ResetPotIngredientList();
+        CraftPotionManager.Instance.ResetPotIngredientList(false);
 
         //return potion data into craftPotion manager result
         CraftPotionManager.Instance.CraftPotionResult(newPotionData);

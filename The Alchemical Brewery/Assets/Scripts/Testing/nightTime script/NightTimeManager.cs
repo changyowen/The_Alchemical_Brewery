@@ -27,6 +27,7 @@ public class NightTimeManager : MonoBehaviour
 
         if(!testing)
         {
+            //PlayerProfile.NewGameData("new player");
             SaveManager.Load();
         }
     }
@@ -34,6 +35,7 @@ public class NightTimeManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(StartSceneIntro());
+        IngredientPanel.Instance.AssignButtonData();
     }
 
     void Update()
@@ -43,6 +45,9 @@ public class NightTimeManager : MonoBehaviour
 
     public void NextScene()
     {
+        //clear pot and returning ingredient
+        CraftPotionManager.Instance.ResetPotIngredientList(true);
+        //start outro
         StartCoroutine(StartSceneOutro());
     }
 

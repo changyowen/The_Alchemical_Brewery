@@ -47,13 +47,15 @@ public class StateDrivenHandler : MonoBehaviour
                     }
                 case RoomStatus.PotRoom:
                     {
-                        if (potFull)
+                        //craft panel set to "potroom"
+                        craftPanel_anim.SetBool("potRoom", true);
+
+                        if (potFull) //if pot full
                         {
                             stateDrivenCamera_anim.Play("potRoom_potFull");
                         }
-                        else
+                        else //if not pot full
                         {
-                            craftPanel_anim.SetBool("potRoom", true);
                             stateDrivenCamera_anim.Play("potRoom_default");
                         }
                         break;

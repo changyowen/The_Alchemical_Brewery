@@ -10,17 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
-  m_Name: Ingredient18
+  m_Name: Crushed18
   m_EditorClassIdentifier: 
-  ingredientIndex: 17
-  ingredientName: Freezing Fruit
-  ingredientSprite: {fileID: 21300000, guid: d548649462310624daf43f71119a3458, type: 3}
+  ingredientIndex: 37
+  ingredientName: Crushed Freezing Fruit
+  ingredientSprite: {fileID: 21300000, guid: c76cefa2a98323d44ba3eb7d2db9f130, type: 3}
   ingredientDescription: 'A fruit that will freeze anyone who consumes it. It is
     nowadays normally used in alchemy to create potions that will freeze the enemies.
 
     Not
-    compatible with anything that produce heat within the target.'
-  priceVariable: 20
+    compatible with anything that produce heat within the target.
+
+    Has been crushed
+    to allow it to be more easier to be used in alchemy.'
+  priceVariable: 25
   effectiveVariable: -25
   elementType: -2
   ingredientUsage: -1

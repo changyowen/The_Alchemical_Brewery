@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
+  m_Name: Crushed8
+  m_EditorClassIdentifier: 
+  ingredientIndex: 27
+  ingredientName: Crushed Recovery Flower
+  ingredientSprite: {fileID: 21300000, guid: d9a1aaf303d072449b66646ade4b781d, type: 3}
+  ingredientDescription: 'A flower that have good recovery abilities, once applied,
+    will heal small to medium wounds and even infections.
+
+    It reacts badly towards
+    poisons
+
+    Has been crushed to allow it to be more easier to be used in alchemy.'
+  priceVariable: 30
+  effectiveVariable: 25
+  elementType: -1
+  ingredientUsage: 1
+  ingredientColor: {r: 0.8980392, g: 0.8980392, b: 0.8980392, a: 0}
+  refineStage: 

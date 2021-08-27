@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
-  m_Name: Ingredient3
+  m_Name: Crushed3
   m_EditorClassIdentifier: 
-  ingredientIndex: 2
-  ingredientName: Herculean Fruit
-  ingredientSprite: {fileID: 21300000, guid: f577bff6340d7eb4d98e660eef43c9a4, type: 3}
+  ingredientIndex: 22
+  ingredientName: Crushed Herculean Fruit
+  ingredientSprite: {fileID: 21300000, guid: 74d85bcf3b36c2e478fdc5107c1b5539, type: 3}
   ingredientDescription: 'A fruit that is used to increase strength temporally.
 
     It
-    normally used with some other herbs.'
-  priceVariable: 10
+    normally used with some other herbs.
+
+    Has been crushed to allow it to be
+    more easier to be used in alchemy.'
+  priceVariable: 15
   effectiveVariable: 6
   elementType: 2
   ingredientUsage: 1
-  ingredientColor: {r: 0.7278227, g: 1, b: 0.495283, a: 0}
+  ingredientColor: {r: 0.7294118, g: 1, b: 0.49803922, a: 0}
   refineStage: 

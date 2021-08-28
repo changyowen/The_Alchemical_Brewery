@@ -27,7 +27,8 @@ public class NightTimeManager : MonoBehaviour
 
         if(!testing)
         {
-            //PlayerProfile.NewGameData("new player");
+            PlayerProfile.GM_TestingUse();
+            SaveManager.Save();
             SaveManager.Load();
         }
     }

@@ -75,6 +75,7 @@ public class StateDrivenHandler : MonoBehaviour
 
             if(!CraftPotionManager.Instance.potFull)
             {
+                stateDrivenCamera_anim.Play("potRoom_default");
                 StartCoroutine(PotFullAnimationCoroutine(false));
             }
             else

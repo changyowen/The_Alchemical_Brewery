@@ -8,7 +8,7 @@ public static class PlayerProfile
 {
     public static string profileName = "NewPlayer";
     public static List<PotionData> acquiredPotion = new List<PotionData>();
-    public static IngredientProfile[] ingredientProfile = new IngredientProfile[20];
+    public static IngredientProfile[] ingredientProfile = new IngredientProfile[60];
     public static CustomerProfile[] customerProfile = new CustomerProfile[10];
     public static FairyShopProfile fairyShopProfile = new FairyShopProfile();
     public static ShopProfile shopProfile = new ShopProfile();
@@ -82,7 +82,7 @@ public static class PlayerProfile
             customerProfile[i].UnlockThisCustomer();
         }
         //unlock first 4 ingredients
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 60; i++)
         {
             ingredientProfile[i].UnlockThisIngredient();
         }

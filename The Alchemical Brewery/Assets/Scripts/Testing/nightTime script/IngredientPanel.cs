@@ -3,12 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+public enum RefinementStage
+{
+    Normal = 0,
+    Crushed = 1,
+    Extract = 2
+}
+
 public class IngredientPanel : MonoBehaviour
 {
     public static IngredientPanel Instance { get; private set; }
 
     public ScriptableObjectHolder SO_holder;
     public GameObject[] ingredientButton_obj;
+
+    public RefinementStage panelRefinementStage = RefinementStage.Normal;
+    public int refinementValue
+    {
+        get
+        {
+            return (int)panelRefinementStage * 20;
+        }
+    }
 
     void Awake()
     {
@@ -35,11 +52,10 @@ public class IngredientPanel : MonoBehaviour
         {
             //assign image
             Image buttonImage = ingredientButton_obj[i].transform.GetChild(0).GetComponent<Image>();
-            buttonImage.sprite = SO_holder.ingredientSO[i + 1].ingredientSprite;
-
+            buttonImage.sprite = SO_holder.ingredientSO[i + refinementValue + 1].ingredientSprite;
             //lock or unlock
             GameObject lockImage_obj = ingredientButton_obj[i].transform.GetChild(2).gameObject;
-            bool ingredientUnlocked = PlayerProfile.ingredientProfile[i].unlocked;
+            bool ingredientUnlocked = PlayerProfile.ingredientProfile[i + refinementValue].unlocked;
             if(ingredientUnlocked)
             {
                 ingredientButton_obj[i].GetComponent<Button>().interactable = true;
@@ -51,5 +67,29 @@ public class IngredientPanel : MonoBehaviour
                 lockImage_obj.SetActive(true);
             }
         }
+    }
+
+    public void ChangeRefinementStage(int _refinementStage)
+    {
+        switch(_refinementStage)
+        {
+            case 0:
+                {
+                    panelRefinementStage = RefinementStage.Normal;
+                    break;
+                }
+            case 1:
+                {
+                    panelRefinementStage = RefinementStage.Crushed;
+                    break;
+                }
+            case 2:
+                {
+                    panelRefinementStage = RefinementStage.Extract;
+                    break;
+                }
+        }
+        //update button data
+        AssignButtonData();
     }
 }

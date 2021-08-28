@@ -7282,7 +7282,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 516520494}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1608849543}
+        m_MethodName: ChangeRefinementStage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &516520494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10547,8 +10558,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 9fd0d5553db344a478bee8cd333c1bd0, type: 3}
+    m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -14432,7 +14443,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1084072250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1608849543}
+        m_MethodName: ChangeRefinementStage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1084072250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20455,7 +20477,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1522103707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1608849543}
+        m_MethodName: ChangeRefinementStage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1522103707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21226,6 +21259,7 @@ MonoBehaviour:
   - {fileID: 1967635594}
   - {fileID: 1629345814}
   - {fileID: 1578880931}
+  panelRefinementStage: 0
 --- !u!1 &1613680354
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class CraftingUIUpdateHandler : MonoBehaviour
 {
+    Animator anim;
     ScriptableObjectHolder so_Holder;
 
     public Image[] potIngredientImage;
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+        anim.keepAnimatorControllerStateOnDisable = true;
         so_Holder = CraftPotionManager.Instance.so_Holder;
     }
 

@@ -27,4 +27,5 @@ MonoBehaviour:
   elementType: 2
   ingredientUsage: 1
   ingredientColor: {r: 0.20392157, g: 1, b: 0.7882353, a: 0}
-  refineStage: 
+  refineStage: 2
+  originalIngredient: {fileID: 11400000, guid: 7739945f42cc3164fadcf3cb417867cf, type: 2}

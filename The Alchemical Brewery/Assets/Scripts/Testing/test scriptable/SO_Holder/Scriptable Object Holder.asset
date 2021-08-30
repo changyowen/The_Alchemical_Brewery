@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2249508efa0f847991ad694e67fde0, type: 3}
   m_Name: Scriptable Object Holder
   m_EditorClassIdentifier: 
-  transparentSprite: {fileID: 21300000, guid: 5ea3dd0cd79407749a2b5df42a594b96, type: 3}
   ingredientSO:
   - {fileID: 0}
   - {fileID: 11400000, guid: 34ee3381d5f397e47915ed7b190e4c36, type: 2}
@@ -55,6 +54,26 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 89874723c0cf4174aa35e906c64e66f4, type: 2}
   - {fileID: 11400000, guid: 8f288a7160b083d419d708a3a2f7031e, type: 2}
   - {fileID: 11400000, guid: 4c1bf49ef6ed452448867ca5f4ead2a6, type: 2}
+  - {fileID: 11400000, guid: 74e5c7dcd4f1f7447a7f64624aa0623a, type: 2}
+  - {fileID: 11400000, guid: 8c96b17bd4f3cf145a9af4449dd58a99, type: 2}
+  - {fileID: 11400000, guid: 695b5fe9067c8b8459c4f562c7f317bb, type: 2}
+  - {fileID: 11400000, guid: 3bf9a13e3b2523c4aa4f9067a86b9794, type: 2}
+  - {fileID: 11400000, guid: 90d13f68321ae974d820c0602043248f, type: 2}
+  - {fileID: 11400000, guid: 84c5f741c7f5b7d46a37114a1e633a27, type: 2}
+  - {fileID: 11400000, guid: b41729cfacb7eee4088d4786669527be, type: 2}
+  - {fileID: 11400000, guid: dd169867ca6d4964a992ae832a7ebe8c, type: 2}
+  - {fileID: 11400000, guid: 83b5e02bd2c6b774292e1cd633b2737b, type: 2}
+  - {fileID: 11400000, guid: d5b70183044237b49b1e3aaf93da2b87, type: 2}
+  - {fileID: 11400000, guid: 59bb8a7fe3349344aab0c53e52fa86b6, type: 2}
+  - {fileID: 11400000, guid: 22896f2331cfb4745a60eddf8e9c7227, type: 2}
+  - {fileID: 11400000, guid: 3474ff02e3e72404b8705d05cde83b3d, type: 2}
+  - {fileID: 11400000, guid: aab599be43a85a147b1aa0f4fd3adef8, type: 2}
+  - {fileID: 11400000, guid: c1bc1c3844e7b404ba8b4a1f84e74ff6, type: 2}
+  - {fileID: 11400000, guid: c9b74d5c4db5b3446bc3bbd49c332941, type: 2}
+  - {fileID: 11400000, guid: cf0ab9b62248094478eb54b5d4259359, type: 2}
+  - {fileID: 11400000, guid: bfb898d878c034d47ab1ee7e2268a211, type: 2}
+  - {fileID: 11400000, guid: 34dc45d63d1a2434cb8506e741fbc664, type: 2}
+  - {fileID: 11400000, guid: a914eda602f24c243902be70309bc3c2, type: 2}
   ingredientSpawnForceSO:
   - {fileID: 11400000, guid: 6487f55a95b7413438e58b52b3434c98, type: 2}
   - {fileID: 11400000, guid: 9135ed85ef247a346a22cddc7ab6b064, type: 2}
@@ -85,3 +104,16 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   customerAppearRateSprite: {fileID: 0}
+  transparentSprite: {fileID: 21300000, guid: 5ea3dd0cd79407749a2b5df42a594b96, type: 3}
+  crushedLogoSprite: {fileID: 21300000, guid: 5e63b34744812ef429b09ec400601886, type: 3}
+  extractLogoSprite: {fileID: 21300000, guid: 366112c98b24675439d4798f7d59abcf, type: 3}
+  ignisLogoSprite: {fileID: -1732384008759314191, guid: ae6b9fce6b6845a4ab4c4f7db19ded0d,
+    type: 3}
+  aquaLogoSprite: {fileID: -8519741122866755507, guid: ae6b9fce6b6845a4ab4c4f7db19ded0d,
+    type: 3}
+  ordoLogoSprite: {fileID: 2224281266104900678, guid: ae6b9fce6b6845a4ab4c4f7db19ded0d,
+    type: 3}
+  terraLogoSprite: {fileID: 365952347673448637, guid: ae6b9fce6b6845a4ab4c4f7db19ded0d,
+    type: 3}
+  aerLogoSprite: {fileID: -9034698549594046828, guid: ae6b9fce6b6845a4ab4c4f7db19ded0d,
+    type: 3}

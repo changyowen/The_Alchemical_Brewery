@@ -9,6 +9,7 @@ public class CraftingUIUpdateHandler : MonoBehaviour
     ScriptableObjectHolder so_Holder;
 
     public Image[] potIngredientImage;
+    public Image[] refinementImage;
 
     void Start()
     {
@@ -33,12 +34,34 @@ public class CraftingUIUpdateHandler : MonoBehaviour
             {
                 //get ingredient data
                 IngredientData ingData = so_Holder.ingredientSO[potIngredientList[i]];
-                potIngredientImage[i].sprite = ingData.ingredientSprite;
+
+                switch (ingData.refineStage)
+                {
+                    case RefinementStage.Normal:
+                        {
+                            potIngredientImage[i].sprite = ingData.ingredientSprite;
+                            refinementImage[i].sprite = so_Holder.transparentSprite;
+                            break;
+                        }
+                    case RefinementStage.Crushed:
+                        {
+                            potIngredientImage[i].sprite = ingData.originalIngredient.ingredientSprite;
+                            refinementImage[i].sprite = so_Holder.crushedLogoSprite;
+                            break;
+                        }
+                    case RefinementStage.Extract:
+                        {
+                            potIngredientImage[i].sprite = ingData.originalIngredient.ingredientSprite;
+                            refinementImage[i].sprite = so_Holder.extractLogoSprite;
+                            break;
+                        }
+                }
             }
             else
             {
                 //get trasparent sprite
                 potIngredientImage[i].sprite = so_Holder.transparentSprite;
+                refinementImage[i].sprite = so_Holder.transparentSprite;
             }
         }
     }

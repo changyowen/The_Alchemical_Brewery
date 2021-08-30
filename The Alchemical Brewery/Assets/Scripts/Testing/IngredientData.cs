@@ -25,5 +25,6 @@ public class IngredientData : ScriptableObject
     public Color ingredientColor;
 
     [Header("Put index of each refine stage")]
-    public int[] refineStage;
+    public RefinementStage refineStage;
+    public IngredientData originalIngredient;
 }

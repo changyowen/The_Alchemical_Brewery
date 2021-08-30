@@ -42,7 +42,7 @@ public class IngredientPanel : MonoBehaviour
         for (int i = 0; i < ingredientButton_obj.Length; i++)
         {
             Text ingredientTotal_text = ingredientButton_obj[i].transform.GetChild(1).GetComponent<Text>();
-            ingredientTotal_text.text = "" + PlayerProfile.shopProfile.ingredientPurchased[i];
+            ingredientTotal_text.text = "" + PlayerProfile.shopProfile.ingredientPurchased[i + refinementValue];
         }
     }
 

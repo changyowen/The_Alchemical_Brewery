@@ -108,9 +108,9 @@ public class CraftPotionManager : MonoBehaviour
         if (potIngredientList.Count < 4)
         {
             //Add into potIngredientList
-            potIngredientList.Add(ingredientIndex);
+            potIngredientList.Add(ingredientIndex + IngredientPanel.Instance.refinementValue);
             //Subtract from player ingredient purchased total;
-            PlayerProfile.shopProfile.ingredientPurchased[ingredientIndex - 1] -= 1;
+            PlayerProfile.shopProfile.ingredientPurchased[ingredientIndex + IngredientPanel.Instance.refinementValue - 1] -= 1;
         }
     }
 

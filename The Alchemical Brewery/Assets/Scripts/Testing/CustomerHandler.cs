@@ -105,7 +105,7 @@ public class CustomerHandler : MonoBehaviour
 
                 ///Get customer type based on appearance rate
                 int getIndex = CustomerTypeWeightedRandom();
-                CustomerData currentCustomerData = StageManager.Instance.customerTypeToday[getIndex];
+                CustomerData currentCustomerData = StageManager.customerTypeToday[getIndex];
 
                 ///Declare Customer Class
                 CustomerClass newCustomerClass = new CustomerClass();
@@ -168,7 +168,7 @@ public class CustomerHandler : MonoBehaviour
 
             ///Get customer type based on appearance rate
             int getIndex = CustomerTypeWeightedRandom();
-            CustomerData currentCustomerData = StageManager.Instance.customerTypeToday[getIndex];
+            CustomerData currentCustomerData = StageManager.customerTypeToday[getIndex];
 
             ///Declare Customer Class
             CustomerClass newCustomerClass = new CustomerClass();

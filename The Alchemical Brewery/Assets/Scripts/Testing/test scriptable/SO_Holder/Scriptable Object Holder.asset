@@ -117,3 +117,8 @@ MonoBehaviour:
     type: 3}
   aerLogoSprite: {fileID: -9034698549594046828, guid: ae6b9fce6b6845a4ab4c4f7db19ded0d,
     type: 3}
+  loveLogoSprite: {fileID: 21300000, guid: 7747e1d8766188c45aad7b81176d8485, type: 3}
+  okayLogoSprite: {fileID: 21300000, guid: 008b53c39f38f054db7cdf0ab1eea8c3, type: 3}
+  boredLogoSprite: {fileID: 21300000, guid: 3c197e89fdffff64ea089c631febd610, type: 3}
+  questionMarkLogoSprite: {fileID: 21300000, guid: 7a4dfbbccad528845be17733fee5dba5,
+    type: 3}

@@ -30,4 +30,10 @@ public class ScriptableObjectHolder: ScriptableObject
     public Sprite ordoLogoSprite;
     public Sprite terraLogoSprite;
     public Sprite aerLogoSprite;
+
+    [Header("customer's favor sprites")]
+    public Sprite loveLogoSprite;
+    public Sprite okayLogoSprite;
+    public Sprite boredLogoSprite;
+    public Sprite questionMarkLogoSprite;
 }

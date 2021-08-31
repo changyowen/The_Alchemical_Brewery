@@ -6,13 +6,16 @@ using UnityEngine;
 public class LightingManager : MonoBehaviour
 {
     //Scene References
-    [SerializeField] private GameObject SunMoonParent;
-    [SerializeField] private Light DirectionalLight;
-    [SerializeField] private LightingPreset Preset;
+    [SerializeField] private GameObject SunMoonParent = null;
+    [SerializeField] private Light DirectionalLight = null;
+    [SerializeField] private LightingPreset Preset = null;
+    [SerializeField] Light[] streetLights = null;
     //Variables
     [SerializeField, Range(0, 24)] private float TimeOfDay = 12;
-    [SerializeField] private float timeSpeed;
+    [SerializeField] private float timeSpeed = 0;
+    [SerializeField] private Vector2 streetLightTimer = Vector2.zero;
 
+    public bool isGameScene = true;
 
     private void Update()
     {
@@ -21,13 +24,19 @@ public class LightingManager : MonoBehaviour
 
         if (Application.isPlaying)
         {
-            ////(Replace with a reference to the game time)
-            //TimeOfDay += Time.deltaTime * timeSpeed;
-            //TimeOfDay %= 24; //Modulus to ensure always between 0-24
-            //UpdateLighting(TimeOfDay / 24f);
-
-            float officialTimeOfDay = ClockSystem.Instance.TimeOfDay;
-            UpdateLighting(officialTimeOfDay / 24f);
+            if(!isGameScene)
+            {
+                //(Replace with a reference to the game time)
+                TimeOfDay += Time.deltaTime * timeSpeed;
+                TimeOfDay %= 24; //Modulus to ensure always between 0-24
+                UpdateLighting(TimeOfDay / 24f);
+                UpdateStreetLighting();
+            }
+            else
+            {
+                float officialTimeOfDay = ClockSystem.Instance.TimeOfDay;
+                UpdateLighting(officialTimeOfDay / 24f);
+            }
         }
         else
         {
@@ -79,5 +88,21 @@ public class LightingManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void UpdateStreetLighting()
+    {
+        for (int i = 0; i < streetLights.Length; i++)
+        {
+            if (TimeOfDay >= streetLightTimer.x || TimeOfDay <= streetLightTimer.y)
+            {
+                streetLights[i].enabled = true;
+            }
+            else
+            {
+                streetLights[i].enabled = false;
+            }
+        }
+        
     }
 }

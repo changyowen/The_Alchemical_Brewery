@@ -15,7 +15,7 @@ public class StageManager : MonoBehaviour
     public static int stageIndex = 1;
     public static List<PotionData> potionListToday = new List<PotionData>();
     public static List<int> ingredientOrderToday = new List<int>();
-    public List<CustomerData> customerTypeToday;
+    public static List<CustomerData> customerTypeToday = null;
     public List<float> customerAppearRateList = new List<float>();
     public float totalCustomerAppearRate = 0;
 
@@ -40,8 +40,11 @@ public class StageManager : MonoBehaviour
 
             //assign potion sell today
             AssignPotionToday();
-            //assign all customer type for this stage
-            AssignCustomerTypeToday();
+            //assign all customer type for this stage (IF NULL)
+            if(customerTypeToday == null)
+            {
+                AssignCustomerTypeToday();
+            }
             //calculate each customer appear rate
             AssignCustomerAppearRate();
         }
@@ -94,6 +97,7 @@ public class StageManager : MonoBehaviour
     {
         StageDataAssign stageData = so_Holder.stageDataSO[stageIndex];
 
+        customerTypeToday = new List<CustomerData>();
         for (int i = 0; i < stageData.CustomerAppear.Count && i < 5; i++)
         {
             int customerIndex = stageData.CustomerAppear[i];

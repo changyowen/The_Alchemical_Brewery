@@ -173,7 +173,7 @@ public class IngredientGravity : MonoBehaviour
         float dist = Vector3.Distance(attractPoint, transform.position);
 
         //if havent reach attract point
-        if (dist > 0.2)
+        if (dist > 0.3f)
         {
             Vector3 Dir = (attractPoint - transform.position).normalized;
             Vector3 attractVelocity = Dir * 14f * Time.deltaTime;

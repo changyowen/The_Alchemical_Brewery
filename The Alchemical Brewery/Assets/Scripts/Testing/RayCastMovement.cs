@@ -44,7 +44,7 @@ public class RayCastMovement : MonoBehaviour
 	void Update()
 	{
 		int layer_mask = LayerMask.GetMask("TeleportUse");
-		int layer_mask01 = LayerMask.GetMask("Ground");
+		int layer_mask01 = LayerMask.GetMask("TeleportUse", "Ignore Raycast");
 
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
@@ -60,7 +60,7 @@ public class RayCastMovement : MonoBehaviour
             {
 				if(rayCastMode == RayCastMovementMode.Normal)
 				{
-					if (Physics.Raycast(ray, out hit, Mathf.Infinity, layer_mask01))
+					if (Physics.Raycast(ray, out hit, Mathf.Infinity, ~layer_mask01))
 					{
 						if (hit.collider.CompareTag("Ground"))
 						{
@@ -95,7 +95,8 @@ public class RayCastMovement : MonoBehaviour
 
 	private IEnumerator TeleportFunc(Vector3 teleportDest)
 	{
-		isTeleporting = true; 
+		isTeleporting = true;
+		ElementMeterPanel.Instance.elementSkillRemaining[4] -= 1; //subtract skill remaining
 		navMeshAgent.SetDestination(transform.position); //reset position
 		teleportEffect_obj.SetActive(true); //activate teleport effect
 

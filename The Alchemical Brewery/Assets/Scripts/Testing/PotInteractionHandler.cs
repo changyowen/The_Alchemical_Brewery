@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PotInteractionHandler : MonoBehaviour
 {
@@ -18,23 +19,28 @@ public class PotInteractionHandler : MonoBehaviour
 
     void OnMouseDown()
     {
-        //if player still far from pot
-        float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, transform.position);
-        if(dist > 4f)
+        //check if not mouse over UI
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            //go to the nearest point toward collider
-            Collider col = GetComponent<Collider>();
-            Vector3 closestPoint = col.ClosestPoint(PlayerInfoHandler.Instance.playerPosition);
-            RayCastMovement.Instance.NewDestination(closestPoint);
+            //if player still far from pot
+            float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, transform.position);
+            if (dist > 4f)
+            {
+                //go to the nearest point toward collider
+                Collider col = GetComponent<Collider>();
+                Vector3 closestPoint = col.ClosestPoint(PlayerInfoHandler.Instance.playerPosition);
+                RayCastMovement.Instance.NewDestination(closestPoint);
+            }
+            else //if player already near the pot
+            {
+                //stop moving
+                RayCastMovement.Instance.NewDestination(PlayerInfoHandler.Instance.playerPosition);
+                //Start interaction
+                PotInteraction();
+                //PotSystem_Daytime.Instance.PotInteraction(potIndex);
+            }
         }
-        else //if player already near the pot
-        {
-            //stop moving
-            RayCastMovement.Instance.NewDestination(PlayerInfoHandler.Instance.playerPosition);
-            //Start interaction
-            PotInteraction();
-            //PotSystem_Daytime.Instance.PotInteraction(potIndex);
-        }
+        
     }
 
     void PotInteraction()

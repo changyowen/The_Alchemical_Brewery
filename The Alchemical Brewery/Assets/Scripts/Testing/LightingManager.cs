@@ -30,12 +30,13 @@ public class LightingManager : MonoBehaviour
                 TimeOfDay += Time.deltaTime * timeSpeed;
                 TimeOfDay %= 24; //Modulus to ensure always between 0-24
                 UpdateLighting(TimeOfDay / 24f);
-                UpdateStreetLighting();
+                UpdateStreetLighting(0f);
             }
             else
             {
                 float officialTimeOfDay = ClockSystem.Instance.TimeOfDay;
                 UpdateLighting(officialTimeOfDay / 24f);
+                UpdateStreetLighting(officialTimeOfDay);
             }
         }
         else
@@ -90,17 +91,34 @@ public class LightingManager : MonoBehaviour
         }
     }
 
-    private void UpdateStreetLighting()
+    private void UpdateStreetLighting(float _timeOfScene)
     {
-        for (int i = 0; i < streetLights.Length; i++)
+        if(!isGameScene)
         {
-            if (TimeOfDay >= streetLightTimer.x || TimeOfDay <= streetLightTimer.y)
+            for (int i = 0; i < streetLights.Length; i++)
             {
-                streetLights[i].enabled = true;
+                if (TimeOfDay >= streetLightTimer.x || TimeOfDay <= streetLightTimer.y)
+                {
+                    streetLights[i].enabled = true;
+                }
+                else
+                {
+                    streetLights[i].enabled = false;
+                }
             }
-            else
+        }
+        else
+        {
+            for (int i = 0; i < streetLights.Length; i++)
             {
-                streetLights[i].enabled = false;
+                if (_timeOfScene >= streetLightTimer.x || _timeOfScene <= streetLightTimer.y)
+                {
+                    streetLights[i].enabled = true;
+                }
+                else
+                {
+                    streetLights[i].enabled = false;
+                }
             }
         }
         

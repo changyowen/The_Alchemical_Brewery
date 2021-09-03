@@ -6,6 +6,8 @@ public class ElementSkillManager : MonoBehaviour
 {
     public static ElementSkillManager Instance { get; private set; }
 
+    public GameObject[] ignisSkillEffect_objList;
+
     [System.NonSerialized] public bool[] skillActivated = new bool[5] { false, false, false, false, false };
 
     public float ignisSkillTime = 30f;
@@ -22,6 +24,11 @@ public class ElementSkillManager : MonoBehaviour
         skillActivated[0] = true; //activated skill
         StageManager.accelerateGame = true; //accelerate game
         ElementMeterPanel.Instance.elementSkillRemaining[0] -= 1;//minus skill remaining
+        //Activate effect camera and post proccessing
+        for (int i = 0; i < ignisSkillEffect_objList.Length; i++)
+        {
+            ignisSkillEffect_objList[i].SetActive(true);
+        }
 
         ///WAIT TILL IGNIS SKILL TIME
         float remainingTime = ignisSkillTime;
@@ -33,6 +40,11 @@ public class ElementSkillManager : MonoBehaviour
             yield return null; 
         }
 
+        //Disable effect camera and post proccessing
+        for (int i = 0; i < ignisSkillEffect_objList.Length; i++)
+        {
+            ignisSkillEffect_objList[i].SetActive(false);
+        }
         StageManager.accelerateGame = false; //stop accelerate game
         skillActivated[0] = false; //deactivate skill
         ElementMeterPanel.Instance.elementMana[0] = 0; //reset mana

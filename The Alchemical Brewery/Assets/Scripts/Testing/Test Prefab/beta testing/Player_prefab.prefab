@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f28de013bc765d47a76bf3c6ef8bf50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayCastMode: 1
+  rayCastMode: 0
   teleportEffect_obj: {fileID: 7816282324748457488}
   rayLength: 0
   smooth: 1

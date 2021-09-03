@@ -122,9 +122,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 8
-  m_WholeNumbers: 0
-  m_Value: 8
+  m_MaxValue: 4
+  m_WholeNumbers: 1
+  m_Value: 4
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a8ecb4f6a05b544908744896c7dab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementIndex: 2
   slider: {fileID: 1805581545962668356}
   gradient:
     serializedVersion: 2
@@ -398,7 +399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c598d87c362bb4c45b33b6d760dca6cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64e137fafaf539640864874b53592a2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

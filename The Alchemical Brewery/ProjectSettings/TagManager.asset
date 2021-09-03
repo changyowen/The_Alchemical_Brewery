@@ -31,6 +31,7 @@ TagManager:
   - Ground
   - Customer
   - Ingredient
+  - TeleportUse
   layers:
   - Default
   - TransparentFX
@@ -43,9 +44,9 @@ TagManager:
   - Obstacle
   - PlayerCollider
   - Ingredient
-  - 
-  - 
-  - 
+  - TeleportUse
+  - Ground
+  - FireEffect
   - 
   - 
   - 

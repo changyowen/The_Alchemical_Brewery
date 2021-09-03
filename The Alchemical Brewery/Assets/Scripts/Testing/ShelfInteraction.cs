@@ -25,7 +25,6 @@ public class ShelfInteraction : MonoBehaviour
 
     void Update()
     {
-
         if(!shelfOpen)
         {
             ChestSpriteHandler(false);
@@ -83,5 +82,13 @@ public class ShelfInteraction : MonoBehaviour
             //close shelf
             shelfOpen = false;
         }
+    }
+
+    public void DirectIngredientSpawn()
+    {
+        //reopen shelf shelf
+        shelfOpen = true;
+        //spawn ingredient
+        ingredientDrop.IngredientSpawn(shelfIndex, ingredientIndex);
     }
 }

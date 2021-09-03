@@ -48,6 +48,7 @@ public class TimeScaleManager : MonoBehaviour
     {
         if (accelerateGame != StageManager.accelerateGame)
         {
+            Debug.Log("YESSSS");
             accelerateGame = StageManager.accelerateGame;
             int boolInt = accelerateGame ? 2 : 1;
             accelerateGameScale = (float)boolInt;

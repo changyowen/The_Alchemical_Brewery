@@ -5,15 +5,26 @@ using System.Linq;
 
 public class InstantiateAssetHandler : MonoBehaviour
 {
+    public static InstantiateAssetHandler Instance { get; private set; }
+
+    [Header("SO Holder & StageAssetInstantiate")]
     public ScriptableObjectHolder so_Holder;
     public StageAssetInstantiate stageAssetInstantiate;
 
+    [Header("Intro & Outro gameObject")]
     public GameObject dayTimeIntro_obj;
     public GameObject dayTimeOutro_obj;
+
+    [System.NonSerialized] public List<GameObject> magicChestObjList; //MagicChest object [FOR REFERENCE]
 
     [Header("Testing Use")]
     public bool testing = false;
     public List<int> ingOrder_test = new List<int>();
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     public void InstantiateAssetPrefab(int stageIndex, List<int> ingredientOrderToday)
     {
@@ -47,6 +58,9 @@ public class InstantiateAssetHandler : MonoBehaviour
         AssignMagicChestData(magicChestPrefabList, ingredientOrderToday);
         //assign pot data
         AssignPotData(potPrefabList);
+
+        ///ASSIGN FOR REFERENCE USE
+        magicChestObjList = new List<GameObject>(magicChestPrefabList);
     }
 
     List<GameObject> InstantiateEachAsset(GameObject _prefab, Transform[] instantiatePos)

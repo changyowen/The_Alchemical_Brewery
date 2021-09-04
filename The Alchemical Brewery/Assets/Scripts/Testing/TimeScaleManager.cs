@@ -50,7 +50,7 @@ public class TimeScaleManager : MonoBehaviour
         {
             Debug.Log("YESSSS");
             accelerateGame = StageManager.accelerateGame;
-            int boolInt = accelerateGame ? 2 : 1;
+            float boolInt = accelerateGame ? 1.75f : 1;
             accelerateGameScale = (float)boolInt;
             TimeScaleChange(pauseGameScale, accelerateGameScale);
         }

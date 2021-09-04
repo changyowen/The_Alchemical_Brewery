@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClockSystem : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ClockSystem : MonoBehaviour
 
     public GameObject clockhand_minute_obj;
     public GameObject clockhand_hour_obj;
+    public Text digitalClock_text; 
 
     [Range(0, 24)] public float TimeOfDay = 8;
     [SerializeField] private float timeSpeedperHour;
@@ -24,6 +26,7 @@ public class ClockSystem : MonoBehaviour
         {
             TimeCalculation();
             ClockHandRotation();
+            DigitalTimeUpdate();
         }
     }
 
@@ -48,5 +51,26 @@ public class ClockSystem : MonoBehaviour
 
         float rotationDegreesPerHour_hour = 30f;
         clockhand_hour_obj.transform.eulerAngles = new Vector3(0, 0, -TimeOfDay * rotationDegreesPerHour_hour);
+    }
+
+    void DigitalTimeUpdate()
+    {
+        int timeInInt = (int)TimeOfDay;
+        if(timeInInt == 0)
+        {
+            digitalClock_text.text = "12 am";
+        }
+        else if(timeInInt > 0 && timeInInt < 12)
+        {
+            digitalClock_text.text = timeInInt + " am";
+        }
+        else if(timeInInt == 12)
+        {
+            digitalClock_text.text = "12 pm";
+        }
+        else if(timeInInt > 12)
+        {
+            digitalClock_text.text = (timeInInt - 12) + " pm";
+        }
     }
 }

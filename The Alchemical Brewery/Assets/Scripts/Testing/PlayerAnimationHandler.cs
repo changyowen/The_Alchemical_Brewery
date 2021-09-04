@@ -10,6 +10,7 @@ public class PlayerAnimationHandler : MonoBehaviour
     NavMeshAgent agent;
     Vector2 smoothDeltaPosition = Vector2.zero;
     Vector2 velocity = Vector2.zero;
+    Vector3 desiredDirection = Vector3.zero;
 
     void Start()
     {
@@ -37,6 +38,15 @@ public class PlayerAnimationHandler : MonoBehaviour
 
         bool shouldMove = velocity.magnitude > 0.5f && agent.remainingDistance > agent.radius;
 
+        //update direction when still moving
+        if(shouldMove)
+        {
+            desiredDirection = agent.desiredVelocity.normalized;
+
+            anim.SetFloat("velx_beforeStop", desiredDirection.x);
+            anim.SetFloat("vely_beforeStop", desiredDirection.z);
+        }
+        
         // Update animation parameters
         anim.SetBool("move", shouldMove);
         anim.SetFloat("velx", velocity.x);

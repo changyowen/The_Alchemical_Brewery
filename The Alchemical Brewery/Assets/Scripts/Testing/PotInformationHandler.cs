@@ -6,7 +6,7 @@ public class PotInformationHandler : MonoBehaviour
 {
     public int potIndex = 0;
 
-    public int potPotionHolder = 0;
+    public int potPotionHolder = -1;
     public List<int> potIngredientHolderList = new List<int>();
 
     public bool potBoiling = false;
@@ -17,7 +17,7 @@ public class PotInformationHandler : MonoBehaviour
     //reset all pot holder
     public void ResetPotHolder()
     {
-        potPotionHolder = 0;
+        potPotionHolder = -1;
         potIngredientHolderList.Clear();
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PotHolderUpdateHandler : MonoBehaviour
 {
+    public ScriptableObjectHolder SO_holder;
+
     int potIndex;
 
     public PotInformationHandler potInformationHandler;
@@ -32,12 +34,14 @@ public class PotHolderUpdateHandler : MonoBehaviour
         if(!potInformationHandler.potBoiling)
         {
             //if pot holding potion
-            if(potInformationHandler.potPotionHolder != 0)
+            if(potInformationHandler.potPotionHolder != -1)
             {
+                //get PotionData
+                PotionData potionData = StageManager.potionListToday[potInformationHandler.potPotionHolder];
                 //potion holder image SetActive
                 HolderSetActive(true, false, false);
                 //set image.....
-                potionHolderImage.sprite = null;
+                potionHolderImage.sprite = SO_holder.potionIconList[potionData.potionSpriteIndex];
             }
             else //if pot not holding potion
             {

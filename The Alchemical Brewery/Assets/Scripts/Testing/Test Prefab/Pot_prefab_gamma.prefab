@@ -105,7 +105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4036816777264958322}
-  m_LocalRotation: {x: 0.6087613, y: -0, z: -0, w: 0.79335344}
+  m_LocalRotation: {x: 0.38268346, y: -0, z: -0, w: 0.9238795}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potIndex: 0
-  potPotionHolder: 0
+  potPotionHolder: -1
   potIngredientHolderList: 
   potBoiling: 0
   spawnIngredient_obj: {fileID: 6580540116182979530, guid: 01cde2c42022fd046b66d33c93c9c985,
@@ -1428,6 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b174cd4d06f9bf4cba814f54414682e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 11400000, guid: 8c01756340a37404fb76cdb7ab041e58, type: 2}
   potInformationHandler: {fileID: 5932807725193754037}
   potionHolder: {fileID: 5932807723913842847}
   ingredientHolder: {fileID: 5932807724067779879}

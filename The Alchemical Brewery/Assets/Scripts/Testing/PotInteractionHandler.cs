@@ -49,10 +49,10 @@ public class PotInteractionHandler : MonoBehaviour
         if(!potInformationHandler.potBoiling)
         {
             //if pot is holding potion
-            if (potInformationHandler.potPotionHolder != 0)
+            if (potInformationHandler.potPotionHolder != -1)
             {
-                //if player didnt holding potion
-                if (PlayerInfoHandler.Instance.playerPotionHolder == 0)
+                //if player potion pocket not full
+                if (PlayerInfoHandler.Instance.playerPotionHolderList.Count < 3)
                 {
                     //take potion
                     TakePotion();
@@ -77,14 +77,14 @@ public class PotInteractionHandler : MonoBehaviour
 
         }
     }
-
+    
     void TakePotion()
     {
         int takenPotionIndex = potInformationHandler.potPotionHolder;
         //player get potion
-        PlayerInfoHandler.Instance.playerPotionHolder = takenPotionIndex;
+        PlayerInfoHandler.Instance.playerPotionHolderList.Add(takenPotionIndex);
         //reset pot potion holder
-        potInformationHandler.potPotionHolder = 0;
+        potInformationHandler.potPotionHolder = -1;
     }
 
     void PutIngredient()

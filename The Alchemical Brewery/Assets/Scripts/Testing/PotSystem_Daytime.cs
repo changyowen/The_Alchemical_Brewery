@@ -37,10 +37,10 @@ public class PotSystem_Daytime : MonoBehaviour
             if (thisPot.potPotionHolder != 0)
             {
                 //if player didnt holding potion
-                if (PlayerInfoHandler.Instance.playerPotionHolder == 0)
+                if (PlayerInfoHandler.Instance.playerPotionHolderList.Count == 0)
                 {
                     //if pot holding potion
-                    if (thisPot.potPotionHolder != 0)
+                    if (thisPot.potPotionHolder != -1)
                     {
                         thisPot.TakePotion();
                     }

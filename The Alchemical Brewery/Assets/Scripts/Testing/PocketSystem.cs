@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class PocketSystem : MonoBehaviour
 {
-    public Image potionHolderImage;
+    public ScriptableObjectHolder SO_holder;
+
+    public Image[] potionHolderImage;
     public Image[] ingredientHolderImage;
     public GameObject spawnIngredient_obj;
     public Vector3 spawnPosOffset;
 
     void Update()
     {
+        PotionHolderUpdate();
         IngredientHolderUpdate();
     }
 
@@ -19,20 +22,22 @@ public class PocketSystem : MonoBehaviour
     void PotionHolderUpdate()
     {
         //get player potion holder
-        int playerPotionHolder = PlayerInfoHandler.Instance.playerPotionHolder;
+        List<int> playerPotionHolderList = PlayerInfoHandler.Instance.playerPotionHolderList;
 
-        switch(playerPotionHolder)
+        if (StageManager.potionListToday != null)
         {
-            case 0: //if no potion hold
+            for (int i = 0; i < 3; i++)
+            {
+                if(playerPotionHolderList.Count > i) //if potion exist in this slot
                 {
-                    potionHolderImage.sprite = null;
-                    break;
+                    PotionData potionData = StageManager.potionListToday[playerPotionHolderList[i]];
+                    potionHolderImage[i].sprite = SO_holder.potionIconList[potionData.potionSpriteIndex];
                 }
-            default: //if holded potion
+                else //if potion not exist in this slot
                 {
-                    potionHolderImage.sprite = null;
-                    break;
+                    potionHolderImage[i].sprite = SO_holder.transparentSprite;
                 }
+            }
         }
     }
 

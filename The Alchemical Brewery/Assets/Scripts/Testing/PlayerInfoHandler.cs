@@ -8,7 +8,7 @@ public class PlayerInfoHandler : MonoBehaviour
 
     public Vector3 playerPosition;
 
-    public int playerPotionHolder = 0;
+    public List<int> playerPotionHolderList = new List<int>();
     public List<int> playerIngredientHolder = new List<int>();
 
     void Awake()

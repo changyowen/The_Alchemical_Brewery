@@ -36,4 +36,7 @@ public class ScriptableObjectHolder: ScriptableObject
     public Sprite okayLogoSprite;
     public Sprite boredLogoSprite;
     public Sprite questionMarkLogoSprite;
+
+    [Header("Potion icon choices")]
+    public Sprite[] potionIconList;
 }

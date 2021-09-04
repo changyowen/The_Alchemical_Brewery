@@ -67,7 +67,7 @@ public class CustomerQueueHandler : MonoBehaviour
 
         /////////////////////
         //if player holding a potion
-        if(PlayerInfoHandler.Instance.playerPotionHolder != 0)
+        if(PlayerInfoHandler.Instance.playerPotionHolderList.Count != 0)
         {
             Debug.Log("Serve");
             //if holding customer prefer potion
@@ -90,7 +90,7 @@ public class CustomerQueueHandler : MonoBehaviour
         ///INCREASE MONEY
 
         ///RESET PLAYER POTION HOLDER
-        PlayerInfoHandler.Instance.playerPotionHolder = 0;
+        PlayerInfoHandler.Instance.playerPotionHolderList.RemoveAt(0);
         
         ///GET CUSTOMER CLASS
         //get customer class

@@ -10,6 +10,7 @@ public enum PotionUsage
 [System.Serializable]
 public class PotionData 
 {
+    public int potionSpriteIndex = 0; 
     public string potionName;
     public int[] potionFormular;
 

@@ -9699,7 +9699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78eaf6471a1649642864ad68a03371e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementMana: 0000000000000000000000000000000000000000
+  elementMana: 0400000000000000040000000000000004000000
 --- !u!1 &681407269
 GameObject:
   m_ObjectHideFlags: 0

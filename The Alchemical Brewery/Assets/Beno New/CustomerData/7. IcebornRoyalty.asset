@@ -15,6 +15,8 @@ MonoBehaviour:
   customerIndex: 7
   customerName: Iceborn Royalty
   customerSprite: {fileID: 21300000, guid: 78f9de5e80dd0f445b4a1b2389b4d9de, type: 3}
+  customerDescription: Born within the ice is the nobles that guard the far north.
+    They are the one who have seen through a lot.
   preferElement: 00000000
   preferPotionUsage: 00000000
   baseAppearRate: 5

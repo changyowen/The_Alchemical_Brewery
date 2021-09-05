@@ -15,6 +15,7 @@ MonoBehaviour:
   customerIndex: 0
   customerName: Villager
   customerSprite: {fileID: 21300000, guid: fc0abf6fc6db1e74da774779a5bdc928, type: 3}
+  customerDescription: Your typical villager that resides in villages big and small.
   preferElement: 0000000002000000
   preferPotionUsage: 0100000000000000
   baseAppearRate: 30

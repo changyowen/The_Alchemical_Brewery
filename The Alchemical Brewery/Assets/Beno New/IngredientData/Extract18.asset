@@ -30,3 +30,4 @@ MonoBehaviour:
   ingredientColor: {r: 0, g: 0, b: 0, a: 0}
   refineStage: 2
   originalIngredient: {fileID: 11400000, guid: ed1d54a55380fe24384af78cab16ff8f, type: 2}
+  ingredientPrice: 650

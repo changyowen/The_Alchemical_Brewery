@@ -126,6 +126,16 @@ public class CraftPotionManager : MonoBehaviour
         }
     }
 
+    public void ActivateCloseButton(Transform _closebutton)
+    {
+        _closebutton.gameObject.SetActive(true);
+    }
+
+    public void DeactivateCloseButton(Transform _closebutton)
+    {
+        _closebutton.gameObject.SetActive(false);
+    }
+
     public void ResetPotIngredientList(bool returnIngredient)
     {
         if(potIngredientList.Count > 0) //if pot has any ingredient

@@ -27,4 +27,7 @@ public class IngredientData : ScriptableObject
     [Header("Put index of each refine stage")]
     public RefinementStage refineStage;
     public IngredientData originalIngredient;
+
+    [Header("Price from Fairy Shop")]
+    public int ingredientPrice;
 }

@@ -26,6 +26,7 @@ public class AlmanacInteraction : MonoBehaviour
 
     public void UpdateAll()
     {
+        Canvas.ForceUpdateCanvases();
         ingredientInformationHandler.UpdateButtonData();
         ingredientInformationHandler.UpdateIngredientInformation();
         customerInformationHandler.UpdateButtonData();

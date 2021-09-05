@@ -64,8 +64,6 @@ public static class PlayerProfile
         {
             IngredientProfile newIngredientProfile = new IngredientProfile();
             ingredientProfile[i] = newIngredientProfile;
-            if (ingredientProfile[0] != null)
-                Debug.Log("YESS");
             //assign index
             ingredientProfile[i].ingredientIndex = i + 1;
         }

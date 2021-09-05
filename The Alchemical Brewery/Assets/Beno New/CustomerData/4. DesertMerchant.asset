@@ -15,6 +15,7 @@ MonoBehaviour:
   customerIndex: 4
   customerName: Desert Merchant
   customerSprite: {fileID: 21300000, guid: c2f56a14861e8bf4eae48e709d484256, type: 3}
+  customerDescription: Merchants that are used to the fiery weather within the desert.
   preferElement: 0200000000000000
   preferPotionUsage: 0000000001000000
   baseAppearRate: 18

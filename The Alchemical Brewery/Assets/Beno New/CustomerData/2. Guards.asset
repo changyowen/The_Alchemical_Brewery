@@ -15,6 +15,8 @@ MonoBehaviour:
   customerIndex: 2
   customerName: Guard
   customerSprite: {fileID: 21300000, guid: 8b4de674c7325bf49a1f270da3b3846c, type: 3}
+  customerDescription: Loyal guards protecting their town and family from any outside
+    threat.
   preferElement: feffffff0200000000000000
   preferPotionUsage: 0100000000000000
   baseAppearRate: 20

@@ -65,6 +65,10 @@ public class ShopIngredientInformationHandler : MonoBehaviour
                 normalIngredientButton[i].GetComponent<Button>().interactable = false;
                 normalIngredientButton[i].transform.GetChild(2).gameObject.SetActive(true);
             }
+
+            //update tooltips
+            TooltipsIngredientPanel tooltipsScript = normalIngredientButton[i].transform.GetChild(4).GetComponent<TooltipsIngredientPanel>();
+            tooltipsScript.AssignTooltipsData(_ingredientData);
         }
     }
 
@@ -94,6 +98,10 @@ public class ShopIngredientInformationHandler : MonoBehaviour
                 regionalIngredientButton[i].GetComponent<Button>().interactable = false;
                 regionalIngredientButton[i].transform.GetChild(2).gameObject.SetActive(true);
             }
+
+            //update tooltips
+            TooltipsIngredientPanel tooltipsScript = regionalIngredientButton[i].transform.GetChild(4).GetComponent<TooltipsIngredientPanel>();
+            tooltipsScript.AssignTooltipsData(_ingredientData);
         }
     }
 

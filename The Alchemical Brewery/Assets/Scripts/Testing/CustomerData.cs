@@ -21,6 +21,8 @@ public class CustomerData : ScriptableObject
     public int customerIndex;
     public string customerName;
     public Sprite customerSprite;
+    [TextArea(3, 10)]
+    public string customerDescription;
 
     [Header("Customer Preferred")]
     public List<Element> preferElement;

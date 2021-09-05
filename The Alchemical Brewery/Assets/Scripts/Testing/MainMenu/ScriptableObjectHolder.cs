@@ -39,4 +39,11 @@ public class ScriptableObjectHolder: ScriptableObject
 
     [Header("Potion icon choices")]
     public Sprite[] potionIconList;
+
+    [Header("STAR")]
+    public Sprite priceStar;
+    public Sprite greyStar;
+    public Sprite greenStar;
+    public Sprite redStar;
+    public Sprite neutralStar;
 }

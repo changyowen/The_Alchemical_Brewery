@@ -14896,7 +14896,7 @@ MonoBehaviour:
     type: 3}
   potionIcon: {fileID: 6658423459454132093}
   potionName: {fileID: 6658423460355722984}
-  ingredientFormularImages:
+  potionFormularImages:
   - {fileID: 6658423460249722363}
   - {fileID: 6658423459689828880}
   - {fileID: 6658423459410362414}
@@ -14907,9 +14907,17 @@ MonoBehaviour:
   - {fileID: 6658423458739869160}
   - {fileID: 6658423459640098176}
   potionUsage: {fileID: 8433264740349607719}
-  potionUsageColor: []
+  potionUsageColor:
+  - {r: 0, g: 0.8490566, b: 0, a: 1}
+  - {r: 0.8207547, g: 0, b: 0, a: 1}
+  - {r: 0.8679245, g: 0, b: 0.8679245, a: 1}
   potionQualityText: {fileID: 6658423459590205572}
-  potionQualityColor: []
+  potionQualityColor:
+  - {r: 0, g: 0.9811321, b: 0.9811321, a: 1}
+  - {r: 0, g: 0.8301887, b: 0, a: 0}
+  - {r: 0.8867924, g: 0.8867924, b: 0, a: 1}
+  - {r: 1, g: 0.49803922, b: 0, a: 1}
+  - {r: 0.8490566, g: 0, b: 0, a: 1}
   potionPricetext: {fileID: 8433264740494662038}
 --- !u!1 &8433264740766347485
 GameObject:

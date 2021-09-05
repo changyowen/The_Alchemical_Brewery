@@ -39,6 +39,7 @@ public class AlmanacIngredientInformationHandler : MonoBehaviour
             ingredientButton_obj[i].transform.GetChild(0).GetComponent<Image>().sprite = ingredientData.ingredientSprite;
 
             //update locked/unlocked
+            Debug.Log(i);
             bool _unlocked = ingredientProfile.unlocked;
             if(_unlocked)
             {

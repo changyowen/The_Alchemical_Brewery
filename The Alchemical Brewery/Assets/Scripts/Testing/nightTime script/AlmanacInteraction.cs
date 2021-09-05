@@ -14,7 +14,7 @@ public class AlmanacInteraction : MonoBehaviour
 
     public int almanacState = 0;
 
-    private void Start()
+    private void OnEnable()
     {
         UpdateAll();
     }
@@ -31,6 +31,7 @@ public class AlmanacInteraction : MonoBehaviour
         customerInformationHandler.UpdateButtonData();
         customerInformationHandler.UpdateCustomerInformation();
         potionInformationHandler.UpdateButtonData();
+        potionInformationHandler.UpdatePotionInformation();
     }
 
     void UpdateAlmenacEachPanel()

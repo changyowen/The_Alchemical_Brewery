@@ -16,6 +16,7 @@ public class PotHolderUpdateHandler : MonoBehaviour
     public GameObject craftButton;
     public Image potionHolderImage;
     public Image[] ingredientHolderImage;
+    public Image[] refinementImages;
 
     void Start()
     {
@@ -96,6 +97,9 @@ public class PotHolderUpdateHandler : MonoBehaviour
             //get sprite of ingredient
             Sprite ingSprite = so_Holder.ingredientSO[_ingredientIndex].ingredientSprite;
             ingredientHolderImage[i].sprite = ingSprite;
+            //update sprite of refinement
+            RefinementStage refinementStage = so_Holder.ingredientSO[_ingredientIndex].refineStage;
+            UpdateRefinementImages(i, refinementStage);
         }
         //update image of empty slot
         for (int j = ingredientHolderImage.Length - 1; j >= ingredientHolderImage.Length - totalEmptySlot; j--)
@@ -103,6 +107,29 @@ public class PotHolderUpdateHandler : MonoBehaviour
             ScriptableObjectHolder so_Holder = StageManager.Instance.so_Holder;
             Sprite transSprite = so_Holder.transparentSprite;
             ingredientHolderImage[j].sprite = transSprite;
+            UpdateRefinementImages(j, RefinementStage.Normal);
+        }
+    }
+
+    void UpdateRefinementImages(int _buttonIndex, RefinementStage _refinementStage)
+    {
+        switch(_refinementStage)
+        {
+            case RefinementStage.Normal:
+                {
+                    refinementImages[_buttonIndex].sprite = SO_holder.transparentSprite;
+                    break;
+                }
+            case RefinementStage.Crushed:
+                {
+                    refinementImages[_buttonIndex].sprite = SO_holder.crushedLogoSprite;
+                    break;
+                }
+            case RefinementStage.Extract:
+                {
+                    refinementImages[_buttonIndex].sprite = SO_holder.extractLogoSprite;
+                    break;
+                }
         }
     }
 }

@@ -4981,6 +4981,7 @@ MonoBehaviour:
   - {fileID: 1073358357}
   - {fileID: 280620260}
   - {fileID: 1780496139}
+  refinementImages: []
 --- !u!114 &345924459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9431,7 +9432,7 @@ PrefabInstance:
     - target: {fileID: 6922491541659610973, guid: 38e9df4293f79da4ba2d8b9144003a96,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e9df4293f79da4ba2d8b9144003a96, type: 3}
@@ -95871,6 +95872,7 @@ MonoBehaviour:
   - {fileID: 1309770216}
   - {fileID: 784193720}
   - {fileID: 1023903813}
+  refinementImages: []
 --- !u!114 &1934152083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97452,6 +97454,7 @@ MonoBehaviour:
   - {fileID: 2061194524}
   - {fileID: 470881699}
   - {fileID: 1205109530}
+  refinementImages: []
 --- !u!114 &2022067486
 MonoBehaviour:
   m_ObjectHideFlags: 0

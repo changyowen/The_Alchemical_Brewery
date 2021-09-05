@@ -26,4 +26,6 @@ MonoBehaviour:
   elementType: -2
   ingredientUsage: -1
   ingredientColor: {r: 0.22745098, g: 0.6603774, b: 0.09675908, a: 0}
-  refineStage: 
+  refineStage: 0
+  originalIngredient: {fileID: 0}
+  ingredientPrice: 75

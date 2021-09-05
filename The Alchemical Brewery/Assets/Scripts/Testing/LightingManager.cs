@@ -174,8 +174,20 @@ public class LightingManager : MonoBehaviour
             float waitTime = .2f;
             yield return new WaitForSeconds(waitTime);
             streetLights[i].enabled = LightOn;
+            streetLights[i].intensity = 0;
+            if (LightOn)
+            {
+                LightFlickering(i);
+            }
         }
+    }
 
-
+    private void LightFlickering(int num)
+    {
+        for (int i = 0; i <= 15; i++)
+        {
+            streetLights[num].intensity = i;
+            Debug.Log(streetLights[num] + " " + streetLights[num].intensity);
+        }
     }
 }

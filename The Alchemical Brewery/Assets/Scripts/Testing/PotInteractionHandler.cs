@@ -122,6 +122,16 @@ public class PotInteractionHandler : MonoBehaviour
         }
     }
 
+    public void ActivateCloseButton(Transform _closeButton)
+    {
+        _closeButton.gameObject.SetActive(true);
+    }
+
+    public void DeactivatedCloseButton(Transform _closeButton)
+    {
+        _closeButton.gameObject.SetActive(false);
+    }
+
     public void StartCraftPotion()
     {
         //reset pot potion holder

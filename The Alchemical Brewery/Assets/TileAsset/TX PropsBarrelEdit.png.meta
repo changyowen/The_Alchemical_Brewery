@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: f95b0ee3986817042aab535b8b91e50f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9135823859450315677
+    second: TX PropsBarrelEdit_0
+  - first:
+      213: 4695068991337819446
+    second: TX PropsBarrelEdit_1
+  - first:
+      213: 7291997010620403855
+    second: TX PropsBarrelEdit_2
+  - first:
+      213: 6472323534708743546
+    second: TX PropsBarrelEdit_3
+  - first:
+      213: 5835403780943533981
+    second: TX PropsBarrelEdit_4
+  - first:
+      213: 3677926950656710631
+    second: TX PropsBarrelEdit_5
+  - first:
+      213: -3520837022199018793
+    second: TX PropsBarrelEdit_6
+  - first:
+      213: 3921138167544969315
+    second: TX PropsBarrelEdit_7
+  - first:
+      213: 9090235122480231751
+    second: TX PropsBarrelEdit_8
+  - first:
+      213: 5784788576091745240
+    second: TX PropsBarrelEdit_9
+  - first:
+      213: 2261914138395921957
+    second: TX PropsBarrelEdit_10
+  - first:
+      213: -8376845530815443680
+    second: TX PropsBarrelEdit_11
+  - first:
+      213: -4063746288337139881
+    second: TX PropsBarrelEdit_12
+  - first:
+      213: -3462254517487239594
+    second: TX PropsBarrelEdit_13
+  - first:
+      213: -1357106449575870634
+    second: TX PropsBarrelEdit_14
+  - first:
+      213: -4013521271948275260
+    second: TX PropsBarrelEdit_15
+  - first:
+      213: -536903754010888642
+    second: TX PropsBarrelEdit_16
+  - first:
+      213: -960945029997423369
+    second: TX PropsBarrelEdit_17
+  - first:
+      213: 3014156872994042380
+    second: TX PropsBarrelEdit_18
+  - first:
+      213: -6288030023612091734
+    second: TX PropsBarrelEdit_19
+  - first:
+      213: -7354622076856048884
+    second: TX PropsBarrelEdit_20
+  - first:
+      213: -5450107824642195444
+    second: TX PropsBarrelEdit_21
+  - first:
+      213: 10926809733865582
+    second: TX PropsBarrelEdit_22
+  - first:
+      213: -7054189304796780501
+    second: TX PropsBarrelEdit_23
+  - first:
+      213: -813522663448084644
+    second: TX PropsBarrelEdit_24
+  - first:
+      213: -2480330910881511475
+    second: TX PropsBarrelEdit_25
+  - first:
+      213: -3206479051416865286
+    second: TX PropsBarrelEdit_26
+  - first:
+      213: -8251426268017200696
+    second: TX PropsBarrelEdit_27
+  - first:
+      213: 8451791321078632207
+    second: TX PropsBarrelEdit_28
+  - first:
+      213: -3614624360024385188
+    second: TX PropsBarrelEdit_29
+  - first:
+      213: 3925156652531181802
+    second: TX PropsBarrelEdit_30
+  - first:
+      213: -1169048968141245558
+    second: TX PropsBarrelEdit_31
+  - first:
+      213: -2080238344285173220
+    second: TX PropsBarrelEdit_32
+  - first:
+      213: -7761523527804238959
+    second: TX PropsBarrelEdit_33
+  - first:
+      213: -1408359852363745857
+    second: TX PropsBarrelEdit_34
+  - first:
+      213: -3729192881666453391
+    second: TX PropsBarrelEdit_35
+  - first:
+      213: 6811106377914783235
+    second: TX PropsBarrelEdit_36
+  - first:
+      213: 445515790837043619
+    second: TX PropsBarrelEdit_37
+  - first:
+      213: 5130923640253251571
+    second: TX PropsBarrelEdit_38
+  - first:
+      213: -4368530928261227411
+    second: TX PropsBarrelEdit_39
+  - first:
+      213: 3878993011288488019
+    second: TX PropsBarrelEdit_40
+  - first:
+      213: -1351600253204307805
+    second: TX PropsBarrelEdit_41
+  - first:
+      213: -503846480031469164
+    second: TX PropsBarrelEdit_42
+  - first:
+      213: 5830844646688073365
+    second: TX PropsBarrelEdit_43
+  - first:
+      213: 8236370171183961613
+    second: TX PropsBarrelEdit_44
+  - first:
+      213: -2008907596136982231
+    second: TX PropsBarrelEdit_45
+  - first:
+      213: -2492102292040265003
+    second: TX PropsBarrelEdit_46
+  - first:
+      213: 4031445588816486746
+    second: TX PropsBarrelEdit_47
+  - first:
+      213: 7388448528742942004
+    second: TX PropsBarrelEdit_48
+  - first:
+      213: 5321571405223389018
+    second: TX PropsBarrelEdit_49
+  - first:
+      213: 749102906304843569
+    second: TX PropsBarrelEdit_50
+  - first:
+      213: -4076354535253273116
+    second: TX PropsBarrelEdit_51
+  - first:
+      213: 6420885172089781556
+    second: TX PropsBarrelEdit_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX PropsBarrelEdit_25
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 322
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc78c7b8d28149dd0800000000000000
+      internalID: -2480330910881511475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

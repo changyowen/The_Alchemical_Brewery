@@ -15,6 +15,7 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private float timeSpeed = 0;
     [SerializeField] private Vector2 streetLightTimer = Vector2.zero;
 
+    public bool isStreetLightOn = false;
     public bool isGameScene = true;
 
     private void Update()
@@ -30,13 +31,15 @@ public class LightingManager : MonoBehaviour
                 TimeOfDay += Time.deltaTime * timeSpeed;
                 TimeOfDay %= 24; //Modulus to ensure always between 0-24
                 UpdateLighting(TimeOfDay / 24f);
-                UpdateStreetLighting(0f);
+                //UpdateStreetLighting(0f);
+                UpdateStreetLightingNew(0f);
             }
             else
             {
                 float officialTimeOfDay = ClockSystem.Instance.TimeOfDay;
                 UpdateLighting(officialTimeOfDay / 24f);
-                UpdateStreetLighting(officialTimeOfDay);
+                //UpdateStreetLighting(officialTimeOfDay);
+                UpdateStreetLightingNew(officialTimeOfDay);
             }
         }
         else
@@ -122,5 +125,57 @@ public class LightingManager : MonoBehaviour
             }
         }
         
+    }
+    private void UpdateStreetLightingNew(float _timeOfScene)
+    {
+        if (!isGameScene)
+        {
+            if (TimeOfDay >= streetLightTimer.x || TimeOfDay <= streetLightTimer.y)
+            {
+                if (!isStreetLightOn)
+                {
+                    isStreetLightOn = true;
+                    StartCoroutine(DelayLight(true));
+                }
+
+            }
+            else
+            {
+                if (isStreetLightOn)
+                {
+                    isStreetLightOn = false;
+                    StartCoroutine(DelayLight(false));
+                }
+            }
+        }
+
+
+        //else
+        //{
+        //    for (int i = 0; i < streetLights.Length; i++)
+        //    {
+        //        if (_timeOfScene >= streetLightTimer.x || _timeOfScene <= streetLightTimer.y)
+        //        {
+        //            streetLights[i].enabled = true;
+        //        }
+        //        else
+        //        {
+        //            streetLights[i].enabled = false;
+        //        }
+        //    }
+        //}
+
+    }
+
+    IEnumerator DelayLight(bool LightOn)
+    {
+        for(int i = 0; i < streetLights.Length; i++)
+        {
+            float waitTime = .2f;
+            yield return new WaitForSeconds(waitTime);
+            streetLights[i].enabled = LightOn;
+        }
+
+
     }
 }

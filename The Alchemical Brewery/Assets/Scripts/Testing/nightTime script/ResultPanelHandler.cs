@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ResultPanelHandler : MonoBehaviour
 {
@@ -9,24 +10,30 @@ public class ResultPanelHandler : MonoBehaviour
 
     public Image potionIcon;
     public Text potionName_text;
+    public TMP_InputField potionName_inputText;
     public Text quality_text;
     public Text element_text;
     public Text usage_text;
     public Text price_text;
     public Image[] formular_image;
 
+    public Transform resultPanel_transform;
+    public GameObject changePotionIcon_panel;
+    public PotionData potionData = null;
+
     public void AssignPreviousPotion(int formularIndex)
     {
         PotionData currentPotionData = PlayerProfile.acquiredPotion[formularIndex];
-
-        potionName_text.text = "" + currentPotionData.potionName;
+        if(potionName_text != null)
+        {
+            potionName_text.text = "" + currentPotionData.potionName;
+        }
         quality_text.text = "" + currentPotionData.potionQuality;
         AssignElementString(currentPotionData.potionElement);
         usage_text.text = "" + currentPotionData.potionUsage.ToString();
         //price_text.text = "" + currentPotionData.
         List<int> currentPotionFormular = new List<int>(currentPotionData.potionFormular);
         AssignFormularImage(currentPotionFormular);
-
     }
 
     public void AssignUnknownPotion(List<int> formularIndex)
@@ -91,5 +98,36 @@ public class ResultPanelHandler : MonoBehaviour
                 formular_image[i].sprite = _transSprite;
             }
         }
+    }
+
+    public void ChangePotionIcon()
+    {
+        GameObject changeIconPanel = Instantiate(changePotionIcon_panel, Vector3.zero, Quaternion.identity);
+        changeIconPanel.transform.SetParent(resultPanel_transform, false);
+
+        ChangePotionIconPanel panelScript = changeIconPanel.GetComponent<ChangePotionIconPanel>();
+        panelScript.potionData = potionData;
+        panelScript.resultPanelScript = this;
+    }
+
+    public void RefreshPotionLogo()
+    {
+        potionIcon.sprite = so_Holder.potionIconList[potionData.potionSpriteIndex];
+    }
+
+    void UpdateNewPotionData()
+    {
+        if(potionData != null)
+        {
+            string newName = potionName_inputText.text;
+            potionData.potionName = newName;
+        }
+    }
+
+    public void CloseResultPanel()
+    {
+        UpdateNewPotionData();
+        SaveManager.Save();
+        Destroy(this.gameObject);
     }
 }

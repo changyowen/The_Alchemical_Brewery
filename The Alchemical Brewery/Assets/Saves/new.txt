@@ -1,8 +1,28 @@
 {
-    "profileName": "gg",
-    "lastSave": "07-09-2021   00:19",
+    "profileName": "new",
+    "lastSave": "07-09-2021   03:27",
     "dayCount": 1,
-    "acquiredPotion": [],
+    "acquiredPotion": [
+        {
+            "potionSpriteIndex": 0,
+            "potionName": "",
+            "potionFormular": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "potionEffectiveScore": 2400,
+            "potionQuality": 91.48445129394531,
+            "potionElement": [
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "potionUsage": 1
+        }
+    ],
     "ingredientProfile": [
         {
             "ingredientIndex": 1,
@@ -293,18 +313,6 @@
             "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
-        },
-        {
-            "customerIndex": 0,
-            "unlocked": false,
-            "customerLevel": 1,
-            "customerExperience": 0
-        },
-        {
-            "customerIndex": 0,
-            "unlocked": false,
-            "customerLevel": 1,
-            "customerExperience": 0
         }
     ],
     "fairyShopProfile": {
@@ -318,7 +326,7 @@
     },
     "shopProfile": {
         "ingredientPurchased": [
-            0,
+            -4,
             0,
             0,
             0,

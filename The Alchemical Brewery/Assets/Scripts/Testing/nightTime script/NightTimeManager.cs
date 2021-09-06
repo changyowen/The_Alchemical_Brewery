@@ -29,9 +29,9 @@ public class NightTimeManager : MonoBehaviour
 
         if(testing)
         {
-            //PlayerProfile.GM_TestingUse();
+            PlayerProfile.GM_TestingUse();
             //SaveManager.Save();
-            SaveManager.Load();
+            //SaveManager.Load();
         }
     }
 
@@ -39,14 +39,6 @@ public class NightTimeManager : MonoBehaviour
     {
         StartCoroutine(StartSceneIntro());
         IngredientPanel.Instance.AssignButtonData();
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SaveManager.Save();
-        }
     }
 
     public void NextScene()
@@ -77,7 +69,8 @@ public class NightTimeManager : MonoBehaviour
         nightTimeOutro_obj.SetActive(true);
 
         //Start loading next scene
-        AsyncOperation operation = SceneManager.LoadSceneAsync(2);
+        LoadingScreenScript.nextSceneIndex = 3;
+        AsyncOperation operation = SceneManager.LoadSceneAsync(0);
         operation.allowSceneActivation = false;
 
         //get animator of night time outro
@@ -89,13 +82,6 @@ public class NightTimeManager : MonoBehaviour
             temp += Time.deltaTime;
             yield return null;
         }
-
-        //stay this coroutine if animation havent finish
-        //while (anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
-        //{
-        //    yield return null;
-        //}
-        Debug.Log("Yes");
         //enable change scene
         operation.allowSceneActivation = true;
     }

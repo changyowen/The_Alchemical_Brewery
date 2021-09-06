@@ -12,6 +12,8 @@ public class AlmanacPotionInformationHandler : MonoBehaviour
     public Transform buttonContainer_transform;
     public GameObject[] potionButton_objList;
     public GameObject potionButton_prefab;
+    public Transform almanacMain_transform;
+    public GameObject chooseIcon_panel;
 
     [Header("Information Reference")]
     public Image potionIcon;
@@ -72,6 +74,9 @@ public class AlmanacPotionInformationHandler : MonoBehaviour
 
         //update potion usage
         UpdatePotionUsage(_potionData);
+
+        //update potion quality
+        UpdatePotionQuality(_potionData);
     }
 
     void UpdateFormularImages(PotionData _potionData)
@@ -190,5 +195,19 @@ public class AlmanacPotionInformationHandler : MonoBehaviour
     {
         currentPotionIndex = _buttonIndex;
         UpdatePotionInformation();
+    }
+
+    public void ChangePotionIcon()
+    {
+        //get potion data
+        PotionData _potionData = PlayerProfile.acquiredPotion[currentPotionIndex];
+
+        GameObject choosePotionIconPanel = Instantiate(chooseIcon_panel, Vector3.zero, Quaternion.identity);
+        choosePotionIconPanel.transform.SetParent(almanacMain_transform, false);
+
+        ChangePotionIconPanel panelScript = choosePotionIconPanel.GetComponent<ChangePotionIconPanel>();
+        panelScript.potionData = _potionData;
+        panelScript.almanacScript = this;
+        SaveManager.Save();
     }
 }

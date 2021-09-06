@@ -59,11 +59,6 @@ public class MainMenuManager : MonoBehaviour
             {
                 GameObject newProfileButton = Instantiate(profileButton_obj, Vector3.zero, Quaternion.identity) as GameObject;
                 newProfileButton.transform.SetParent(loadPanel_container, false);
-                Debug.Log(saveDataList[0].profileName);
-                for (int a = 0; a < saveDataList[0].ingredientProfile.Length; a++)
-                {
-                    Debug.Log(saveDataList[0].ingredientProfile[a].unlocked);
-                }
 
                 //assign button data
                 ProfileButtonInformationHandler buttonScript = newProfileButton.GetComponent<ProfileButtonInformationHandler>();
@@ -107,7 +102,8 @@ public class MainMenuManager : MonoBehaviour
             PlayerProfile.NewGameData(newProfileName);
             SaveManager.Save();
             //next scene
-            SceneManager.LoadScene(1);
+            LoadingScreenScript.nextSceneIndex = 2;
+            SceneManager.LoadScene(0);
         }
     }
 

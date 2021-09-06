@@ -33,6 +33,7 @@ public class ProfileButtonInformationHandler : MonoBehaviour, IPointerClickHandl
     {
         PlayerProfile.LoadData(saveData);
 
-        SceneManager.LoadScene(1);
+        LoadingScreenScript.nextSceneIndex = 2;
+        SceneManager.LoadScene(0);
     }
 }

@@ -11,7 +11,7 @@ public static class PlayerProfile
     public static int dayCount = 1;
     public static List<PotionData> acquiredPotion = new List<PotionData>();
     public static IngredientProfile[] ingredientProfile = new IngredientProfile[60];
-    public static CustomerProfile[] customerProfile = new CustomerProfile[10];
+    public static CustomerProfile[] customerProfile = new CustomerProfile[8];
     public static FairyShopProfile fairyShopProfile = new FairyShopProfile();
     public static ShopProfile shopProfile = new ShopProfile();
 

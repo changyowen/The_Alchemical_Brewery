@@ -63,7 +63,6 @@ public class IngredientPanel : MonoBehaviour
             }
             else
             {
-                Debug.Log("FALSE");
                 ingredientButton_obj[i].GetComponent<Button>().interactable = false;
                 lockImage_obj.SetActive(true);
             }

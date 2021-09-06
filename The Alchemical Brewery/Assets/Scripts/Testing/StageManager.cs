@@ -52,7 +52,7 @@ public class StageManager : MonoBehaviour
 
     void Start()
     {
-        if (testing)
+        if (!testing)
         {
             instantiateAssetHandler.InstantiateAssetPrefab(stageIndex, ingredientOrderToday);
             ResultManager.Instance.AssignInitialCustomerLevelArray(customerTypeToday);
@@ -107,7 +107,6 @@ public class StageManager : MonoBehaviour
         {
             //get customer index and level
             int customerIndex = customerTypeToday[i].customerIndex;
-            Debug.Log(PlayerProfile.customerProfile.Length);
             int customerLevel = PlayerProfile.customerProfile[customerIndex].customerLevel;
             //get customer base & leveling appear rate
             float baseAppearRate = customerTypeToday[i].baseAppearRate;
@@ -152,7 +151,8 @@ public class StageManager : MonoBehaviour
         //clear all customer
 
         //Start loading next scene
-        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
+        LoadingScreenScript.nextSceneIndex = 2;
+        AsyncOperation operation = SceneManager.LoadSceneAsync(0);
         operation.allowSceneActivation = false;
 
         //loop if day time intro havent finish

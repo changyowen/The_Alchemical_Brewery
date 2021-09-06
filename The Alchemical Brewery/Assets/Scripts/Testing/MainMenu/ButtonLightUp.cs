@@ -6,27 +6,28 @@ using UnityEngine.UI;
 
 public class ButtonLightUp : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    public Image buttonImage;
+
     public Color disableColor;
 
     public void Start()
     {
         Canvas.ForceUpdateCanvases();
-        Color colors = transform.GetChild(0).GetComponent<Image>().color;
+        Color colors = buttonImage.color;
         colors = disableColor;
-        transform.GetChild(0).GetComponent<Image>().color = colors;
+        buttonImage.color = colors;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("YESS");
-        Color colors = transform.GetChild(0).GetComponent<Image>().color;
+        Color colors = buttonImage.color;
         colors = Color.white;
-        transform.GetChild(0).GetComponent<Image>().color = colors;
+        buttonImage.color = colors;
     }
     public void OnPointerExit(PointerEventData eventData)
     {
-        Color colors = transform.GetChild(0).GetComponent<Image>().color;
+        Color colors = buttonImage.color;
         colors = disableColor;
-        transform.GetChild(0).GetComponent<Image>().color = colors;
+        buttonImage.color = colors;
     }
 }

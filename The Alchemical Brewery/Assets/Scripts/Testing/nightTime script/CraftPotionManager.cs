@@ -13,9 +13,12 @@ public class CraftPotionManager : MonoBehaviour
     public GameObject craftingAnimation_obj;
     public GameObject blackScreen_obj;
     public GameObject craftingUI_obj;
+    public GameObject craftResultPanel_obj;
+    public Transform craftingMain_transform;
 
     public List<int> potIngredientList = new List<int>(); //List for Ingredient in pot
 
+    [System.NonSerialized] public bool getBackPreviousPotion = false; 
     public PotionData potionDataHolder = null;
 
     public bool potFull = false;
@@ -102,10 +105,14 @@ public class CraftPotionManager : MonoBehaviour
         //check not more than 4
         if (potIngredientList.Count < 4)
         {
-            //Add into potIngredientList
-            potIngredientList.Add(ingredientIndex + IngredientPanel.Instance.refinementValue);
-            //Subtract from player ingredient purchased total;
-            PlayerProfile.shopProfile.ingredientPurchased[ingredientIndex + IngredientPanel.Instance.refinementValue - 1] -= 1;
+            int ingLeft = PlayerProfile.shopProfile.ingredientPurchased[ingredientIndex + IngredientPanel.Instance.refinementValue - 1];
+            if (ingLeft > 0)
+            {
+                //Add into potIngredientList
+                potIngredientList.Add(ingredientIndex + IngredientPanel.Instance.refinementValue);
+                //Subtract from player ingredient purchased total;
+                PlayerProfile.shopProfile.ingredientPurchased[ingredientIndex + IngredientPanel.Instance.refinementValue - 1] -= 1;
+            }
         }
     }
 
@@ -175,6 +182,7 @@ public class CraftPotionManager : MonoBehaviour
             {
                 //get back previous formular
                 potionDataHolder = PlayerProfile.acquiredPotion[previousFormularIndex];
+                getBackPreviousPotion = true;
             }
             else //if new formular
             {
@@ -226,9 +234,33 @@ public class CraftPotionManager : MonoBehaviour
         //assign back potion data
         potionDataHolder = newPotionData;
 
-        //adding into player profile
-        PlayerProfile.acquiredPotion.Add(potionDataHolder);
-        SaveManager.Save();
+        //adding into player profile [IF not prefious potion]
+        if(!getBackPreviousPotion)
+        {
+            PlayerProfile.acquiredPotion.Add(potionDataHolder);
+
+            //show result
+            GameObject craftResultPanel = Instantiate(craftResultPanel_obj, Vector3.zero, Quaternion.identity);
+            craftResultPanel.transform.SetParent(craftingMain_transform, false);
+            ResultPanelHandler panelScript = craftResultPanel.GetComponent<ResultPanelHandler>();
+            panelScript.potionData = PlayerProfile.acquiredPotion[PlayerProfile.acquiredPotion.Count - 1];
+            panelScript.AssignPreviousPotion(PlayerProfile.acquiredPotion.Count - 1);
+
+
+            SaveManager.Save();
+        }
+        else
+        {
+            //show result
+            GameObject craftResultPanel = Instantiate(craftResultPanel_obj, Vector3.zero, Quaternion.identity);
+            craftResultPanel.transform.SetParent(craftingMain_transform, false);
+            ResultPanelHandler panelScript = craftResultPanel.GetComponent<ResultPanelHandler>();
+            panelScript.potionData = potionDataHolder;
+            int _position = PlayerProfile.acquiredPotion.IndexOf(potionDataHolder);
+            panelScript.AssignPreviousPotion(_position);
+            SaveManager.Save();
+        }
+        getBackPreviousPotion = false; //reset this bool
     }
 
     public void StartMiniGame()

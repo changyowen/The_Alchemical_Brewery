@@ -1,8 +1,28 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "07-09-2021   00:03",
+    "lastSave": "07-09-2021   05:34",
     "dayCount": 1,
-    "acquiredPotion": [],
+    "acquiredPotion": [
+        {
+            "potionSpriteIndex": 12,
+            "potionName": "very Weird Potion Yeah",
+            "potionFormular": [
+                1,
+                1,
+                2,
+                2
+            ],
+            "potionEffectiveScore": 400,
+            "potionQuality": 82.66673278808594,
+            "potionElement": [
+                -1,
+                -1,
+                0,
+                0
+            ],
+            "potionUsage": 1
+        }
+    ],
     "ingredientProfile": [
         {
             "ingredientIndex": 1,
@@ -293,18 +313,6 @@
             "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
-        },
-        {
-            "customerIndex": 0,
-            "unlocked": false,
-            "customerLevel": 1,
-            "customerExperience": 0
-        },
-        {
-            "customerIndex": 0,
-            "unlocked": false,
-            "customerLevel": 1,
-            "customerExperience": 0
         }
     ],
     "fairyShopProfile": {
@@ -318,8 +326,8 @@
     },
     "shopProfile": {
         "ingredientPurchased": [
-            75,
-            75,
+            71,
+            71,
             75,
             75,
             75,

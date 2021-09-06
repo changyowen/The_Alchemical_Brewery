@@ -79,7 +79,7 @@ public static class SaveManager
                 filesList.Add(_temp);
             }
         }
-        Debug.Log(filesList.Count);
+
         if (filesList.Count != 0)
         {
             return filesList;

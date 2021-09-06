@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 2440067750160202692}
   - component: {fileID: 7475929895225999686}
   m_Layer: 5
-  m_Name: Profile
+  m_Name: ProfileButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -405,6 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46fd0114c8beec848bf58559c3fb421a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonImage: {fileID: 2440067748963707943}
   disableColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
 --- !u!114 &7475929895225999686
 MonoBehaviour:

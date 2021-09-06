@@ -122,6 +122,7 @@ MonoBehaviour:
   boredLogoSprite: {fileID: 21300000, guid: 3c197e89fdffff64ea089c631febd610, type: 3}
   questionMarkLogoSprite: {fileID: 21300000, guid: 7a4dfbbccad528845be17733fee5dba5,
     type: 3}
+  crossedSprite: {fileID: 21300000, guid: de9b268a90d88784d8b393b37cba02ba, type: 3}
   potionIconList:
   - {fileID: 21300000, guid: 3e52e6bf8a8092e4d9baafad8d13046d, type: 3}
   - {fileID: 21300000, guid: 24658501f52f18342a05a9a1291cdd99, type: 3}

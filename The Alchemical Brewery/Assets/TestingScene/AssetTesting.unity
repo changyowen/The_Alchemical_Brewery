@@ -15,12 +15,12 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
+  m_FogColor: {r: 0.67689776, g: 0.7954992, b: 0.9201205, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.24313726, g: 0.3137255, b: 0.8784314, a: 1}
+  m_AmbientSkyColor: {r: 0.84705883, g: 0.84705883, b: 0.84705883, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1677,7 +1677,7 @@ MonoBehaviour:
   instantiateAssetHandler: {fileID: 1248810823}
   customerAppearRateList: []
   totalCustomerAppearRate: 0
-  testing: 1
+  testing: 0
   ingOrder_test: 01000000010000000100000002000000020000000200000003000000030000000300000004000000
 --- !u!43 &99691853
 Mesh:
@@ -4276,7 +4276,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.9833183, g: 0.9833183, b: 0.9833183, a: 1}
   m_Intensity: 0.6
   m_Range: 10
   m_SpotAngle: 30
@@ -8443,7 +8443,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605382535}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -9432,7 +9432,7 @@ PrefabInstance:
     - target: {fileID: 6922491541659610973, guid: 38e9df4293f79da4ba2d8b9144003a96,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38e9df4293f79da4ba2d8b9144003a96, type: 3}
@@ -11397,7 +11397,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769708213}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -21258,7 +21258,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208375717}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -88906,7 +88906,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406918860}
-  m_LocalRotation: {x: 0, y: 0, z: -0.00000008742278, w: -1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.99965733, w: 0.026176995}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -89964,7 +89964,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496932617}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -92781,7 +92781,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745747941}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -96350,10 +96350,10 @@ MonoBehaviour:
   - {fileID: 769708215}
   - {fileID: 605382537}
   - {fileID: 1745747943}
-  TimeOfDay: 24
+  TimeOfDay: 11.8
   timeSpeed: 0.5
   streetLightTimer: {x: 17, y: 7}
-  isStreetLightOn: 1
+  isStreetLightOn: 0
   isGameScene: 1
 --- !u!1 &1962805503
 GameObject:

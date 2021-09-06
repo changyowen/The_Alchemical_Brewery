@@ -66,7 +66,7 @@ public class AlmanacIngredientInformationHandler : MonoBehaviour
         //ingredient description
         ingredientDescription.text = "" + currentIngredientSO.ingredientDescription;
         //ingredient price
-        //ingredientPrice.text = "" + currentIngredientSO.
+        ingredientPrice.text = "" + currentIngredientSO.ingredientPrice;
 
         //element sprite
         UpdateElementSprite(currentIngredientSO);
@@ -112,13 +112,112 @@ public class AlmanacIngredientInformationHandler : MonoBehaviour
 
     void UpdateValueStar(IngredientData _currentIngredientSO)
     {
-        //int totalStar = 0;
-        //if(_currentIngredientSO.priceVariable )
+        int _priceVariable = _currentIngredientSO.priceVariable;
+        int totalStar = 0;
+
+        if (_priceVariable > 0 && _priceVariable <= 5)
+        {
+            totalStar = 0;
+        }
+        else if (_priceVariable > 5 && _priceVariable <= 10)
+        {
+            totalStar = 1;
+        }
+        else if (_priceVariable > 10 && _priceVariable <= 15)
+        {
+            totalStar = 2;
+        }
+        else if (_priceVariable > 15 && _priceVariable <= 20)
+        {
+            totalStar = 3;
+        }
+        else if (_priceVariable > 20 && _priceVariable <= 25)
+        {
+            totalStar = 4;
+        }
+        else if (_priceVariable > 25)
+        {
+            totalStar = 5;
+        }
+
+        for (int i = 0; i < valueStars.Length; i++)
+        {
+            if (i < totalStar) //if slot is not empty
+            {
+                valueStars[i].sprite = SO_holder.priceStar;
+            }
+            else //if slot is empty
+            {
+                valueStars[i].sprite = SO_holder.greyStar;
+            }
+        }
     }
 
     void UpdateEffectivenessStar(IngredientData _currentIngredientSO)
     {
+        int _effectiveVariable = _currentIngredientSO.effectiveVariable;
+        //get effective value that Absolute
+        int tempAbs = Mathf.Abs(_effectiveVariable);
 
+        int totalStar = 0;
+
+        if (tempAbs >= 0 && tempAbs <= 5)
+        {
+            totalStar = 0;
+        }
+        else if (tempAbs > 5 && tempAbs <= 10)
+        {
+            totalStar = 1;
+        }
+        else if (tempAbs > 10 && tempAbs <= 15)
+        {
+            totalStar = 2;
+        }
+        else if (tempAbs > 15 && tempAbs <= 20)
+        {
+            totalStar = 3;
+        }
+        else if (tempAbs > 20 && tempAbs <= 25)
+        {
+            totalStar = 4;
+        }
+        else if (tempAbs > 25)
+        {
+            totalStar = 5;
+        }
+
+        for (int i = 0; i < effectivenessStars.Length; i++)
+        {
+            if (_effectiveVariable != 0) //not neutral
+            {
+                if (i < totalStar) //slot is not empty
+                {
+                    if (_effectiveVariable > 0) //green
+                    {
+                        effectivenessStars[i].sprite = SO_holder.greenStar;
+                    }
+                    else if (_effectiveVariable < 0) //red
+                    {
+                        effectivenessStars[i].sprite = SO_holder.redStar;
+                    }
+                }
+                else //slot is empty
+                {
+                    effectivenessStars[i].sprite = SO_holder.greyStar;
+                }
+            }
+            else //is neutral
+            {
+                if (i < 1)
+                {
+                    effectivenessStars[i].sprite = SO_holder.neutralStar;
+                }
+                else
+                {
+                    effectivenessStars[i].sprite = SO_holder.transparentSprite;
+                }
+            }
+        }
     }
 
     public void ChangeAlmanacIngredientIndex(int _buttonIndex)

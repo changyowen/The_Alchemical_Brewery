@@ -27,7 +27,7 @@ public class ShopIngredientInformationHandler : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void OnEnable()
     {
         UpdateAllButtons();
     }
@@ -51,7 +51,7 @@ public class ShopIngredientInformationHandler : MonoBehaviour
             normalIngredientButton[i].transform.GetChild(0).GetComponent<Image>().sprite = _ingredientData.ingredientSprite;
 
             //update price
-            normalIngredientButton[i].transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "$ " + 0f;
+            normalIngredientButton[i].transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "$ " + _ingredientData.ingredientPrice;
 
             //update locked/unlocked
             bool _unlocked = _ingredientProfile.unlocked;
@@ -84,7 +84,7 @@ public class ShopIngredientInformationHandler : MonoBehaviour
             regionalIngredientButton[i].transform.GetChild(0).GetComponent<Image>().sprite = _ingredientData.ingredientSprite;
 
             //update price
-            regionalIngredientButton[i].transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "$ " + 0f;
+            regionalIngredientButton[i].transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "$ " + _ingredientData.ingredientPrice;
 
             //update locked/unlocked
             bool _unlocked = _ingredientProfile.unlocked;

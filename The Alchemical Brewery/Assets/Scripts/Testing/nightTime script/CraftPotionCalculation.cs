@@ -7,6 +7,8 @@ public class CraftPotionCalculation : MonoBehaviour
 {
     public static CraftPotionCalculation Instance { get; private set; }
 
+    public ScriptableObjectHolder SO_holder;
+
     void Awake()
     {
         Instance = this;
@@ -61,10 +63,101 @@ public class CraftPotionCalculation : MonoBehaviour
                 GameObject combination = craftingAnimation_obj.transform.GetChild(childNo).gameObject;
                 combination.transform.GetChild(0).GetComponent<Image>().sprite = ingredientDataList[i].ingredientSprite;
                 combination.transform.GetChild(2).GetComponent<Image>().sprite = ingredientDataList[j].ingredientSprite;
+                //update combination result sprite
+                int _combinationResult = ElementCombinationCompare(ingredientDataList[i], ingredientDataList[j]);
+                switch(_combinationResult)
+                {
+                    case -1:
+                        {
+                            combination.transform.GetChild(1).GetComponent<Image>().sprite = SO_holder.crossedSprite;
+                            break;
+                        }
+                    case 1:
+                        {
+                            combination.transform.GetChild(1).GetComponent<Image>().sprite = SO_holder.okayLogoSprite;
+                            break;
+                        }
+                    case 0:
+                        {
+                            combination.transform.GetChild(1).GetComponent<Image>().sprite = SO_holder.boredLogoSprite;
+                            break;
+                        }
+                }
                 childNo++;
-                Debug.Log(potIngredient[i] + " " + potIngredient[j]);
             }
         }
+    }
+
+    public int ElementCombinationCompare(IngredientData ing1, IngredientData ing2)
+    {
+        switch(ing1.elementType)
+        {
+            case Element.Ignis:
+                {
+                    if(ing2.elementType == Element.Ignis)
+                    {
+                        return 1;
+                    }
+                    else if(ing2.elementType == Element.Aqua || ing2.elementType == Element.Aer)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+            case Element.Aqua:
+                {
+                    if (ing2.elementType == Element.Aqua)
+                    {
+                        return 1;
+                    }
+                    else if (ing2.elementType == Element.Ignis || ing2.elementType == Element.Terra)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+            case Element.Terra:
+                {
+                    if (ing2.elementType == Element.Terra)
+                    {
+                        return 1;
+                    }
+                    else if (ing2.elementType == Element.Aqua || ing2.elementType == Element.Aer)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+            case Element.Aer:
+                {
+                    if (ing2.elementType == Element.Aer)
+                    {
+                        return 1;
+                    }
+                    else if (ing2.elementType == Element.Ignis || ing2.elementType == Element.Terra)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+            case Element.Ordo:
+                {
+                    return 0;
+                }
+        }
+        return 0;
     }
 
     public List<Element> ElementCalculation(List<int> potIngredient)

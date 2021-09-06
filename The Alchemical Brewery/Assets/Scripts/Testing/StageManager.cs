@@ -37,26 +37,22 @@ public class StageManager : MonoBehaviour
         {
             //PlayerProfile.GM_TestingUse();
             SaveManager.Load();
-
-            //assign potion sell today
-            AssignPotionToday();
-            //assign all customer type for this stage (IF NULL)
-            if(customerTypeToday == null)
-            {
-                AssignCustomerTypeToday();
-            }
-            //calculate each customer appear rate
-            AssignCustomerAppearRate();
+            
         }
-        else
+        //assign potion sell today
+        AssignPotionToday();
+        //assign all customer type for this stage (IF NULL)
+        if (customerTypeToday == null)
         {
-
+            AssignCustomerTypeToday();
         }
+        //calculate each customer appear rate
+        AssignCustomerAppearRate();
     }
 
     void Start()
     {
-        if(testing)
+        if (testing)
         {
             instantiateAssetHandler.InstantiateAssetPrefab(stageIndex, ingredientOrderToday);
             ResultManager.Instance.AssignInitialCustomerLevelArray(customerTypeToday);

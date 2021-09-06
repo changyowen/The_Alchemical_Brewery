@@ -32,6 +32,12 @@ TagManager:
   - Customer
   - Ingredient
   - TeleportUse
+  - fish
+  - hook_obstacle_down
+  - hook_collider_obstacle
+  - hook_obstacle_up
+  - almanac
+  - map
   layers:
   - Default
   - TransparentFX

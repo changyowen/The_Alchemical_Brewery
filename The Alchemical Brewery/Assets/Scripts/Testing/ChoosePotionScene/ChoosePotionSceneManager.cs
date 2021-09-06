@@ -15,9 +15,6 @@ public class ChoosePotionSceneManager : MonoBehaviour
 
     private void Start()
     {
-        //load game
-        SaveManager.Load();
-
         ///CHOSING & CHOSEN POTION PANEL
         Canvas.ForceUpdateCanvases();
         ChoosingPotionHandler.Instance.AssignAllAvailablePotion();

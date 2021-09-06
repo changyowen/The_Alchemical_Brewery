@@ -1,1 +1,0 @@
-{"profileName":"NewPlayer","acquiredPotion":[{"potionName":"potion0","potionFormular":[0,0,0,0]},{"potionName":"potion1","potionFormular":[1,1,1,1]}]}

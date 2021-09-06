@@ -7,6 +7,8 @@ using UnityEngine;
 public static class PlayerProfile 
 {
     public static string profileName = "NewPlayer";
+    public static string lastSave = "12/12/1999";
+    public static int dayCount = 1;
     public static List<PotionData> acquiredPotion = new List<PotionData>();
     public static IngredientProfile[] ingredientProfile = new IngredientProfile[60];
     public static CustomerProfile[] customerProfile = new CustomerProfile[10];
@@ -16,8 +18,13 @@ public static class PlayerProfile
     public static void LoadData(SaveData saveData)
     {
         profileName = saveData.profileName;
+        lastSave = saveData.lastSave;
+        dayCount = saveData.dayCount;
         acquiredPotion = saveData.acquiredPotion;
+        ingredientProfile = saveData.ingredientProfile;
         customerProfile = saveData.customerProfile;
+        fairyShopProfile = saveData.fairyShopProfile;
+        shopProfile = saveData.shopProfile;
     }
 
     public static void NewGameData(string _profileName)
@@ -146,10 +153,24 @@ public class FairyShopProfile
 [Serializable]
 public class SaveData
 {
-    public string profileName = PlayerProfile.profileName;
-    public List<PotionData> acquiredPotion = PlayerProfile.acquiredPotion;
-    public IngredientProfile[] ingredientProfile = PlayerProfile.ingredientProfile;
-    public CustomerProfile[] customerProfile = PlayerProfile.customerProfile;
-    public FairyShopProfile fairyShopProfile = PlayerProfile.fairyShopProfile;
-    public ShopProfile shopProfile = PlayerProfile.shopProfile;
+    public string profileName;
+    public string lastSave;
+    public int dayCount;
+    public List<PotionData> acquiredPotion;
+    public IngredientProfile[] ingredientProfile;
+    public CustomerProfile[] customerProfile;
+    public FairyShopProfile fairyShopProfile;
+    public ShopProfile shopProfile;
+
+    public void DirectSave()
+    {
+        profileName = PlayerProfile.profileName;
+        lastSave = PlayerProfile.lastSave;
+        dayCount = PlayerProfile.dayCount;
+        acquiredPotion = PlayerProfile.acquiredPotion;
+        ingredientProfile = PlayerProfile.ingredientProfile;
+        customerProfile = PlayerProfile.customerProfile;
+        fairyShopProfile = PlayerProfile.fairyShopProfile;
+        shopProfile = PlayerProfile.shopProfile;
+    }
 }

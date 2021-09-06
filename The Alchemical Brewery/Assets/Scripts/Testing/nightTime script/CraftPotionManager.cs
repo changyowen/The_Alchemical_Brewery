@@ -31,11 +31,6 @@ public class CraftPotionManager : MonoBehaviour
     {
         CraftButtonHandler();
         CheckPotFull();
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SaveManager.Load();
-        }
     }
 
     void CraftButtonHandler()

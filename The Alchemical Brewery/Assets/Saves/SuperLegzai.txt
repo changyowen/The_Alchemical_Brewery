@@ -1,0 +1,391 @@
+{
+    "profileName": "SuperLegzai",
+    "lastSave": "07-09-2021   00:03",
+    "dayCount": 1,
+    "acquiredPotion": [],
+    "ingredientProfile": [
+        {
+            "ingredientIndex": 1,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 2,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 3,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 4,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 5,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 6,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 7,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 8,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 9,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 10,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 11,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 12,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 13,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 14,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 15,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 16,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 17,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 18,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 19,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 20,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 21,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 22,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 23,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 24,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 25,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 26,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 27,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 28,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 29,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 30,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 31,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 32,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 33,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 34,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 35,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 36,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 37,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 38,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 39,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 40,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 41,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 42,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 43,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 44,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 45,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 46,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 47,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 48,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 49,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 50,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 51,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 52,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 53,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 54,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 55,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 56,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 57,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 58,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 59,
+            "unlocked": true
+        },
+        {
+            "ingredientIndex": 60,
+            "unlocked": true
+        }
+    ],
+    "customerProfile": [
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": false,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": false,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": false,
+            "customerLevel": 1,
+            "customerExperience": 0
+        }
+    ],
+    "fairyShopProfile": {
+        "counterUnlocked": 3,
+        "magicChestUnlocked": 10,
+        "potUnlocked": 3,
+        "refinementStationUnlocked": [
+            true,
+            true
+        ]
+    },
+    "shopProfile": {
+        "ingredientPurchased": [
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75
+        ],
+        "counterPurchased": 3,
+        "magicChestPurchased": 10,
+        "potPurchased": 3,
+        "refinementStationPurchased": [
+            true,
+            true
+        ],
+        "increaseCustomerAppearRate": true
+    }
+}

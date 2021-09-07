@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient17
   m_EditorClassIdentifier: 
-  ingredientIndex: 16
+  ingredientIndex: 17
   ingredientName: Raging Fruit
   ingredientSprite: {fileID: 21300000, guid: 804822731893ec74db941c18ce5f5329, type: 3}
   ingredientDescription: A fruit that will causes the consumer to go into a rage.
@@ -24,5 +24,5 @@ MonoBehaviour:
   ingredientUsage: -1
   ingredientColor: {r: 0.40392157, g: 0.29838768, b: 0.16558382, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 350

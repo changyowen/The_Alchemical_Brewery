@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient13
   m_EditorClassIdentifier: 
-  ingredientIndex: 12
+  ingredientIndex: 13
   ingredientName: Confusion Shroom
   ingredientSprite: {fileID: 21300000, guid: 86a1613aac5be3b44a6ecb7b71863ac9, type: 3}
   ingredientDescription: 'A type of shroom that once consumed will affect the cognitive
@@ -26,5 +26,5 @@ MonoBehaviour:
   ingredientUsage: -1
   ingredientColor: {r: 0.46416566, g: 0, b: 0.8679245, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 275

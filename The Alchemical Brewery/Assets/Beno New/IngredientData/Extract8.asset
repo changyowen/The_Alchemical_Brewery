@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Extract8
   m_EditorClassIdentifier: 
-  ingredientIndex: 47
+  ingredientIndex: 48
   ingredientName: Recovery Flower Extract
   ingredientSprite: {fileID: 21300000, guid: 2923d033cae9c264a851953b531d1965, type: 3}
   ingredientDescription: 'A flower that have good recovery abilities, once applied,

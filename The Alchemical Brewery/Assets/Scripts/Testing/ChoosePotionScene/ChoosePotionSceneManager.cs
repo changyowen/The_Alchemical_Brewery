@@ -8,9 +8,16 @@ public class ChoosePotionSceneManager : MonoBehaviour
 
     [System.NonSerialized] public List<CustomerData> customerTypeToday = null;
 
+    public bool testing = false;
+
     public void Awake()
     {
         Instance = this;
+
+        if(testing)
+        {
+            SaveManager.Load();
+        }
     }
 
     private void Start()

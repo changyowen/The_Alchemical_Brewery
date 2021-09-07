@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient20
   m_EditorClassIdentifier: 
-  ingredientIndex: 19
+  ingredientIndex: 20
   ingredientName: Levitation Flower
   ingredientSprite: {fileID: 21300000, guid: 638436865b74bca4085ca80d25f9e7b7, type: 3}
   ingredientDescription: A flower that floats magically, it will also allow those
@@ -23,5 +23,5 @@ MonoBehaviour:
   ingredientUsage: 1
   ingredientColor: {r: 0.75, g: 1, b: 0.94406515, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 500

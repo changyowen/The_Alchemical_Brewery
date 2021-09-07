@@ -1,13 +1,13 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "07-09-2021   07:50",
+    "lastSave": "07-09-2021   23:48",
     "dayCount": 1,
     "dayResetTravel": 5,
     "stageChosen": 2,
     "acquiredPotion": [
         {
             "potionSpriteIndex": 0,
-            "potionName": "my First Potion",
+            "potionName": "yyy",
             "potionFormular": [
                 3,
                 3,
@@ -15,7 +15,7 @@
                 3
             ],
             "potionEffectiveScore": 216,
-            "potionQuality": 100.0,
+            "potionQuality": 96.31521606445313,
             "potionElement": [
                 2,
                 2,
@@ -348,7 +348,7 @@
         "ingredientPurchased": [
             75,
             75,
-            71,
+            67,
             75,
             75,
             74,

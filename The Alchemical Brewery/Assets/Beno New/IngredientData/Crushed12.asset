@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed12
   m_EditorClassIdentifier: 
-  ingredientIndex: 31
+  ingredientIndex: 32
   ingredientName: Crushed Ignition Herb
   ingredientSprite: {fileID: 21300000, guid: 5d5af4912856c6344bdbc1b2da64a69c, type: 3}
   ingredientDescription: 'Once consume, it will ignite the consumer with searing

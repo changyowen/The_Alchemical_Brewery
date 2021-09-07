@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed10
   m_EditorClassIdentifier: 
-  ingredientIndex: 29
+  ingredientIndex: 30
   ingredientName: Crushed Additive Root
   ingredientSprite: {fileID: 21300000, guid: 0c342cf58da72c8419b45ccc0e1decc7, type: 3}
   ingredientDescription: 'A type of root that is added in order to improve potion

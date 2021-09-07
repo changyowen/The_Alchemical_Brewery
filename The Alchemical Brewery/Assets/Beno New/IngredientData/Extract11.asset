@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Extract11
   m_EditorClassIdentifier: 
-  ingredientIndex: 50
+  ingredientIndex: 51
   ingredientName: Coolant Herb Extract
   ingredientSprite: {fileID: 21300000, guid: 39772f661b6444c4aa82b5516ab0fcae, type: 3}
   ingredientDescription: 'A herb used by people in hot regions to cool themselves

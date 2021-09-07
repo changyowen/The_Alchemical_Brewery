@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient8
   m_EditorClassIdentifier: 
-  ingredientIndex: 7
+  ingredientIndex: 8
   ingredientName: Recovery Flower
   ingredientSprite: {fileID: 21300000, guid: aa0ffe5047a5deb45b83326f8f566718, type: 3}
   ingredientDescription: 'A flower that have good recovery abilities, once applied,
@@ -26,5 +26,5 @@ MonoBehaviour:
   ingredientUsage: 1
   ingredientColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 250

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Extract6
   m_EditorClassIdentifier: 
-  ingredientIndex: 45
+  ingredientIndex: 46
   ingredientName: Fruit of Sloth Extract
   ingredientSprite: {fileID: 21300000, guid: f19df49c7d237c841804f147b81dbb12, type: 3}
   ingredientDescription: "A fruit that is said to make one's movement slower. \nIt

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed9
   m_EditorClassIdentifier: 
-  ingredientIndex: 28
+  ingredientIndex: 29
   ingredientName: Crushed Neutralization Agent
   ingredientSprite: {fileID: 21300000, guid: b33b4daf76f64cb4ab14a422c01247e3, type: 3}
   ingredientDescription: 'A common herb used to negate the harmful substance inside

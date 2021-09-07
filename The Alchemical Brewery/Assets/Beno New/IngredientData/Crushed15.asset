@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed15
   m_EditorClassIdentifier: 
-  ingredientIndex: 34
+  ingredientIndex: 35
   ingredientName: Crushed Fruit of Healing
   ingredientSprite: {fileID: 21300000, guid: 5e006fa83b225514cae6ddd9dbd00f3b, type: 3}
   ingredientDescription: 'These fruits contain massive healing capabilities that

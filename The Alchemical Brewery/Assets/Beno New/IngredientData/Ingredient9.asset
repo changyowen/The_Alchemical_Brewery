@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient9
   m_EditorClassIdentifier: 
-  ingredientIndex: 8
+  ingredientIndex: 9
   ingredientName: Neutralization Agent
   ingredientSprite: {fileID: 21300000, guid: 662d20407456d4049a0c6cf4967d1673, type: 3}
   ingredientDescription: 'A common herb used to negate the harmful substance inside
@@ -25,5 +25,5 @@ MonoBehaviour:
   ingredientUsage: 0
   ingredientColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 0.1764706}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 225

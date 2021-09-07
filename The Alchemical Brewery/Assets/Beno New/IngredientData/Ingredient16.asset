@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient16
   m_EditorClassIdentifier: 
-  ingredientIndex: 15
+  ingredientIndex: 16
   ingredientName: Heat Flower
   ingredientSprite: {fileID: 21300000, guid: 503c19b5a9630cd4ab8bb180b060cf59, type: 3}
   ingredientDescription: "A flower that magically is able to generate heat despite
@@ -25,5 +25,5 @@ MonoBehaviour:
   ingredientUsage: 1
   ingredientColor: {r: 1, g: 0, b: 0.5497303, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 350

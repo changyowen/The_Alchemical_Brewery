@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed11
   m_EditorClassIdentifier: 
-  ingredientIndex: 30
+  ingredientIndex: 31
   ingredientName: Crushed Coolant Herb
   ingredientSprite: {fileID: 21300000, guid: 0582c14e433a323449d9a7f5801cfc7b, type: 3}
   ingredientDescription: 'A herb used by people in hot regions to cool themselves

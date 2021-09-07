@@ -38,4 +38,24 @@ public class ChoosingPotionHandler : MonoBehaviour
             potionInformationHandler.UpdateDataInformation(availablePotionList[i]);
         }
     }
+
+    public void ConfirmChosenPotion()
+    {
+        if (!ChosenPotionHandler.Instance.choosingIngredientMode) //if still in choose potion mode
+        {
+            if(ChosenPotionHandler.Instance.chosenPotionList.Count == 0) //if player didnt choose any potion
+            {
+                NotificationSystem.Instance.SendPopOutNotification("Choose at least one potion!");
+            }
+            else if(ChosenPotionHandler.Instance.chosenPotionList.Count > 10) //if ingredient more than ten
+            {
+                NotificationSystem.Instance.SendPopOutNotification("Cannot choose more than 10 ingredients!");
+            }
+            else 
+            {
+                ChosenPotionHandler.Instance.choosingIngredientMode = true;
+                ChoosingIngredientHandler.Instance.UpdateIngredientButtons();
+            }
+        }
+    }
 }

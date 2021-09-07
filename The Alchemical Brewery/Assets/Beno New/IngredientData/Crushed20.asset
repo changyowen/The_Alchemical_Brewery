@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed20
   m_EditorClassIdentifier: 
-  ingredientIndex: 39
+  ingredientIndex: 40
   ingredientName: Crushed Levitation Flower
   ingredientSprite: {fileID: 21300000, guid: b9916af2e7fdc1d48a381be21c11ac81, type: 3}
   ingredientDescription: 'A flower that floats magically, it will also allow those

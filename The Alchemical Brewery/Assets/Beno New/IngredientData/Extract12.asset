@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Extract12
   m_EditorClassIdentifier: 
-  ingredientIndex: 51
+  ingredientIndex: 52
   ingredientName: Ignition Herb Extract
   ingredientSprite: {fileID: 21300000, guid: 17417465243b52644a0333b33834d9b3, type: 3}
   ingredientDescription: 'Once consume, it will ignite the consumer with searing

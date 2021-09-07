@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient4
   m_EditorClassIdentifier: 
-  ingredientIndex: 3
+  ingredientIndex: 4
   ingredientName: Hawk Grass
   ingredientSprite: {fileID: 21300000, guid: 61cf6ecb492f5994293ecfe3e3ac2c72, type: 3}
   ingredientDescription: 'A type of herb that is said to provide the consumer a hawk-like
@@ -25,5 +25,5 @@ MonoBehaviour:
   ingredientUsage: 1
   ingredientColor: {r: 0.55074656, g: 0.8584906, b: 0.2713154, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 200

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed14
   m_EditorClassIdentifier: 
-  ingredientIndex: 33
+  ingredientIndex: 34
   ingredientName: Crushed Anti-Insect Herb
   ingredientSprite: {fileID: 21300000, guid: 341f42edddf57a840a89f5deb2ef96f1, type: 3}
   ingredientDescription: 'This weird looking herb emits a smell that insects hates

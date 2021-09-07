@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed3
   m_EditorClassIdentifier: 
-  ingredientIndex: 22
+  ingredientIndex: 23
   ingredientName: Crushed Herculean Fruit
   ingredientSprite: {fileID: 21300000, guid: 74d85bcf3b36c2e478fdc5107c1b5539, type: 3}
   ingredientDescription: 'A fruit that is used to increase strength temporally.

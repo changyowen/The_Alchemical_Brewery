@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed5
   m_EditorClassIdentifier: 
-  ingredientIndex: 24
+  ingredientIndex: 25
   ingredientName: Crushed Poison Grass
   ingredientSprite: {fileID: 21300000, guid: 3250115afaae37e4d9f645ebf0b1d008, type: 3}
   ingredientDescription: 'A type of grass that would secrete a type of poison harmful

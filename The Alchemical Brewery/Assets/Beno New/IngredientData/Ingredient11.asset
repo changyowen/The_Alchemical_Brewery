@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient11
   m_EditorClassIdentifier: 
-  ingredientIndex: 10
+  ingredientIndex: 11
   ingredientName: Coolant Herb
   ingredientSprite: {fileID: 21300000, guid: 9f50b0a388084ad4796568ce08dbb753, type: 3}
   ingredientDescription: 'A herb used by people in hot regions to cool themselves
@@ -25,5 +25,5 @@ MonoBehaviour:
   ingredientUsage: 1
   ingredientColor: {r: 0.2028302, g: 1, b: 0.78814685, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 275

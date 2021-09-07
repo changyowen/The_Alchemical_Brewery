@@ -9,7 +9,17 @@ public class ChosenPotionMouseDetector : MonoBehaviour, IPointerEnterHandler, IP
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        chosenPotionInformation.mouseIn = true;
+        if(ChosenPotionHandler.Instance != null)
+        {
+            if(!ChosenPotionHandler.Instance.choosingIngredientMode)
+            {
+                chosenPotionInformation.mouseIn = true;
+            }
+            else
+            {
+                chosenPotionInformation.mouseIn = false;
+            }
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)

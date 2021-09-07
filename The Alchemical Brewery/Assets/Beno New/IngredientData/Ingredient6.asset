@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Ingredient6
   m_EditorClassIdentifier: 
-  ingredientIndex: 5
+  ingredientIndex: 6
   ingredientName: Fruit of Sloth
   ingredientSprite: {fileID: 21300000, guid: e2c01f97f46d772429359ed56a9bc0ac, type: 3}
   ingredientDescription: "A fruit that is said to make one's movement slower. \nIt
@@ -23,5 +23,5 @@ MonoBehaviour:
   ingredientUsage: -1
   ingredientColor: {r: 0, g: 0.4245283, b: 0.009181859, a: 0}
   refineStage: 0
-  originalIngredient: {fileID: 0}
+  originalIngredient: {fileID: 11400000}
   ingredientPrice: 200

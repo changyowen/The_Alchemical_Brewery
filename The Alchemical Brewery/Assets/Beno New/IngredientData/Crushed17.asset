@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed17
   m_EditorClassIdentifier: 
-  ingredientIndex: 36
+  ingredientIndex: 37
   ingredientName: Crushed Raging Fruit
   ingredientSprite: {fileID: 21300000, guid: e09ef296d31bb7c4bbb177d23d8fb75b, type: 3}
   ingredientDescription: 'A fruit that will causes the consumer to go into a rage.

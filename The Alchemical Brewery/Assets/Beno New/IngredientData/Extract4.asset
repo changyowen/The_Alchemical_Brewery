@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Extract4
   m_EditorClassIdentifier: 
-  ingredientIndex: 43
+  ingredientIndex: 44
   ingredientName: Hawk Grass Extract
   ingredientSprite: {fileID: 21300000, guid: 588d3f7e6f164e04980ed48aa3b27c10, type: 3}
   ingredientDescription: 'A type of herb that is said to provide the consumer a hawk-like

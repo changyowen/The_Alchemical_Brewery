@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Extract9
   m_EditorClassIdentifier: 
-  ingredientIndex: 48
+  ingredientIndex: 49
   ingredientName: Neutralization Agent Extract
   ingredientSprite: {fileID: 21300000, guid: 860aebce954bb5141b6de7093add4e0b, type: 3}
   ingredientDescription: 'A common herb used to negate the harmful substance inside

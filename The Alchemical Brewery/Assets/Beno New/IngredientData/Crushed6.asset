@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed6
   m_EditorClassIdentifier: 
-  ingredientIndex: 25
+  ingredientIndex: 26
   ingredientName: Crushed Fruit of Sloth
   ingredientSprite: {fileID: 21300000, guid: 5bb72f9362d7cbe45a98e19c2d059cfb, type: 3}
   ingredientDescription: "A fruit that is said to make one's movement slower. \nIt

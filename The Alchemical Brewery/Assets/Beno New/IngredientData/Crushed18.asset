@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed18
   m_EditorClassIdentifier: 
-  ingredientIndex: 37
+  ingredientIndex: 38
   ingredientName: Crushed Freezing Fruit
   ingredientSprite: {fileID: 21300000, guid: c76cefa2a98323d44ba3eb7d2db9f130, type: 3}
   ingredientDescription: 'A fruit that will freeze anyone who consumes it. It is

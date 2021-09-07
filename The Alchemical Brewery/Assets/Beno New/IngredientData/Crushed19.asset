@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed19
   m_EditorClassIdentifier: 
-  ingredientIndex: 38
+  ingredientIndex: 39
   ingredientName: Crushed Knockout Grass
   ingredientSprite: {fileID: 21300000, guid: 0fa3a0c44d770dc429f87aca6751523e, type: 3}
   ingredientDescription: 'A type of herb that once consumed, will send a shockwave

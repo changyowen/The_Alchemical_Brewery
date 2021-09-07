@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed4
   m_EditorClassIdentifier: 
-  ingredientIndex: 23
+  ingredientIndex: 24
   ingredientName: Crushed Hawk Grass
   ingredientSprite: {fileID: 21300000, guid: 010e5da8164b2bc499f319a0d6b714c1, type: 3}
   ingredientDescription: 'A type of herb that is said to provide the consumer a hawk-like

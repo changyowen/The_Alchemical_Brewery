@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b4ece6beaaa4744aa74d3456dcb870, type: 3}
   m_Name: Crushed13
   m_EditorClassIdentifier: 
-  ingredientIndex: 32
+  ingredientIndex: 33
   ingredientName: Crushed Confusion Shroom
   ingredientSprite: {fileID: 21300000, guid: 967de496f9fa08a418ae66112d491d9c, type: 3}
   ingredientDescription: 'A type of shroom that once consumed will affect the cognitive

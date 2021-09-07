@@ -52,6 +52,33 @@ public class AlmanacObjInteraction : MonoBehaviour
 
 	public void OpenPanel()
 	{
-		panel_obj.SetActive(true);
+		if(this.gameObject.tag == "almanac") //for almanac
+		{
+			//only open almanac if created at least one potion
+			if(PlayerProfile.acquiredPotion.Count != 0)
+			{
+				panel_obj.SetActive(true);
+			}
+			else
+			{
+				//warn player to create first potion
+				string _warnText = "Please create your first potion first!";
+				NotificationSystem.Instance.SendPopOutNotification(_warnText);
+			}
+		}
+		else if(this.gameObject.tag == "map") //for map
+		{
+			//only open map if player able to travel
+			if(PlayerProfile.dayResetTravel == 0)
+			{
+				panel_obj.SetActive(true);
+			}
+			else
+			{
+				//warn player to wait till reset travel day
+				string _warnText = PlayerProfile.dayResetTravel + " more days to travel again!";
+				NotificationSystem.Instance.SendPopOutNotification(_warnText);
+			}
+		}
 	}
 }

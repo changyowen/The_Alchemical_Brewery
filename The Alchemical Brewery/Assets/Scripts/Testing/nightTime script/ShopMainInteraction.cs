@@ -13,6 +13,7 @@ public class ShopMainInteraction : MonoBehaviour
     public GameObject[] changeStateButton_obj;
     public GameObject ingredientPanel;
     public GameObject upgradePanel;
+    public GameObject fairyShopButton_obj;
 
 
     public ShopState currentShopState = ShopState.Ingredient;
@@ -85,6 +86,7 @@ public class ShopMainInteraction : MonoBehaviour
 
     public void CloseFairyShop()
     {
+        fairyShopButton_obj.SetActive(true);
         this.gameObject.SetActive(false);
     }
 }

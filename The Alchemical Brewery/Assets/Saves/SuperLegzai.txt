@@ -1,26 +1,46 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "07-09-2021   05:34",
+    "lastSave": "07-09-2021   07:50",
     "dayCount": 1,
+    "dayResetTravel": 5,
+    "stageChosen": 2,
     "acquiredPotion": [
         {
-            "potionSpriteIndex": 12,
-            "potionName": "very Weird Potion Yeah",
+            "potionSpriteIndex": 0,
+            "potionName": "my First Potion",
             "potionFormular": [
-                1,
-                1,
+                3,
+                3,
+                3,
+                3
+            ],
+            "potionEffectiveScore": 216,
+            "potionQuality": 100.0,
+            "potionElement": [
+                2,
+                2,
                 2,
                 2
             ],
-            "potionEffectiveScore": 400,
-            "potionQuality": 82.66673278808594,
-            "potionElement": [
-                -1,
-                -1,
-                0,
-                0
-            ],
             "potionUsage": 1
+        },
+        {
+            "potionSpriteIndex": 4,
+            "potionName": "very Expensive Potion",
+            "potionFormular": [
+                22,
+                27,
+                6,
+                10
+            ],
+            "potionEffectiveScore": -41,
+            "potionQuality": 96.819580078125,
+            "potionElement": [
+                0,
+                0,
+                2
+            ],
+            "potionUsage": 0
         }
     ],
     "ingredientProfile": [
@@ -326,8 +346,16 @@
     },
     "shopProfile": {
         "ingredientPurchased": [
+            75,
+            75,
             71,
-            71,
+            75,
+            75,
+            74,
+            75,
+            75,
+            75,
+            74,
             75,
             75,
             75,
@@ -339,20 +367,12 @@
             75,
             75,
             75,
+            74,
             75,
             75,
             75,
             75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
+            74,
             75,
             75,
             75,

@@ -9,6 +9,8 @@ public static class PlayerProfile
     public static string profileName = "NewPlayer";
     public static string lastSave = "12/12/1999";
     public static int dayCount = 1;
+    public static int dayResetTravel = 0;
+    public static int stageChosen = 1;
     public static List<PotionData> acquiredPotion = new List<PotionData>();
     public static IngredientProfile[] ingredientProfile = new IngredientProfile[60];
     public static CustomerProfile[] customerProfile = new CustomerProfile[8];
@@ -20,6 +22,8 @@ public static class PlayerProfile
         profileName = saveData.profileName;
         lastSave = saveData.lastSave;
         dayCount = saveData.dayCount;
+        dayResetTravel = saveData.dayResetTravel;
+        stageChosen = saveData.stageChosen;
         acquiredPotion = saveData.acquiredPotion;
         ingredientProfile = saveData.ingredientProfile;
         customerProfile = saveData.customerProfile;
@@ -156,6 +160,8 @@ public class SaveData
     public string profileName;
     public string lastSave;
     public int dayCount;
+    public int dayResetTravel;
+    public int stageChosen;
     public List<PotionData> acquiredPotion;
     public IngredientProfile[] ingredientProfile;
     public CustomerProfile[] customerProfile;
@@ -167,6 +173,8 @@ public class SaveData
         profileName = PlayerProfile.profileName;
         lastSave = PlayerProfile.lastSave;
         dayCount = PlayerProfile.dayCount;
+        dayResetTravel = PlayerProfile.dayResetTravel;
+        stageChosen = PlayerProfile.stageChosen;
         acquiredPotion = PlayerProfile.acquiredPotion;
         ingredientProfile = PlayerProfile.ingredientProfile;
         customerProfile = PlayerProfile.customerProfile;

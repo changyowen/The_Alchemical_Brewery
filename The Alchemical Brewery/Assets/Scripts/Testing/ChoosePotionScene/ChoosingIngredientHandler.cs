@@ -94,6 +94,46 @@ public class ChoosingIngredientHandler : MonoBehaviour
 
     public void ConfirmStartGame()
     {
+        if(chosenIngredientForGameplay.Count < 10) //player didnt filled all the slot
+        {
+            NotificationSystem.Instance.SendPopOutNotification("You must place place 10 ingredients to start game!");
+        }
+        else //player filled all the slot
+        {
+            //check if player take all ingredient acquired
+            bool _getAllIng = CheckListContainList(chosenIngredientForGameplay, ChosenPotionHandler.Instance.chosenIngredientList);
 
+            if(!_getAllIng) //player didnt choose all ingredient needed
+            {
+                NotificationSystem.Instance.SendPopOutNotification("You didnt't choose all ingredient required for your menus!");
+            }
+            else
+            {
+                //start game
+                ClearAllChosenIngredientForGameplay();
+                ChoosePotionSceneManager.Instance.OpenShop();
+            }
+        }
+    }
+
+    bool CheckListContainList(List<IngredientData> listA, List<IngredientData> listB)
+    {
+        //check if listB never bigger than listA
+        if (listB.Count > listA.Count)
+            return false;
+
+        for (int i = 0; i < listB.Count; i++)
+        {
+            if(!listA.Contains(listB[i]))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void ClearAllChosenIngredientForGameplay()
+    {
+        chosenIngredientForGameplay.Clear();
     }
 }

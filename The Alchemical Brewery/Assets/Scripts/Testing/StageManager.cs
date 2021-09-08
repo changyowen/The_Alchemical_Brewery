@@ -14,7 +14,7 @@ public class StageManager : MonoBehaviour
 
     //public static int stageIndex = 1;
     public static List<PotionData> potionListToday = new List<PotionData>();
-    public static List<int> ingredientOrderToday = new List<int>();
+    public static List<IngredientData> ingredientOrderToday = new List<IngredientData>();
     public static List<CustomerData> customerTypeToday = null;
     public static List<float> favorPointList = null;
     public List<float> customerAppearRateList = new List<float>();

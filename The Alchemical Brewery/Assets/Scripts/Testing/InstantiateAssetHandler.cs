@@ -27,7 +27,7 @@ public class InstantiateAssetHandler : MonoBehaviour
         Instance = this;
     }
 
-    public void InstantiateAssetPrefab(int stageIndex, List<int> ingredientOrderToday)
+    public void InstantiateAssetPrefab(int stageIndex, List<IngredientData> ingredientOrderToday)
     {
         //spawn stage asset position
         GameObject stageAssetPos = Instantiate(stageAssetInstantiate.stageAsset[stageIndex], Vector3.zero, Quaternion.identity) as GameObject;
@@ -106,7 +106,7 @@ public class InstantiateAssetHandler : MonoBehaviour
         }
     }
 
-    void AssignMagicChestData(List<GameObject> _magicChestPrefabList, List<int> _ingredientOrderToday)
+    void AssignMagicChestData(List<GameObject> _magicChestPrefabList, List<IngredientData> _ingredientOrderToday)
     {
         for (int i = 0; i < _magicChestPrefabList.Count; i++)
         {
@@ -115,9 +115,16 @@ public class InstantiateAssetHandler : MonoBehaviour
             //set shelfIndex
             shelfInteraction.shelfIndex = i;
             //set ingredient
-            shelfInteraction.ingredientIndex = ingOrder_test[i];
+            if(StageManager.Instance.testing) //if testing
+            {
+                shelfInteraction.ingredientIndex = ingOrder_test[i];
+            }
+            else //if real game
+            {
+                shelfInteraction.ingredientIndex = _ingredientOrderToday[i].ingredientIndex;
+            }
             //set ingredient img
-            shelfInteraction.ingredientSR.sprite = so_Holder.ingredientSO[ingOrder_test[i]].ingredientSprite;
+            shelfInteraction.UpdateChestIngredientSprite();
             //set shelf refresh Time
             shelfInteraction.shelfReopenTime = 3f;
         }

@@ -14,6 +14,7 @@ public class ChoosePotionSceneManager : MonoBehaviour
 
     public ScriptableObjectHolder SO_holder;
     public Image introImage;
+    public Image outroImage;
 
     public bool testing = false;
 
@@ -68,25 +69,25 @@ public class ChoosePotionSceneManager : MonoBehaviour
 
     IEnumerator FadeScene(bool startScene, int indexScene)
     {
-        var sequence = DOTween.Sequence();
-
         if (startScene) //fade in effect
         {
-            sequence.Join(introImage.DOFade(0f, 2));
-            yield return new WaitForSeconds(2f);
+            var sequence = DOTween.Sequence();
+            sequence.Join(introImage.DOFade(0f, 1.5f));
+            yield return new WaitForSeconds(1.5f);
             introImage.gameObject.SetActive(false);
         }
         else //fade out effect
         {
-            introImage.gameObject.SetActive(true);
-            sequence.Join(introImage.DOFade(255f, 2));
+            var sequence = DOTween.Sequence();
+            outroImage.gameObject.SetActive(true);
+            sequence.Join(outroImage.DOFade(1f, 1.5f));
 
             //Start loading next scene
             LoadingScreenScript.nextSceneIndex = indexScene;
             AsyncOperation operation = SceneManager.LoadSceneAsync(0);
             operation.allowSceneActivation = false;
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1.5f);
 
             //enable change scene
             operation.allowSceneActivation = true;

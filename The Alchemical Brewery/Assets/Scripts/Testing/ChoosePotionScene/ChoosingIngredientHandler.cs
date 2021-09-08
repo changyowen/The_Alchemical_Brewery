@@ -110,6 +110,7 @@ public class ChoosingIngredientHandler : MonoBehaviour
             else
             {
                 //start game
+                StageManager.ingredientOrderToday = new List<IngredientData>(chosenIngredientForGameplay);
                 ClearAllChosenIngredientForGameplay();
                 ChoosePotionSceneManager.Instance.OpenShop();
             }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShelfInteraction : MonoBehaviour
 {
     [Header("Get Component")]
+    public ScriptableObjectHolder SO_holder;
     public SpriteRenderer chestSR;
     public SpriteRenderer orbSR;
     public SpriteRenderer ingredientSR;
@@ -55,6 +56,11 @@ public class ShelfInteraction : MonoBehaviour
         {
             chestSR.sprite = closeChest;
         }
+    }
+
+    public void UpdateChestIngredientSprite()
+    {
+        ingredientSR.sprite = SO_holder.ingredientSO[ingredientIndex].ingredientSprite;
     }
 
     void OnMouseDown()

@@ -32,6 +32,7 @@ public class IngredientDrop : MonoBehaviour
             IngredientItemHandler ingredientItemHandler = spawnedIngredient.GetComponent<IngredientItemHandler>();
             ingredientItemHandler.shelfIndex = shelfIndex;
             ingredientItemHandler.ingredientIndex = ingredientIndex;
+            ingredientItemHandler.UpdateIngedientSprite();
 
             //set spawn force
             spawnedIngredient.GetComponent<IngredientGravity>().ingredientSpawnForce = IngredientGravity.TypeOfSpawnForce.FromShelf;

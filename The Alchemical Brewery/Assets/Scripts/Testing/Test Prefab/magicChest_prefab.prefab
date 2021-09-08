@@ -480,6 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 11400000, guid: 8c01756340a37404fb76cdb7ab041e58, type: 2}
   chestSR: {fileID: 166250796316242561}
   orbSR: {fileID: 1619686343579795347}
   ingredientSR: {fileID: 1549705643108442083}
@@ -515,7 +516,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4859458479509795693}
-  m_LocalRotation: {x: 0.38268346, y: -0, z: -0, w: 0.9238795}
+  m_LocalRotation: {x: 0.6427877, y: -0, z: -0, w: 0.7660444}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -560,8 +561,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4859458481047314347}
-  m_LocalRotation: {x: 0.6087613, y: -0, z: -0, w: 0.79335344}
-  m_LocalPosition: {x: 0, y: 0.7436408, z: 2.3889322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.9, z: 1.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4859458479507616539}

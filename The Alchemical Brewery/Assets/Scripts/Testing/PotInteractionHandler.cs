@@ -113,6 +113,7 @@ public class PotInteractionHandler : MonoBehaviour
             IngredientItemHandler ingredientItemHandler = spawnedIngredient.GetComponent<IngredientItemHandler>();
             ingredientItemHandler.shelfIndex = 0;
             ingredientItemHandler.ingredientIndex = potInformationHandler.potIngredientHolderList[holderIndex];
+            ingredientItemHandler.UpdateIngedientSprite();
 
             //set spawn force
             spawnedIngredient.GetComponent<IngredientGravity>().ingredientSpawnForce = IngredientGravity.TypeOfSpawnForce.FromPot;

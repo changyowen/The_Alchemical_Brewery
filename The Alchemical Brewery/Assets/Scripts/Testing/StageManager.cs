@@ -169,6 +169,9 @@ public class StageManager : MonoBehaviour
 
         //clear all customer
 
+        //day count + 1
+        PlayerProfile.dayCount++;
+
         //Start loading next scene
         LoadingScreenScript.nextSceneIndex = 2;
         AsyncOperation operation = SceneManager.LoadSceneAsync(0);
@@ -185,6 +188,9 @@ public class StageManager : MonoBehaviour
 
         //reset DTS static value
         ResetAllStaticValueDTS();
+
+        //Save
+        SaveManager.Save();
 
         //enable change scene
         operation.allowSceneActivation = true;

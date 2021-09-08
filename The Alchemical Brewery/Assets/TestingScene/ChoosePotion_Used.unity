@@ -79748,7 +79748,7 @@ MonoBehaviour:
   SO_holder: {fileID: 11400000, guid: 8c01756340a37404fb76cdb7ab041e58, type: 2}
   introImage: {fileID: 1612722231}
   outroImage: {fileID: 930446338}
-  testing: 0
+  testing: 1
 --- !u!1 &1384609962
 GameObject:
   m_ObjectHideFlags: 0
@@ -82064,7 +82064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1612722230
 RectTransform:
   m_ObjectHideFlags: 0
@@ -85681,7 +85681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946158429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.1, y: 0, z: 25.2}
+  m_LocalPosition: {x: 20, y: 0, z: 25.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 415512547}

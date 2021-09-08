@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class PotInteractionHandler : MonoBehaviour
 {
@@ -175,29 +176,38 @@ public class PotInteractionHandler : MonoBehaviour
         for (int i = 0; i < StageManager.potionListToday.Count; i++)
         {
             List<int> _formularList = new List<int>(StageManager.potionListToday[i].potionFormular);
+            List<int> _ownFormularList = new List<int>(_currentIngredientList);
+            _formularList.Sort();
+            _ownFormularList.Sort();
 
-            int _totalMatch = 0;
-            for (int a = 0; a < 4; a++)
-            {
-                if(_currentIngredientList.Contains(_formularList[a]))
-                {
-                    _totalMatch++;
-                }
-                else
-                {
-                    a = 4;
-                }
-            }
+            bool _doListMatch = DoListsMatch(_formularList, _ownFormularList);
 
-            if(_totalMatch == 4)
+            if(_doListMatch)
             {
                 _potionIndex = i;
-                Debug.Log(i);
                 return true;
             }
         }
 
         _potionIndex = -1;
         return false;
+    }
+
+    private bool DoListsMatch(List<int> list1, List<int> list2)
+    {
+        var areListsEqual = true;
+
+        if (list1.Count != list2.Count)
+            return false;
+
+        for (var i = 0; i < list1.Count; i++)
+        {
+            if (list2[i] != list1[i])
+            {
+                areListsEqual = false;
+            }
+        }
+
+        return areListsEqual;
     }
 }

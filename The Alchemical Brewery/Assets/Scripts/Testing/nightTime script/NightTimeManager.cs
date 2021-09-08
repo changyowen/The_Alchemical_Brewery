@@ -43,10 +43,17 @@ public class NightTimeManager : MonoBehaviour
 
     public void NextScene()
     {
-        //clear pot and returning ingredient
-        CraftPotionManager.Instance.ResetPotIngredientList(true);
-        //start outro
-        StartCoroutine(StartSceneOutro());
+        if(PlayerProfile.acquiredPotion.Count == 0)
+        {
+            NotificationSystem.Instance.SendPopOutNotification("Craft at least one potion before open your shop!");
+        }
+        else
+        {
+            //clear pot and returning ingredient
+            CraftPotionManager.Instance.ResetPotIngredientList(true);
+            //start outro
+            StartCoroutine(StartSceneOutro());
+        }
     }
 
     IEnumerator StartSceneIntro()

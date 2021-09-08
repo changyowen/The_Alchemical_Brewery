@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PotionInformationHandler : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class PotionInformationHandler : MonoBehaviour
 
     [Header("Information")]
     public Image potionIcon;
-    public Text potionName_text;
+    public TextMeshProUGUI potionName_text;
     public Text usage_text;
     public Text quality_text;
     public Text price_text;
@@ -41,7 +42,7 @@ public class PotionInformationHandler : MonoBehaviour
         //potionIcon.sprite = 
 
         ///NAME
-        potionName_text.text = "" + currentPotionData.potionName;
+        potionName_text.text = currentPotionData.potionName + "       ";
 
         ///PRICE
         //price_text.text = "$" + _potionData.

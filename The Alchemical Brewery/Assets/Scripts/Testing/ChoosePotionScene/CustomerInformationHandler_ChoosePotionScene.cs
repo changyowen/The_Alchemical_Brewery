@@ -6,7 +6,8 @@ using UnityEngine.AI;
 public class CustomerInformationHandler_ChoosePotionScene : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
-    public CustomerData customerDataSO;
+    [System.NonSerialized] public CustomerData customerDataSO;
+    [System.NonSerialized] public int _customerIndex_fromlist;
 
     public GameObject customerCanvas;
 

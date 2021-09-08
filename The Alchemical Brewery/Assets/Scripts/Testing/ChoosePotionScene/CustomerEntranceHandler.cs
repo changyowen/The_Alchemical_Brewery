@@ -47,6 +47,8 @@ public class CustomerEntranceHandler : MonoBehaviour
             //assign SO holder
             CustomerInformationHandler_ChoosePotionScene currentCustomerInfomation = newCustomerObj.GetComponent<CustomerInformationHandler_ChoosePotionScene>();
             currentCustomerInfomation.customerDataSO = ChoosePotionSceneManager.Instance.customerTypeToday[i];
+            //assign customer index(from customerTodayList)
+            currentCustomerInfomation._customerIndex_fromlist = i;
 
             //set destination
             newCustomerObj.GetComponent<NavMeshAgent>().SetDestination(queue_transform.GetChild(i).position);

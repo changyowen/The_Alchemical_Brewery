@@ -6,5 +6,5 @@ using UnityEngine;
 public class StageDataAssign : ScriptableObject
 {
     public int stageIndex;
-    public List<int> CustomerAppear;
+    public List<CustomerData> CustomerAppear;
 }

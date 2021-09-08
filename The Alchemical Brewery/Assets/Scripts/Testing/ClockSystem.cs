@@ -25,9 +25,9 @@ public class ClockSystem : MonoBehaviour
         if(StageManager.dayTimeGameplay)
         {
             TimeCalculation();
-            ClockHandRotation();
-            DigitalTimeUpdate();
         }
+        ClockHandRotation();
+        DigitalTimeUpdate();
     }
 
     void TimeCalculation()

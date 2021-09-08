@@ -12,6 +12,7 @@ public class CustomerPreferHandler : MonoBehaviour
 
     List<PotionData> chosenPotionList;
     float globalFavorPoint = 0;
+    float favorPoint_inPercentage = 0;
 
     private void Update()
     {
@@ -28,6 +29,11 @@ public class CustomerPreferHandler : MonoBehaviour
             UpdateCustomerCanvasSprite();
         }
         
+        //update to gloabal favor point list
+        if(ChoosePotionSceneManager.Instance != null)
+        {
+            ChoosePotionSceneManager.Instance.favorPointList[currentCustomerInformation._customerIndex_fromlist] = favorPoint_inPercentage * 50f; ;
+        }
     }
 
     void UpdateFavorPoint()
@@ -107,6 +113,8 @@ public class CustomerPreferHandler : MonoBehaviour
             {
                 canvasSprite.sprite = SO_holder.boredLogoSprite;
             }
+
+            favorPoint_inPercentage = newFavorPoint;
         }
     }
 }

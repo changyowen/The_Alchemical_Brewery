@@ -12,10 +12,11 @@ public class StageManager : MonoBehaviour
     public StageAssetInstantiate stageAssetInstantiate;
     public InstantiateAssetHandler instantiateAssetHandler;
 
-    public static int stageIndex = 1;
+    //public static int stageIndex = 1;
     public static List<PotionData> potionListToday = new List<PotionData>();
     public static List<int> ingredientOrderToday = new List<int>();
     public static List<CustomerData> customerTypeToday = null;
+    public static List<float> favorPointList = null;
     public List<float> customerAppearRateList = new List<float>();
     public float totalCustomerAppearRate = 0;
 
@@ -37,27 +38,24 @@ public class StageManager : MonoBehaviour
         {
             //PlayerProfile.GM_TestingUse();
             SaveManager.Load();
-            
         }
-        //assign potion sell today
+        //assign potion sell today [if testing only]*
         AssignPotionToday();
-        //assign all customer type for this stage (IF NULL)
+
+        //assign all customer type for this stage (IF NULL)*
         if (customerTypeToday == null)
         {
             AssignCustomerTypeToday();
         }
-        //calculate each customer appear rate
+        //calculate each customer appear rate*
         AssignCustomerAppearRate();
     }
 
     void Start()
     {
-        if (!testing)
-        {
-            instantiateAssetHandler.InstantiateAssetPrefab(stageIndex, ingredientOrderToday);
-            ResultManager.Instance.AssignInitialCustomerLevelArray(customerTypeToday);
-            StartCoroutine(StartDayTimeScene());
-        }
+        instantiateAssetHandler.InstantiateAssetPrefab(PlayerProfile.stageChosen, ingredientOrderToday);
+        ResultManager.Instance.AssignInitialCustomerLevelArray(customerTypeToday);
+        StartCoroutine(StartDayTimeScene());
     }
 
     void Update()
@@ -73,31 +71,40 @@ public class StageManager : MonoBehaviour
 
     void AssignPotionToday()
     {
-        if (PlayerProfile.acquiredPotion.Count < 4)
+        // testing use
+        if(potionListToday.Count == 0)
         {
-            for (int i = 0; i < PlayerProfile.acquiredPotion.Count; i++)
+            if (PlayerProfile.acquiredPotion.Count < 4)
             {
-                potionListToday.Add(PlayerProfile.acquiredPotion[i]);
+                for (int i = 0; i < PlayerProfile.acquiredPotion.Count; i++)
+                {
+                    potionListToday.Add(PlayerProfile.acquiredPotion[i]);
+                }
             }
-        }
-        else
-        {
-            for (int i = 0; i < 4; i++)
+            else
             {
-                potionListToday.Add(PlayerProfile.acquiredPotion[i]);
+                for (int i = 0; i < 4; i++)
+                {
+                    potionListToday.Add(PlayerProfile.acquiredPotion[i]);
+                }
             }
         }
     }
 
     void AssignCustomerTypeToday()
     {
-        StageDataAssign stageData = so_Holder.stageDataSO[stageIndex];
+        StageDataAssign stageData = so_Holder.stageDataSO[PlayerProfile.stageChosen];
 
         customerTypeToday = new List<CustomerData>();
         for (int i = 0; i < stageData.CustomerAppear.Count && i < 5; i++)
         {
-            int customerIndex = stageData.CustomerAppear[i];
-            customerTypeToday.Add(so_Holder.customerDataSO[customerIndex]);
+            //get Customer Data
+            CustomerData _customerdata = stageData.CustomerAppear[i];
+            //check if customer already unlocked
+            bool _customerUnlocked = PlayerProfile.customerProfile[_customerdata.customerIndex].unlocked;
+            //adding into customerTodayList if customer is unlocked
+            if (_customerUnlocked)
+                customerTypeToday.Add(_customerdata);
         }
     }
 
@@ -108,11 +115,24 @@ public class StageManager : MonoBehaviour
             //get customer index and level
             int customerIndex = customerTypeToday[i].customerIndex;
             int customerLevel = PlayerProfile.customerProfile[customerIndex].customerLevel;
+
             //get customer base & leveling appear rate
             float baseAppearRate = customerTypeToday[i].baseAppearRate;
             float levelingAppearRate = customerLevel * customerTypeToday[i].levelingAppearRate;
+
+            //get favor point of customer [if not NULL]
+            float _favorPoint = 0;
+            if (favorPointList != null)
+            {
+                _favorPoint = favorPointList[i];
+            }
+            else
+            {
+                _favorPoint = 0;
+            }
+
             //assign total appear rate into customerAppearrateList
-            float customerAppearRate = baseAppearRate + levelingAppearRate;
+            float customerAppearRate = baseAppearRate + levelingAppearRate + _favorPoint;
             customerAppearRateList.Add(customerAppearRate);
             //sum into totalCustomerAppearRate
             totalCustomerAppearRate += customerAppearRate; 

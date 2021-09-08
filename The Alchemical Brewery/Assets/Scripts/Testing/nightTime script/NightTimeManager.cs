@@ -13,7 +13,7 @@ public class NightTimeManager : MonoBehaviour
 {
     public static NightTimeManager Instance { get; private set; }
 
-    public static int stageIndex = 1;
+    //public static int stageIndex = 1;
 
     public GameObject nightTimeIntro_obj;
     public GameObject nightTimeOutro_obj;

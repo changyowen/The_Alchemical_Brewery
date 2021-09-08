@@ -23,7 +23,7 @@ public class ShopIngredientInformationHandler : MonoBehaviour
     {
         get
         {
-            return (int)StageManager.stageIndex * 5;
+            return (int)PlayerProfile.stageChosen * 5;
         }
     }
 

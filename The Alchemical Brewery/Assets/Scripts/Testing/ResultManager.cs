@@ -125,7 +125,6 @@ public class ResultManager : MonoBehaviour
                 {
                     if (Input.GetMouseButtonDown(0))
                     {
-                        Debug.Log("test");
                         newUnlockStuffPanel.GetComponent<Animator>().SetTrigger("enabledExit");
                         currentUnlockStuffPanel.enabledSkip = false;
                     }

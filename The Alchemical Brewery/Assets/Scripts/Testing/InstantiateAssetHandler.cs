@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 public class InstantiateAssetHandler : MonoBehaviour
@@ -135,6 +136,9 @@ public class InstantiateAssetHandler : MonoBehaviour
 
     public Animator StartDayTimeIntro()
     {
+        //set day count
+        dayTimeIntro_obj.transform.GetChild(1).GetComponent<Text>().text = "Day " + PlayerProfile.dayCount;
+
         Animator anim = dayTimeIntro_obj.GetComponent<Animator>();
         anim.SetTrigger("StartIntro");
 

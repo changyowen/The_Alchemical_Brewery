@@ -3,7 +3,7 @@
     "lastSave": "07-09-2021   23:48",
     "dayCount": 1,
     "dayResetTravel": 5,
-    "stageChosen": 2,
+    "stageChosen": 1,
     "acquiredPotion": [
         {
             "potionSpriteIndex": 0,

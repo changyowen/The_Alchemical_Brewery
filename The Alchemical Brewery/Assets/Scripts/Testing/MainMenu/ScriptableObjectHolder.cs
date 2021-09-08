@@ -9,6 +9,7 @@ public class ScriptableObjectHolder: ScriptableObject
     public IngredientSpawnForce[] ingredientSpawnForceSO;
     public CustomerData[] customerDataSO;
 
+    [Header("StageData")]
     public StageDataAssign[] stageDataSO;
 
     [Header("shop asset sprites")]

@@ -10,6 +10,7 @@ public class ShelfInteraction : MonoBehaviour
     public SpriteRenderer orbSR;
     public SpriteRenderer ingredientSR;
     public IngredientDrop ingredientDrop;
+    public GameObject terraParticleSystem;
 
     [Header("Sprite")]
     public Sprite closeChest;
@@ -94,6 +95,11 @@ public class ShelfInteraction : MonoBehaviour
     {
         //reopen shelf shelf
         shelfOpen = true;
+
+        //deactivate and activate particle system [for make sure particle system reopen]
+        terraParticleSystem.SetActive(false);
+        terraParticleSystem.SetActive(true);
+
         //spawn ingredient
         ingredientDrop.IngredientSpawn(shelfIndex, ingredientIndex);
     }

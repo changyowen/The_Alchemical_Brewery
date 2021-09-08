@@ -929,10 +929,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 858202655}
   orbSR: {fileID: 1261212375}
   ingredientSR: {fileID: 1462779127}
   ingredientDrop: {fileID: 1811950868}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -1196,7 +1198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &70464544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,7 +1227,7 @@ Transform:
   m_LocalPosition: {x: -5.210987, y: 7.617346, z: -0.15494156}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1190153692}
+  m_Father: {fileID: 1393901234}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79655515
@@ -1275,10 +1277,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 892554397}
   orbSR: {fileID: 2099419654}
   ingredientSR: {fileID: 1792222887}
   ingredientDrop: {fileID: 1524906339}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -1683,7 +1687,7 @@ MonoBehaviour:
   instantiateAssetHandler: {fileID: 1248810823}
   customerAppearRateList: []
   totalCustomerAppearRate: 0
-  testing: 0
+  testing: 1
   ingOrder_test: 01000000010000000100000002000000020000000200000003000000030000000300000004000000
 --- !u!43 &99691853
 Mesh:
@@ -2921,6 +2925,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174187213}
   m_CullTransparentMesh: 0
+--- !u!1 &175601587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175601588}
+  m_Layer: 0
+  m_Name: OrdoSkillEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &175601588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175601587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 804729900}
+  m_Father: {fileID: 1190153692}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &179619659
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,7 +7816,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1190153692}
+    m_TransformParent: {fileID: 1393901234}
     m_Modifications:
     - target: {fileID: 6102773531026413211, guid: 0cd47bc56da6c2444ae87e9c2bb998d7,
         type: 3}
@@ -7846,7 +7881,7 @@ PrefabInstance:
     - target: {fileID: 6102773531026413286, guid: 0cd47bc56da6c2444ae87e9c2bb998d7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cd47bc56da6c2444ae87e9c2bb998d7, type: 3}
@@ -8061,7 +8096,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh95734
+  m_Name: pb_Mesh340682
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8449,7 +8484,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605382535}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -11408,7 +11443,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769708213}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -11756,10 +11791,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 1862919773}
   orbSR: {fileID: 1360045257}
   ingredientSR: {fileID: 2126750364}
   ingredientDrop: {fileID: 1747825880}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -11936,7 +11973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &804729899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11965,8 +12002,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1190153692}
-  m_RootOrder: 2
+  m_Father: {fileID: 175601588}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &804754533
 GameObject:
@@ -13923,10 +13960,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 1353729647}
   orbSR: {fileID: 25327333}
   ingredientSR: {fileID: 1694476547}
   ingredientDrop: {fileID: 293374978}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -19278,10 +19317,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 1077036105}
   orbSR: {fileID: 1884324516}
   ingredientSR: {fileID: 1833130145}
   ingredientDrop: {fileID: 1284973956}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -20511,10 +20552,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 782097420}
   orbSR: {fileID: 903209343}
   ingredientSR: {fileID: 1029085958}
   ingredientDrop: {fileID: 579713268}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -21023,10 +21066,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 92419098}
   orbSR: {fileID: 979655493}
   ingredientSR: {fileID: 363009005}
   ingredientDrop: {fileID: 742683032}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -21121,9 +21166,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2028173463}
-  - {fileID: 70464545}
-  - {fileID: 804729900}
+  - {fileID: 1393901234}
+  - {fileID: 175601588}
   - {fileID: 1501761592}
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -87057,10 +87101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 859003890}
   orbSR: {fileID: 365819374}
   ingredientSR: {fileID: 1760405230}
   ingredientDrop: {fileID: 1938732415}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -88864,6 +88910,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384235119}
   m_CullTransparentMesh: 0
+--- !u!1 &1393901233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1393901234}
+  m_Layer: 0
+  m_Name: IgnisSkillEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1393901234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393901233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2028173463}
+  - {fileID: 70464545}
+  m_Father: {fileID: 1190153692}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1395236270
 GameObject:
   m_ObjectHideFlags: 0
@@ -89976,7 +90054,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496932617}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -90059,7 +90137,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1190153692}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1501761593
 MonoBehaviour:
@@ -92793,7 +92871,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745747941}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -96745,10 +96823,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 2007613248}
   orbSR: {fileID: 1822525054}
   ingredientSR: {fileID: 1274129769}
   ingredientDrop: {fileID: 648663468}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
@@ -96914,10 +96994,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0ac2452ae128640bc3cb4b5ae2bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO_holder: {fileID: 0}
   chestSR: {fileID: 2031630706}
   orbSR: {fileID: 1868198034}
   ingredientSR: {fileID: 1733542885}
   ingredientDrop: {fileID: 23931168}
+  terraParticleSystem: {fileID: 0}
   closeChest: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   openChest: {fileID: -7333666679924004807, guid: 7ecfaa78995a30d4a9c66ad92c53989d,

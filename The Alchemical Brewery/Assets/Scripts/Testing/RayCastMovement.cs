@@ -50,12 +50,6 @@ public class RayCastMovement : MonoBehaviour
 		RaycastHit hit;
 		if (Input.GetButtonDown("Fire1"))
 		{
-			////debugUse
-			//if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-			//{
-			//	if (!EventSystem.current.IsPointerOverGameObject())
-			//		Debug.Log(hit.transform.gameObject.name);
-			//}
 			if (!EventSystem.current.IsPointerOverGameObject())
             {
 				if(rayCastMode == RayCastMovementMode.Normal)
@@ -114,6 +108,10 @@ public class RayCastMovement : MonoBehaviour
 		teleportEffect_obj.SetActive(false); //disable teleport effect
 		isTeleporting = false;
 		rayCastMode = RayCastMovementMode.Normal;
+		if(ElementSkillManager.Instance != null)
+		{
+			ElementSkillManager.Instance.ordoSkillEffect_obj.SetActive(false); //deactivate ordoskill effect
+		}
 
 		///CHECK IF ORDO SKILL REMAINING FINISHED
 		if(ElementMeterPanel.Instance.elementSkillRemaining[4] == 0)

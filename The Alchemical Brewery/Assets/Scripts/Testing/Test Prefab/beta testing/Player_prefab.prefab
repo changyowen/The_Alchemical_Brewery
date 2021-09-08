@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 8944204978306157359}
   - component: {fileID: 8944204978306157344}
   - component: {fileID: 9213601128683213815}
+  - component: {fileID: 7816390702035656670}
   m_Layer: 0
   m_Name: Player_prefab
   m_TagString: Untagged
@@ -270,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPosition: {x: 0, y: 0, z: 0}
-  playerPotionHolder: 0
+  playerPotionHolderList: 
   playerIngredientHolder: 
 --- !u!114 &9213601128683213815
 MonoBehaviour:
@@ -285,6 +286,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 8186537339418685649}
+--- !u!114 &7816390702035656670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8944204978306157356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61ea434ad4ddd6646b9ba0178d642596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCameraMain: {fileID: 0}
+  scrollSensitivity: 65
+  teleportView: 60
 --- !u!1 &8944204978884544390
 GameObject:
   m_ObjectHideFlags: 0

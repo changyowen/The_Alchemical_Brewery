@@ -6,7 +6,8 @@ public class ElementSkillManager : MonoBehaviour
 {
     public static ElementSkillManager Instance { get; private set; }
 
-    public GameObject[] ignisSkillEffect_objList;
+    public GameObject ignisSkillEffect_obj;
+    public GameObject ordoSkillEffect_obj;
 
     [System.NonSerialized] public bool[] skillActivated = new bool[5] { false, false, false, false, false };
 
@@ -25,10 +26,7 @@ public class ElementSkillManager : MonoBehaviour
         StageManager.accelerateGame = true; //accelerate game
         ElementMeterPanel.Instance.elementSkillRemaining[0] -= 1;//minus skill remaining
         //Activate effect camera and post proccessing
-        for (int i = 0; i < ignisSkillEffect_objList.Length; i++)
-        {
-            ignisSkillEffect_objList[i].SetActive(true);
-        }
+        ignisSkillEffect_obj.SetActive(true);
 
         ///WAIT TILL IGNIS SKILL TIME
         float remainingTime = ignisSkillTime;
@@ -41,10 +39,7 @@ public class ElementSkillManager : MonoBehaviour
         }
 
         //Disable effect camera and post proccessing
-        for (int i = 0; i < ignisSkillEffect_objList.Length; i++)
-        {
-            ignisSkillEffect_objList[i].SetActive(false);
-        }
+        ignisSkillEffect_obj.SetActive(false);
         StageManager.accelerateGame = false; //stop accelerate game
         skillActivated[0] = false; //deactivate skill
         ElementMeterPanel.Instance.elementMana[0] = 0; //reset mana
@@ -115,5 +110,7 @@ public class ElementSkillManager : MonoBehaviour
     public void OrdoSkill()
     {
         RayCastMovement.Instance.rayCastMode = RayCastMovementMode.Teleport; //TELEPORT MODE
+        //activate ordoskilleffect
+        ordoSkillEffect_obj.SetActive(true);
     }
 }

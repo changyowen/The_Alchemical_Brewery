@@ -12,7 +12,6 @@ public class StageManager : MonoBehaviour
     public StageAssetInstantiate stageAssetInstantiate;
     public InstantiateAssetHandler instantiateAssetHandler;
 
-    //public static int stageIndex = 1;
     public static List<PotionData> potionListToday = new List<PotionData>();
     public static List<IngredientData> ingredientOrderToday = new List<IngredientData>();
     public static List<CustomerData> customerTypeToday = null;
@@ -184,7 +183,22 @@ public class StageManager : MonoBehaviour
         ResultManager.Instance.AssignFinalCustomerLevelArray(customerTypeToday);
         yield return StartCoroutine(ResultManager.Instance.StartResult());
 
+        //reset DTS static value
+        ResetAllStaticValueDTS();
+
         //enable change scene
         operation.allowSceneActivation = true;
+    }
+
+    void ResetAllStaticValueDTS()
+    {
+        dayTimeGameplay = false;
+        pauseGame = false;
+        accelerateGame = false;
+
+        potionListToday = new List<PotionData>();
+        ingredientOrderToday = new List<IngredientData>();
+        customerTypeToday = null;
+        favorPointList = null;
     }
 }

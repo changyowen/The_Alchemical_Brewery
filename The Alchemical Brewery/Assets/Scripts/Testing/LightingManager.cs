@@ -10,6 +10,7 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private Light DirectionalLight = null;
     [SerializeField] private LightingPreset Preset = null;
     [SerializeField] Light[] streetLights = null;
+    [SerializeField] Light[] streetLights_point = null;
     //Variables
     [SerializeField, Range(0, 24)] private float TimeOfDay = 12;
     [SerializeField] private float timeSpeed = 0;
@@ -187,38 +188,46 @@ public class LightingManager : MonoBehaviour
         {
             if(LightOn)
             {
-                StartCoroutine(StartFlickering(streetLights[i]));
+                StartCoroutine(StartFlickering(streetLights[i], streetLights_point[i]));
 
                 yield return new WaitForSecondsRealtime(0.8f);
             }
             else
             {
                 streetLights[i].enabled = false; 
+                streetLights_point[i].enabled = false; 
             }
         }
     }
 
-    IEnumerator StartFlickering(Light _streetLight)
+    IEnumerator StartFlickering(Light _streetLight, Light _streetLight_point)
     {
         _streetLight.enabled = true;
+        _streetLight_point.enabled = true;
         yield return new WaitForSecondsRealtime(0.08f);
         _streetLight.enabled = false;
+        _streetLight_point.enabled = false;
 
         yield return new WaitForSecondsRealtime(0.15f);
 
         _streetLight.enabled = true;
+        _streetLight_point.enabled = true;
         yield return new WaitForSecondsRealtime(0.08f);
         _streetLight.enabled = false;
+        _streetLight_point.enabled = false;
 
         yield return new WaitForSecondsRealtime(0.15f);
 
         _streetLight.enabled = true;
+        _streetLight_point.enabled = true;
         yield return new WaitForSecondsRealtime(0.08f);
         _streetLight.enabled = false;
+        _streetLight_point.enabled = false;
 
         yield return new WaitForSecondsRealtime(0.5f);
 
         _streetLight.enabled = true;
+        _streetLight_point.enabled = true;
     }
 
     public void ResetLightingWhenPlaying(float _timeOfday)

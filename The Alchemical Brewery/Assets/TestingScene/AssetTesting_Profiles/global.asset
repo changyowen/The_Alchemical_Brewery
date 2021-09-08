@@ -1387,7 +1387,7 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 10
+    value: 1
   directLightingStrength:
     overrideState: 0
     value: 0
@@ -1433,11 +1433,11 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   shutterAngle:
-    overrideState: 1
+    overrideState: 0
     value: 270
   sampleCount:
     overrideState: 1
-    value: 10
+    value: 4
 --- !u!114 &3491264644705362594
 MonoBehaviour:
   m_ObjectHideFlags: 3

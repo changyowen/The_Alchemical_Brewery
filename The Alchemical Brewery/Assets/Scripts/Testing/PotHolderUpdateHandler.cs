@@ -28,47 +28,40 @@ public class PotHolderUpdateHandler : MonoBehaviour
 
     void Update()
     {
-        ////get pot class
-        //Pot thisPot = PotSystem_Daytime.Instance.potList[potIndex];
-
-        //if pot not boiling
-        if(!potInformationHandler.potBoiling)
+        //if pot holding potion
+        if (potInformationHandler.potPotionHolder != -1)
         {
-            //if pot holding potion
-            if(potInformationHandler.potPotionHolder != -1)
+            //get PotionData
+            PotionData potionData = StageManager.potionListToday[potInformationHandler.potPotionHolder];
+            //potion holder image SetActive
+            HolderSetActive(true, false, false);
+            //set image.....
+            potionHolderImage.sprite = SO_holder.potionIconList[potionData.potionSpriteIndex];
+        }
+        else //if pot not holding potion
+        {
+            //if ingredient holder NOT empty
+            if (potInformationHandler.potIngredientHolderList.Count != 0)
             {
-                //get PotionData
-                PotionData potionData = StageManager.potionListToday[potInformationHandler.potPotionHolder];
-                //potion holder image SetActive
-                HolderSetActive(true, false, false);
-                //set image.....
-                potionHolderImage.sprite = SO_holder.potionIconList[potionData.potionSpriteIndex];
-            }
-            else //if pot not holding potion
-            {
-                //if ingredient holder NOT empty
-                if(potInformationHandler.potIngredientHolderList.Count != 0)
+                //if ingredient holder is full
+                if (potInformationHandler.potIngredientHolderList.Count == 4)
                 {
-                    //if ingredient holder is full
-                    if(potInformationHandler.potIngredientHolderList.Count == 4)
-                    {
-                        //ingredient holder & craft button image SetActive
-                        HolderSetActive(false, true, true);
-                    }
-                    else //if ingredient holder is NOT full
-                    {
-                        //ingredient holder image SetActive
-                        HolderSetActive(false, true, false);
-                    }
+                    //ingredient holder & craft button image SetActive
+                    HolderSetActive(false, true, true);
+                }
+                else //if ingredient holder is NOT full
+                {
+                    //ingredient holder image SetActive
+                    HolderSetActive(false, true, false);
+                }
 
-                    //update ingredient holder image
-                    IngredientHolderImageUpdate();
-                }
-                else //if ingredient holder is empty
-                {
-                    //all holder image unactive
-                    HolderSetActive(false, false, false);
-                }
+                //update ingredient holder image
+                IngredientHolderImageUpdate();
+            }
+            else //if ingredient holder is empty
+            {
+                //all holder image unactive
+                HolderSetActive(false, false, false);
             }
         }
     }

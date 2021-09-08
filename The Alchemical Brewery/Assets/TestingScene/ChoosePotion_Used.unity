@@ -79748,7 +79748,7 @@ MonoBehaviour:
   SO_holder: {fileID: 11400000, guid: 8c01756340a37404fb76cdb7ab041e58, type: 2}
   introImage: {fileID: 1612722231}
   outroImage: {fileID: 930446338}
-  testing: 1
+  testing: 0
 --- !u!1 &1384609962
 GameObject:
   m_ObjectHideFlags: 0
@@ -81953,6 +81953,7 @@ MonoBehaviour:
   - {fileID: 504961659}
   - {fileID: 1739282091}
   - {fileID: 1034156420}
+  streetLights_point: []
   TimeOfDay: 0
   timeSpeed: 1.5
   streetLightTimer: {x: 18, y: 6}

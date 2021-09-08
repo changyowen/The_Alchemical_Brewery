@@ -270,9 +270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de23d6bfd66bcdc4ca1aaf18ee6d6854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnim: {fileID: 8186537339418685649}
   playerPosition: {x: 0, y: 0, z: 0}
   playerPotionHolderList: 
   playerIngredientHolder: 
+  drinkingPotionState: 0
 --- !u!114 &9213601128683213815
 MonoBehaviour:
   m_ObjectHideFlags: 0

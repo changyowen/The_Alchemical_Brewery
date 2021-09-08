@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class PocketSystem : MonoBehaviour
 {
+    public static PocketSystem Instance { get; private set; }
+
     public ScriptableObjectHolder SO_holder;
 
     public Image[] potionHolderImage;
     public Image[] ingredientHolderImage;
     public GameObject spawnIngredient_obj;
     public Vector3 spawnPosOffset;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Update()
     {
@@ -110,6 +118,83 @@ public class PocketSystem : MonoBehaviour
 
             //remove choosen ingredient
             playerIngredientHolder.RemoveAt(holderIndex);
+        }
+    }
+
+    public IEnumerator DrinkPotion(int holderIndex)
+    {
+        //get player potion holder
+        List<int> playerPotionHolder = PlayerInfoHandler.Instance.playerPotionHolderList;
+        
+        if (PlayerInfoHandler.Instance != null)
+        {
+            if (holderIndex < playerPotionHolder.Count && !PlayerInfoHandler.Instance.drinkingPotionState) //if potion exist in this slot
+            {
+                //get Potion Data
+                PotionData _potionData = StageManager.potionListToday[holderIndex];
+
+                //remove choosen ingredient
+                playerPotionHolder.RemoveAt(holderIndex);
+
+                //turn drinkingPotion state
+                PlayerInfoHandler.Instance.drinkingPotionState = true;
+                //stop moving
+                NavMeshAgent _navMeshAgent = PlayerInfoHandler.Instance.gameObject.GetComponent<NavMeshAgent>();
+                if (_navMeshAgent != null)
+                {
+                    _navMeshAgent.SetDestination(PlayerInfoHandler.Instance.transform.position);
+                }
+                //start drinking potion
+                Animator _anim = PlayerInfoHandler.Instance.playerAnim;
+                if(_anim != null)
+                {
+                    _anim.SetTrigger("drinkingPotion");
+                }
+
+                //wait animation
+                yield return new WaitForSeconds(2.4f);
+
+                //deactivate drinkingPotion state
+                PlayerInfoHandler.Instance.drinkingPotionState = false;
+
+                //increase element for skill
+                IncreaseElementForSkill(_potionData);
+            }
+        }
+    }
+
+    void IncreaseElementForSkill(PotionData _potionData)
+    {
+        for (int i = 0; i < _potionData.potionElement.Count; i++)
+        {
+            switch(_potionData.potionElement[i])
+            {
+                case Element.Ignis:
+                    {
+                        ElementMeterPanel.Instance.elementMana[0]++;
+                        break;
+                    }
+                case Element.Aqua:
+                    {
+                        ElementMeterPanel.Instance.elementMana[1]++;
+                        break;
+                    }
+                case Element.Terra:
+                    {
+                        ElementMeterPanel.Instance.elementMana[2]++;
+                        break;
+                    }
+                case Element.Aer:
+                    {
+                        ElementMeterPanel.Instance.elementMana[3]++;
+                        break;
+                    }
+                case Element.Ordo:
+                    {
+                        ElementMeterPanel.Instance.elementMana[4]++;
+                        break;
+                    }
+            }
         }
     }
 }

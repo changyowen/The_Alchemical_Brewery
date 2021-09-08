@@ -135,19 +135,69 @@ public class PotInteractionHandler : MonoBehaviour
 
     public void StartCraftPotion()
     {
-        //reset pot potion holder
-        potInformationHandler.ResetPotHolder();
-        //get boiling time needed
-        float boilingTime = 5f;
-        //start crafting potion
-        StartCoroutine(CraftPotion(boilingTime));
+        //check if same formular with menus'
+        int _matchPotionIndex = -1;
+        bool _matchMenuBool = CheckAllFormularIfSame( potInformationHandler.potIngredientHolderList, out _matchPotionIndex);
+
+        if(_matchMenuBool)
+        {
+            //reset pot potion holder
+            potInformationHandler.ResetPotHolder();
+            //get boiling time needed
+            float boilingTime = 5f;
+            //start crafting potion
+            StartCoroutine(CraftPotion(boilingTime, _matchPotionIndex));
+        }
+        else
+        {
+            //send notification
+            if(NotificationSystem.Instance != null)
+            {
+                NotificationSystem.Instance.SendPopOutNotification("Ingredients are not match with menu's!");
+            }
+        }
     }
 
-    IEnumerator CraftPotion(float boilingTime)
+    IEnumerator CraftPotion(float boilingTime, int _potionIndex)
     {
+        //start boiling
+        potInformationHandler.potBoiling = true;
         //wait for boiling time
         yield return new WaitForSeconds(boilingTime);
         //complete potion
-        potInformationHandler.potPotionHolder = 1;
+        potInformationHandler.potPotionHolder = _potionIndex;
+        //end boiling
+        potInformationHandler.potBoiling = false;
+    }
+
+    bool CheckAllFormularIfSame(List<int> _currentIngredientList, out int _potionIndex)
+    {
+        for (int i = 0; i < StageManager.potionListToday.Count; i++)
+        {
+            List<int> _formularList = new List<int>(StageManager.potionListToday[i].potionFormular);
+
+            int _totalMatch = 0;
+            for (int a = 0; a < 4; a++)
+            {
+                if(_currentIngredientList.Contains(_formularList[a]))
+                {
+                    _totalMatch++;
+                }
+                else
+                {
+                    a = 4;
+                }
+            }
+
+            if(_totalMatch == 4)
+            {
+                _potionIndex = i;
+                Debug.Log(i);
+                return true;
+            }
+        }
+
+        _potionIndex = -1;
+        return false;
     }
 }

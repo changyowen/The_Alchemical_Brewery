@@ -35,6 +35,10 @@ public static class PlayerProfile
     {
         ///ASSIGN PROFILE NAME
         profileName = _profileName;
+        ///ASSIGN DAY COUNT, DAY RESET TRAVEL, STAGE CHOSEN
+        dayCount = 1;
+        dayResetTravel = 0;
+        stageChosen = 1;
 
         ///ASSIGN INGREDIENT PROFILE CLASS
         for (int i = 0; i < ingredientProfile.Length; i++)

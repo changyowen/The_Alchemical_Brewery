@@ -15,7 +15,10 @@ public class ShortcutPanelInteraction : MonoBehaviour, IPointerEnterHandler, IPo
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        anim.SetBool("showPanel", true);
+        if(StageManager.dayTimeGameplay)
+        {
+            anim.SetBool("showPanel", true);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)

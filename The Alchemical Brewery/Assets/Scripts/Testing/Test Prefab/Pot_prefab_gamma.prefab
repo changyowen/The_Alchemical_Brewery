@@ -1226,6 +1226,7 @@ GameObject:
   - component: {fileID: 5932807725193754035}
   - component: {fileID: 5932807725193754034}
   - component: {fileID: 5932807725193754037}
+  - component: {fileID: 4262972666213562457}
   m_Layer: 0
   m_Name: Pot_prefab_gamma
   m_TagString: Untagged
@@ -1309,6 +1310,23 @@ MonoBehaviour:
   spawnIngredient_obj: {fileID: 6580540116182979530, guid: 01cde2c42022fd046b66d33c93c9c985,
     type: 3}
   ingredientSpawn: {fileID: 5932807725339358437}
+--- !u!114 &4262972666213562457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5932807725193754046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b3ce8195fb7064fb01bc4dbeed336e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_Transform: {fileID: 4036816777134914515}
+  scale_beforeBounce: {x: 1.5, y: 1.5, z: 1}
+  scale_afterBounce: {x: 1.8, y: 1.2, z: 1}
+  lerpTime: 0.2
+  shaking: 0
 --- !u!1 &5932807725205793469
 GameObject:
   m_ObjectHideFlags: 0

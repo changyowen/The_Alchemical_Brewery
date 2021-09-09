@@ -9,11 +9,14 @@ public class PotInteractionHandler : MonoBehaviour
     int potIndex;
 
     PotInformationHandler potInformationHandler;
+    PotBouncingScript potBouncingScript;
 
     void Start()
     {
         //get pot information handler
         potInformationHandler = GetComponent<PotInformationHandler>();
+        //get pot bouncing script
+        potBouncingScript = GetComponent<PotBouncingScript>();
         //get pot index
         potIndex = potInformationHandler.potIndex;
     }
@@ -163,12 +166,17 @@ public class PotInteractionHandler : MonoBehaviour
     {
         //start boiling
         potInformationHandler.potBoiling = true;
+        //start bouncing
+        potBouncingScript.shaking = true;
+        StartCoroutine(potBouncingScript.StartShaking());
         //wait for boiling time
         yield return new WaitForSeconds(boilingTime);
         //complete potion
         potInformationHandler.potPotionHolder = _potionIndex;
         //end boiling
         potInformationHandler.potBoiling = false;
+        //start bouncing
+        potBouncingScript.shaking = false;
     }
 
     bool CheckAllFormularIfSame(List<int> _currentIngredientList, out int _potionIndex)

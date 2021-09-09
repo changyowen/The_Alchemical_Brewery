@@ -159,7 +159,7 @@ public class StageManager : MonoBehaviour
         StartCoroutine(CustomerHandler.Instance.GenerateCustomer());
     }
 
-    IEnumerator EndDayTimeGamePlay()
+    public IEnumerator EndDayTimeGamePlay()
     {
         //instantiate dayTimeOutro and get its animator
         Animator dayTimeOutro_anim = instantiateAssetHandler.StartDayTimeOutro();

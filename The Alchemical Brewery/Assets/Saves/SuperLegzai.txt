@@ -1,7 +1,7 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "07-09-2021   23:48",
-    "dayCount": 1,
+    "lastSave": "09-09-2021   12:11",
+    "dayCount": 2,
     "dayResetTravel": 5,
     "stageChosen": 1,
     "acquiredPotion": [

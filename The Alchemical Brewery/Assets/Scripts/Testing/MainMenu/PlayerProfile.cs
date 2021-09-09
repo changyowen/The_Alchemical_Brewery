@@ -11,6 +11,7 @@ public static class PlayerProfile
     public static int dayCount = 1;
     public static int dayResetTravel = 0;
     public static int stageChosen = 1;
+    public static int cashTotal = 10000;
     public static List<PotionData> acquiredPotion = new List<PotionData>();
     public static IngredientProfile[] ingredientProfile = new IngredientProfile[60];
     public static CustomerProfile[] customerProfile = new CustomerProfile[8];
@@ -23,6 +24,7 @@ public static class PlayerProfile
         lastSave = saveData.lastSave;
         dayCount = saveData.dayCount;
         dayResetTravel = saveData.dayResetTravel;
+        cashTotal = saveData.cashTotal;
         stageChosen = saveData.stageChosen;
         acquiredPotion = saveData.acquiredPotion;
         ingredientProfile = saveData.ingredientProfile;
@@ -39,6 +41,8 @@ public static class PlayerProfile
         dayCount = 1;
         dayResetTravel = 0;
         stageChosen = 1;
+        ///ASSIGN CASH
+        cashTotal = 10000;
 
         ///ASSIGN INGREDIENT PROFILE CLASS
         for (int i = 0; i < ingredientProfile.Length; i++)
@@ -73,6 +77,9 @@ public static class PlayerProfile
     public static void GM_TestingUse()
     {
         profileName = "SuperLegzai";
+
+        ///ASSIGN CASH
+        cashTotal = 1000000;
 
         ///ASSIGN INGREDIENT PROFILE CLASS
         for (int i = 0; i < ingredientProfile.Length; i++)
@@ -166,6 +173,7 @@ public class SaveData
     public int dayCount;
     public int dayResetTravel;
     public int stageChosen;
+    public int cashTotal;
     public List<PotionData> acquiredPotion;
     public IngredientProfile[] ingredientProfile;
     public CustomerProfile[] customerProfile;
@@ -179,6 +187,7 @@ public class SaveData
         dayCount = PlayerProfile.dayCount;
         dayResetTravel = PlayerProfile.dayResetTravel;
         stageChosen = PlayerProfile.stageChosen;
+        cashTotal = PlayerProfile.cashTotal;
         acquiredPotion = PlayerProfile.acquiredPotion;
         ingredientProfile = PlayerProfile.ingredientProfile;
         customerProfile = PlayerProfile.customerProfile;

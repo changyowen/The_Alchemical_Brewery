@@ -20,16 +20,31 @@ public class CraftPotionCalculation : MonoBehaviour
         List<IngredientData> ingredientDataList = GetIngredientData(potIngredient);
 
         //typeVariabe calculation
-        int totalScore = 0;
-        for (int i = 0; i < ingredientDataList.Count - 1; i++)
+        int totalScore = ingredientDataList[0].effectiveVariable;
+        for (int i = 1; i < ingredientDataList.Count; i++)
         {
-            for (int j = i + 1; j < ingredientDataList.Count; j++)
-            {
-                totalScore += ingredientDataList[i].effectiveVariable * ingredientDataList[j].effectiveVariable;
-            }
+            totalScore *= ingredientDataList[i].effectiveVariable;
         }
 
         return totalScore;
+    }
+
+    public int PotionPriceCalculation(List<int> ingredientList, float quality)
+    {
+        //get list of ingredient data
+        List<IngredientData> ingredientDataList = GetIngredientData(ingredientList);
+
+        int totalScore = 0;
+        for (int i = 0; i < ingredientList.Count - 1; i++)
+        {
+            for (int j = i + 1; j < ingredientList.Count; j++)
+            {
+                totalScore += ingredientList[i] * ingredientList[j];
+            }
+        }
+
+        float _price = (quality/100) * (float)totalScore;
+        return (int)_price;
     }
 
     List<IngredientData> GetIngredientData(List<int> potIngredient)

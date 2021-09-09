@@ -64,8 +64,8 @@ public class AlmanacPotionInformationHandler : MonoBehaviour
         potionName.text = "" + _potionData.potionName;
 
         //potion price
-        //potionPricetext.text = "" + _potionDat
-        
+        potionPricetext.text = "" + _potionData.potionPrice;
+
         //update formular images
         UpdateFormularImages(_potionData);
 

@@ -133,6 +133,6 @@ public class MainMenuManager : MonoBehaviour
         SaveManager.Save();
         SaveManager.Load();
         //next scene
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

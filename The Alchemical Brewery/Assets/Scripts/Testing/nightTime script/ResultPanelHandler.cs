@@ -31,9 +31,21 @@ public class ResultPanelHandler : MonoBehaviour
         quality_text.text = "" + currentPotionData.potionQuality;
         AssignElementString(currentPotionData.potionElement);
         usage_text.text = "" + currentPotionData.potionUsage.ToString();
-        //price_text.text = "" + currentPotionData.
+        usage_text.color = Color.black;
+        price_text.text = "" + currentPotionData.potionPrice;
         List<int> currentPotionFormular = new List<int>(currentPotionData.potionFormular);
         AssignFormularImage(currentPotionFormular);
+    }
+
+    public void AssignInvalidPotion(List<int> formularIndex)
+    {
+        potionName_text.text = "???";
+        quality_text.text = "???";
+        AssignElementString(null);
+        usage_text.text = "Invalid!!!";
+        usage_text.color = Color.red;
+        price_text.text = "???";
+        AssignFormularImage(formularIndex);
     }
 
     public void AssignUnknownPotion(List<int> formularIndex)
@@ -42,7 +54,8 @@ public class ResultPanelHandler : MonoBehaviour
         quality_text.text = "???";
         AssignElementString(null);
         usage_text.text = "???";
-        //price_text.text = "" + currentPotionData.
+        usage_text.color = Color.black;
+        price_text.text = "???";
         AssignFormularImage(formularIndex);
     }
 
@@ -52,7 +65,7 @@ public class ResultPanelHandler : MonoBehaviour
         quality_text.text = "-";
         element_text.text = "-";
         usage_text.text = "-";
-        //price_text.text = "" + currentPotionData.
+        price_text.text = "???";
         AssignFormularImage(null);
     }
 

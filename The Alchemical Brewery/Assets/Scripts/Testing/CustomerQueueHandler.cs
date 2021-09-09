@@ -70,12 +70,28 @@ public class CustomerQueueHandler : MonoBehaviour
         if(PlayerInfoHandler.Instance.playerPotionHolderList.Count != 0)
         {
             Debug.Log("Serve");
+
             //if holding customer prefer potion
-            //if(currentQueue[0].preferPotion == PlayerInfoHandler.Instance.playerPotionHolder)
-            //{
-            //    ServeCustomer(currentQueue);
-            //}
-            ServeCustomer(currentQueue);
+            int _temp = 0;
+            int holderCount = PlayerInfoHandler.Instance.playerPotionHolderList.Count;
+            for (int i = 0; i < PlayerInfoHandler.Instance.playerPotionHolderList.Count; i++)
+            {
+                if (currentQueue[0].preferPotion == PlayerInfoHandler.Instance.playerPotionHolderList[i])
+                {
+                    ServeCustomer(currentQueue, i);
+                    _temp = 0;
+                    i = 3; //quit this loop
+                }
+                else
+                {
+                    _temp++;
+                }
+            }
+            
+            if(_temp == holderCount)
+            {
+                NotificationSystem.Instance.SendPopOutNotification("Your didn't have ordered potion!");
+            }
             //refresh customer's destination in queue
             CustomerHandler.Instance.RefreshCustomerQueuePos(currentQueue, queueIndex);
         }
@@ -85,19 +101,43 @@ public class CustomerQueueHandler : MonoBehaviour
         }
     }
 
-    public void ServeCustomer(List<CustomerClass> currentQueue)
+    public void ServeCustomer(List<CustomerClass> currentQueue, int soldPotionIndex)
     {
-        ///INCREASE MONEY
+        ///GET POTION DATA
+        PotionData _currentPotionData = StageManager.potionListToday[PlayerInfoHandler.Instance.playerPotionHolderList[soldPotionIndex]];
 
         ///RESET PLAYER POTION HOLDER
-        PlayerInfoHandler.Instance.playerPotionHolderList.RemoveAt(0);
+        PlayerInfoHandler.Instance.playerPotionHolderList.RemoveAt(soldPotionIndex);
         
         ///GET CUSTOMER CLASS
         //get customer class
         CustomerClass currentCustomer = currentQueue[0];
 
-        ///CUSTOMER ADD XP
-        CustomerAddXP(currentCustomer);
+        ///ADD CASH
+        if (ElementMeterPanel.Instance.elementSkillRemaining[3] > 0) //if aer skill able to active
+        {
+            ///ADD CASH x2
+            PlayerProfile.cashTotal += _currentPotionData.potionPrice * 2;
+            ElementMeterPanel.Instance.elementSkillRemaining[3]--;
+        }
+        else
+        {
+            ///ADD CASH 
+            PlayerProfile.cashTotal += _currentPotionData.potionPrice;
+        }
+
+        ///ADD XP
+        if (ElementMeterPanel.Instance.elementSkillRemaining[3] > 0) //if aer skill able to active
+        {
+            ///CUSTOMER ADD XP
+            CustomerAddXP(currentCustomer, 2);
+            ElementMeterPanel.Instance.elementSkillRemaining[3]--;
+        }
+        else
+        {
+            ///CUSTOMER ADD XP
+            CustomerAddXP(currentCustomer, 1);
+        }
 
         ///REMOVE CUSTOMER 
         //remove customer from global customer class list
@@ -115,7 +155,7 @@ public class CustomerQueueHandler : MonoBehaviour
         currentCustomer.NewDestination(CustomerHandler.Instance.customerDeletation[temp].position);
     }
 
-    public void CustomerAddXP(CustomerClass customerClass)
+    public void CustomerAddXP(CustomerClass customerClass, int _multiplier)
     {
         ///GET CUSTOMER DATA
         CustomerData customerData = customerClass.customerData;
@@ -127,7 +167,7 @@ public class CustomerQueueHandler : MonoBehaviour
         if (customerLevel < 6) //if customer havent max level
         {
             ///ADD XP
-            currentCustomerProfile.customerExperience += 1;
+            currentCustomerProfile.customerExperience += 1 * _multiplier;
 
             ///CHECK LEVEL UP
             if (currentCustomerProfile.customerExperience >= customerData.levelingExperience[customerLevel - 1])

@@ -16,6 +16,7 @@ public class PotionData
 
     public int potionEffectiveScore;
     [Range(0, 100)] public float potionQuality;
+    public int potionPrice;
     public List<Element> potionElement = new List<Element>();
     public PotionUsage potionUsage;
 

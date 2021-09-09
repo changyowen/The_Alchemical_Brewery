@@ -69,6 +69,9 @@ public class FishingMiniGame : MonoBehaviour
         PotionData newPotionData = CraftPotionManager.Instance.potionDataHolder;
         //assign progress into potion data quality
         newPotionData.potionQuality = progress;
+        //assign price
+        List<int> _tempIngredientList = new List<int>(newPotionData.potionFormular);
+        newPotionData.potionPrice = CraftPotionCalculation.Instance.PotionPriceCalculation(_tempIngredientList, progress);
 
         //reset all changes in minigame
         ResetAllMiniGameValue();

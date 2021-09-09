@@ -67,8 +67,19 @@ public class CraftPotionManager : MonoBehaviour
                 }
                 else
                 {
-                    resultPanelHandler.AssignUnknownPotion(potIngredientList);
-                    previousFormularIndex = formularIndex;
+                    //calculate effective first
+                    int _effectiveness = CraftPotionCalculation.Instance.PotionEffectiveCalculation(potIngredientList);
+
+                    if(_effectiveness < 0)
+                    {
+                        resultPanelHandler.AssignInvalidPotion(potIngredientList);
+                        previousFormularIndex = formularIndex;
+                    }
+                    else
+                    {
+                        resultPanelHandler.AssignUnknownPotion(potIngredientList);
+                        previousFormularIndex = formularIndex;
+                    }
                 }
             }
         }
@@ -169,10 +180,10 @@ public class CraftPotionManager : MonoBehaviour
         int effectiveScore = CraftPotionCalculation.Instance.PotionEffectiveCalculation(potIngredientList);
 
         //effective score not pass
-        if (effectiveScore >= 10000000f)
+        if (effectiveScore < 0)
         {
-            //reset pot ingredient list
-            ResetPotIngredientList(false);
+            //send warning
+            NotificationSystem.Instance.SendPopOutNotification("This is definitely a bad potion...");
         }
         else //effective score pass
         {

@@ -45,7 +45,7 @@ public class PotionInformationHandler : MonoBehaviour
         potionName_text.text = currentPotionData.potionName + "       ";
 
         ///PRICE
-        //price_text.text = "$" + _potionData.
+        price_text.text = "$" + _potionData.potionPrice;
 
         ///USAGE
         usage_text.text = "" + currentPotionData.potionUsage.ToString();

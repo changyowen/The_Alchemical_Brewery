@@ -1,21 +1,43 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "09-09-2021   12:11",
-    "dayCount": 2,
-    "dayResetTravel": 5,
+    "lastSave": "09-09-2021   15:57",
+    "dayCount": 1,
+    "dayResetTravel": 0,
     "stageChosen": 1,
+    "cashTotal": 1000000,
     "acquiredPotion": [
         {
-            "potionSpriteIndex": 0,
-            "potionName": "yyy",
+            "potionSpriteIndex": 42,
+            "potionName": "white Flower Potion",
             "potionFormular": [
-                3,
-                3,
-                3,
-                3
+                8,
+                8,
+                8,
+                8
             ],
-            "potionEffectiveScore": 216,
-            "potionQuality": 96.31521606445313,
+            "potionEffectiveScore": 390625,
+            "potionQuality": 100.0,
+            "potionPrice": 384,
+            "potionElement": [
+                -1,
+                -1,
+                -1,
+                -1
+            ],
+            "potionUsage": 1
+        },
+        {
+            "potionSpriteIndex": 28,
+            "potionName": "very Expensive Potion Woww",
+            "potionFormular": [
+                60,
+                60,
+                60,
+                60
+            ],
+            "potionEffectiveScore": 10000,
+            "potionQuality": 52.85506820678711,
+            "potionPrice": 11416,
             "potionElement": [
                 2,
                 2,
@@ -23,24 +45,6 @@
                 2
             ],
             "potionUsage": 1
-        },
-        {
-            "potionSpriteIndex": 4,
-            "potionName": "very Expensive Potion",
-            "potionFormular": [
-                22,
-                27,
-                6,
-                10
-            ],
-            "potionEffectiveScore": -41,
-            "potionQuality": 96.819580078125,
-            "potionElement": [
-                0,
-                0,
-                2
-            ],
-            "potionUsage": 0
         }
     ],
     "ingredientProfile": [
@@ -348,31 +352,12 @@
         "ingredientPurchased": [
             75,
             75,
-            67,
-            75,
-            75,
-            74,
-            75,
-            75,
-            75,
-            74,
             75,
             75,
             75,
             75,
             75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            74,
-            75,
-            75,
-            75,
-            75,
-            74,
+            71,
             75,
             75,
             75,
@@ -405,7 +390,26 @@
             75,
             75,
             75,
-            75
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            71
         ],
         "counterPurchased": 3,
         "magicChestPurchased": 10,

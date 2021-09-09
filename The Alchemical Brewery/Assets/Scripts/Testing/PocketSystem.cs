@@ -171,27 +171,27 @@ public class PocketSystem : MonoBehaviour
             {
                 case Element.Ignis:
                     {
-                        ElementMeterPanel.Instance.elementMana[0]++;
+                        ElementMeterPanel.Instance.elementMana[0] += 4;
                         break;
                     }
                 case Element.Aqua:
                     {
-                        ElementMeterPanel.Instance.elementMana[1]++;
+                        ElementMeterPanel.Instance.elementMana[1] += 4;
                         break;
                     }
                 case Element.Terra:
                     {
-                        ElementMeterPanel.Instance.elementMana[2]++;
+                        ElementMeterPanel.Instance.elementMana[2] += 4;
                         break;
                     }
                 case Element.Aer:
                     {
-                        ElementMeterPanel.Instance.elementMana[3]++;
+                        ElementMeterPanel.Instance.elementMana[3] += 4;
                         break;
                     }
                 case Element.Ordo:
                     {
-                        ElementMeterPanel.Instance.elementMana[4]++;
+                        ElementMeterPanel.Instance.elementMana[4] += 4;
                         break;
                     }
             }

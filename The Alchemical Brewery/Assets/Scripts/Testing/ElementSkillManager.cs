@@ -8,6 +8,8 @@ public class ElementSkillManager : MonoBehaviour
 
     public GameObject ignisSkillEffect_obj;
     public GameObject ordoSkillEffect_obj;
+    public GameObject aerSkillEffect_obj;
+    public GameObject aquaSkillEffect_obj;
 
     [System.NonSerialized] public bool[] skillActivated = new bool[5] { false, false, false, false, false };
 
@@ -52,9 +54,11 @@ public class ElementSkillManager : MonoBehaviour
         ///WAIT TILL AQUA SKILL REMAINING FINISHED
         while(ElementMeterPanel.Instance.elementSkillRemaining[1] != 0)
         {
+            aquaSkillEffect_obj.SetActive(true);
             yield return null;
         }
 
+        aquaSkillEffect_obj.SetActive(false);
         skillActivated[1] = false; //deactivate skill
         ElementMeterPanel.Instance.elementMana[1] = 0; //deset element mana
     }
@@ -100,9 +104,11 @@ public class ElementSkillManager : MonoBehaviour
         ///WAIT TILL AQUA SKILL REMAINING FINISHED
         while (ElementMeterPanel.Instance.elementSkillRemaining[3] != 0)
         {
+            aerSkillEffect_obj.SetActive(true);
             yield return null;
         }
 
+        aerSkillEffect_obj.SetActive(false);
         skillActivated[3] = false; //deactivate skill
         ElementMeterPanel.Instance.elementMana[3] = 0; //deset element mana
     }

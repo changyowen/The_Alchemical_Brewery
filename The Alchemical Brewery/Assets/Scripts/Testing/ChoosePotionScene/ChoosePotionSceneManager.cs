@@ -84,7 +84,7 @@ public class ChoosePotionSceneManager : MonoBehaviour
 
             //Start loading next scene
             LoadingScreenScript.nextSceneIndex = indexScene;
-            AsyncOperation operation = SceneManager.LoadSceneAsync(0);
+            AsyncOperation operation = SceneManager.LoadSceneAsync(1);
             operation.allowSceneActivation = false;
 
             yield return new WaitForSeconds(1.5f);

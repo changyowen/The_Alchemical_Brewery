@@ -77,7 +77,7 @@ public class NightTimeManager : MonoBehaviour
 
         //Start loading next scene
         LoadingScreenScript.nextSceneIndex = 3;
-        AsyncOperation operation = SceneManager.LoadSceneAsync(0);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
         operation.allowSceneActivation = false;
 
         //get animator of night time outro

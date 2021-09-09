@@ -173,10 +173,14 @@ public class StageManager : MonoBehaviour
         PlayerProfile.dayCount++;
         //day reset travel - 1
         PlayerProfile.dayResetTravel--;
+        if(PlayerProfile.dayResetTravel < 0)
+        {
+            PlayerProfile.dayResetTravel = 0;
+        }
 
         //Start loading next scene
         LoadingScreenScript.nextSceneIndex = 2;
-        AsyncOperation operation = SceneManager.LoadSceneAsync(0);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
         operation.allowSceneActivation = false;
 
         //loop if day time intro havent finish

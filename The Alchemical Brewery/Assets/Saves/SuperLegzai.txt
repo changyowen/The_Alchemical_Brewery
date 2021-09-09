@@ -1,54 +1,14 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "09-09-2021   19:40",
-    "dayCount": 3,
+    "lastSave": "09-09-2021   20:30",
+    "dayCount": 1,
     "dayResetTravel": 5,
     "stageChosen": 2,
-    "cashTotal": 1002952,
+    "cashTotal": 1000000,
     "acquiredPotion": [
         {
-            "potionSpriteIndex": 3,
-            "potionName": "my Very Very First Potion",
-            "potionFormular": [
-                3,
-                3,
-                3,
-                3
-            ],
-            "potionEffectiveScore": 1296,
-            "potionQuality": 100.0,
-            "potionPrice": 54,
-            "potionElement": [
-                2,
-                2,
-                2,
-                2
-            ],
-            "potionUsage": 1
-        },
-        {
             "potionSpriteIndex": 8,
-            "potionName": "Aqua Ordo Two Times Potion",
-            "potionFormular": [
-                1,
-                1,
-                2,
-                2
-            ],
-            "potionEffectiveScore": 0,
-            "potionQuality": 99.31050872802735,
-            "potionPrice": 12,
-            "potionElement": [
-                -1,
-                -1,
-                0,
-                0
-            ],
-            "potionUsage": 1
-        },
-        {
-            "potionSpriteIndex": 19,
-            "potionName": "very Dangerous Potion",
+            "potionName": "first Potion Yeah",
             "potionFormular": [
                 12,
                 12,
@@ -56,8 +16,8 @@
                 12
             ],
             "potionEffectiveScore": 160000,
-            "potionQuality": 99.17442321777344,
-            "potionPrice": 856,
+            "potionQuality": 100.0,
+            "potionPrice": 864,
             "potionElement": [
                 -2,
                 -2,
@@ -313,18 +273,6 @@
         {
             "customerIndex": 0,
             "unlocked": true,
-            "customerLevel": 2,
-            "customerExperience": 2
-        },
-        {
-            "customerIndex": 0,
-            "unlocked": true,
-            "customerLevel": 1,
-            "customerExperience": 3
-        },
-        {
-            "customerIndex": 0,
-            "unlocked": true,
             "customerLevel": 1,
             "customerExperience": 0
         },
@@ -344,7 +292,19 @@
             "customerIndex": 0,
             "unlocked": true,
             "customerLevel": 1,
-            "customerExperience": 3
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
+            "customerLevel": 1,
+            "customerExperience": 0
         },
         {
             "customerIndex": 0,
@@ -361,7 +321,7 @@
     ],
     "fairyShopProfile": {
         "counterUnlocked": 3,
-        "magicChestUnlocked": 11,
+        "magicChestUnlocked": 10,
         "potUnlocked": 3,
         "refinementStationUnlocked": [
             true,
@@ -372,7 +332,7 @@
         "ingredientPurchased": [
             75,
             75,
-            79,
+            75,
             75,
             75,
             75,

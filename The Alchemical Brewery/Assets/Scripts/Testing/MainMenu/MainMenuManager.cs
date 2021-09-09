@@ -103,7 +103,7 @@ public class MainMenuManager : MonoBehaviour
             SaveManager.Save();
             //next scene
             LoadingScreenScript.nextSceneIndex = 2;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 

@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TestingScene/LoadingScreen_Used.unity
-    guid: 61495af75a7d03844956c7a5ee801be7
-  - enabled: 1
-    path: Assets/TestingScene/MainMenu_Used.unity
+    path: Assets/UsedScene/MainMenu_Used.unity
     guid: fcc669781d892a64cb3448a7e6b23b81
   - enabled: 1
-    path: Assets/Beno New/NightTime.unity
+    path: Assets/UsedScene/LoadingScreen_Used.unity
+    guid: 61495af75a7d03844956c7a5ee801be7
+  - enabled: 1
+    path: Assets/UsedScene/NightTime.unity
     guid: 3b125ab9a5613714ea2b9edaa357a0c7
   - enabled: 1
-    path: Assets/TestingScene/ChoosePotion_Used.unity
+    path: Assets/UsedScene/ChoosePotion_Used.unity
     guid: ab0c5f6d4080f5d42b491712ae55aa4c
   - enabled: 1
-    path: Assets/TestingScene/AssetTesting.unity
+    path: Assets/UsedScene/AssetTesting.unity
     guid: 164807e5cd90a1b44ab9a3b28efe6231
   - enabled: 1
-    path: Assets/TestingScene/Stage_2.unity
+    path: Assets/UsedScene/Stage_2.unity
     guid: 1c21aa403a7b8494891251bc578b5b76
   - enabled: 1
-    path: Assets/TestingScene/Stage_3.unity
+    path: Assets/UsedScene/Stage_3.unity
     guid: bab718d2ece7cf84d95b715649dd9ecd
   m_configObjects: {}

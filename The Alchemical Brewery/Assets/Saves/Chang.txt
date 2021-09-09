@@ -1,52 +1,11 @@
 {
-    "profileName": "SuperLegzai",
-    "lastSave": "09-09-2021   23:25",
+    "profileName": "Chang",
+    "lastSave": "09-09-2021   23:04",
     "dayCount": 1,
-    "dayResetTravel": 5,
-    "stageChosen": 2,
-    "cashTotal": 1000000,
-    "acquiredPotion": [
-        {
-            "potionSpriteIndex": 8,
-            "potionName": "first Potion Yeah",
-            "potionFormular": [
-                12,
-                12,
-                12,
-                12
-            ],
-            "potionEffectiveScore": 160000,
-            "potionQuality": 100.0,
-            "potionPrice": 864,
-            "potionElement": [
-                -2,
-                -2,
-                -2,
-                -2
-            ],
-            "potionUsage": -1
-        },
-        {
-            "potionSpriteIndex": 0,
-            "potionName": "potion Numba Twooo",
-            "potionFormular": [
-                3,
-                3,
-                3,
-                3
-            ],
-            "potionEffectiveScore": 1296,
-            "potionQuality": 90.32032775878906,
-            "potionPrice": 48,
-            "potionElement": [
-                2,
-                2,
-                2,
-                2
-            ],
-            "potionUsage": 1
-        }
-    ],
+    "dayResetTravel": 0,
+    "stageChosen": 1,
+    "cashTotal": 10000,
+    "acquiredPotion": [],
     "ingredientProfile": [
         {
             "ingredientIndex": 1,
@@ -66,227 +25,227 @@
         },
         {
             "ingredientIndex": 5,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 6,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 7,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 8,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 9,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 10,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 11,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 12,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 13,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 14,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 15,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 16,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 17,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 18,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 19,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 20,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 21,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 22,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 23,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 24,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 25,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 26,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 27,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 28,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 29,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 30,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 31,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 32,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 33,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 34,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 35,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 36,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 37,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 38,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 39,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 40,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 41,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 42,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 43,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 44,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 45,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 46,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 47,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 48,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 49,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 50,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 51,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 52,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 53,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 54,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 55,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 56,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 57,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 58,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 59,
-            "unlocked": true
+            "unlocked": false
         },
         {
             "ingredientIndex": 60,
-            "unlocked": true
+            "unlocked": false
         }
     ],
     "customerProfile": [
@@ -298,126 +257,126 @@
         },
         {
             "customerIndex": 0,
-            "unlocked": true,
+            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         },
         {
             "customerIndex": 0,
-            "unlocked": true,
+            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         },
         {
             "customerIndex": 0,
-            "unlocked": true,
+            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         },
         {
             "customerIndex": 0,
-            "unlocked": true,
+            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         },
         {
             "customerIndex": 0,
-            "unlocked": true,
+            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         },
         {
             "customerIndex": 0,
-            "unlocked": true,
+            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         },
         {
             "customerIndex": 0,
-            "unlocked": true,
+            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         }
     ],
     "fairyShopProfile": {
-        "counterUnlocked": 3,
-        "magicChestUnlocked": 10,
-        "potUnlocked": 3,
+        "counterUnlocked": 1,
+        "magicChestUnlocked": 5,
+        "potUnlocked": 1,
         "refinementStationUnlocked": [
-            true,
-            true
+            false,
+            false
         ]
     },
     "shopProfile": {
         "ingredientPurchased": [
-            75,
-            75,
-            71,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            71,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75,
-            75
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
         ],
-        "counterPurchased": 3,
-        "magicChestPurchased": 10,
-        "potPurchased": 3,
+        "counterPurchased": 1,
+        "magicChestPurchased": 4,
+        "potPurchased": 1,
         "refinementStationPurchased": [
-            true,
-            true
+            false,
+            false
         ],
-        "increaseCustomerAppearRate": true
+        "increaseCustomerAppearRate": false
     }
 }

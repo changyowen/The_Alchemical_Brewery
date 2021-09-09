@@ -11,6 +11,7 @@ public class LoadingScreenScript : MonoBehaviour
 
     public void Start()
     {
+        ChangeBGM();
         RandomAnimation();
         StartCoroutine(NextScene());
     }
@@ -41,5 +42,52 @@ public class LoadingScreenScript : MonoBehaviour
     {
         int temp = Random.Range(0, witchGirlAnimation_obj.Length);
         witchGirlAnimation_obj[temp].SetActive(true);
+    }
+
+    void ChangeBGM()
+    {
+        GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+        if(_globalSoundAudio != null)
+        {
+            DetermineBGM(_globalSoundAudio);
+        }
+    }
+
+    void DetermineBGM(GlobalSoundAudio _globalSoundAudio)
+    {
+        switch(nextSceneIndex)
+        {
+            case 0: //main menu
+                {
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.mainMenuBGM, 2));
+                    break;
+                }
+            case 2: //NTS
+                {
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.nTS_lobby, 2));
+                    break;
+                }
+            case 3: //ChosenPotionScene
+                {
+                    //StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.mainMenuBGM, 2));
+                    break;
+                }
+            case 4: //Stage 1
+                {
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage1BGM, 2));
+                    break;
+                }
+            case 5: //Stage 2
+                {
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage2BGM, 2));
+                    break;
+                }
+            case 6: //Stage 3
+                {
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage3BGM, 2));
+                    break;
+                }
+        }
+        
     }
 }

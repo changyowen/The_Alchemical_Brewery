@@ -133,6 +133,13 @@ public class MainMenuManager : MonoBehaviour
         SaveManager.Save();
         SaveManager.Load();
         //next scene
-        SceneManager.LoadScene(2);
+        LoadingScreenScript.nextSceneIndex = 2;
+        SceneManager.LoadScene(1);
+    }
+
+    public void CreditButton()
+    {
+        LoadingScreenScript.nextSceneIndex = 7;
+        SceneManager.LoadScene(1);
     }
 }

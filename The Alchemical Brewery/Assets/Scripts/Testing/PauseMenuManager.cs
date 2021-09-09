@@ -27,6 +27,11 @@ public class PauseMenuManager : MonoBehaviour
     {
         if(!StageManager.pauseGame && StageManager.dayTimeGameplay)
         {
+            GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+            if (_globalSoundAudio != null)
+            {
+                StartCoroutine(_globalSoundAudio.FadeOutMusic(1f));
+            }
             StageManager.pauseGame = true;
             pausePanel_obj.SetActive(true);
         }
@@ -34,6 +39,11 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ResumeGame()
     {
+        GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+        if (_globalSoundAudio != null)
+        {
+            StartCoroutine(_globalSoundAudio.FadeInMusic(1f, 0.6f));
+        }
         StageManager.pauseGame = false;
         pausePanel_obj.SetActive(false);
     }
@@ -52,8 +62,9 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ConfirmQuit()
     {
-        LoadingScreenScript.nextSceneIndex = 1;
-        AsyncOperation operation = SceneManager.LoadSceneAsync(0);
+        Time.timeScale = 1;
+        LoadingScreenScript.nextSceneIndex = 0;
+        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
     }
 
     public void NotQuitGame()

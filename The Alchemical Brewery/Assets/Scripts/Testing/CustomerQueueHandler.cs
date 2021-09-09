@@ -139,6 +139,12 @@ public class CustomerQueueHandler : MonoBehaviour
             CustomerAddXP(currentCustomer, 1);
         }
 
+        ///VFX
+        if (AudioSourceDTS.dts_AudioSource != null)
+        {
+            AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.coins, 0.5f);
+        }
+
         ///REMOVE CUSTOMER 
         //remove customer from global customer class list
         CustomerHandler.Instance.customerClassList.Remove(currentCustomer);

@@ -49,6 +49,12 @@ public class NightTimeManager : MonoBehaviour
         }
         else
         {
+            GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+            if (_globalSoundAudio != null)
+            {
+                _globalSoundAudio.ChangeVolume(0.3f);
+            }
+            AudioSourceNTS.nts_AudioSource.PlayOneShot(SoundManager.nextDay, 0.6f);
             //clear pot and returning ingredient
             CraftPotionManager.Instance.ResetPotIngredientList(true);
             //start outro
@@ -61,6 +67,7 @@ public class NightTimeManager : MonoBehaviour
         //get animator of night time intro
         Animator anim = nightTimeIntro_obj.GetComponent<Animator>();
         //stay this coroutine if animation havent finish
+        float tempTime = 0;
         while(anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
         {
             yield return null;
@@ -89,6 +96,12 @@ public class NightTimeManager : MonoBehaviour
             temp += Time.deltaTime;
             yield return null;
         }
+        GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+        if (_globalSoundAudio != null)
+        {
+            _globalSoundAudio.ChangeVolume(0f);
+        }
+
         //enable change scene
         operation.allowSceneActivation = true;
     }

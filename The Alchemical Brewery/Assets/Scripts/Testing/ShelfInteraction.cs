@@ -83,6 +83,10 @@ public class ShelfInteraction : MonoBehaviour
             //ShelfSystem_Daytime.Instance.ShelfInteraction(shelfIndex);
             if(shelfOpen)
             {
+                if (AudioSourceDTS.dts_AudioSource != null)
+                {
+                    AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.chestPop, 1f);
+                }
                 ingredientDrop.IngredientSpawn(shelfIndex, ingredientIndex);
             }
             
@@ -99,6 +103,11 @@ public class ShelfInteraction : MonoBehaviour
         //deactivate and activate particle system [for make sure particle system reopen]
         terraParticleSystem.SetActive(false);
         terraParticleSystem.SetActive(true);
+
+        if (AudioSourceDTS.dts_AudioSource != null)
+        {
+            AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.chestPop, 1f);
+        }
 
         //spawn ingredient
         ingredientDrop.IngredientSpawn(shelfIndex, ingredientIndex);

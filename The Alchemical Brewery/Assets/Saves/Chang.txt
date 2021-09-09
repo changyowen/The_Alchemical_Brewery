@@ -1,11 +1,32 @@
 {
     "profileName": "Chang",
-    "lastSave": "09-09-2021   23:04",
-    "dayCount": 1,
-    "dayResetTravel": 0,
-    "stageChosen": 1,
-    "cashTotal": 10000,
-    "acquiredPotion": [],
+    "lastSave": "10-09-2021   03:22",
+    "dayCount": 5,
+    "dayResetTravel": 2,
+    "stageChosen": 2,
+    "cashTotal": 7561,
+    "acquiredPotion": [
+        {
+            "potionSpriteIndex": 0,
+            "potionName": "my First Potion",
+            "potionFormular": [
+                3,
+                2,
+                1,
+                3
+            ],
+            "potionEffectiveScore": 0,
+            "potionQuality": 80.94840240478516,
+            "potionPrice": 23,
+            "potionElement": [
+                -1,
+                0,
+                2,
+                2
+            ],
+            "potionUsage": 1
+        }
+    ],
     "ingredientProfile": [
         {
             "ingredientIndex": 1,
@@ -252,8 +273,8 @@
         {
             "customerIndex": 0,
             "unlocked": true,
-            "customerLevel": 1,
-            "customerExperience": 0
+            "customerLevel": 2,
+            "customerExperience": 6
         },
         {
             "customerIndex": 0,
@@ -300,7 +321,7 @@
     ],
     "fairyShopProfile": {
         "counterUnlocked": 1,
-        "magicChestUnlocked": 5,
+        "magicChestUnlocked": 6,
         "potUnlocked": 1,
         "refinementStationUnlocked": [
             false,
@@ -309,10 +330,10 @@
     },
     "shopProfile": {
         "ingredientPurchased": [
+            1,
             0,
-            0,
-            0,
-            0,
+            2,
+            6,
             0,
             0,
             0,

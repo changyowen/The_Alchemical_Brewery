@@ -18,7 +18,14 @@ public class ShopMainInteraction : MonoBehaviour
 
     public ShopState currentShopState = ShopState.Ingredient;
 
-
+    public void OpenShop()
+    {
+        GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+        if (_globalSoundAudio != null)
+        {
+            StartCoroutine(_globalSoundAudio.SwitchToNewMusic(SoundManager.nTS_SHop, 0.25f, 0.8f));
+        }
+    }
 
     private void Update()
     {
@@ -86,6 +93,11 @@ public class ShopMainInteraction : MonoBehaviour
 
     public void CloseFairyShop()
     {
+        GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+        if (_globalSoundAudio != null)
+        {
+            _globalSoundAudio.SwitchNewMusic_directly(SoundManager.nTS_lobby, 0.5f);
+        }
         fairyShopButton_obj.SetActive(true);
         this.gameObject.SetActive(false);
     }

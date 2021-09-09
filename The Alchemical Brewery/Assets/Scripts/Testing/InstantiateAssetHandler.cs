@@ -149,6 +149,8 @@ public class InstantiateAssetHandler : MonoBehaviour
         Animator anim = dayTimeIntro_obj.GetComponent<Animator>();
         anim.SetTrigger("StartIntro");
 
+        AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.dayStart);
+
         return anim;
     }
 

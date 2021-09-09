@@ -113,13 +113,24 @@ public class ShopIngredientInformationHandler : MonoBehaviour
 
     public void PurchaseCommonIngredient(int buttonIndex)
     {
-        PlayerProfile.cashTotal -= 200;
-        PlayerProfile.shopProfile.ingredientPurchased[buttonIndex + refinementValue]++;
-        SaveManager.Save();
+        if(PlayerProfile.cashTotal >= SO_holder.ingredientSO[1 + buttonIndex + refinementValue].ingredientPrice)
+        {
+            PlayerProfile.cashTotal -= SO_holder.ingredientSO[1 + buttonIndex + refinementValue].ingredientPrice;
+            PlayerProfile.shopProfile.ingredientPurchased[buttonIndex + refinementValue]++;
+            AudioSourceNTS.nts_AudioSource.PlayOneShot(SoundManager.coins ,0.5f);
+            SaveManager.Save();
+        }
     }
 
     public void PurchaseRegionalIngredient(int buttonIndex)
     {
-        PlayerProfile.shopProfile.ingredientPurchased[buttonIndex + refinementValue + regionalValue]++;
+        if (PlayerProfile.cashTotal >= SO_holder.ingredientSO[1 + buttonIndex + refinementValue + regionalValue].ingredientPrice)
+        {
+            PlayerProfile.cashTotal -= SO_holder.ingredientSO[1 + buttonIndex + refinementValue + regionalValue].ingredientPrice;
+            PlayerProfile.shopProfile.ingredientPurchased[buttonIndex + refinementValue + regionalValue]++;
+            AudioSourceNTS.nts_AudioSource.PlayOneShot(SoundManager.coins, 0.5f);
+            SaveManager.Save();
+        }
+        
     }
 }

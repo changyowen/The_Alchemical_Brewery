@@ -117,6 +117,11 @@ public class PocketSystem : MonoBehaviour
             ingredientItemHandler.ingredientIndex = playerIngredientHolder[holderIndex];
             ingredientItemHandler.UpdateIngedientSprite();
 
+            if (AudioSourceDTS.dts_AudioSource != null)
+            {
+                AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.chestPop, 1f);
+            }
+
             //remove choosen ingredient
             playerIngredientHolder.RemoveAt(holderIndex);
         }

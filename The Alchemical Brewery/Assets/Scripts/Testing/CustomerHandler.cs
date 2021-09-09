@@ -82,8 +82,6 @@ public class CustomerHandler : MonoBehaviour
 
     public IEnumerator GenerateCustomer()
     {
-
-
         while(StageManager.dayTimeGameplay)
         {
             if(currentCustomerTotal < maximumCustomerTotal)

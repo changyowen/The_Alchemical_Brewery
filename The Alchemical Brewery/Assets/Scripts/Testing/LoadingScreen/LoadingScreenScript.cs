@@ -59,32 +59,37 @@ public class LoadingScreenScript : MonoBehaviour
         {
             case 0: //main menu
                 {
-                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.mainMenuBGM, 2));
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.mainMenuBGM, 2, 0.8f));
                     break;
                 }
             case 2: //NTS
                 {
-                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.nTS_lobby, 2));
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.nTS_lobby, 2, 0.5f));
                     break;
                 }
             case 3: //ChosenPotionScene
                 {
-                    //StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.mainMenuBGM, 2));
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.choosePotionBGM, 2, 1f));
                     break;
                 }
-            case 4: //Stage 1
+            case 4: //stage 1
                 {
-                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage1BGM, 2));
+                    StartCoroutine(_globalSoundAudio.FadeOutMusic(1f));
                     break;
                 }
-            case 5: //Stage 2
+            case 5: //stage 2
                 {
-                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage2BGM, 2));
+                    StartCoroutine(_globalSoundAudio.FadeOutMusic(1f));
                     break;
                 }
-            case 6: //Stage 3
+            case 6: //stage 3
                 {
-                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage3BGM, 2));
+                    StartCoroutine(_globalSoundAudio.FadeOutMusic(1f));
+                    break;
+                }
+            case 7: //credit
+                {
+                    StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.creditsBGM, 2, 0.8f));
                     break;
                 }
         }

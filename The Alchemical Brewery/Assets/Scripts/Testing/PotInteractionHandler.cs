@@ -122,6 +122,12 @@ public class PotInteractionHandler : MonoBehaviour
             //set spawn force
             spawnedIngredient.GetComponent<IngredientGravity>().ingredientSpawnForce = IngredientGravity.TypeOfSpawnForce.FromPot;
             spawnedIngredient.GetComponent<IngredientGravity>().SpawnForce();
+
+            if (AudioSourceDTS.dts_AudioSource != null)
+            {
+                AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.chestPop, 1f);
+            }
+
             //remove ingredient from pot holder
             potInformationHandler.potIngredientHolderList.RemoveAt(holderIndex);
         }

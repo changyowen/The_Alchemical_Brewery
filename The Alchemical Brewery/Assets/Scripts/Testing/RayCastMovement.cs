@@ -94,6 +94,12 @@ public class RayCastMovement : MonoBehaviour
 		navMeshAgent.SetDestination(transform.position); //reset position
 		teleportEffect_obj.SetActive(true); //activate teleport effect
 
+		//VFX
+		if(AudioSourceDTS.dts_AudioSource != null)
+		{
+			AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.teleport, 0.8f);
+		}
+
 		//delay a bit for teleport effect
 		yield return new WaitForSeconds(.7f);
 

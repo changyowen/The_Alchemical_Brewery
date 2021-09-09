@@ -143,8 +143,11 @@ public class StageManager : MonoBehaviour
         //start day time intro & return its animator
         Animator dayTimeIntro_anim = instantiateAssetHandler.StartDayTimeIntro();
 
+        //determine BGM
+        DetermineStageBGM();
+
         //loop if day time intro havent finish
-        while(dayTimeIntro_anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
+        while (dayTimeIntro_anim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1)
         {
             yield return null; 
         }
@@ -166,6 +169,9 @@ public class StageManager : MonoBehaviour
 
         //set daytimeGameplay to true
         dayTimeGameplay = false;
+
+        //End game vfx
+        AudioSourceDTS.dts_AudioSource.PlayOneShot(SoundManager.dayEnd, 0.5f);
 
         //clear all customer
 
@@ -200,6 +206,32 @@ public class StageManager : MonoBehaviour
 
         //enable change scene
         operation.allowSceneActivation = true;
+    }
+
+    void DetermineStageBGM()
+    {
+        GlobalSoundAudio _globalSoundAudio = FindObjectOfType<GlobalSoundAudio>();
+        if (_globalSoundAudio != null)
+        {
+            switch (PlayerProfile.stageChosen)
+            {
+                case 1:
+                    {
+                        StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage1BGM, 2, 0.6f));
+                        break;
+                    }
+                case 2:
+                    {
+                        StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage2BGM, 2, 0.6f));
+                        break;
+                    }
+                case 3:
+                    {
+                        StartCoroutine(_globalSoundAudio.ChangeNewMusic(SoundManager.stage3BGM, 2, 0.6f));
+                        break;
+                    }
+            }
+        }
     }
 
     void ResetAllStaticValueDTS()

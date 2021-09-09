@@ -114,11 +114,11 @@ public class CustomerQueueHandler : MonoBehaviour
         CustomerClass currentCustomer = currentQueue[0];
 
         ///ADD CASH
-        if (ElementMeterPanel.Instance.elementSkillRemaining[3] > 0) //if aer skill able to active
+        if (ElementMeterPanel.Instance.elementSkillRemaining[1] > 0) //if aer skill able to active
         {
             ///ADD CASH x2
             PlayerProfile.cashTotal += _currentPotionData.potionPrice * 2;
-            ElementMeterPanel.Instance.elementSkillRemaining[3]--;
+            ElementMeterPanel.Instance.elementSkillRemaining[1]--;
         }
         else
         {

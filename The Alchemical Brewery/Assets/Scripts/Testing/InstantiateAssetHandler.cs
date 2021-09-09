@@ -30,7 +30,7 @@ public class InstantiateAssetHandler : MonoBehaviour
     public void InstantiateAssetPrefab(int stageIndex, List<IngredientData> ingredientOrderToday)
     {
         //spawn stage asset position
-        GameObject stageAssetPos = Instantiate(stageAssetInstantiate.stageAsset[stageIndex], Vector3.zero, Quaternion.identity) as GameObject;
+        GameObject stageAssetPos = Instantiate(stageAssetInstantiate.stageAsset[1], Vector3.zero, Quaternion.identity) as GameObject;
 
         //get each position transform
         Transform[] counter_Pos = stageAssetPos.transform.GetChild(1).Cast<Transform>().ToArray();

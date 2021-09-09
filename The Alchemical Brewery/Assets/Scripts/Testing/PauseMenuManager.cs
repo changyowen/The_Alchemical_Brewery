@@ -25,8 +25,11 @@ public class PauseMenuManager : MonoBehaviour
 
     public void PauseGame()
     {
-        StageManager.pauseGame = true;
-        pausePanel_obj.SetActive(true);
+        if(!StageManager.pauseGame && StageManager.dayTimeGameplay)
+        {
+            StageManager.pauseGame = true;
+            pausePanel_obj.SetActive(true);
+        }
     }
 
     public void ResumeGame()

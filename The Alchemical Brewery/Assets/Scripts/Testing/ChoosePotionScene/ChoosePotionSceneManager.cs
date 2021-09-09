@@ -100,8 +100,33 @@ public class ChoosePotionSceneManager : MonoBehaviour
         StageManager.potionListToday = ChosenPotionHandler.Instance.chosenPotionList;
         //assign favorPointList
         StageManager.favorPointList = new List<float>(favorPointList);
+        //get next scene index
+        int _nextSceneIndex = 0;
+        switch(PlayerProfile.stageChosen)
+        {
+            case 1:
+                {
+                    _nextSceneIndex = 4;
+                    break;
+                }
+            case 2:
+                {
+                    _nextSceneIndex = 5;
+                    break;
+                }
+            case 3:
+                {
+                    _nextSceneIndex = 6;
+                    break;
+                }
+            default:
+                {
+                    _nextSceneIndex = 4;
+                    break;
+                }
+        }
         //fade to anext scene
-        StartCoroutine(FadeScene(false, 4));
+        StartCoroutine(FadeScene(false, _nextSceneIndex));
     }
     
 

@@ -60,7 +60,7 @@ public class CustomerResultPanel : MonoBehaviour
             ///START LEVELING ANIMATION
             while (initialLevel != finalLevel)
             {
-                initialLevel += .2f * Time.unscaledDeltaTime;
+                initialLevel += .5f * Time.unscaledDeltaTime;
 
                 if (initialLevel >= finalLevel)
                 {

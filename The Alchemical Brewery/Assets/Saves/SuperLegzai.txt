@@ -1,43 +1,23 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "09-09-2021   15:57",
-    "dayCount": 1,
-    "dayResetTravel": 0,
-    "stageChosen": 1,
-    "cashTotal": 1000000,
+    "lastSave": "09-09-2021   19:40",
+    "dayCount": 3,
+    "dayResetTravel": 5,
+    "stageChosen": 2,
+    "cashTotal": 1002952,
     "acquiredPotion": [
         {
-            "potionSpriteIndex": 42,
-            "potionName": "white Flower Potion",
+            "potionSpriteIndex": 3,
+            "potionName": "my Very Very First Potion",
             "potionFormular": [
-                8,
-                8,
-                8,
-                8
+                3,
+                3,
+                3,
+                3
             ],
-            "potionEffectiveScore": 390625,
+            "potionEffectiveScore": 1296,
             "potionQuality": 100.0,
-            "potionPrice": 384,
-            "potionElement": [
-                -1,
-                -1,
-                -1,
-                -1
-            ],
-            "potionUsage": 1
-        },
-        {
-            "potionSpriteIndex": 28,
-            "potionName": "very Expensive Potion Woww",
-            "potionFormular": [
-                60,
-                60,
-                60,
-                60
-            ],
-            "potionEffectiveScore": 10000,
-            "potionQuality": 52.85506820678711,
-            "potionPrice": 11416,
+            "potionPrice": 54,
             "potionElement": [
                 2,
                 2,
@@ -45,6 +25,46 @@
                 2
             ],
             "potionUsage": 1
+        },
+        {
+            "potionSpriteIndex": 8,
+            "potionName": "Aqua Ordo Two Times Potion",
+            "potionFormular": [
+                1,
+                1,
+                2,
+                2
+            ],
+            "potionEffectiveScore": 0,
+            "potionQuality": 99.31050872802735,
+            "potionPrice": 12,
+            "potionElement": [
+                -1,
+                -1,
+                0,
+                0
+            ],
+            "potionUsage": 1
+        },
+        {
+            "potionSpriteIndex": 19,
+            "potionName": "very Dangerous Potion",
+            "potionFormular": [
+                12,
+                12,
+                12,
+                12
+            ],
+            "potionEffectiveScore": 160000,
+            "potionQuality": 99.17442321777344,
+            "potionPrice": 856,
+            "potionElement": [
+                -2,
+                -2,
+                -2,
+                -2
+            ],
+            "potionUsage": -1
         }
     ],
     "ingredientProfile": [
@@ -293,8 +313,14 @@
         {
             "customerIndex": 0,
             "unlocked": true,
+            "customerLevel": 2,
+            "customerExperience": 2
+        },
+        {
+            "customerIndex": 0,
+            "unlocked": true,
             "customerLevel": 1,
-            "customerExperience": 0
+            "customerExperience": 3
         },
         {
             "customerIndex": 0,
@@ -318,7 +344,7 @@
             "customerIndex": 0,
             "unlocked": true,
             "customerLevel": 1,
-            "customerExperience": 0
+            "customerExperience": 3
         },
         {
             "customerIndex": 0,
@@ -329,19 +355,13 @@
         {
             "customerIndex": 0,
             "unlocked": true,
-            "customerLevel": 1,
-            "customerExperience": 0
-        },
-        {
-            "customerIndex": 0,
-            "unlocked": false,
             "customerLevel": 1,
             "customerExperience": 0
         }
     ],
     "fairyShopProfile": {
         "counterUnlocked": 3,
-        "magicChestUnlocked": 10,
+        "magicChestUnlocked": 11,
         "potUnlocked": 3,
         "refinementStationUnlocked": [
             true,
@@ -350,6 +370,10 @@
     },
     "shopProfile": {
         "ingredientPurchased": [
+            75,
+            75,
+            79,
+            75,
             75,
             75,
             75,
@@ -405,11 +429,7 @@
             75,
             75,
             75,
-            75,
-            75,
-            75,
-            75,
-            71
+            75
         ],
         "counterPurchased": 3,
         "magicChestPurchased": 10,

@@ -99,7 +99,7 @@ public static class PlayerProfile
 
         ///UNLOCK STUFF FOR START GAME
         //unlock first customer
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 8; i++)
         {
             customerProfile[i].UnlockThisCustomer();
         }

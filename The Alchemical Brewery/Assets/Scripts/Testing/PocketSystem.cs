@@ -115,6 +115,7 @@ public class PocketSystem : MonoBehaviour
             //set ingredient data
             IngredientItemHandler ingredientItemHandler = spawnedIngredient.GetComponent<IngredientItemHandler>();
             ingredientItemHandler.ingredientIndex = playerIngredientHolder[holderIndex];
+            ingredientItemHandler.UpdateIngedientSprite();
 
             //remove choosen ingredient
             playerIngredientHolder.RemoveAt(holderIndex);
@@ -123,6 +124,7 @@ public class PocketSystem : MonoBehaviour
 
     public IEnumerator DrinkPotion(int holderIndex)
     {
+        Debug.Log("Drink");
         //get player potion holder
         List<int> playerPotionHolder = PlayerInfoHandler.Instance.playerPotionHolderList;
         
@@ -131,7 +133,7 @@ public class PocketSystem : MonoBehaviour
             if (holderIndex < playerPotionHolder.Count && !PlayerInfoHandler.Instance.drinkingPotionState) //if potion exist in this slot
             {
                 //get Potion Data
-                PotionData _potionData = StageManager.potionListToday[holderIndex];
+                PotionData _potionData = StageManager.potionListToday[PlayerInfoHandler.Instance.playerPotionHolderList[holderIndex]];
 
                 //remove choosen ingredient
                 playerPotionHolder.RemoveAt(holderIndex);

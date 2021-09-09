@@ -113,7 +113,9 @@ public class ShopIngredientInformationHandler : MonoBehaviour
 
     public void PurchaseCommonIngredient(int buttonIndex)
     {
+        PlayerProfile.cashTotal -= 200;
         PlayerProfile.shopProfile.ingredientPurchased[buttonIndex + refinementValue]++;
+        SaveManager.Save();
     }
 
     public void PurchaseRegionalIngredient(int buttonIndex)

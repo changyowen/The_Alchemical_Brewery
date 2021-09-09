@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class QueueInteraction : MonoBehaviour
 {
@@ -19,27 +20,31 @@ public class QueueInteraction : MonoBehaviour
 
     void OnMouseDown()
     {
-        //if player still far from counter
-        Vector3 counterPosition = transform.position + counterPositionOffset;
-        float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, counterPosition);
-        if (dist > 3f)
+        //check if not mouse over UI
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            //go to the nearest point toward collider
-            Collider col = GetComponent<Collider>();
-            Vector3 closestPoint = col.ClosestPoint(PlayerInfoHandler.Instance.playerPosition);
-            RayCastMovement.Instance.NewDestination(counterPosition);
-        }
-        else //if player already near the counter
-        {
-            //stop moving
-            RayCastMovement.Instance.NewDestination(PlayerInfoHandler.Instance.playerPosition);
-
-            //check queue is enabled
-            if(queueInteractionEnable)
+            //if player still far from counter
+            Vector3 counterPosition = transform.position + counterPositionOffset;
+            float dist = Vector3.Distance(PlayerInfoHandler.Instance.playerPosition, counterPosition);
+            if (dist > 3f)
             {
-                //Start interaction
-                CustomerQueueHandler.Instance.CounterInteraction(queueIndex);
-                queueTimer = 0;
+                //go to the nearest point toward collider
+                Collider col = GetComponent<Collider>();
+                Vector3 closestPoint = col.ClosestPoint(PlayerInfoHandler.Instance.playerPosition);
+                RayCastMovement.Instance.NewDestination(counterPosition);
+            }
+            else //if player already near the counter
+            {
+                //stop moving
+                RayCastMovement.Instance.NewDestination(PlayerInfoHandler.Instance.playerPosition);
+
+                //check queue is enabled
+                if (queueInteractionEnable)
+                {
+                    //Start interaction
+                    CustomerQueueHandler.Instance.CounterInteraction(queueIndex);
+                    queueTimer = 0;
+                }
             }
         }
     }

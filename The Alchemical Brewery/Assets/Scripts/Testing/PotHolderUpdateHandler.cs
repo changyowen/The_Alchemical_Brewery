@@ -88,7 +88,7 @@ public class PotHolderUpdateHandler : MonoBehaviour
             //assign ingredient index
             int _ingredientIndex = potInformationHandler.potIngredientHolderList[i];
             //get sprite of ingredient
-            Sprite ingSprite = so_Holder.ingredientSO[_ingredientIndex].ingredientSprite;
+            Sprite ingSprite = so_Holder.ingredientSO[_ingredientIndex].originalIngredient.ingredientSprite;
             ingredientHolderImage[i].sprite = ingSprite;
             //update sprite of refinement
             RefinementStage refinementStage = so_Holder.ingredientSO[_ingredientIndex].refineStage;

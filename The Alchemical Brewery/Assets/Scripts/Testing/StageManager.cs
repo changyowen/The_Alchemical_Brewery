@@ -171,6 +171,8 @@ public class StageManager : MonoBehaviour
 
         //day count + 1
         PlayerProfile.dayCount++;
+        //day reset travel - 1
+        PlayerProfile.dayResetTravel--;
 
         //Start loading next scene
         LoadingScreenScript.nextSceneIndex = 2;

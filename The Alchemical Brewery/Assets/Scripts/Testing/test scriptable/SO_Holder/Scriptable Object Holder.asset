@@ -90,6 +90,8 @@ MonoBehaviour:
   stageDataSO:
   - {fileID: 0}
   - {fileID: 11400000, guid: e5eb21bc47ecdee40845ddc34b44d5c7, type: 2}
+  - {fileID: 11400000, guid: 23dfe58a611f47347a9fc53fbece6c82, type: 2}
+  - {fileID: 11400000, guid: fe4577d5896f8974784b052efd869d99, type: 2}
   magicChestSprite: {fileID: 6532185735211046382, guid: 7ecfaa78995a30d4a9c66ad92c53989d,
     type: 3}
   potSprite: {fileID: 21300000, guid: 570925d886d61bd4da9a3b0f0cdd216e, type: 3}

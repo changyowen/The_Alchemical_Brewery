@@ -9,6 +9,7 @@ public class CustomerInformationHandler_ChoosePotionScene : MonoBehaviour
     [System.NonSerialized] public CustomerData customerDataSO;
     [System.NonSerialized] public int _customerIndex_fromlist;
 
+    public SpriteRenderer customerSprite;
     public GameObject customerCanvas;
 
     bool reachedDestination = false;
@@ -20,6 +21,10 @@ public class CustomerInformationHandler_ChoosePotionScene : MonoBehaviour
 
     private void Update()
     {
+        if(customerDataSO != null)
+        {
+            customerSprite.sprite = customerDataSO.customerSprite;
+        }
         CheckDestinationDistance();
         CustomerCanvasUpdate();
     }

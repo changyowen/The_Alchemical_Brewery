@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CustomerInformationHandler : MonoBehaviour
 {
+    NavMeshAgent agent;
+
     public CustomerClass customerClass = null;
 
     public SpriteRenderer sr;
@@ -12,6 +15,7 @@ public class CustomerInformationHandler : MonoBehaviour
 
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         sr.sprite = customerClass.customerSprite;
     }
 
@@ -19,7 +23,7 @@ public class CustomerInformationHandler : MonoBehaviour
     {
         if(customerClass != null)
         {
-            if(customerClass.reachedQueuePos)
+            if(agent.remainingDistance <= 0.2f)
             {
                 _customerCustomer.SetActive(true);
             }

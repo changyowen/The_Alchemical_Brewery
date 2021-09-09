@@ -32,8 +32,9 @@ public class ElementMeterPanel : MonoBehaviour
         {
             if(elementSkillRemaining[i] == 0) //if no more skill left (Allow element mana consuming)
             {
-                if(elementMana[i] == 4) //if element mana full
+                if(elementMana[i] >= 4) //if element mana full
                 {
+                    elementMana[i] = 4;
                     //element ready to reload
                     elementReady[i] = true;
                 }

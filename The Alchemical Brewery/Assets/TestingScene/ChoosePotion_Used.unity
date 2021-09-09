@@ -68262,6 +68262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 106186295}
+  _customerCustomer: {fileID: 0}
 --- !u!54 &318965000
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -69120,6 +69121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 195383084}
+  _customerCustomer: {fileID: 0}
 --- !u!54 &391812293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -74910,7 +74912,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerInformationHandler: {fileID: 391812292}
+  SO_holder: {fileID: 0}
   testingText: {fileID: 392706148}
+  IconImage: {fileID: 0}
 --- !u!114 &978004115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80628,7 +80632,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerInformationHandler: {fileID: 1726189478}
+  SO_holder: {fileID: 0}
   testingText: {fileID: 380746738}
+  IconImage: {fileID: 0}
 --- !u!114 &1472253905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82064,7 +82070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1612722230
 RectTransform:
   m_ObjectHideFlags: 0
@@ -82441,6 +82447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 1821351724}
+  _customerCustomer: {fileID: 0}
 --- !u!54 &1675270209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -83084,6 +83091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 504148898}
+  _customerCustomer: {fileID: 0}
 --- !u!54 &1726189479
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -83936,7 +83944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerInformationHandler: {fileID: 318964999}
+  SO_holder: {fileID: 0}
   testingText: {fileID: 1833057556}
+  IconImage: {fileID: 0}
 --- !u!114 &1763560939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86061,7 +86071,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customerInformationHandler: {fileID: 1675270208}
+  SO_holder: {fileID: 0}
   testingText: {fileID: 1749726568}
+  IconImage: {fileID: 0}
 --- !u!114 &1971536253
 MonoBehaviour:
   m_ObjectHideFlags: 0

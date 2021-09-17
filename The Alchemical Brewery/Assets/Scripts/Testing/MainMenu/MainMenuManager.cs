@@ -133,8 +133,9 @@ public class MainMenuManager : MonoBehaviour
         SaveManager.Save();
         SaveManager.Load();
         //next scene
+        //Start loading next scene
         LoadingScreenScript.nextSceneIndex = 2;
-        SceneManager.LoadScene(1);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(1);
     }
 
     public void CreditButton()

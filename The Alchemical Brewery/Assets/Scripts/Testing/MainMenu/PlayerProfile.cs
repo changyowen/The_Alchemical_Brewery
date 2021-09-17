@@ -44,6 +44,9 @@ public static class PlayerProfile
         ///ASSIGN CASH
         cashTotal = 10000;
 
+        //CLEAR AQUIRED POTION LIST
+        acquiredPotion = new List<PotionData>();
+
         ///ASSIGN INGREDIENT PROFILE CLASS
         for (int i = 0; i < ingredientProfile.Length; i++)
         {
@@ -78,8 +81,15 @@ public static class PlayerProfile
     {
         profileName = "SuperLegzai";
 
+        dayCount = 1;
+        dayResetTravel = 0;
+        stageChosen = 1;
+
         ///ASSIGN CASH
         cashTotal = 1000000;
+
+        //CLEAR AQUIRED POTION LIST
+        acquiredPotion = new List<PotionData>();
 
         ///ASSIGN INGREDIENT PROFILE CLASS
         for (int i = 0; i < ingredientProfile.Length; i++)

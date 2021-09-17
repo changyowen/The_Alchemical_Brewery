@@ -62,7 +62,9 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ConfirmQuit()
     {
+        StageManager.pauseGame = false;
         Time.timeScale = 1;
+        StageManager.Instance.ResetAllStaticValueDTS();
         LoadingScreenScript.nextSceneIndex = 0;
         AsyncOperation operation = SceneManager.LoadSceneAsync(1);
     }

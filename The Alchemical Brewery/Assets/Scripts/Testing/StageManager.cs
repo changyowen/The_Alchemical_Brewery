@@ -234,7 +234,7 @@ public class StageManager : MonoBehaviour
         }
     }
 
-    void ResetAllStaticValueDTS()
+    public void ResetAllStaticValueDTS()
     {
         dayTimeGameplay = false;
         pauseGame = false;

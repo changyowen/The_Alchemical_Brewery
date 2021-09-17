@@ -1,28 +1,50 @@
 {
     "profileName": "SuperLegzai",
-    "lastSave": "10-09-2021   04:47",
+    "lastSave": "17-09-2021   16:51",
     "dayCount": 1,
     "dayResetTravel": 0,
     "stageChosen": 1,
-    "cashTotal": 996700,
+    "cashTotal": 1000000,
     "acquiredPotion": [
         {
-            "potionSpriteIndex": 20,
-            "potionName": "Multipurpose Potion For Showcase",
+            "potionSpriteIndex": 7,
+            "potionName": "walao",
             "potionFormular": [
+                4,
+                4,
+                4,
+                4
+            ],
+            "potionEffectiveScore": 625,
+            "potionQuality": 95.13540649414063,
+            "potionPrice": 91,
+            "potionElement": [
                 2,
-                15,
-                12,
-                19
+                2,
+                2,
+                2
+            ],
+            "potionUsage": 1
+        },
+        {
+            "potionSpriteIndex": 22,
+            "potionName": "halo",
+            "potionFormular": [
+                1,
+                2,
+                3,
+                4
             ],
             "potionEffectiveScore": 0,
-            "potionQuality": 97.46868896484375,
-            "potionPrice": 765,
+            "potionQuality": 40.54814910888672,
+            "potionPrice": 14,
             "potionElement": [
+                -1,
                 0,
-                1
+                2,
+                2
             ],
-            "potionUsage": -1
+            "potionUsage": 1
         }
     ],
     "ingredientProfile": [
@@ -328,30 +350,30 @@
     },
     "shopProfile": {
         "ingredientPurchased": [
-            75,
-            78,
-            75,
-            75,
-            75,
-            75,
-            75,
-            77,
-            77,
-            75,
-            75,
             74,
-            75,
-            75,
             74,
-            75,
-            75,
-            75,
             74,
+            70,
             75,
             75,
             75,
-            78,
-            77,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
+            75,
             75,
             75,
             75,
